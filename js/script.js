@@ -1,5 +1,5 @@
 /**
-//  * @author Untoldcoding
+//  * @author DIVAKAR_RAJPUT
  */
 (function ($) {
   "use strict";
@@ -12,16 +12,6 @@
     newOn: 250,
   });
 })(jQuery);
-$(document).on("click", function () { 
-  document.getElementById("my_audio").play();
-  console.log("Shaadi me zaroor aana");
-});
-
-function pauseAudio() {
-  document.getElementById("my_audio").pause();
-  console.log("Shaadi me pakka aana");
-  event.stopPropagation();
-}
 
 var countDownDate = new Date("Feb 14, 2024 00:00:00").getTime();
 
