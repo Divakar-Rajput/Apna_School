@@ -59,6 +59,9 @@ header .container nav ul,
     align-items: center;
     margin: 0px;
 }
+header .container nav ul .material-symbols-outlined{
+    display: none;
+}
 
 header .container nav ul li,
 .sub_menu .sub_menu_container ul li {
@@ -121,11 +124,27 @@ header .sub_menu .sub_menu_container ul {
     gap: 0%;
 }
 @media screen and (max-width: 991px) {
+    header .container nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
     header .container nav ul li {
         display: none;
     }
     header .container .branding {
-        max-width: 15%;
+        max-width: 25%;
+    }
+    header .container nav ul .material-symbols-outlined{
+        display: block;
+        font-size: 3.5vw;
+        margin-right: 5%;
+        cursor: pointer;
+        padding: 10px;
+        transition: .3s linear;
+    }
+    header .container nav ul .material-symbols-outlined:hover{
+       background-color: rgb(216, 214, 214);
     }
 }
 @media screen and (max-width: 756px) {
@@ -135,6 +154,11 @@ header .sub_menu .sub_menu_container ul {
     header .container .branding {
         max-width: 35%;
     }
+    header .container nav ul .material-symbols-outlined{
+        font-size: 4vw;
+        margin-right: 5%;
+        padding: 7px;
+    }
 }
 @media screen and (max-width: 500px) {
     header .container nav ul li {
@@ -142,6 +166,11 @@ header .sub_menu .sub_menu_container ul {
     }
     header .container .branding {
         max-width: 50%;
+    }
+    header .container nav ul .material-symbols-outlined{
+        font-size: 6vw;
+        margin-right: 10%;
+        padding: 7px;
     }
 }
 @media screen and (max-width: 350px) {
