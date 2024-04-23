@@ -125,7 +125,7 @@ header .sub_menu .sub_menu_container ul {
         display: none;
     }
     header .container .branding {
-        max-width: 30%;
+        max-width: 15%;
     }
 }
 @media screen and (max-width: 756px) {
