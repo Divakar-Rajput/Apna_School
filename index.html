@@ -15,8 +15,12 @@
             <div class="branding">
                <img src="img/bannerlogo.png" alt="">
             </div>
+            <span class="material-symbols-outlined" onclick="myFunction()">
+                menu
+                </span>
+        </ul>
             <nav>
-                <ul>
+                <ul id="menu">
                     <li><a href="#">BranchWise MCQs</a></li>
                     <li><a href="#">School MCQs</a></li>
                     <li><a href="#">DSA</a></li>
@@ -26,10 +30,6 @@
                     <li><a href="#">Training</a></li>
                     <li><a href="#">Books</a></li>
                     <li><a href="#">Contact</a></li>
-                    <span class="material-symbols-outlined">
-                        menu
-                        </span>
-                </ul>
             </nav>
         </div>
         <div class="sub_menu">
@@ -74,6 +74,13 @@
             </div>
         </div>
     </header>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          x.classList.toggle("menu");
+          x.style.transition = ".3s linear";
+        }
+        </script
     <script src="JS/main_js.js"></script>
 </body>
 </html>

@@ -24,6 +24,8 @@ header .container {
     max-width: 100%;
     height: 60%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     background: rgb(253, 253, 253);
 }
@@ -59,13 +61,13 @@ header .container nav ul,
     align-items: center;
     margin: 0px;
 }
-header .container nav ul .material-symbols-outlined{
+header .container .material-symbols-outlined{
     display: none;
 }
 
 header .container nav ul li,
 .sub_menu .sub_menu_container ul li {
-    max-width: 20%;
+    max-width: 100%;
     width: auto;
     display: flex;
     align-items: center;
@@ -126,19 +128,42 @@ header .sub_menu .sub_menu_container ul {
 @media screen and (max-width: 991px) {
     header .container nav ul {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 12vh;
+        overflow:auto;
+        gap: 0%;
+        width: 100%;
+        height:0vh;
+        padding: 0px;
+        background-color: #282A35;
         align-items: center;
         justify-content: end;
     }
+    header .container nav .menu{
+        height: 100vh;
+        overflow: auto;
+    }
     header .container nav ul li {
-        display: none;
+        width: 100%;
+    }
+    header .container nav ul li a {
+        font-size: 2vw;
+        color: #cdcbcb;
+    }
+    header .container nav ul li:hover a {
+        color: black;
     }
     header .container .branding {
         max-width: 25%;
     }
-    header .container nav ul .material-symbols-outlined{
+    header .container .material-symbols-outlined{
         display: block;
+        position: absolute;
         font-size: 3.5vw;
-        margin-right: 5%;
+        right: 0;
         cursor: pointer;
         padding: 10px;
         transition: .3s linear;
@@ -148,29 +173,49 @@ header .sub_menu .sub_menu_container ul {
     }
 }
 @media screen and (max-width: 756px) {
+    header .container nav ul {
+        gap: 0%;
+        width: 100%;
+    }
     header .container nav ul li {
-        display: none;
+        width: 100%;
+    }
+    header .container nav ul li a {
+        font-size: 2.5vw;
+        color: #cdcbcb;
     }
     header .container .branding {
-        max-width: 35%;
+        max-width: 30%;
     }
-    header .container nav ul .material-symbols-outlined{
+    header .container .material-symbols-outlined{
         font-size: 4vw;
-        margin-right: 5%;
-        padding: 7px;
+        margin-right: 4%;
+    }
+    header .container nav ul .material-symbols-outlined:hover{
+       background-color: rgb(216, 214, 214);
     }
 }
 @media screen and (max-width: 500px) {
+    header .container nav ul {
+        gap: 0%;
+        width: 100%;
+    }
     header .container nav ul li {
-        display: none;
+        width: 100%;
+    }
+    header .container nav ul li a {
+        font-size: 3.7vw;
+        color: #cdcbcb;
     }
     header .container .branding {
-        max-width: 50%;
+        max-width: 30%;
     }
-    header .container nav ul .material-symbols-outlined{
+    header .container .material-symbols-outlined{
         font-size: 6vw;
-        margin-right: 10%;
-        padding: 7px;
+        margin-right: 4%;
+    }
+    header .container nav ul .material-symbols-outlined:hover{
+       background-color: rgb(216, 214, 214);
     }
 }
 @media screen and (max-width: 350px) {
