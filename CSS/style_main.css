@@ -92,7 +92,7 @@ header .container nav ul li a,
 header .sub_menu{
     width: 100%;
     height: 40%;
-    background: #282A35;
+    background: linear-gradient(90deg, #051360, #394f81, #051360);
 }
 header .sub_menu .sub_menu_container{
     width: 100%;
@@ -101,31 +101,80 @@ header .sub_menu .sub_menu_container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
     scrollbar-width: none;
-}
+} */
 header  .sub_menu .sub_menu_container ul li a {
     color: #e6e6e6;
-    padding: 8px;
+    padding: 0px 8px 0px 8px;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
 }
 header .sub_menu .sub_menu_container ul li:hover {
-   background-color: rgb(0, 0, 0);
+   background-color: #5f6899;
 }
 .active{
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #04AA6D !important;
+    background-color: #1c02e5 !important;
 }
 header .sub_menu .sub_menu_container ul {
     gap: 0%;
+    height: 100%;
+    overflow: auto;
 }
-@media screen and (max-width: 991px) {
+header .sub_menu .sub_menu_container ul::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+/* content area */
+.conten_container{
+    width: 100%;
+    margin: auto;
+    top: 16px;
+    position: relative;
+    height: 100%;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: #ffffff;
+}
+.conten_container .inside-artical{
+   width: 90%;
+   height: 95%;
+   position: relative;
+   /* background-color: rgb(237, 21, 21); */
+   margin: auto;
+}
+.conten_container .inside-artical .context{
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+}
+.conten_container .inside-artical .context .left_area,
+.conten_container .inside-artical .context .mid_area,
+.conten_container .inside-artical .context .right_area{
+    width: 33.33%;
+    height: auto;
+}
+.conten_container .inside-artical .context .left_area h3,
+.conten_container .inside-artical .context .mid_area h3,
+.conten_container .inside-artical .context .right_area h3{
+   text-align: center;
+}
+/* media queries */
+/* for ipad or tablets screen:768px - 480px */
+
+@media screen and (max-device-width: 768px)  {
     header .container nav ul {
         display: flex;
         flex-direction: column;
@@ -143,7 +192,7 @@ header .sub_menu .sub_menu_container ul {
         justify-content: end;
     }
     header .container nav .menu{
-        height: 100vh;
+        height: auto;
         overflow: auto;
     }
     header .container nav ul li {
@@ -171,54 +220,96 @@ header .sub_menu .sub_menu_container ul {
     header .container nav ul .material-symbols-outlined:hover{
        background-color: rgb(216, 214, 214);
     }
+    .conten_container .inside-artical .context{
+        flex-direction: row;
+    }
+    .conten_container .inside-artical .context .left_area,
+.conten_container .inside-artical .context .mid_area,
+.conten_container .inside-artical .context .right_area{
+    width: 100%;
+    height: auto;
 }
-@media screen and (max-width: 756px) {
+.conten_container .inside-artical .context .left_area h3,
+.conten_container .inside-artical .context .mid_area h3,
+.conten_container .inside-artical .context .right_area h3{
+   font-size: 2.7vw;
+}
+.conten_container .inside-artical .context .left_area li,
+.conten_container .inside-artical .context .mid_area li,
+.conten_container .inside-artical .context .right_area li{
+   line-height: 20px;
+   
+}
+.conten_container .inside-artical .context .left_area li a,
+.conten_container .inside-artical .context .mid_area li a,
+.conten_container .inside-artical .context .right_area li a{
+   font-size: 2vw;
+   text-decoration: none;
+}
+}
+/* for mobile devices screen:480px - 320px 
+for portrait view*/
+@media screen and (max-device-width: 480px) 
+    and (orientation: portrait) {
     header .container nav ul {
         gap: 0%;
         width: 100%;
     }
     header .container nav ul li {
         width: 100%;
+    }
+    header .container nav ul li a {
+        font-size: 3vw;
+        color: #cdcbcb;
+    }
+    header .container .branding {
+        max-width: 38%;
+    }
+    header .container .material-symbols-outlined{
+        font-size: 6.5vw;
+        margin-right: 4%;
+    }
+    header .container nav ul .material-symbols-outlined:hover{
+       background-color: rgb(216, 214, 214);
+    }
+}
+/* for mobile devices screen:480px - 320px 
+for landscape view*/
+@media screen and (max-device-width: 640px) 
+    and (orientation: landscape)
+ {
+    header {
+        height: 20vh;
+    }
+    header .container nav ul {
+        gap: 0%;
+        top: 20vh;
+        width: 100%;
+    }
+    header .container nav ul li {
+        width: 100%;
+    }
+    header .container nav ul li a {
+        font-size: 1vw;
+        color: #cdcbcb;
+    }
+    header .container .branding {
+        max-width: 24%;
+    }
+    header .container .material-symbols-outlined{
+        font-size: 4.5vw;
+        margin-right: 4%;
+    }
+    header .container nav ul .material-symbols-outlined:hover{
+       background-color: rgb(216, 214, 214);
     }
     header .container nav ul li a {
         font-size: 2.5vw;
         color: #cdcbcb;
     }
-    header .container .branding {
-        max-width: 30%;
-    }
-    header .container .material-symbols-outlined{
-        font-size: 4vw;
-        margin-right: 4%;
-    }
-    header .container nav ul .material-symbols-outlined:hover{
-       background-color: rgb(216, 214, 214);
-    }
 }
-@media screen and (max-width: 500px) {
-    header .container nav ul {
-        gap: 0%;
-        width: 100%;
-    }
-    header .container nav ul li {
-        width: 100%;
-    }
-    header .container nav ul li a {
-        font-size: 3.7vw;
-        color: #cdcbcb;
-    }
-    header .container .branding {
-        max-width: 50%;
-    }
-    header .container .material-symbols-outlined{
-        font-size: 6vw;
-        margin-right: 4%;
-    }
-    header .container nav ul .material-symbols-outlined:hover{
-       background-color: rgb(216, 214, 214);
-    }
-}
-@media screen and (max-width: 350px) {
+    /* For iPhone 4 Portrait or Landscape View */
+@media screen and (max-width: 320px) {
     header  .sub_menu .sub_menu_container ul li a {
         font-size: 3vw;
     }
