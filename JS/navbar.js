@@ -1,17 +1,9 @@
 //for top menu
-document.getElementById("menu").innerHTML = 
-`<li><a href="#">BranchWise MCQs</a></li>
-<li><a href="#">School MCQs</a></li>
-<li><a href="#">DSA</a></li>
-<li><a href="#">Test</a></li>
-<li><a href="#">Job</a></li>
-<li><a href="#">Internship</a></li>
-<li><a href="#">Training</a></li>
-<li><a href="#">Books</a></li>
-<li><a href="#">Contact</a></li>`; 
+// document.getElementById("menu").innerHTML =
+//   ``;
 //for sub menu 
-document.getElementById("sub_menu_container").innerHTML = 
-`<li><a class="subnav" href="#">HTML</a></li>
+document.getElementById("sub_menu_container").innerHTML =
+  `<li><a class="subnav" href="#">HTML</a></li>
 <li><a class="subnav" href="#">CSS</a></li>
 <li><a class="subnav" href="#">JAVASCRIPT</a></li>
 <li><a class="subnav" href="#">SQL</a></li>
@@ -53,7 +45,7 @@ document.getElementById("sub_menu_container").innerHTML =
 <li><a class="subnav" href="#">DATASCIENCE</a></li>`;
 //for quick links
 document.getElementById("text-widget").innerHTML =
-`<li><a href="#">About</a></li>|
+  `<li><a href="#">About</a></li>|
 <li><a href="#">Certifications</a></li>|
 <li><a href="#">Internships</a></li>|
 <li><a href="#">Jobs</a></li>|
@@ -62,8 +54,8 @@ document.getElementById("text-widget").innerHTML =
 <li><a href="#">Copyright</a></li>|
 <li><a href="#">Contact</a></li>`;
 //for social media links
-document.getElementById("social-widgets").innerHTML = 
-`<li><a href="#" class="fa fa-facebook"></a> </li>
+document.getElementById("social-widgets").innerHTML =
+  `<li><a href="#" class="fa fa-facebook"></a> </li>
 <li><a href="#" class="fa fa-instagram"></a></li>
 <li><a href="#" class="fa fa-twitter"></a></li>
 <li><a href="#" class="fa fa-linkedin"></a></li>
@@ -82,7 +74,7 @@ function myFunction() {
 tagButtons = document.querySelectorAll(".subnav")
 tagButtons.forEach((button) => {
   button.addEventListener("click", () => {
-      tagButtons.forEach((btn) => btn.classList.remove("active"));
-      button.classList.add("active");
+    tagButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
   });
 });

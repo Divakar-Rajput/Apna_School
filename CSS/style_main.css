@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --var-background-color: linear-gradient(90deg, #051360, #394f81, #051360);
+    --var-background-color:#282A35;
     --var-nav-background: #242946;
-    --var-hover-color: #1c02e5;
-    --var-active-color: #1c02e5;
+    --var-hover-color: #e8e7ed;
+    --var-active-color: #04AA6D;
+    --var-subnav-hover-color: #000000;
     --var-content-background: rgb(255, 255, 255);
     --var-link-color: rgb(8, 130, 178);
     --var-link-hover-color: #000000;
@@ -87,6 +88,32 @@ header .container nav ul li,
     list-style: none;
     transition: .3s linear;
 }
+/* drop down content */
+header .container nav ul li .dropdown-content{
+    position: absolute;
+    max-width: 10%;
+    width: 10%;
+    padding: 10px;
+    display: none;
+    top: 6%;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+    transition: .3s;
+}
+header .container nav ul li .dropdown-content a{
+    text-decoration: none;
+    padding: 10px;
+    background: var(--var-nav-background);
+    color: #ffffff;
+}
+header .container nav ul li .dropdown-content a:hover{
+    background-color: #000000;
+}
+header .container nav ul li:hover .dropdown-content{
+    display: flex;
+}
+/* drop down content */
 
 header .container nav ul li:hover,
 .sub_menu .sub_menu_container ul li:hover {
@@ -131,7 +158,7 @@ header .sub_menu .sub_menu_container ul li a {
 }
 
 header .sub_menu .sub_menu_container ul li:hover {
-    background-color: var(--var-hover-color);
+    background-color: var(--var-subnav-hover-color);
 }
 
 .active {
@@ -230,9 +257,6 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
 .third-column ul li a:hover {
     color: var(--var-link-hover-color);
 }
-
-/* media queries */
-/* for ipad or tablets screen:768px - 480px */
 .site-footer{
     width: 100%;
     max-width: 100%;
@@ -307,6 +331,8 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     color: #ffffff;
     text-align: center;
 }
+/* media queries */
+/* for ipad or tablets screen:768px - 480px */
 @media screen and (max-device-width: 768px) {
     header .container nav ul {
         display: flex;
@@ -333,11 +359,29 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
 
     header .container nav ul li {
         width: 100%;
+        display: block;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
     }
 
     header .container nav ul li a {
         font-size: 2vw;
         color: #cdcbcb;
+    }
+    header .container nav ul li .dropdown-content{
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        padding: 0px;
+    }
+    header .container nav ul li .dropdown-content a{
+        background: none;
+    }
+    header .container nav ul li .dropdown-content a:hover{
+        background-color: #dcd7d7;
+    }
+    header .container nav ul li:hover .dropdown-content{
+        display: flex;
     }
 
     header .container nav ul li:hover a {
@@ -538,7 +582,7 @@ for landscape view*/
         color: #cdcbcb;
     }
     main article .inside-artical .entry-content .front-page-top {
-        font-size: 2.5vw;
+        font-size: 2.5Fvw;
         padding: 20px 0px 0px 0px;
     }
     main article .inside-artical .entry-content .front-page .first-column ul li a,
