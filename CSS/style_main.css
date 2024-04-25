@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --var-background-color: linear-gradient(90deg, #051360, #394f81, #051360);
+    --var-nav-background: #242946;
+    --var-hover-color: #ffffff;
+    --var-active-color: #1c02e5;
+    --var-content-background: rgb(255, 255, 255);
+    --var-link-color: rgb(8, 130, 178);
+    --var-link-hover-color: #000000;
+}
+
 body {
     width: 100%;
     height: 100%;
-    background: rgb(235, 233, 233);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,6 +20,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 1vw;
+    background-color: rgb(240, 233, 233);
     color: black;
 }
 
@@ -61,7 +71,8 @@ header .container nav ul,
     align-items: center;
     margin: 0px;
 }
-header .container .material-symbols-outlined{
+
+header .container .material-symbols-outlined {
     display: none;
 }
 
@@ -76,9 +87,10 @@ header .container nav ul li,
     list-style: none;
     transition: .3s linear;
 }
+
 header .container nav ul li:hover,
 .sub_menu .sub_menu_container ul li:hover {
-   background-color: rgb(237, 235, 235);
+    background-color: var(--var-hover-color);
 }
 
 header .container nav ul li a,
@@ -88,13 +100,15 @@ header .container nav ul li a,
     font-size: 1vw;
     padding: 10px;
 }
+
 /* sub menu */
-header .sub_menu{
+header .sub_menu {
     width: 100%;
     height: 40%;
-    background: linear-gradient(90deg, #051360, #394f81, #051360);
+    background: var(--var-background-color);
 }
-header .sub_menu .sub_menu_container{
+
+header .sub_menu .sub_menu_container {
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -104,77 +118,129 @@ header .sub_menu .sub_menu_container{
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 /* ::-webkit-scrollbar{
     display: none;
     scrollbar-width: none;
 } */
-header  .sub_menu .sub_menu_container ul li a {
+header .sub_menu .sub_menu_container ul li a {
     color: #e6e6e6;
     padding: 0px 8px 0px 8px;
     font-size: 13px;
     font-weight: 400;
 }
+
 header .sub_menu .sub_menu_container ul li:hover {
-   background-color: #5f6899;
+    background-color: var(--var-hover-color);
 }
-.active{
+
+.active {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1c02e5 !important;
+    background-color: var(--var-active-color);
 }
+
 header .sub_menu .sub_menu_container ul {
     gap: 0%;
     height: 100%;
     overflow: auto;
 }
+
 header .sub_menu .sub_menu_container ul::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
+
 /* content area */
-.conten_container{
+main {
     width: 100%;
-    margin: auto;
-    top: 16px;
-    position: relative;
     height: 100%;
-    display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-    background-color: #ffffff;
+    display: inline-block;
 }
-.conten_container .inside-artical{
-   width: 90%;
-   height: 95%;
-   position: relative;
-   /* background-color: rgb(237, 21, 21); */
-   margin: auto;
+
+main article {
+    /* max-width: 98%; */
+    width: 100%;
+    height: 98%;
+    margin: 0px auto;
+    padding: 0;
 }
-.conten_container .inside-artical .context{
-    width: 90%;
-    height: auto;
-    display: flex;
+
+main article .inside-artical {
+    width: 100%;
+    height: 90%;
     margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+main article .inside-artical .entry-content {
+    width: 98%;
+    height: 90%;
+    margin: auto;
+    background-color: var(--var-content-background);
+}
+
+main article .inside-artical .entry-content .front-page-top {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1vw;
+    padding: 30px 10px;
+}
+
+main article .inside-artical .entry-content .front-page {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
     flex-direction: row;
+    padding: 30px 0px;
 }
-.conten_container .inside-artical .context .left_area,
-.conten_container .inside-artical .context .mid_area,
-.conten_container .inside-artical .context .right_area{
-    width: 33.33%;
-    height: auto;
+
+main article .inside-artical .entry-content .front-page .first-column,
+.second-column,
+.third-column {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+    margin: 0;
 }
-.conten_container .inside-artical .context .left_area h3,
-.conten_container .inside-artical .context .mid_area h3,
-.conten_container .inside-artical .context .right_area h3{
-   text-align: center;
+main article .inside-artical .entry-content .front-page .first-column ul li,
+.second-column ul li,
+.third-column ul li {
+    line-height: 25px;
 }
+
+main article .inside-artical .entry-content .front-page .first-column ul li a,
+.second-column ul li a,
+.third-column ul li a {
+    text-decoration: none;
+    word-spacing: 2px;
+    letter-spacing: .5px;
+    color: var(--var-link-color);
+    transition: .3s linear;
+}
+
+main article .inside-artical .entry-content .front-page .first-column ul li a:hover,
+.second-column ul li a:hover,
+.third-column ul li a:hover {
+    color: var(--var-link-hover-color);
+}
+
 /* media queries */
 /* for ipad or tablets screen:768px - 480px */
-
-@media screen and (max-device-width: 768px)  {
+footer{
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    background-color: red;
+    /* background: rgb(240, 233, 233); */
+}
+@media screen and (max-device-width: 768px) {
     header .container nav ul {
         display: flex;
         flex-direction: column;
@@ -182,33 +248,40 @@ header .sub_menu .sub_menu_container ul::-webkit-scrollbar {
         position: absolute;
         left: 0;
         top: 12vh;
-        overflow:auto;
+        overflow: auto;
         gap: 0%;
         width: 100%;
-        height:0vh;
+        height: 0vh;
         padding: 0px;
-        background-color: #282A35;
+        background-color: var(--var-nav-background);
         align-items: center;
         justify-content: end;
+        z-index: 9999999;
     }
-    header .container nav .menu{
+
+    header .container nav .menu {
         height: auto;
         overflow: auto;
     }
+
     header .container nav ul li {
         width: 100%;
     }
+
     header .container nav ul li a {
         font-size: 2vw;
         color: #cdcbcb;
     }
+
     header .container nav ul li:hover a {
         color: black;
     }
+
     header .container .branding {
         max-width: 25%;
     }
-    header .container .material-symbols-outlined{
+
+    header .container .material-symbols-outlined {
         display: block;
         position: absolute;
         font-size: 3.5vw;
@@ -217,100 +290,136 @@ header .sub_menu .sub_menu_container ul::-webkit-scrollbar {
         padding: 10px;
         transition: .3s linear;
     }
-    header .container nav ul .material-symbols-outlined:hover{
-       background-color: rgb(216, 214, 214);
+
+    header .container nav ul .material-symbols-outlined:hover {
+        background-color: rgb(216, 214, 214);
     }
-    .conten_container .inside-artical .context{
-        flex-direction: row;
+    main article .inside-artical .entry-content .front-page-top {
+        font-size: 2.4vw;
+        padding: 20px 0px 0px 0px;
     }
-    .conten_container .inside-artical .context .left_area,
-.conten_container .inside-artical .context .mid_area,
-.conten_container .inside-artical .context .right_area{
-    width: 100%;
-    height: auto;
+
+    main article .inside-artical .entry-content .front-page {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    main article .inside-artical .entry-content .front-page .first-column ul li a,
+    .second-column ul li a,
+    .third-column ul li a {
+        font-size: 2vw;
+    }
+    main article .inside-artical .entry-content .front-page .first-column h3,
+    .second-column h3,
+    .third-column h3 {
+        font-size: 2.7vw;
+    }
 }
-.conten_container .inside-artical .context .left_area h3,
-.conten_container .inside-artical .context .mid_area h3,
-.conten_container .inside-artical .context .right_area h3{
-   font-size: 2.7vw;
-}
-.conten_container .inside-artical .context .left_area li,
-.conten_container .inside-artical .context .mid_area li,
-.conten_container .inside-artical .context .right_area li{
-   line-height: 20px;
-   
-}
-.conten_container .inside-artical .context .left_area li a,
-.conten_container .inside-artical .context .mid_area li a,
-.conten_container .inside-artical .context .right_area li a{
-   font-size: 2vw;
-   text-decoration: none;
-}
-}
+
 /* for mobile devices screen:480px - 320px 
 for portrait view*/
-@media screen and (max-device-width: 480px) 
-    and (orientation: portrait) {
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
     header .container nav ul {
         gap: 0%;
         width: 100%;
     }
+
     header .container nav ul li {
         width: 100%;
     }
+
     header .container nav ul li a {
         font-size: 3vw;
         color: #cdcbcb;
     }
+
     header .container .branding {
         max-width: 38%;
     }
-    header .container .material-symbols-outlined{
+
+    header .container .material-symbols-outlined {
         font-size: 6.5vw;
         margin-right: 4%;
     }
-    header .container nav ul .material-symbols-outlined:hover{
-       background-color: rgb(216, 214, 214);
+
+    header .container nav ul .material-symbols-outlined:hover {
+        background-color: rgb(216, 214, 214);
+    }
+    main article .inside-artical .entry-content .front-page-top {
+        font-size: 3vw;
+        padding: 20px 0px 0px 0px;
+    }
+    main article .inside-artical .entry-content .front-page .first-column ul li a,
+    .second-column ul li a,
+    .third-column ul li a {
+        font-size: 3.4vw;
+    }
+    main article .inside-artical .entry-content .front-page .first-column h3,
+    .second-column h3,
+    .third-column h3 {
+        font-size: 3.6vw;
     }
 }
+
 /* for mobile devices screen:480px - 320px 
 for landscape view*/
-@media screen and (max-device-width: 640px) 
-    and (orientation: landscape)
- {
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
     header {
         height: 20vh;
     }
+
     header .container nav ul {
         gap: 0%;
         top: 20vh;
         width: 100%;
     }
+
     header .container nav ul li {
         width: 100%;
     }
+
     header .container nav ul li a {
         font-size: 1vw;
         color: #cdcbcb;
     }
+
     header .container .branding {
         max-width: 24%;
     }
-    header .container .material-symbols-outlined{
+
+    header .container .material-symbols-outlined {
         font-size: 4.5vw;
         margin-right: 4%;
     }
-    header .container nav ul .material-symbols-outlined:hover{
-       background-color: rgb(216, 214, 214);
+
+    header .container nav ul .material-symbols-outlined:hover {
+        background-color: rgb(216, 214, 214);
     }
+
     header .container nav ul li a {
         font-size: 2.5vw;
         color: #cdcbcb;
     }
+    main article .inside-artical .entry-content .front-page-top {
+        font-size: 5vw;
+        padding: 20px 0px 0px 0px;
+    }
+    main article .inside-artical .entry-content .front-page .first-column ul li a,
+    .second-column ul li a,
+    .third-column ul li a {
+        font-size: 4.5vw;
+    }
+    main article .inside-artical .entry-content .front-page .first-column h3,
+    .second-column h3,
+    .third-column h3 {
+        font-size: 3.6vw;
+    }
 }
-    /* For iPhone 4 Portrait or Landscape View */
+
+/* For iPhone 4 Portrait or Landscape View */
 @media screen and (max-width: 320px) {
-    header  .sub_menu .sub_menu_container ul li a {
+    header .sub_menu .sub_menu_container ul li a {
         font-size: 3vw;
     }
 }
