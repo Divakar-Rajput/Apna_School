@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --var-background-color:#282A35;
+    --var-background-color: #282A35;
     --var-nav-background: #242946;
     --var-hover-color: #e8e7ed;
     --var-active-color: #04AA6D;
@@ -72,6 +72,13 @@ header .container nav ul,
     align-items: center;
     margin: 0px;
 }
+header .sub_menu .sub_menu_container ul .current {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--var-active-color);
+}
 
 header .container .material-symbols-outlined {
     display: none;
@@ -88,8 +95,9 @@ header .container nav ul li,
     list-style: none;
     transition: .3s linear;
 }
+
 /* drop down content */
-header .container nav ul li .dropdown-content{
+header .container nav ul li .dropdown-content {
     position: absolute;
     max-width: 10%;
     width: 10%;
@@ -101,16 +109,22 @@ header .container nav ul li .dropdown-content{
     z-index: 999;
     transition: .3s;
 }
-header .container nav ul li .dropdown-content a{
+
+header .container nav ul li .dropdown-content a {
     text-decoration: none;
     padding: 10px;
     background: var(--var-nav-background);
     color: #ffffff;
 }
-header .container nav ul li .dropdown-content a:hover{
+
+header .container nav ul li .dropdown-content a:hover {
     background-color: #000000;
 }
-header .container nav ul li:hover .dropdown-content{
+
+header .container nav ul li:hover .dropdown-content {
+    display: flex;
+}
+header .container nav ul li:hover .dropdown-content {
     display: flex;
 }
 /* drop down content */
@@ -236,6 +250,7 @@ main article .inside-artical .entry-content .front-page .first-column,
     padding: 20px 0px;
     margin: 0;
 }
+
 main article .inside-artical .entry-content .front-page .first-column ul li,
 .second-column ul li,
 .third-column ul li {
@@ -257,29 +272,34 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
 .third-column ul li a:hover {
     color: var(--var-link-hover-color);
 }
-.site-footer{
+
+.site-footer {
     width: 100%;
     max-width: 100%;
     height: 30vh;
     background-color: #000000;
     /* background: rgb(240, 233, 233); */
 }
-.site-footer .footer-widgets{
+
+.site-footer .footer-widgets {
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.site-footer .footer-widgets .footer-widgets-container{
+
+.site-footer .footer-widgets .footer-widgets-container {
     width: 90%;
     height: 80%;
 }
-.site-footer .footer-widgets .footer-widgets-container aside{
+
+.site-footer .footer-widgets .footer-widgets-container aside {
     width: 100%;
     height: 40%;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .text-widget{
+
+.site-footer .footer-widgets .footer-widgets-container aside .text-widget {
     width: 100%;
     height: 80%;
     display: flex;
@@ -287,16 +307,19 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     justify-content: center;
     color: #ffffff;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .text-widget li{
+
+.site-footer .footer-widgets .footer-widgets-container aside .text-widget li {
     list-style: none;
     margin: 10px;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .text-widget li a{
+
+.site-footer .footer-widgets .footer-widgets-container aside .text-widget li a {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .social-widgets{
+
+.site-footer .footer-widgets .footer-widgets-container aside .social-widgets {
     width: au;
     height: 100%;
     display: flex;
@@ -304,7 +327,8 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     justify-content: center;
     background-color: #04050e;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li{
+
+.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li {
     width: 3%;
     height: 80%;
     margin: 10px;
@@ -315,22 +339,27 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     background-color: #ffffff;
     cursor: pointer;
 }
-.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li:hover{
+
+.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li:hover {
     background-color: rgb(196, 184, 184);
 }
-.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a{
-   text-decoration: none;
-   color: #000000;
-   font-size: 1.3vw;
+
+.site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.3vw;
 }
-.site-footer .site-info{
+
+.site-footer .site-info {
     width: 100%;
     height: 10%;
 }
-.site-footer .site-info p{
+
+.site-footer .site-info p {
     color: #ffffff;
     text-align: center;
 }
+
 /* media queries */
 /* for ipad or tablets screen:768px - 480px */
 @media screen and (max-device-width: 768px) {
@@ -368,20 +397,27 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
         font-size: 2vw;
         color: #cdcbcb;
     }
-    header .container nav ul li .dropdown-content{
+
+    header .container nav ul li .dropdown-content {
         position: relative;
         max-width: 100%;
         width: 100%;
         padding: 0px;
     }
-    header .container nav ul li .dropdown-content a{
+
+    header .container nav ul li .dropdown-content a {
         background: none;
     }
-    header .container nav ul li .dropdown-content a:hover{
+
+    header .container nav ul li .dropdown-content a:hover {
         background-color: #dcd7d7;
     }
-    header .container nav ul li:hover .dropdown-content{
+
+    header .container nav ul li:hover .dropdown-content {
         display: flex;
+    }
+    header .container nav ul .dropdown-toggle:hover .dropdown-content {
+        display: none;
     }
 
     header .container nav ul li:hover a {
@@ -405,6 +441,7 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     header .container nav ul .material-symbols-outlined:hover {
         background-color: rgb(216, 214, 214);
     }
+
     main article .inside-artical .entry-content .front-page-top {
         font-size: 2.4vw;
         padding: 20px 0px 0px 0px;
@@ -421,55 +458,66 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     .third-column ul li a {
         font-size: 2vw;
     }
+
     main article .inside-artical .entry-content .front-page .first-column h3,
     .second-column h3,
     .third-column h3 {
         font-size: 2.7vw;
     }
-    .site-footer .footer-widgets{
+
+    .site-footer .footer-widgets {
         width: 100%;
         height: auto;
     }
-    .site-footer .footer-widgets .footer-widgets-container{
+
+    .site-footer .footer-widgets .footer-widgets-container {
         width: 100%;
         height: auto;
 
     }
-    .site-footer .footer-widgets .footer-widgets-container aside{
+
+    .site-footer .footer-widgets .footer-widgets-container aside {
         width: 100%;
         height: auto;
         display: flex;
         justify-content: center;
-        
+
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget {
         width: 80%;
         height: auto;
         display: flex;
         flex-wrap: wrap;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a {
         font-size: 2.3vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets {
         width: au;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li {
         width: 6vw;
         height: 6vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a{
-       font-size: 2vw;
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a {
+        font-size: 2vw;
     }
-    .site-footer .site-info{
+
+    .site-footer .site-info {
         width: 100%;
         height: 10%;
     }
-    .site-footer .site-info p{
+
+    .site-footer .site-info p {
         font-size: 2.3vw;
 
     }
@@ -504,42 +552,51 @@ for portrait view*/
     header .container nav ul .material-symbols-outlined:hover {
         background-color: rgb(216, 214, 214);
     }
+
     main article .inside-artical .entry-content .front-page-top {
         font-size: 3vw;
         padding: 20px 0px 0px 0px;
     }
+
     main article .inside-artical .entry-content .front-page .first-column ul li a,
     .second-column ul li a,
     .third-column ul li a {
         font-size: 3.4vw;
     }
+
     main article .inside-artical .entry-content .front-page .first-column h3,
     .second-column h3,
     .third-column h3 {
         font-size: 3.6vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget {
         width: 98%;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a {
         font-size: 3.2vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li {
         width: 8vw;
         height: 8vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a{
-       font-size: 3.2vw;
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a {
+        font-size: 3.2vw;
     }
-    .site-footer .site-info{
+
+    .site-footer .site-info {
         width: 100%;
         height: 10%;
     }
-    .site-footer .site-info p{
+
+    .site-footer .site-info p {
         font-size: 3.2vw;
 
     }
-     
+
 }
 
 /* for mobile devices screen:480px - 320px 
@@ -581,38 +638,47 @@ for landscape view*/
         font-size: 2.5vw;
         color: #cdcbcb;
     }
+
     main article .inside-artical .entry-content .front-page-top {
         font-size: 2.5Fvw;
         padding: 20px 0px 0px 0px;
     }
+
     main article .inside-artical .entry-content .front-page .first-column ul li a,
     .second-column ul li a,
     .third-column ul li a {
         font-size: 2.5vw;
     }
+
     main article .inside-artical .entry-content .front-page .first-column h3,
     .second-column h3,
     .third-column h3 {
         font-size: 3vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget {
         width: 98%;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .text-widget li a {
         font-size: 2vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li{
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li {
         width: 5vw;
-        height:5vw;
+        height: 5vw;
     }
-    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a{
-       font-size: 2vw;
+
+    .site-footer .footer-widgets .footer-widgets-container aside .social-widgets li a {
+        font-size: 2vw;
     }
-    .site-footer .site-info{
+
+    .site-footer .site-info {
         width: 100%;
         height: 10%;
     }
-    .site-footer .site-info p{
+
+    .site-footer .site-info p {
         font-size: 2vw;
 
     }

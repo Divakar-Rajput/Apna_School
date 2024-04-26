@@ -1,6 +1,81 @@
-//for top menu
-// document.getElementById("menu").innerHTML =
-//   ``;
+// for top menu
+document.getElementById("menu").innerHTML =
+  `<li class="list dropdown-toggle"><a href="#">BranchWise MCQs
+  <a href="#" class="fa fa-angle-down"
+          style="font-size: 1.5vw;"></a>
+</a>
+<div class="dropdown-content">
+  <a href="#">CS-IT-IS</a>
+  <a href="#">ECE-EEE-EE</a>
+  <a href="#">Civil</a>
+  <a href="#">Mechanical</a>
+  <a href="#">Chemical</a>
+  <a href="#">Metallurgy</a>
+  <a href="#">Mining</a>
+  <a href="#">Instrumentation</a>
+  <a href="#">Aerospace</a>
+  <a href="#">Aeronautical</a>
+  <a href="#">Biotchnology</a>
+  <a href="#">Agriculture</a>
+  <a href="#">Marine</a>
+  <a href="#">Mechatronics</a>
+  <a href="#">MCA</a>
+  <a href="#">BCA</a>
+</div>
+</li>
+<li class="list dropdown-toggle"><a href="#">School MCQs
+  <a href="#" class="fa fa-angle-down"
+          style="font-size: 1.5vw;"></a>
+</a>
+<div class="dropdown-content">
+  <a href="#">Class-8</a>
+  <a href="#">Class-9</a>
+  <a href="#">Class-10</a>
+  <a href="#">Class-11</a>
+  <a href="#">Class-12</a>
+</div>
+</li>
+<li class="list dropdown-toggle"><a href="#">DSA
+  <a href="#" class="fa fa-angle-down"
+          style="font-size: 1.5vw;"></a>
+</a>
+<div class="dropdown-content">
+  <a href="#">C Programs</a>
+  <a href="#">Algorithms in C</a>
+  <a href="#">Data Structure in C</a>
+  <a href="#">C++ Programs</a>
+  <a href="#">C++ Algorithms</a>
+  <a href="#">Data Structure in C++</a>
+  <a href="#">Jva Programs</a>
+  <a href="#">Java Algorithms</a>
+  <a href="#">Data Structure in Java</a>
+  <a href="#">PythonPrograms</a>
+  <a href="#">C# Programs</a>
+</div>
+</li>
+<li class="list dropdown-toggle"><a href="#">Test
+  <a href="#" class="fa fa-angle-down"
+          style="font-size: 1.5vw;"></a>
+</a>
+<div class="dropdown-content">
+  <a href="#">All-Test</a>
+  <a href="#">Certification</a>
+  <a href="#">Dowmload Certificates</a>
+</div>
+</li>
+<li class="list dropdown-toggle"><a href="#">Job
+  <a href="#" class="fa fa-angle-down"
+          style="font-size: 1.5vw;"></a>
+</a>
+<div class="dropdown-content">
+  <a href="#">All-Jobs</a>
+  <a href="#">Job Test</a>
+</div>
+</li>
+<li class="list dropdown-toggle"><a href="#">Internship</a></li>
+<li class="list dropdown-toggle"><a href="#">Training</a></li>
+<li class="list dropdown-toggle"><a href="#">Books</a></li>
+<li class="list dropdown-toggle"><a href="#">Contact</a></li>`;
 //for sub menu 
 document.getElementById("sub_menu_container").innerHTML =
   `<li><a class="subnav" href="#">HTML</a></li>
@@ -76,5 +151,12 @@ tagButtons.forEach((button) => {
   button.addEventListener("click", () => {
     tagButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
+  });
+});
+tagButton = document.querySelectorAll(".list")
+tagButton.forEach((button) => {
+  button.addEventListener("click", () => {
+    // tagButton.forEach((btn) => btn.classList.add("dropdown-toggle"));
+    button.classList.toggle("dropdown-toggle");
   });
 });
