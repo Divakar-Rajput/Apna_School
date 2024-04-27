@@ -1,29 +1,24 @@
 // for top menu
 document.getElementById("menu").innerHTML =
-  `<li class="list dropdown-toggle"><a href="#">BranchWise MCQs
+  `<li class="list"><a href="index.html">Home</a></li>
+  <li class="list dropdown-toggle"><a href="#">Tutorials
   <a href="#" class="fa fa-angle-down"
           style="font-size: 1.5vw;"></a>
 </a>
 <div class="dropdown-content">
-  <a href="#">CS-IT-IS</a>
-  <a href="#">ECE-EEE-EE</a>
-  <a href="#">Civil</a>
-  <a href="#">Mechanical</a>
-  <a href="#">Chemical</a>
-  <a href="#">Metallurgy</a>
-  <a href="#">Mining</a>
-  <a href="#">Instrumentation</a>
-  <a href="#">Aerospace</a>
-  <a href="#">Aeronautical</a>
-  <a href="#">Biotchnology</a>
-  <a href="#">Agriculture</a>
-  <a href="#">Marine</a>
-  <a href="#">Mechatronics</a>
-  <a href="#">MCA</a>
-  <a href="#">BCA</a>
+<a href="#">Web Design</a>
+<a href="#">Data Analytics</a>
+<a href="#">Java Script</a>
+<a href="#">Python</a>
+<a href="#">Java Script</a>
+<a href="#">CS Subjects</a>
+<a href="#">Linux</a>
+<a href="#">Web Building</a>
+<a href="#">Back End</a>
+<a href="#" style = "background-color:#04AA6D;">More Courses...</a>
 </div>
 </li>
-<li class="list dropdown-toggle"><a href="#">School MCQs
+<li class="list dropdown-toggle"><a href="#">Courses MCQs
   <a href="#" class="fa fa-angle-down"
           style="font-size: 1.5vw;"></a>
 </a>
@@ -33,6 +28,13 @@ document.getElementById("menu").innerHTML =
   <a href="#">Class-10</a>
   <a href="#">Class-11</a>
   <a href="#">Class-12</a>
+  <a href="#">B.Tech</a>
+  <a href="#">M.Tech</a>
+  <a href="#">MCA</a>
+  <a href="#">BCA</a>
+  <a href="#">Agriculture</a>
+  <a href="more_courses_mcq.html" style = "background-color:#04AA6D;">More Courses...</a>
+  
 </div>
 </li>
 <li class="list dropdown-toggle"><a href="#">DSA
@@ -53,71 +55,8 @@ document.getElementById("menu").innerHTML =
   <a href="#">C# Programs</a>
 </div>
 </li>
-<li class="list dropdown-toggle"><a href="#">Test
-  <a href="#" class="fa fa-angle-down"
-          style="font-size: 1.5vw;"></a>
-</a>
-<div class="dropdown-content">
-  <a href="#">All-Test</a>
-  <a href="#">Certification</a>
-  <a href="#">Dowmload Certificates</a>
-</div>
-</li>
-<li class="list dropdown-toggle"><a href="#">Job
-  <a href="#" class="fa fa-angle-down"
-          style="font-size: 1.5vw;"></a>
-</a>
-<div class="dropdown-content">
-  <a href="#">All-Jobs</a>
-  <a href="#">Job Test</a>
-</div>
-</li>
-<li class="list dropdown-toggle"><a href="#">Internship</a></li>
-<li class="list dropdown-toggle"><a href="#">Training</a></li>
-<li class="list dropdown-toggle"><a href="#">Books</a></li>
+<li class="list dropdown-toggle"><a href="#">Services</a></li>
 <li class="list dropdown-toggle"><a href="#">Contact</a></li>`;
-//for sub menu 
-document.getElementById("sub_menu_container").innerHTML =
-  `<li><a class="subnav" href="#">HTML</a></li>
-<li><a class="subnav" href="#">CSS</a></li>
-<li><a class="subnav" href="#">JAVASCRIPT</a></li>
-<li><a class="subnav" href="#">SQL</a></li>
-<li><a class="subnav" href="#">PYTHON</a></li>
-<li><a class="subnav" href="#">JAVA</a></li>
-<li><a class="subnav" href="#">PHP</a></li>
-<li><a class="subnav" href="#">HOW_TO</a></li>
-<li><a class="subnav" href="#">W3.CSS</a></li>
-<li><a class="subnav" href="#">C</a></li>
-<li><a class="subnav" href="#">C++</a></li>
-<li><a class="subnav" href="#">C#</a></li>
-<li><a class="subnav" href="#">BOOTSTRAP</a></li>
-<li><a class="subnav" href="#">REACT</a></li>
-<li><a class="subnav" href="#">MYSQL</a></li>
-<li><a class="subnav" href="#">JQUERY</a></li>
-<li><a class="subnav" href="#">EXCEL</a></li>
-<li><a class="subnav" href="#">XML</a></li>
-<li><a class="subnav" href="#">DJANGO</a></li>
-<li><a class="subnav" href="#">NUMPY</a></li>
-<li><a class="subnav" href="#">PANDAS</a></li>
-<li><a class="subnav" href="#">NODEJS</a></li>
-<li><a class="subnav" href="#">R</a></li>
-<li><a class="subnav" href="#">TYPESCRIPT</a></li>
-<li><a class="subnav" href="#">ANGULAR</a></li>
-<li><a class="subnav" href="#">GIT</a></li>
-<li><a class="subnav" href="#">POSTGRASQL</a></li>
-<li><a class="subnav" href="#">MONODB</a></li>
-<li><a class="subnav" href="#">ASP</a></li>
-<li><a class="subnav" href="#">AI</a></li>
-<li><a class="subnav" href="#">GO</a></li>
-<li><a class="subnav" href="#">KOTLIN</a></li>
-<li><a class="subnav" href="#">SASS</a></li>
-<li><a class="subnav" href="#">VUE</a></li>
-<li><a class="subnav" href="#">DSA</a></li>
-<li><a class="subnav" href="#">GEN_AI</a></li>
-<li><a class="subnav" href="#">SCIPY</a></li>
-<li><a class="subnav" href="#">AWS</a></li>
-<li><a class="subnav" href="#">CYBERSECURITY</a></li>
-<li><a class="subnav" href="#">DATASCIENCE</a></li>`;
 //for quick links
 document.getElementById("text-widget").innerHTML =
   `<li><a href="#">About</a></li>|

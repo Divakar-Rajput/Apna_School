@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ApnaSchool: Programming & Engineering Questions & Answers</title>
         <link rel="stylesheet" href="CSS/style_main.css">
-        <link rel="stylesheet" href="CSS/home_style.css">
         <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
         <link rel="stylesheet"
                 href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -139,46 +138,7 @@
 
 
         <!-- content area -->
-        <div class="main-container">
-                <aside>
-                        <div class="main-banner">
-                          <div class="banner-info">
-                                <div class="banner-info-text">
-                                        <h3>Learn to Code</h3>
-                                        <h4>With The World's Largest Web Developer Site.</h4>
-                                        <p>And with One Million+ Langaugaes MCQs</p>
-                                </div>
-                                <div class="banner-info-img">
-                                        <img src="img/favicon.png" alt="">
-                                </div>
-
-                          </div>
-                        </div>
-                        <div class="hero_area">
-                                <svg class="waves" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
-                                        preserveAspectRatio="none" shape-rendering="auto">
-                                        <defs>
-                                                <path id="gentle-wave"
-                                                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                                        </defs>
-                                        <g class="parallax">
-                                                <use xlink:href="#gentle-wave" x="48" y="0"
-                                                        fill="rgba(25,255,255,0.7)" />
-                                                <use xlink:href="#gentle-wave" x="48" y="3"
-                                                        fill="rgba(27,255,255,0.5)" />
-                                                <use xlink:href="#gentle-wave" x="48" y="5"
-                                                        fill="rgba(22,255,255,0.3)" />
-                                                <use xlink:href="#gentle-wave" x="48" y="7" 
-                                                        fill="rgba(29,255,255)" />
-                                        </g>
-                                </svg>
-                        </div>
-                        <div class="html-container">
-                                
-                        </div>
-                </aside>
-        </div>
+        
         <!-- content area close -->
         <div class="site-footer">
                 <div class="footer-widgets">

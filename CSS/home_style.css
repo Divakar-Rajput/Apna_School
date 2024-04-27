@@ -1,0 +1,143 @@
+.main-container{
+    width: 100%;
+    height: auto;
+    background: red;
+}
+.main-container aside{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    border-top: 1px solid #ffff;
+}
+.main-container aside .main-banner{
+    width: 100%;
+    margin: auto;
+    height: 50%;
+    border-top: 1px solid #ffff;
+    background: url(img/background_in_space.gif);
+    background-repeat: repeat;
+
+}
+.main-container aside .main-banner .banner-info{
+    width: 90%;
+    margin: auto;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vw;
+    /* background-color: blue; */
+
+}
+.main-container aside .main-banner .banner-info .banner-info-text,
+.banner-info-img{
+    width: 90%;
+    height: 90%;
+    /* background-color: rgb(11, 221, 42); */
+
+}
+.main-container aside .main-banner .banner-info .banner-info-text h3{
+    margin-top: 20%;
+   font-size: 4vw;
+   text-align: center;
+   color: #ffffff;
+
+}
+.main-container aside .main-banner .banner-info .banner-info-text h4{
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #e9e90c;
+ 
+ }
+ .main-container aside .main-banner .banner-info .banner-info-text p{
+    font-size: 1vw;
+    text-align: center;
+    color: #fbfbfb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+ }
+.main-container aside .main-banner .banner-info .banner-info-img{
+    width: 50%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    /* background-color: rgb(221, 218, 11); */
+
+}
+.main-container aside .main-banner .banner-info .banner-info-img img{
+    width: 80%;
+
+}
+.main-container aside .html-container{
+    width: 100%;
+    height: 30vw;
+    background-color:rgba(25,255,255);
+    /* background-color: red; */
+
+}
+/* Waves Animation start*/
+
+.hero_area {
+    position: relative;
+    height: 10vw;
+    background-color: #282A35;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 10vw;
+    min-height: 100px;
+    max-height: 150px;
+    bottom: 0;
+    left: 0;
+    background-color: #282A35;
+}
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+/*Shrinking for mobile*/
+
+@media (max-width: 768px) {
+    .waves {
+        height: 1vw;
+        min-height: 10vw;
+    }
+
+}
+
+/* Waves Animation end*/
