@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaSchool : Try it yourself</title>
+    <link rel="stylesheet" href="files/editor.css">
+</head>
+
+<body>
+    <div class="code_editor">
+        <div class="code_editor_container">
+            <div class="editor_text">
+                <p>Code :</p>
+<div id="editor" class="editor">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+    
+&lt;p id="demo">Click the button to change the layout of this paragraph&lt;/p>
+    
+&lt;button onclick="myFunction()">Click Me!&lt;/button>
+    
+&lt;script>
+    function myFunction() {
+      let x = document.getElementById("demo");
+      x.style.fontSize = "25px"; 
+      x.style.color = "red"; 
+    }
+&lt;/script>
+                                
+</div>
+            </div>
+            <div class="editor_preview">
+                <p> Preview :</p>
+                <iframe class="preview"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
+
+    <script src="files/main.js"></script>
+
+</body>
+
+</html>

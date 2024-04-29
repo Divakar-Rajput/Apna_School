@@ -1,7 +1,6 @@
 .main-container {
     width: 100%;
     height: auto;
-    background: red;
 }
 
 .main-container aside {
@@ -93,7 +92,7 @@
     margin: auto;
     height: 90%;
     display: flex;
-
+     padding-bottom: 20px;
 }
 
 .main-container aside .section-container .inside-section .inside-section1 {
@@ -155,12 +154,125 @@
 }
 
 .main-container aside .section-container .inside-section .inside-section2 {
-    width: 100%;
+    width: 35%;
+    padding: 10px;
     height: 100%;
     margin: auto;
-    background-color: rgb(25, 255, 148);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(250, 238, 238);
+    box-shadow: 0px 0px 10px #010100;
 }
-
+.main-container aside .section-container .inside-section .inside-section2
+.section {
+    width:90%;
+    height:90%;
+    /* background-color: rgb(25, 255, 148); */
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section h3 {
+    font-size: 1.4vw;
+    margin: 0px 0px 10px 5px;
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section .exampleCode {
+    width:90%;
+    height: 75%;
+    margin: auto;
+    border-left: 4px solid #038e5b;
+    background-color: #fff;
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section .exampleCode pre {
+    width: 100%;
+    height: 100%;
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section .exampleCode pre code {
+    width:100%;
+    overflow: hidden;
+    height: 100%;
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section button {
+    width:50%;
+    height: 10%;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+    background-color: #038e5b;
+}
+.main-container aside .section-container .inside-section .inside-section2
+.section button:hover {
+    background-color: #017c4f;
+}
+.main-container aside .cards-container{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    background-color: #EC7063;
+}
+.main-container aside .cards-container .inside-card-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-container aside .cards-container .inside-card-container .card-frame{
+    width: 90%;
+    height: auto;
+    display: flex;
+    gap: 8%;
+    margin-bottom: 8%;
+    align-items: center;
+    justify-content: center;
+}
+.main-container aside .cards-container .inside-card-container .card-frame
+.card{
+    width: 45%;
+    height: 30vh;
+    display: flex;
+    line-height: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.main-container aside .cards-container .inside-card-container .card-frame
+.card h1{
+    font-size: 2.6vw;
+}
+.main-container aside .cards-container .inside-card-container .card-frame
+.card p{
+    font-size: 1.1vw;
+    margin-bottom: 10%;
+}
+.main-container aside .cards-container .inside-card-container .card-frame
+.card a button{
+    width: auto;
+    padding: 0.5vw 3vw 0.5vw 3vw;
+    background-color: #010100;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: .2s;
+}
+.main-container aside .cards-container .inside-card-container .card-frame
+.card a button:hover{
+    background-color: #313030;
+    cursor: pointer;
+}
 @media screen and (max-device-width: 768px) {
     .main-container aside .main-banner .banner-info .banner-info-text h3 {
         font-size: 7vw;    
@@ -180,7 +292,7 @@
     .main-container aside .section-container {
         height: auto;
         padding-bottom: 20px;
-        padding-top: 20px;
+        padding-top: 50px;
 
     }
     .main-container aside .section-container .inside-section .inside-section2 {
@@ -204,6 +316,31 @@
         padding:10px;
         font-size: 2vw;
     }
+    .main-container aside .cards-container .inside-card-container .card-frame{
+        width: 90%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card{
+        width: 100%;
+       margin-top: 8%;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card h1{
+        font-size: 5vw;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card p{
+        font-size: 2vw;
+        margin-bottom:5%;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+.card a button{
+    padding: 1.5vw 4vw 1.5vw 4vw;
+}
+    
 }
 
 /* for mobile devices screen:480px - 320px 
@@ -223,22 +360,52 @@ for portrait view*/
         width: 70%;
         font-size: 3.4vw;
     }
+    .main-container aside .cards-container .inside-card-container .card-frame{
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card{
+        width: 100%;
+       margin-top: 8%;
+    }
+    .main-container aside .cards-container .inside-card-container{
+        width: 100%;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card h1{
+        font-size: 8vw;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card p{
+        font-size: 3vw;
+        margin-bottom:5%;
+    }
 }
 
 /* for mobile devices screen:480px - 320px 
 for landscape view*/
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
     .main-container aside .section-container {
-        padding: 10px 0px 10px 0px;
+        padding-top: 50px;
     }
 
     .main-container aside .section-container .inside-section .inside-section1 h5 {
         margin-top: 40px;
+        font-size: 2vw;
     }
 
     .main-container aside .section-container .inside-section .inside-section1 button {
         width: 70%;
-        font-size: 3.4vw;
+        font-size: 2.1vw;
+    }
+    .main-container aside .cards-container .inside-card-container .card-frame
+    .card{
+        width: 100%;
+        height: 30vw;
+       margin-top: 8%;
     }
 }
 

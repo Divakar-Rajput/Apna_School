@@ -6,7 +6,7 @@ document.getElementById("menu").innerHTML =
           style="font-size: 1.5vw;"></a>
 </a>
 <div class="dropdown-content">
-<a href="#">Web Design</a>
+<a href="editor/code_editor.html" target="_blank">Web Design</a>
 <a href="#">Data Analytics</a>
 <a href="#">Java Script</a>
 <a href="#">Python</a>
