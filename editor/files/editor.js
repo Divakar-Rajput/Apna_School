@@ -11,7 +11,6 @@ textautoRun.addEventListener('keyup', () => {
     if (window.editor) {
         window.editor.save();
     }
-
     var text = document.getElementById("textareaCode").value;
 
     var ifr = document.createElement("iframe");

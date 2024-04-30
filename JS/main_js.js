@@ -2,8 +2,10 @@ window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
     setTimeout(() => {
         preloader.classList.add('fade-out');
-        preloader.style.display = 'none';
-    }, 1000);
+        setTimeout( () => {
+            preloader.style.display = 'none';
+        },200)
+    }, 800);
 });
 window.addEventListener('scroll', () => {
     const goto = document.querySelector('#goto');
