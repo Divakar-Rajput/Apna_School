@@ -397,6 +397,33 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
     width: 100%;
     height: 100%;
 }
+.gototop{
+    position: fixed;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    display: flex;
+    bottom: -10%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    background-color: rgb(25, 0, 255);
+}
+.gototop:hover{
+    background-color: rgb(21, 7, 151);
+}
+.anime{
+       bottom: 5%;
+       opacity: 1;}
+.gototop .top{
+font-size: 1.7vw;
+font-weight: bold;
+color: #fff;
+}
 /* banner aear */
 /* media queries */
 /* for ipad or tablets screen:768px - 480px */
@@ -591,6 +618,17 @@ main article .inside-artical .entry-content .front-page .first-column ul li a:ho
         width: 100%;
         height: 100%;
     }
+    .gototop{
+        width: 5vw;
+        height: 5vw;
+        right: 3%;
+    }
+    .anime{
+           bottom: 8%;
+           opacity: 1;}
+    .gototop .top{
+    font-size: 2vw;
+    }
     
 }
 
@@ -666,6 +704,14 @@ for portrait view*/
     .site-footer .site-info p {
         font-size: 3.2vw;
 
+    }
+    .gototop{
+        width: 8vw;
+        height: 8vw;
+        right: 8%;
+    }
+    .gototop .top{
+    font-size: 4vw;
     }
 
 }
