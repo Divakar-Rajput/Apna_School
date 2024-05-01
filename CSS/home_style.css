@@ -13,6 +13,7 @@
 .main-container aside .main-banner {
     width: 100%;
     margin: auto;
+    margin-top: 5.5%;
     height: 50%;
     border-top: 1px solid #ffff;
     background: url(img/background_in_space.gif);

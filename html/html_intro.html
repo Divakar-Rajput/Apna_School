@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ApnaSchool: Programming & Engineering Questions & Answers</title>
+        <link rel="stylesheet" href="/CSS/style_main.css">
+        <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="/CSS/preloader.css">
+        <link rel="stylesheet" href="/CSS/content_page.css">
+        <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+        <div class="preloader" id="preloader">
+                <div class="wrapper">
+                        <div class="box-wrap">
+                                <div class="box one"></div>
+                                <div class="box two"></div>
+                                <div class="box three"></div>
+                                <div class="box four"></div>
+                                <div class="box five"></div>
+                                <div class="box six"></div>
+                        </div>
+                </div>
+        </div>
+        <div class="gototop" id="goto" title="Go Top">
+                <span class="material-symbols-outlined top">
+                        arrow_upward
+                </span>
+        </div>
+
+        <header>
+                <div class="container">
+                        <div class="branding">
+                                <img src="/img/bannerlogo.png" alt="">
+                        </div>
+                        <span class="material-symbols-outlined" onclick="myFunction()">
+                                menu
+                        </span>
+                        <nav>
+                                <ul id="menu" class="menu_bar">
+                                        <li class="list"><a href="/index.html">Hom</a></li>
+                                        <li class="list dropdown-toggle"><a href="#">Tutorials
+                                                        <a href="#" class="fa fa-angle-down"
+                                                                style="font-size: 1.5vw;"></a>
+                                                </a>
+                                                <div class="dropdown-content">
+                                                        <a href="#">Web Design</a>
+                                                        <a href="#">Data Analytics</a>
+                                                        <a href="#">Java Script</a>
+                                                        <a href="#">Python</a>
+                                                        <a href="#">Java Script</a>
+                                                        <a href="#">CS Subjects</a>
+                                                        <a href="#">Linux</a>
+                                                        <a href="#">Web Building</a>
+                                                        <a href="#">Back End</a>
+                                                        <a href="#" style="background-color:#04AA6D;">More
+                                                                Courses...</a>
+                                                </div>
+                                        </li>
+                                        <li class="list dropdown-toggle"><a href="#">Courses MCQs
+                                                        <a href="#" class="fa fa-angle-down"
+                                                                style="font-size: 1.5vw;"></a>
+                                                </a>
+                                                <div class="dropdown-content">
+                                                        <a href="#">Class-8</a>
+                                                        <a href="#">Class-9</a>
+                                                        <a href="#">Class-10</a>
+                                                        <a href="#">Class-11</a>
+                                                        <a href="#">Class-12</a>
+                                                        <a href="#">B.Tech</a>
+                                                        <a href="#">M.Tech</a>
+                                                        <a href="#">MCA</a>
+                                                        <a href="#">BCA</a>
+                                                        <a href="#">Agriculture</a>
+                                                        <a href="#" style="background-color:#04AA6D;">More
+                                                                Courses...</a>
+
+                                                </div>
+                                        </li>
+                                        <li class="list dropdown-toggle"><a href="#">DSA
+                                                        <a href="#" class="fa fa-angle-down"
+                                                                style="font-size: 1.5vw;"></a>
+                                                </a>
+                                                <div class="dropdown-content">
+                                                        <a href="#">C Programs</a>
+                                                        <a href="#">Algorithms in C</a>
+                                                        <a href="#">Data Structure in C</a>
+                                                        <a href="#">C++ Programs</a>
+                                                        <a href="#">C++ Algorithms</a>
+                                                        <a href="#">Data Structure in C++</a>
+                                                        <a href="#">Jva Programs</a>
+                                                        <a href="#">Java Algorithms</a>
+                                                        <a href="#">Data Structure in Java</a>
+                                                        <a href="#">PythonPrograms</a>
+                                                        <a href="#">C# Programs</a>
+                                                </div>
+                                        </li>
+                                        <li class="list dropdown-toggle"><a href="#">Services</a></li>
+                                        <li class="list dropdown-toggle"><a href="#">Contact</a></li>
+                                </ul>
+                        </nav>
+                </div>
+                <div class="sub_menu">
+                        <div class="sub_menu_container">
+                                <ul id="sub_menu_container">
+                                        <li><a class="subnav active" href="default.html">HTML</a></li>
+                                        <li><a class="subnav" href="css_tutorials.html">CSS</a></li>
+                                        <li><a class="subnav" href="js_tutorials.html">JAVASCRIPT</a></li>
+                                        <li><a class="subnav" href="sql_tutorials.html">SQL</a></li>
+                                        <li><a class="subnav" href="python_tutorials.html">PYTHON</a></li>
+                                        <li><a class="subnav" href="java_tutorials.html">JAVA</a></li>
+                                        <li><a class="subnav" href="php_tutorials.html">PHP</a></li>
+                                        <li><a class="subnav" href="how_to_tutorials.html">HOW_TO</a></li>
+                                        <li><a class="subnav" href="w3_css_tutorials.html">W3.CSS</a></li>
+                                        <li><a class="subnav" href="c_tutorials.html">C</a></li>
+                                        <li><a class="subnav" href="c++_tutorials.html">C++</a></li>
+                                        <li><a class="subnav" href="c#_tutorials.html">C#</a></li>
+                                        <li><a class="subnav" href="bootstrap_tutorials.html">BOOTSTRAP</a></li>
+                                        <li><a class="subnav" href="react_tutorials.html">REACT</a></li>
+                                        <li><a class="subnav" href="mysql_tutorials.html">MYSQL</a></li>
+                                        <li><a class="subnav" href="jquery_tutorials.html">JQUERY</a></li>
+                                        <li><a class="subnav" href="excel_tutorials.html">EXCEL</a></li>
+                                        <li><a class="subnav" href="xml_tutorials.html">XML</a></li>
+                                        <li><a class="subnav" href="django_tutorials.html">DJANGO</a></li>
+                                        <li><a class="subnav" href="numpy_tutorials.html">NUMPY</a></li>
+                                        <li><a class="subnav" href="pandas_tutorials.html">PANDAS</a></li>
+                                        <li><a class="subnav" href="nodejs_tutorials.html">NODEJS</a></li>
+                                        <li><a class="subnav" href="r_tutorials.html">R</a></li>
+                                        <li><a class="subnav" href="typescript_tutorials.html">TYPESCRIPT</a></li>
+                                        <li><a class="subnav" href="angular_tutorials.html">ANGULAR</a></li>
+                                        <li><a class="subnav" href="git_tutorials.html">GIT</a></li>
+                                        <li><a class="subnav" href="postgrasql_tutorials.html">POSTGRASQL</a></li>
+                                        <li><a class="subnav" href="monodb_tutorials.html">MONODB</a></li>
+                                        <li><a class="subnav" href="html_tutorials.html">html</a></li>
+                                        <li><a class="subnav" href="ai_tutorials.html">AI</a></li>
+                                        <li><a class="subnav" href="go_tutorials.html">GO</a></li>
+                                        <li><a class="subnav" href="kotlin_tutorials.html">KOTLIN</a></li>
+                                        <li><a class="subnav" href="sass_tutorials.html">SASS</a></li>
+                                        <li><a class="subnav" href="vue_tutorials.html">VUE</a></li>
+                                        <li><a class="subnav" href="dsa_tutorials.html">DSA</a></li>
+                                        <li><a class="subnav" href="gen_ai_tutorials.html">GEN_AI</a></li>
+                                        <li><a class="subnav" href="sripy_tutorials.html">SCIPY</a></li>
+                                        <li><a class="subnav" href="aws_tutorials.html">AWS</a></li>
+                                        <li><a class="subnav" href="cybersecurity_tutorials.html">CYBERSECURITY</a></li>
+                                        <li><a class="subnav" href="datasciencs_tutorials.html">DATASCIENCE</a></li>
+                                </ul>
+                        </div>
+                </div>
+        </header>
+        <!-- content area 
+===========================================================================================================================
+=========================================================================================================================== -->
+        <div class="content_container">
+                <div class="content_left">
+                        <div class="list-container">
+                                <h2 class="left"><span class="left_h2">HTML</span> Toturial</h2>
+                                <a target="_top" href="default.html">HTML HOME</a>
+                                <a target="_top" class="active_list" href="html_intro.html">HTML Introduction</a>
+                                <a target="_top" href="html_editors.html">HTML Editors</a>
+                                <a target="_top" href="html_basic.html">HTML Basic</a>
+                                <a target="_top" href="html_elements.html">HTML Elements</a>
+                                <a target="_top" href="html_attributes.html">HTML Attributes</a>
+                                <a target="_top" href="html_headings.html">HTML Headings</a>
+                                <a target="_top" href="html_paragraphs.html">HTML Paragraphs</a>
+                                <a target="_top" href="html_styles.html">HTML Styles</a>
+                                <a target="_top" href="html_formatting.html">HTML Formatting</a>
+                                <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
+                                <a target="_top" href="html_comments.html">HTML Comments</a>
+                                <a target="_top" href="html_colors.html">HTML Colors
+                                        <span class="material-symbols-outlined" style="position: absolute; right: 0;">
+                                                arrow_drop_down
+                                        </span>
+                                </a>
+                                <div class="tut_overview">
+                                        <a target="_top" href="html_colors.html">Colors</a>
+                                        <a target="_top" href="html_colors_rgb.html">RGB</a>
+                                        <a target="_top" href="html_colors_hex.html">HEX</a>
+                                        <a target="_top" href="html_colors_hsl.html">HSL</a>
+                                </div>
+                                <a target="_top" href="html_css.html">HTML CSS</a>
+                                <a target="_top" href="html_links.html">HTML Links
+                                        <span class="material-symbols-outlined" style="position: absolute; right: 0;">
+                                                arrow_drop_down
+                                        </span>
+                                </a>
+                                <div class="tut_overview">
+                                        <a target="_top" href="html_links.html">Links</a>
+                                        <a target="_top" href="html_links_colors.html">Link Colors</a>
+                                        <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
+                                </div>
+                                <a target="_top" href="html_images.html">HTML Images
+                                        <span class="material-symbols-outlined" style="position: absolute; right: 0;">
+                                                arrow_drop_down
+                                        </span>
+                                </a>
+                                <div class="tut_overview">
+                                        <a target="_top" href="html_images.html">Images</a>
+                                        <a target="_top" href="html_images_imagemap.html">Image Map</a>
+                                        <a target="_top" href="html_images_background.html">Background Images</a>
+                                        <a target="_top" href="html_images_picture.html">The Picture Element</a>
+                                </div>
+                                <a target="_top" href="html_favicon.html">HTML Favicon</a>
+                                <a target="_top" href="html_page_title.html">HTML Page Title</a>
+                                <a target="_top" href="html_tables.html">HTML Tables
+                                        <span class="material-symbols-outlined" style="position: absolute; right: 0;">
+                                                arrow_drop_down
+                                        </span>
+                                </a>
+                                <div class="tut_overview">
+                                        <a target="_top" href="html_tables.html">HTML Tables</a>
+                                        <a target="_top" href="html_table_borders.html">Table Borders</a>
+                                        <a target="_top" href="html_table_sizes.html">Table Sizes</a>
+                                        <a target="_top" href="html_table_headers.html">Table Headers</a>
+                                        <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
+                                        <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
+                                        <a target="_top" href="html_table_styling.html">Table Styling</a>
+                                        <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
+                                </div>
+                                <a target="_top" href="html_lists.html">HTML Lists
+                                        <span class="material-symbols-outlined" style="position: absolute; right: 0;">
+                                                arrow_drop_down
+                                        </span>
+                                </a>
+                                <div class="tut_overview">
+                                        <a target="_top" href="html_lists.html">Lists</a>
+                                        <a target="_top" href="html_lists_unordered.html">Unordered Lists</a>
+                                        <a target="_top" href="html_lists_ordered.html">Ordered Lists</a>
+                                        <a target="_top" href="html_lists_other.html">Other Lists</a>
+                                </div>
+                                <a target="_top" href="html_blocks.html">HTML Block &amp; Inline</a>
+                                <a target="_top" href="html_div.html">HTML Div</a>
+                                <a target="_top" href="html_classes.html">HTML Classes</a>
+                                <a target="_top" href="html_id.html">HTML Id</a>
+                                <a target="_top" href="html_iframe.html">HTML Iframes</a>
+                                <a target="_top" href="html_scripts.html">HTML JavaScript</a>
+                                <a target="_top" href="html_filepaths.html">HTML File Paths</a>
+                                <a target="_top" href="html_head.html">HTML Head</a>
+                                <a target="_top" href="html_layout.html">HTML Layout</a>
+                                <a target="_top" href="html_responsive.html">HTML Responsive</a>
+                                <a target="_top" href="html_computercode_elements.html">HTML Computercode</a>
+                                <a target="_top" href="html5_semantic_elements.html">HTML Semantics</a>
+                                <a target="_top" href="html5_syntax.html">HTML Style Guide</a>
+                                <a target="_top" href="html_entities.html">HTML Entities</a>
+                                <a target="_top" href="html_symbols.html">HTML Symbols</a>
+                                <a target="_top" href="html_emojis.html">HTML Emojis</a>
+                                <a target="_top" href="html_charset.html">HTML Charsets</a>
+                                <a target="_top" href="html_urlencode.html">HTML URL Encode</a>
+                                <a target="_top" href="html_xhtml.html" class="not-wired">HTML vs. XHTML</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+                                <a target="_top" href="html_forms.html">HTML Forms</a>
+                                <a target="_top" href="html_forms_attributes.html">HTML Form Attributes</a>
+                                <a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+                                <a target="_top" href="html_form_input_types.html">HTML Input Types</a>
+                                <a target="_top" href="html_form_attributes.html">HTML Input Attributes</a>
+                                <a target="_top" href="html_form_attributes_form.html" class="not-wired">Input Form
+                                        Attributes</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+                                <a target="_top" href="html5_canvas.html">HTML Canvas</a>
+                                <a target="_top" href="html5_svg.html" class="not-wired">HTML SVG</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+                                <a target="_top" href="html_media.html">HTML Media</a>
+                                <a target="_top" href="html5_video.html">HTML Video</a>
+                                <a target="_top" href="html5_audio.html">HTML Audio</a>
+                                <a target="_top" href="html_object.html">HTML Plug-ins</a>
+                                <a target="_top" href="html_youtube.html" class="not-wired">HTML YouTube</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+                                <a target="_top" href="html5_geolocation.html">HTML Geolocation</a>
+                                <a target="_top" href="html5_draganddrop.html">HTML Drag/Drop</a>
+                                <a target="_top" href="html5_webstorage.html">HTML Web Storage</a>
+                                <a target="_top" href="html5_webworkers.html">HTML Web Workers</a>
+                                <a target="_top" href="html5_serversentevents.html" class="not-wired">HTML SSE</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+                                <a target="_top" class="no-checkmark" href="html_examples.html">HTML Examples</a>
+                                <a target="_top" class="no-checkmark" href="html_editor.html">HTML Editor</a>
+                                <a target="_top" class="no-checkmark" href="html_quiz.html">HTML Quiz</a>
+                                <a target="_top" class="no-checkmark" href="html_exercises.html">HTML Exercises</a>
+                                <a target="_top" class="no-checkmark" href="html_website.html">HTML Website</a>
+                                <a target="_top" class="no-checkmark" href="html_interview_prep.html">HTML Interview
+                                        Prep</a>
+                                <a target="_top" class="no-checkmark" href="html_bootcamp.html">HTML Bootcamp</a>
+                                <a target="_top" class="no-checkmark" href="html_exam.html">HTML Certificate</a>
+                                <a target="_top" class="no-checkmark" href="html_summary.html">HTML Summary</a>
+                                <a target="_top" class="no-checkmark not-wired" href="html_accessibility.html">HTML
+                                        Accessibility</a>
+                                <br>
+                                <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/default.html">HTML Tag
+                                        List</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_attributes.html">HTML
+                                        Attributes</a>
+                                <a target="_top" class="no-checkmark not-wired"
+                                        href="/tags/ref_standardattributes.html">HTML Global Attributes</a>
+                                <a target="_top" class="no-checkmark not-wired"
+                                        href="/tags/ref_html_browsersupport.html">HTML Browser Support</a>
+                                <a target="_top" class="no-checkmark not-wired"
+                                        href="/tags/ref_eventattributes.html">HTML Events</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_colornames.html">HTML
+                                        Colors</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_canvas.html">HTML
+                                        Canvas</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_av_dom.html">HTML
+                                        Audio/Video</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_html_dtd.html">HTML
+                                        Doctypes</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_charactersets.html">HTML
+                                        Character Sets</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_urlencode.html">HTML URL
+                                        Encode</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_language_codes.html">HTML
+                                        Lang Codes</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_httpmessages.html">HTTP
+                                        Messages</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_httpmethods.html">HTTP
+                                        Methods</a>
+                                <a target="_top" class="no-checkmark not-wired" href="/tags/ref_pxtoemconversion.html">PX
+                                        to EM Converter</a>
+                                <a target="_top" class="no-checkmark not-wired"
+                                        href="/tags/ref_keyboardshortcuts.html">Keyboard Shortcuts</a>
+                                <div style="background-color: #E7E9EB; width: 100%; height: 15vh;"></div>
+
+
+                        </div>
+                </div>
+                <div class="content_mid">
+                        <div class="w3-row w3-white">
+                                <div class="w3-col l10 m12" id="main">
+                                        <div id="mainLeaderboard" style="overflow:hidden;width: 100%;height: 25vh;">
+                                        </div>
+
+                                        <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+                                        <div class="w3-clear nextprev">
+                                                <a class="w3-left w3-btn" href="default.html">❮ Privious</a>
+                                                <a class="w3-right w3-btn" href="html_intro.html">Next ❯</a>
+                                        </div>
+
+                                        <div class="w3-panel w3-info intro">
+                                                <p>HTML is the standard markup language for Web pages.</p>
+                                                <p>With HTML you can create your own Website.</p>
+                                                <p>HTML is easy to learn - You will enjoy it!</p>
+                                                <a class="w3-btn w3-margin-bottom" href="html_intro.html"
+                                                        style="border-radius: 5px; font-size: 1.1vw;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study
+                                                        our free HTML Tutorial »</a><br>
+                                        </div>
+                                        <hr style="margin: 20px -16px;opacity: 0.2;">
+
+                                        <h2>Easy Learning with HTML "Run it Yourself"</h2>
+                                        <p>With our "Run it Yourself" editor, you can edit the HTML code and view the
+                                                result:</p>
+
+                                        <div class="w3-example">
+                                                <h3>Example</h3>
+                                                <div class="w3-code notranslate htmlHigh">
+                                                        <span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>!DOCTYPE<span
+                                                                        class="attributecolor" style="color:red">
+                                                                        html</span><span class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br>
+                                                        <span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>html<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>head<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>title<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span>Page
+                                                        Title<span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/title<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br>
+                                                        <span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/head<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>body<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>h1<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span>This
+                                                        is a Heading<span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/h1<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>p<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span>This
+                                                        is a paragraph.<span class="tagnamecolor"
+                                                                style="color:brown"><span class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/p<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><br>
+                                                        <span class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/body<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span><br><span
+                                                                class="tagnamecolor" style="color:brown"><span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&lt;</span>/html<span
+                                                                        class="tagcolor"
+                                                                        style="color:mediumblue">&gt;</span></span>
+                                                </div>
+                                                <a class="w3-btn w3-margin-bottom" href="/editor/html_example.html"
+                                                        target="_blank">Try it
+                                                        Yourself »</a>
+                                        </div>
+                                        <p><strong>Click on the "Try it Yourself" button to see how it works.</strong>
+                                        </p>
+                                        <hr>
+
+                                        <h2>HTML Examples</h2>
+                                        <p>In this HTML tutorial, you will find more than 200 examples. With our online
+                                                "Try it Yourself" editor, you can edit and test each example yourself!
+                                        </p>
+                                        <p><a href="html_examples.html" class="ws-btn ws-grey ws-hover-black">Go to HTML
+                                                        Examples!</a></p>
+                                        <hr>
+                                        <!-- <h2>HTML Exercises</h2>
+                                        <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+                                        <form autocomplete="off" id="w3-exerciseform"
+                                                action="exercise.html?filename=exercise_html_attributes1" method="post"
+                                                target="_blank">
+                                                <h2>Test Yourself With Exercises</h2>
+                                                <div class="exercisewindow">
+                                                        <h2>Exercise:</h2>
+                                                        <p>Add a "tooltip" to the paragraph below with the text "About
+                                                                ApnaSchool".</p>
+                                                        <div class="exerciseprecontainer">
+                                                                &lt;p <input name="ex1" maxlength="5"
+                                                                        style="width: 54px;">="About
+                                                                ApnaSchool"&gt;ApnaSchool is a web developer's
+                                                                site.&lt;/p&gt;
+                                                        </div>
+                                                        <br>
+                                                        <button type="submit" class="w3-btn w3-margin-bottom">Submit
+                                                                Answer »</button>
+                                                        <p><a target="_blank"
+                                                                        href="exercise.html?filename=exercise_html_attributes1">Start
+                                                                        the Exercise</a></p>
+                                                </div>
+                                        </form> -->
+                                        <!-- <hr> -->
+                                        <!-- <h2>HTML Quiz Test</h2>
+                                        <p>Test your HTML skills with our HTML Quiz!</p>
+                                        <p><a href="html_quiz.html" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+                                        <hr>
+                                        <style>
+                                                #img_mylearning {
+                                                        max-width: 100%;
+                                                }
+                                        </style> -->
+                                        <!-- <hr> -->
+
+                                        <h2>HTML References</h2>
+                                        <p>At ApnaSchool you will find complete references about HTML elements,
+                                                attributes, events, color names, entities, character-sets, URL encoding,
+                                                language codes, HTTP messages, browser support, and more:</p>
+
+                                        <div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/default.html">HTML Elements</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_html_browsersupport.html">Browser
+                                                                Support</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_attributes.html">Attributes</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_standardattributes.html">Global
+                                                                Attributes</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_eventattributes.html">Event
+                                                                Attributes</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_colornames.html">Color Names</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_canvas.html">Canvas</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_av_dom.html">Audio/Video DOM</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_charactersets.html">Character Sets</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_urlencode.html">URL Encoding</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_language_codes.html">Language Codes</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_country_codes.html">Country Codes</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_httpmessages.html">HTTP Messages</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_pxtoemconversion.html">Px to Em
+                                                                Converter</a>
+                                                </div>
+
+                                                <div class="w3-third">
+                                                        <a class="bigbtn ws-grey ws-hover-black"
+                                                                href="/tags/ref_keyboardshortcuts.html">Keyboard
+                                                                Shortcuts</a>
+                                                </div>
+
+                                        </div>
+                                        <br>
+                                        <div class="w3-clear nextprev">
+                                                <a class="w3-left w3-btn" href="default.html">❮ Privious</a>
+                                                <a class="w3-right w3-btn" href="html_intro.html">Next ❯</a>
+                                        </div>
+                                        <div id="mainLeaderboard" style="overflow:hidden;width: 100%;height: 25vh;">
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="content_right"></div>
+        </div>
+        <!--===========================================================================================================================
+===========================================================================================================================
+  content area close -->
+        <div class="site-footer">
+                <div class="footer-widgets">
+                        <div class="footer-widgets-container">
+                                <aside>
+                                        <div class="text-widget" id="text-widget">
+                                                <li><a href="#">About</a></li>|
+                                                <li><a href="#">Certifications</a></li>|
+                                                <li><a href="#">Internships</a></li>|
+                                                <li><a href="#">Jobs</a></li>|
+                                                <li><a href="#">Privacy Policy</a></li>|
+                                                <li><a href="#">Terms</a></li>|
+                                                <li><a href="#">Copyright</a></li>|
+                                                <li><a href="#">Contact</a></li>
+                                        </div>
+                                </aside>
+                                <aside>
+                                        <div class="social-widgets" id="social-widgets">
+                                                <li><a href="#" class="fa fa-facebook"></a> </li>
+                                                <li><a href="#" class="fa fa-instagram"></a></li>
+                                                <li><a href="#" class="fa fa-twitter"></a></li>
+                                                <li><a href="#" class="fa fa-linkedin"></a></li>
+                                                <li> <a href="#" class="fa fa-pinterest"></a></li>
+                                                <li><a href="#" class="fa fa-youtube"></a></li>
+                                        </div>
+                                </aside>
+                        </div>
+                </div>
+                <div class="site-info" id="site-info">
+                        <p>&copy; 2011 - 2024 ApnaSchool. All Rights Reserved</p>
+                </div>
+        </div>
+        <script src="/JS/navbar.js"></script>
+        <script src="/JS/main_js.js"></script>
+</body>
+
+</html>

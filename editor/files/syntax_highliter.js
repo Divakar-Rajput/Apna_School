@@ -1,4 +1,4 @@
-textareaCodew3CodeColor(document.getElementById("highlithtext"));
+textareaCodew3CodeColor(document.getElementById("myDiv"));
 
 function w3CodeColor(elmnt, mode) {
   var lang = (mode || "html");
