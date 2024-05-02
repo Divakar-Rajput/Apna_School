@@ -38,14 +38,14 @@
         <header>
                 <div class="container">
                         <div class="branding">
-                                <img src="/img/bannerlogo.png" alt="">
+                                <img src="../img/bannerlogo.png" alt="">
                         </div>
                         <span class="material-symbols-outlined" onclick="myFunction()">
                                 menu
                         </span>
                         <nav>
                                 <ul id="menu" class="menu_bar">
-                                        <li class="list"><a href="/index.html">Hom</a></li>
+                                        <li class="list"><a href="../index.html">Home</a></li>
                                         <li class="list dropdown-toggle"><a href="#">Tutorials
                                                         <a href="#" class="fa fa-angle-down"
                                                                 style="font-size: 1.5vw;"></a>
@@ -109,7 +109,10 @@
                 </div>
                 <div class="sub_menu">
                         <div class="sub_menu_container">
-                                <ul id="sub_menu_container">
+                                <ul id="sub_menu_container">                                        
+                                        <li><a href="#"><span class="material-symbols-outlined" onclick="myMenu()">
+                                                menu
+                                        </span></a></li>
                                         <li><a class="subnav active" href="default.html">HTML</a></li>
                                         <li><a class="subnav" href="css_tutorials.html">CSS</a></li>
                                         <li><a class="subnav" href="js_tutorials.html">JAVASCRIPT</a></li>
@@ -158,7 +161,7 @@
 ===========================================================================================================================
 =========================================================================================================================== -->
         <div class="content_container">
-                <div class="content_left">
+                <div class="content_left" id="content-lft">
                         <div class="list-container">
                                 <h2 class="left"><span class="left_h2">HTML</span> Toturial</h2>
                                 <a target="_top" class="active_list" href="default.html">HTML HOME</a>
@@ -336,29 +339,22 @@
                 <div class="content_mid">
                         <div class="w3-row w3-white">
                                 <div class="w3-col l10 m12" id="main">
-                                        <div id="mainLeaderboard" style="overflow:hidden;width: 100%;height: 25vh;">
-                                        </div>
-
+                                        <div id="mainLeaderboard" style="overflow:hidden;width: 100%;height: 25vh;"></div>
                                         <h1>HTML<span class="color_h1"> Tutorial</span></h1>
                                         <div class="w3-clear nextprev">
-                                                <a class="w3-left w3-btn" href="/index.html">❮ Home</a>
-                                                <a class="w3-right w3-btn" href="html_intro.html">Next ❯</a>
+                                                <a class="w3-left w3-btn" href="../index.html">❮ Home</a>
+                                                <a class="w3-right w3-btn" href="../html/html_intro.html">Next ❯</a>
                                         </div>
-
                                         <div class="w3-panel w3-info intro">
                                                 <p>HTML is the standard markup language for Web pages.</p>
                                                 <p>With HTML you can create your own Website.</p>
                                                 <p>HTML is easy to learn - You will enjoy it!</p>
-                                                <a class="w3-btn w3-margin-bottom" href="html_intro.html"
-                                                        style="border-radius: 5px; font-size: 1.1vw;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study
-                                                        our free HTML Tutorial »</a><br>
+                                                <a class="w3-btn w3-margin-bottom" href="html_intro.html">Study our free HTML Tutorial »</a><br>
                                         </div>
                                         <hr style="margin: 20px -16px;opacity: 0.2;">
-
                                         <h2>Easy Learning with HTML "Run it Yourself"</h2>
                                         <p>With our "Run it Yourself" editor, you can edit the HTML code and view the
                                                 result:</p>
-
                                         <div class="w3-example">
                                                 <h3>Example</h3>
                                                 <div class="w3-code notranslate htmlHigh">
@@ -429,7 +425,7 @@
                                                                         class="tagcolor"
                                                                         style="color:mediumblue">&gt;</span></span>
                                                 </div>
-                                                <a class="w3-btn w3-margin-bottom" href="/editor/html_example.html"
+                                                <a class="w3-btn w3-margin-bottom" href="../editor/html/html_example.html"
                                                         target="_blank">Try it
                                                         Yourself »</a>
                                         </div>
@@ -441,45 +437,9 @@
                                         <p>In this HTML tutorial, you will find more than 200 examples. With our online
                                                 "Try it Yourself" editor, you can edit and test each example yourself!
                                         </p>
-                                        <p><a href="html_examples.html" class="ws-btn ws-grey ws-hover-black">Go to HTML
+                                        <p><a href="../editor/html/html_example.html" target="_blank" class="ws-btn ws-grey ws-hover-black">Go to HTML
                                                         Examples!</a></p>
-                                        <hr>
-                                        <!-- <h2>HTML Exercises</h2>
-                                        <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
-                                        <form autocomplete="off" id="w3-exerciseform"
-                                                action="exercise.html?filename=exercise_html_attributes1" method="post"
-                                                target="_blank">
-                                                <h2>Test Yourself With Exercises</h2>
-                                                <div class="exercisewindow">
-                                                        <h2>Exercise:</h2>
-                                                        <p>Add a "tooltip" to the paragraph below with the text "About
-                                                                ApnaSchool".</p>
-                                                        <div class="exerciseprecontainer">
-                                                                &lt;p <input name="ex1" maxlength="5"
-                                                                        style="width: 54px;">="About
-                                                                ApnaSchool"&gt;ApnaSchool is a web developer's
-                                                                site.&lt;/p&gt;
-                                                        </div>
-                                                        <br>
-                                                        <button type="submit" class="w3-btn w3-margin-bottom">Submit
-                                                                Answer »</button>
-                                                        <p><a target="_blank"
-                                                                        href="exercise.html?filename=exercise_html_attributes1">Start
-                                                                        the Exercise</a></p>
-                                                </div>
-                                        </form> -->
-                                        <!-- <hr> -->
-                                        <!-- <h2>HTML Quiz Test</h2>
-                                        <p>Test your HTML skills with our HTML Quiz!</p>
-                                        <p><a href="html_quiz.html" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
-                                        <hr>
-                                        <style>
-                                                #img_mylearning {
-                                                        max-width: 100%;
-                                                }
-                                        </style> -->
-                                        <!-- <hr> -->
-
+                                        <hr>                                        
                                         <h2>HTML References</h2>
                                         <p>At ApnaSchool you will find complete references about HTML elements,
                                                 attributes, events, color names, entities, character-sets, URL encoding,
@@ -569,8 +529,8 @@
                                         </div>
                                         <br>
                                         <div class="w3-clear nextprev">
-                                                <a class="w3-left w3-btn" href="/index.html">❮ Home</a>
-                                                <a class="w3-right w3-btn" href="html_intro.html">Next ❯</a>
+                                                <a class="w3-left w3-btn" href="../index.html">❮ Home</a>
+                                                <a class="w3-right w3-btn" href="../html/html_intro.html">Next ❯</a>
                                         </div>
                                         <div id="mainLeaderboard" style="overflow:hidden;width: 100%;height: 25vh;">
                                         </div>
@@ -613,8 +573,8 @@
                         <p>&copy; 2011 - 2024 ApnaSchool. All Rights Reserved</p>
                 </div>
         </div>
-        <script src="../JS/navbar.js"></script>
         <script src="../JS/main_js.js"></script>
+        <script src="../JS/navbar.js"></script>
 </body>
 
 </html>
