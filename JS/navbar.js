@@ -14,7 +14,7 @@ document.getElementById("menu").innerHTML =
 <a href="#">Linux</a>
 <a href="#">Web Building</a>
 <a href="#">Back End</a>
-<a href="#" style = "background-color:#04AA6D;">More Courses...</a>
+<a href="#">More Courses...</a>
 </div>
 </li>
 <li class="list dropdown-toggle"><a href="#">Courses MCQs
@@ -32,7 +32,7 @@ document.getElementById("menu").innerHTML =
   <a href="#">MCA</a>
   <a href="#">BCA</a>
   <a href="#">Agriculture</a>
-  <a href="more_courses_mcq.html" style = "background-color:#04AA6D;">More Courses...</a>
+  <a href="../MCQs/more_courses_mcq.html">More MCQs...</a>
   
 </div>
 </li>
