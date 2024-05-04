@@ -35,7 +35,7 @@
 }
 
 .herosection {
-  background-image: url('/images/lynx_in_space.png'), url('/images/background_in_space.gif');
+  background-color:#0202e1 ;
   background-repeat: no-repeat, repeat;
   background-position: 90% 60%, center center
     /*left  top*/
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 992px) {
   .herosection {
-    background-image: url('/images/background_in_space.gif');
+    background-color:#0202e1 ;
     background-position: center center
       /*left top*/
     ;
@@ -81,7 +81,7 @@ h1 {
 
 
 .green-border {
-  border-left: 4px solid #04AA6D;
+  border-left: 4px solid #0202e1;
 }
 
 .w3-round,
@@ -90,7 +90,7 @@ h1 {
 }
 
 .tryit-button {
-  background-color: #04AA6D;
+  background-color: #0202e1;
   color: white;
   border-radius: 25px;
   font-size: 18px;
@@ -98,7 +98,7 @@ h1 {
 }
 
 .tut-button {
-  background-color: #04AA6D;
+  background-color: #0202e1;
   color: white;
   font-size: 18px;
   margin: auto;
@@ -110,22 +110,28 @@ h1 {
 .w3csstut {
   height: 390px;
 }
+.tut-button,
+.tryit-button,
+.exercise-button,
+#getdiploma a{
+background-color: #0202e1;
+}
 
 .tut-button:hover,
 .tryit-button:hover,
 .exercise-button:hover,
 #getdiploma a:hover {
-  background-color: #059862 !important;
+  background-color: #182b84 !important;
   color: white !important;
 }
 
 .bar-item-hover:hover {
-  background-color: #04AA6D !important;
+  background-color: #182b84 !important;
   color: white !important;
 }
 
 .bar-icon-hover:hover {
-  background-color: black !important;
+  background-color: #182b84 !important;
   color: white !important;
 }
 
@@ -135,8 +141,9 @@ h1 {
 
 .mystyle,
 .mystyle:hover {
-  background-color: #282A35 !important;
+  background-color: #0202e1 !important;
   color: white !important;
+ 
 }
 
 .ref-button {
@@ -306,7 +313,7 @@ h1 {
 }
 
 .ws-yellow-hover:hover {
-  background-color: #fff080 !important;
+  background-color: #ff8080 !important;
   color: black !important;
 }
 
@@ -557,7 +564,7 @@ form.example {
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
-  border: 1px solid #282A35;
+  border: 1px solid #0202e1;
   border-radius: 25px;
   float: left;
   width: 80%;
@@ -566,7 +573,7 @@ form.example input[type=text] {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-right: 0;
-  border-right: 1px solid #04AA6D;
+  border-right: 1px solid #0505b8;
   outline: 0;
 }
 
@@ -575,7 +582,7 @@ form.example button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #04AA6D;
+  background: #0202e1;
   color: white;
   font-size: 17px;
   border: 1px solid #282A35;
@@ -586,7 +593,7 @@ form.example button {
 }
 
 form.example button:hover {
-  background: #059862;
+  background: #0505b8;
   color: white;
 }
 
@@ -599,22 +606,23 @@ form.example::after {
 #listofsearchresults {
   display: none;
   position: absolute;
-  border:1px solid #000;
+  border:1px solid #0505b8;
   background-color: #282A35;
   background-color: #fff;
   color: #000;
   width: 80%;
   top: 47px;
-  border-left: 1px solid #282A35;
-  border-right: 1px solid #282A35;
-  border-bottom: 1px solid #282A35;
+  border-left: 1px solid #0505b8;
+  border-right: 1px solid #0505b8;
+  border-bottom: 1px solid #0505b8;
   text-align: left;
 }
 
 #listofsearchresults a {
   background-color: #e2e3e9;
   background-color: #fff;
-  color: #777;
+  color: #000000;
+  font-weight: bold;
   text-decoration: none;
   display: block;
   padding: 10px 30px;
@@ -625,19 +633,19 @@ form.example::after {
 #listofsearchresults a:hover {
   color: #000;
   opacity: 1;
+  background-color: #0d1be890;
 }
 
 .span_search {
-  background-color: #ffecee;
+  background-color: #76f276ca;
 }
-
 .search_active {
-  background-color: #ffecee !important;
+  background-color: #dc81bf52 !important;
   color: #000 !important;
 }
 
 .search_active .span_search {
-  background-color: #ffccd1;
+  background-color: #e3c7c9;
 }
 
 .learntocodeh1 {
@@ -738,7 +746,7 @@ table.gstl_50 {
 }
 
 .topnavmain_pro:hover {
-  background-color: #7d53cc !important;
+  background-color: #936cdd !important;
   color: #fff !important;
 }
 
@@ -764,7 +772,7 @@ body.darkpagetheme .icons-right {
 
 .pro-caption h3 {
   font-size: 25px;
-  color: #FFC0C7;
+  color: #ea7986;
   margin: 19px 0;
 }
 
@@ -817,7 +825,7 @@ body.darkpagetheme .icons-right {
 ================================================================================================================================================== */
 #subtopnav {
     position: fixed;
-    background-color: #282A35;
+    background-color: #1936db;
     color: #f1f1f1;
     padding: 0;
     letter-spacing: 1px;
@@ -844,12 +852,12 @@ body.darkpagetheme .icons-right {
   #subtopnav a:hover,
   #subtopnav a:focus,
   #subtopnav a:active {
-    background-color: #000000 !important;
+    background-color: #0b219e !important;
     color: #ffffff !important;
   }
 
   #subtopnav a.active {
-    background-color: #04AA6D !important;
+    background-color: #e70505 !important;
     color: #fff !important;
   }
 
@@ -883,14 +891,14 @@ body.darkpagetheme .icons-right {
 
   #scroll_left_btn span {
     /* xbackground-color: #282A35; */
-    background: linear-gradient(to right, #282A35 70%, transparent 100%);
+    background: linear-gradient(to right, #1935d4 70%, transparent 100%);
     display: block;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
   #scroll_left_btn span:hover {
-    background: linear-gradient(to right, #000 95%, transparent 100%);
+    background: linear-gradient(to right, #0e28b8 80%, transparent 100%);
   }
 
   #scroll_right_btn {
@@ -898,14 +906,14 @@ body.darkpagetheme .icons-right {
     float: left;
     font-size: 15px;
     /* xxbackground-color: #282A35; */
-    background: linear-gradient(to left, #282A35 70%, transparent 100%);
+    background: linear-gradient(to left, #0e28b8 70%, transparent 100%);
 
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
   #scroll_right_btn:hover {
-    background: linear-gradient(to left, #000 95%, transparent 100%);
+    background: linear-gradient(to left, #0e28b8 80%, transparent 100%);
   }
 
   #menubtn_container {
@@ -919,7 +927,7 @@ body.darkpagetheme .icons-right {
   }
 
   #menubtn_container span {
-    background-color: #282A35;
+    background-color: #252630;
   }
 
   #darkmodemenu {
@@ -945,3 +953,106 @@ body.darkpagetheme .icons-right {
 ==================================================================================================================================================
         close  subtopnav
 ================================================================================================================================================== */
+
+/* footer start */
+ 
+  /*FOOTER*/
+  .foohero{
+  width:100%;
+  background-color:#0202e1;
+  color:#fff;
+  }
+  
+  .top_header{
+  padding:2rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  }
+  
+  .top_header section{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  }
+  
+  .top_header span{
+  padding:0 1rem;
+  }
+  
+  .top_header .fa{
+  color:#ffbe00;
+  font-size:35px;
+  }
+  
+  .foohero .border-shape {
+  width: 40%;
+  }
+  
+  .foohero .border-shape::before {
+  width: 100%;
+  left:120px;
+  }
+  
+  .foohero .border-shape::after {
+  width: 100%;
+  right:120px;
+  }
+  
+  .foohero .bottom_content section{
+  padding:1.5rem 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:Center;
+  }
+  
+  
+  .bottom_content a{
+  margin:0 20px;
+  color:rgba(253, 253, 253, 0.7);
+  transition:0.5s;
+  text-decoration: none;
+  }
+  
+  .bottom_content a:hover{
+  color:rgba(255,255,255,1);
+  }
+  
+  
+  .copyright{
+  padding:0.8em 0;
+  background-color:#0202e1;
+  text-align:center;
+  color:rgba(255,255,255,0.7);
+  font-size:12px;
+  }
+  
+  
+  
+  @media (max-width:820px){
+  .top_header{
+  padding:1rem;
+  display:block;
+  }
+  
+  .top_header section{
+  margin:40px 0;
+  align-items:left;
+  justify-content:left;
+  }
+  .foohero .bottom_content section{
+  padding:1rem;
+  display:block;
+  }
+  .foohero .bottom_content section a{
+  padding:1rem;
+  font-size:12px;
+  margin:0 5px;
+  display:inline-block;
+  }
+  }
+  
+  
+  
