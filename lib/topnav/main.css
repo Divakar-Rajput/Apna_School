@@ -3,7 +3,7 @@
  tnb - top navigation bar
 */
 #tnb-search-suggestions {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 5;
     font-family: "Source Sans Pro", sans-serif;
