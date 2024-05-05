@@ -1,0 +1,21 @@
+.w3-third .bigbtn {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none !important;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .bigbtn {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .w3-blue:hover {
+    background-color: #0d8bf2 !important
+  }

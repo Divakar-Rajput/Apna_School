@@ -2,15 +2,16 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
+  <title>HTML Tutorial</title>
+  <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
         content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
     <meta name="Description"
         content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
     <meta name="ApnaSchool" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
-    <meta property="og:site_name" content="ApnaSchool">
-    <meta property="og:title" content="ApnaSchool Online Toturials & Questions">
+    <meta property="og:site_name" content="Apna School">
+    <meta property="og:title" content="ApnaSchool HTML Toturials & Questions">
     <meta property="og:description"
         content="ApnaSchool offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
     <meta property="og:image" itemprop="image" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
@@ -19,24 +20,25 @@
     <meta property="og:image:width" content="436">
     <meta property="og:image:height" content="228">
     <!-- <meta property="og:url" content="www.apnaschool.com"> -->
-    <title>HTML Tutorial</title>
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../lib/topnav/main.css">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04aa6d">
+  <meta name="msapplication-TileColor" content="#00a300">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../lib/topnav/main.css">
     <link rel="stylesheet" href="../lib/my-learning/main.css">
     <link rel="stylesheet" href="../lib/pathfinder/main.css">
+    <link rel="stylesheet" href="../lib/all_pages_style.css">
     <link rel="stylesheet" href="../lib/w3schools32.css">
     <link rel="stylesheet" href="../plus/plans/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../lib/all_pages_style.css">
 </head>
 
-<body style="font-family: 'Source Sans Pro', sans-serif;">
-    <!-- 
-============================================================================================================================================================
-          start    top nav bar with logo image
-============================================================================================================================================================ -->
-    <div id="tnb-search-suggestions"></div>
+<body>
+
+  <div id="tnb-search-suggestions"></div>
     <div id="top-nav-bar" class="classic">
         <div id="pagetop" class="w3-bar notranslate w3-white">
             <a id="w3-logo" href="../index.html"
@@ -1461,15 +1463,19 @@
                 onmouseout="stopscrollmenow()">&nbsp;&nbsp;&nbsp;&#10094;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
         <div id="menubtn_container">
-            <span>
-
+            <!-- <span>
                 <a href='javascript:void(0);'
                     class='topnav-icons fa fa-menu w3-hide-large w3-hide-medium w3-hide-small w3-left w3-bar-item w3-button ga-nav'
                     style="line-height:1.1;padding-top:3px!important;" onclick='open_menu()' title='Menu'></a>
-
+            </span> -->
+            <span>
+              <a href="javascript:void(0);" 
+                 class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav"
+                style="line-height:1.1;padding-top:8px!important;padding-bottom:8px!important; background-color:#0202e1 !important;" onclick="open_menu()"
+                title="Menu"></a>
             </span>
         </div>
-        <a href="html/default.html" class="ga-nav subtopnav_firstitem" title="HTML Tutorial">HTML</a>
+        <a href="../lanhtml/default.html" class="ga-nav subtopnav_firstitem current_active" title="HTML Tutorial">HTML</a>
         <a href="css/default.html" class="ga-nav" title="CSS Tutorial">CSS</a>
         <a href="js/default.html" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
         <a href="sql/default.html" class="ga-nav" title="SQL Tutorial">SQL</a>
@@ -1516,65 +1522,497 @@
                     onmouseout="stopscrollmenow()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10095;&nbsp;&nbsp;&nbsp;</span>
             </div>
         </div>
-    </div>
-    <!--  
-=========================================================================================================================================================================
-                        start  body content 
-========================================================================================================================================================================= -->
+    </div> 
+  <script>
+    subtopnav_intoview();
+  </script>
 
+<!---========================================================================================================================
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+=============================================================================================================================-->
 
-
-
-
-
-<!--
-=========================================================================================================================================================================
-                        start  body content 
-========================================================================================================================================================================= -->
-
-    
-                <div class="foohero">
-                    <div class="top_header">
-                        <section>
-                            <span><i class="fa fa-map-marker"></i></span>
-                            <span>Aligarh, Uttar Pradesh, INDIA, 2021907</span>
-                        </section>
-                        <section>
-                            <span><i class="fa fa-phone"></i></span>
-                            <span>(+91) 9758XXX00</span>
-                        </section>
-                        <section>
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span>apnaschool9758@gmail.com</span>
-                        </section>
-                    </div>
-                    <span class="border-shape"></span>
-                    <div class="bottom_content">
-                        <!-- <section>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-telegram"></i></a>
-                        </section> -->
-                        <section>
-                            <a href="../index.html">Home</a>
-                            <a href="../about.html">About us</a>
-                            <a href="">Terms</a>
-                            <a href="">Privacy</a>
-                            <a href="">Policy</a>
-                            <a href="../about.html">Contact Us</a>
-                        </section>
-                    </div>
-                    <div class="copyright" id="copyright">
-                        Copyright © 2024-2025 websitename - All rights reserved
-                    </div>
-                </div>
-            </div>
+  <div class='w3-sidebar w3-collapse' id='sidenav'>
+    <div id='leftmenuinner'>
+      <div id='leftmenuinnerinner'>
+        <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+        <a target="_top" class="current_active" href="default.asp">HTML HOME</a>
+        <a target="_top" href="html_intro.asp">HTML Introduction</a>
+        <a target="_top" href="html_editors.asp">HTML Editors</a>
+        <a target="_top" href="html_basic.asp">HTML Basic</a>
+        <a target="_top" href="html_elements.asp">HTML Elements</a>
+        <a target="_top" href="html_attributes.asp">HTML Attributes</a>
+        <a target="_top" href="html_headings.asp">HTML Headings</a>
+        <a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
+        <a target="_top" href="html_styles.asp">HTML Styles</a>
+        <a target="_top" href="html_formatting.asp">HTML Formatting</a>
+        <a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
+        <a target="_top" href="html_comments.asp">HTML Comments</a>
+        <a target="_top" href="html_colors.asp">HTML Colors</a>
+        <div class="tut_overview">
+          <a target="_top" href="html_colors.asp">Colors</a>
+          <a target="_top" href="html_colors_rgb.asp">RGB</a>
+          <a target="_top" href="html_colors_hex.asp">HEX</a>
+          <a target="_top" href="html_colors_hsl.asp">HSL</a>
         </div>
+        <a target="_top" href="html_css.asp">HTML CSS</a>
+        <a target="_top" href="html_links.asp">HTML Links</a>
+        <div class="tut_overview">
+          <a target="_top" href="html_links.asp">Links</a>
+          <a target="_top" href="html_links_colors.asp">Link Colors</a>
+          <a target="_top" href="html_links_bookmarks.asp">Link Bookmarks</a>
+        </div>
+        <a target="_top" href="html_images.asp">HTML Images</a>
+        <div class="tut_overview">
+          <a target="_top" href="html_images.asp">Images</a>
+          <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+          <a target="_top" href="html_images_background.asp">Background Images</a>
+          <a target="_top" href="html_images_picture.asp">The Picture Element</a>
+        </div>
+        <a target="_top" href="html_favicon.asp">HTML Favicon</a>
+        <a target="_top" href="html_page_title.asp">HTML Page Title</a>
+        <a target="_top" href="html_tables.asp">HTML Tables</a>
+        <div class="tut_overview">
+          <a target="_top" href="html_tables.asp">HTML Tables</a>
+          <a target="_top" href="html_table_borders.asp">Table Borders</a>
+          <a target="_top" href="html_table_sizes.asp">Table Sizes</a>
+          <a target="_top" href="html_table_headers.asp">Table Headers</a>
+          <a target="_top" href="html_table_padding_spacing.asp">Padding &amp; Spacing</a>
+          <a target="_top" href="html_table_colspan_rowspan.asp">Colspan &amp; Rowspan</a>
+          <a target="_top" href="html_table_styling.asp">Table Styling</a>
+          <a target="_top" href="html_table_colgroup.asp">Table Colgroup</a>
+        </div>
+        <a target="_top" href="html_lists.asp">HTML Lists</a>
+        <div class="tut_overview">
+          <a target="_top" href="html_lists.asp">Lists</a>
+          <a target="_top" href="html_lists_unordered.asp">Unordered Lists</a>
+          <a target="_top" href="html_lists_ordered.asp">Ordered Lists</a>
+          <a target="_top" href="html_lists_other.asp">Other Lists</a>
+        </div>
+        <a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+        <a target="_top" href="html_div.asp">HTML Div</a>
+        <a target="_top" href="html_classes.asp">HTML Classes</a>
+        <a target="_top" href="html_id.asp">HTML Id</a>
+        <a target="_top" href="html_iframe.asp">HTML Iframes</a>
+        <a target="_top" href="html_scripts.asp">HTML JavaScript</a>
+        <a target="_top" href="html_filepaths.asp">HTML File Paths</a>
+        <a target="_top" href="html_head.asp">HTML Head</a>
+        <a target="_top" href="html_layout.asp">HTML Layout</a>
+        <a target="_top" href="html_responsive.asp">HTML Responsive</a>
+        <a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
+        <a target="_top" href="html5_semantic_elements.asp">HTML Semantics</a>
+        <a target="_top" href="html5_syntax.asp">HTML Style Guide</a>
+        <a target="_top" href="html_entities.asp">HTML Entities</a>
+        <a target="_top" href="html_symbols.asp">HTML Symbols</a>
+        <a target="_top" href="html_emojis.asp">HTML Emojis</a>
+        <a target="_top" href="html_charset.asp">HTML Charsets</a>
+        <a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
+        <a target="_top" href="html_xhtml.asp" class="not-wired">HTML vs. XHTML</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+        <a target="_top" href="html_forms.asp">HTML Forms</a>
+        <a target="_top" href="html_forms_attributes.asp">HTML Form Attributes</a>
+        <a target="_top" href="html_form_elements.asp">HTML Form Elements</a>
+        <a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+        <a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+        <a target="_top" href="html_form_attributes_form.asp" class="not-wired">Input Form Attributes</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+        <a target="_top" href="html5_canvas.asp">HTML Canvas</a>
+        <a target="_top" href="html5_svg.asp" class="not-wired">HTML SVG</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+        <a target="_top" href="html_media.asp">HTML Media</a>
+        <a target="_top" href="html5_video.asp">HTML Video</a>
+        <a target="_top" href="html5_audio.asp">HTML Audio</a>
+        <a target="_top" href="html_object.asp">HTML Plug-ins</a>
+        <a target="_top" href="html_youtube.asp" class="not-wired">HTML YouTube</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+        <a target="_top" href="html5_geolocation.asp">HTML Geolocation</a>
+        <a target="_top" href="html5_draganddrop.asp">HTML Drag/Drop</a>
+        <a target="_top" href="html5_webstorage.asp">HTML Web Storage</a>
+        <a target="_top" href="html5_webworkers.asp">HTML Web Workers</a>
+        <a target="_top" href="html5_serversentevents.asp" class="not-wired">HTML SSE</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+        <a target="_top" class="no-checkmark" href="html_examples.asp">HTML Examples</a>
+        <a target="_top" class="no-checkmark" href="html_editor.asp">HTML Editor</a>
+        <a target="_top" class="no-checkmark" href="html_quiz.asp">HTML Quiz</a>
+        <a target="_top" class="no-checkmark" href="html_exercises.asp">HTML Exercises</a>
+        <a target="_top" class="no-checkmark" href="html_website.asp">HTML Website</a>
+        <a target="_top" class="no-checkmark" href="html_interview_prep.asp">HTML Interview Prep</a>
+        <a target="_top" class="no-checkmark" href="html_bootcamp.asp">HTML Bootcamp</a>
+        <a target="_top" class="no-checkmark" href="html_exam.asp">HTML Certificate</a>
+        <a target="_top" class="no-checkmark" href="html_summary.asp">HTML Summary</a>
+        <a target="_top" class="no-checkmark not-wired" href="html_accessibility.asp">HTML Accessibility</a>
+        <br>
+        <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/default.asp">HTML Tag List</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_attributes.asp">HTML Attributes</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_standardattributes.asp">HTML Global
+          Attributes</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_html_browsersupport.asp">HTML Browser
+          Support</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_eventattributes.asp">HTML Events</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_colornames.asp">HTML Colors</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_canvas.asp">HTML Canvas</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_av_dom.asp">HTML Audio/Video</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_html_dtd.asp">HTML Doctypes</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_charactersets.asp">HTML Character Sets</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_urlencode.asp">HTML URL Encode</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_language_codes.asp">HTML Lang Codes</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_httpmethods.asp">HTTP Methods</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_pxtoemconversion.asp">PX to EM Converter</a>
+        <a target="_top" class="no-checkmark not-wired" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+
+
+
+        <br><br>
+      </div>
     </div>
-    <script src="../lib/topnav/main.js"></script>
-    <script src="../lib/w3schools32.css"></script>
-    <script src="../lib/all_page_js.js"></script>
+  </div>
+  <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:250px;'>
+    <div class='w3-row w3-white'>
+      <div class='w3-col l10 m12' id='main'>
+        <div id='mainLeaderboard' style='overflow:hidden;'>
+          <div id="adngin-main_leaderboard-0"></div>
+        </div>
+
+        <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+          <a class="w3-right w3-btn" href="html_intro.asp">Next &#10095;</a>
+        </div>
+
+        <div class="w3-panel w3-info intro">
+          <p>HTML is the standard markup language for Web pages.</p>
+          <p>With HTML you can create your own Website.</p>
+          <p>HTML is easy to learn - You will enjoy it!</p>
+          <a class="w3-btn w3-margin-bottom" href="html_intro.asp"
+            style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study
+            our free HTML Tutorial &raquo;</a><br>
+        </div>
+        <hr>
+
+        <h2>Easy Learning with HTML &quot;Run Code&quot;</h2>
+        <p>With our &quot;Run Code&quot; editor, you can edit the HTML code and view the
+          result:</p>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate htmlHigh">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+            &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a
+            paragraph.&lt;/p&gt;<br><br>
+            &lt;/body&gt;<br>&lt;/html&gt;
+          </div>
+          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_default" target="_blank">Run Code
+            &raquo;</a>
+        </div>
+        <p><strong>Click on the &quot;Run Code&quot; button to see how it works.</strong></p>
+        <hr>
+
+        <h2>HTML Examples</h2>
+        <p>In this HTML tutorial, you will find more than 200 examples. With our online
+          &quot;Run Code&quot; editor, you can edit and test each example yourself!</p>
+        <p><a href="../language/html/html_example.html" class="ws-btn ws-grey ws-hover-black">Go to HTML Examples!</a></p>
+        <hr>
+        <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+          <!-- MidContent -->
+          <!-- <p class="adtext">Advertisement</p> -->
+
+          <div id="adngin-mid_content-0"></div>
+
+        </div>
+        <hr>
+        <!-- <h2>HTML Exercises</h2>
+        <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+        <form autocomplete="off" id="w3-exerciseform" action="exercise.asp?filename=exercise_html_attributes1"
+          method="post" target="_blank">
+          <h2>Test Yourself With Exercises</h2>
+          <div class="exercisewindow">
+            <h2>Exercise:</h2>
+            <p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+            <div class="exerciseprecontainer">
+              &lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web
+              developer's site.&lt;/p&gt;
+            </div>
+            <br>
+            <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
+            <p><a target="_blank" href="exercise.asp?filename=exercise_html_attributes1">Start the Exercise</a></p>
+          </div>
+        </form> -->
+        <hr>
+        <!-- <h2>HTML Quiz Test</h2>
+        <p>Test your HTML skills with our HTML Quiz!</p>
+        <p><a href="html_quiz.asp" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+        <hr>
+        <style>
+          #img_mylearning {
+            max-width: 100%;
+          }
+        </style>
+        <h2>My Learning</h2>
+
+        <p>Track your progress with the free "My Learning" program here at W3Schools.</p>
+        <p>Log in to your account, and start earning points!</p>
+        <p>This is an optional feature. You can study at W3Schools without using My Learning.</p> -->
+        <br>
+        <hr>
+
+        <h2>HTML References</h2>
+        <p>At W3Schools you will find complete references about HTML elements,
+          attributes, events, color names, entities, character-sets, URL encoding,
+          language codes, HTTP messages, browser support, and more:</p>
+
+        <div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/default.asp">HTML Elements</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_html_browsersupport.asp">Browser Support</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_attributes.asp">Attributes</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_standardattributes.asp">Global Attributes</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_eventattributes.asp">Event Attributes</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_colornames.asp">Color Names</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_canvas.asp">Canvas</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_av_dom.asp">Audio/Video DOM</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_charactersets.asp">Character Sets</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_urlencode.asp">URL Encoding</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_language_codes.asp">Language Codes</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_country_codes.asp">Country Codes</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_httpmessages.asp">HTTP Messages</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_pxtoemconversion.asp">Px to Em Converter</a>
+          </div>
+
+          <div class="w3-third">
+            <a class="bigbtn ws-grey ws-hover-black" href="/tags/ref_keyboardshortcuts.asp">Keyboard Shortcuts</a>
+          </div>
+
+        </div>
+        <br>              
+
+
+<!-- <div class="w3-center ws-black htmlvidad w3-padding" style="border-radius:20px;">
+  <a href="https://www.w3schools.com/videos/index.php">
+    <img src="htmlvideoad2.png" style="max-width:100%;" title="html video tutorial">
+  </a>
+</div> -->
+
+
+        <br>
+        <br>
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="/default.asp">&#10094; Home</a>
+          <a class="w3-right w3-btn" href="html_intro.asp">Next &#10095;</a>
+        </div>       
+        
+      </div>
+      
+
+      <div class="w3-col l2 m12" id="right">
+
+        <div class="sidesection">
+          <div id="skyscraper">
+            <div id="adngin-sidebar_top-0"></div>
+          </div>
+        </div>
+
+        <div class="sidesection" style="margin-top:20px;margin-bottom:20px;">
+          <a id="upperfeatureshowcaselink" class="ga-right ga-top-fullaccess-jan"
+            href="https://campus.w3schools.com/products/w3schools-full-access-course" target="_blank">
+            <picture id="upperfeatureshowcase">
+              <!-- <source id="upperfeatureshowcase3001" srcset="/images/img_fullaccess_up_sep1_green_300.png"
+                media="(max-width: 990px)" style="border-radius: 5px;">
+              <source id="upperfeatureshowcase120" srcset="/images/img_fullaccess_up_sep1_green_120.png"
+                media="(max-width: 1260px)" style="border-radius: 5px;">
+              <source id="upperfeatureshowcase160" srcset="/images/img_fullaccess_up_sep1_green_160.png"
+                media="(max-width: 1700px)" style="border-radius: 5px;"> -->
+              <!-- <img id="upperfeatureshowcase300" src="/images/img_fullaccess_up_sep1_green_300.png" alt="Get Certified"
+                style="width:auto;border-radius: 5px;"> -->
+            </picture>
+          </a>
+        </div>
+        
+        <!-- <div class="sidesection">
+          <div class="sharethis">
+            <a href="https://www.youtube.com/@w3schools" target="_blank" title="W3Schools on YouTube"><span
+                class="fa fa-youtube fa-2x ga-right w3-hover-text-red"></span></a>
+            <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank"
+              title="W3Schools on LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+            <a href="https://discord.gg/6Z7UaRbUQM" target="_blank"
+              title='Join the W3schools community on Discord'><span class="fa fa-discord fa-2x ga-right"></span></a>
+            <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="W3Schools on Facebook"><span
+                class="fa fa-facebook-square fa-2x ga-right"></span></a>
+            <a href="https://www.instagram.com/w3schools.com_official/" target="_blank"
+              title="W3Schools on Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+          </div>
+        </div> -->
+        
+        <!--
+        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        right sidebar
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+      -->
+        <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
+          <div id="adngin-outstream-0"></div>
+        </div>
+
+
+        <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
+          <div id="stickyadcontainer">
+            <div style="position:relative;margin:auto;">
+
+              <div id="adngin-sidebar_sticky-0"></div>
+              <script>
+                function secondSnigel() {
+                  if (window.adngin && window.adngin.adnginLoaderReady) {
+                    if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                      if (document.getElementById("adngin-mid_content-0")) {
+                        adngin.queue.push(function () {
+                          adngin.cmd.startAuction([
+                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                          ]);
+                        });
+                      } else {
+                        adngin.queue.push(function () {
+                          adngin.cmd.startAuction([
+                            { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                          ]);
+                        });
+                      }
+                    } else {
+                      if (document.getElementById("adngin-mid_content-0")) {
+                        adngin.queue.push(function () {
+                          adngin.cmd.startAuction([
+                            { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                          ]);
+                        });
+                      }
+                    }
+                  } else {
+                    window.addEventListener('adnginLoaderReady', function () {
+                      if (Number(w3_getStyleValue(document.getElementById("main"), "height").replace("px", "")) > 2200) {
+                        if (document.getElementById("adngin-mid_content-0")) {
+                          adngin.queue.push(function () {
+                            adngin.cmd.startAuction([
+                              { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                              { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                            ]);
+                          });
+                        } else {
+                          adngin.queue.push(function () {
+                            adngin.cmd.startAuction([
+                              { placement: "adngin-sidebar_sticky-0", adUnit: "sidebar_sticky" },
+                            ]);
+                          });
+                        }
+                      } else {
+                        if (document.getElementById("adngin-mid_content-0")) {
+                          adngin.queue.push(function () {
+                            adngin.cmd.startAuction([
+                              { placement: "adngin-mid_content-0", adUnit: "mid_content" },
+                            ]);
+                          });
+                        }
+                      }
+                    });
+                  }
+                }
+              </script>
+
+            </div>
+          </div>
+        </div>
+
+        <script>
+          uic_r_c()
+        </script>
+      </div>
+      
+    </div>
+    <div class="foohero">
+      <div class="top_header">
+          <section>
+              <span><i class="fa fa-map-marker"></i></span>
+              <span>Aligarh, Uttar Pradesh, INDIA, 2021907</span>
+          </section>
+          <section>
+              <span><i class="fa fa-phone"></i></span>
+              <span>(+91) 9758XXX00</span>
+          </section>
+          <section>
+              <span><i class="fa fa-envelope"></i></span>
+              <span>apnaschool9758@gmail.com</span>
+          </section>
+      </div>
+      <span class="border-shape"></span>
+      <div class="bottom_content">
+          <!-- <section>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+          </section> -->
+          <section>
+              <a href="../index.html">Home</a>
+              <a href="../about.html">About us</a>
+              <a href="">Terms</a>
+              <a href="">Privacy</a>
+              <a href="">Policy</a>
+              <a href="../about.html">Contact Us</a>
+          </section>
+      </div>
+      <div class="copyright" id="copyright">
+          Copyright © 2024-2025 websitename - All rights reserved
+      </div>
+  </div>
+  </div>
+  
+  <script src="../lib/all_page_js.js"></script>
+  <script src="../lib/w3schools_footer.js"></script>
+  <script src="../lib/topnav/main.js"></script>
 </body>
 
 </html>

@@ -363,12 +363,12 @@ a {
 .w3-button {
   border: none;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 6px 16px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  background-color: inherit;
+  background-color: none;
   text-align: center;
   cursor: pointer;
   white-space: nowrap
@@ -642,9 +642,18 @@ a {
 .w3-threequarter,
 .w3-quarter {
   float: left;
-  width: 100%
+  width: 100%;
 }
-
+.w3-third .bigbtn {
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  text-decoration: none !important;
+  border-radius: 5px;
+}
 .w3-col.s1 {
   width: 8.33333%
 }
@@ -711,7 +720,10 @@ a {
   .w3-third {
     width: 33.33333%
   }
-
+  .w3-third a {
+    width: 33.33333%;
+    background-color: #000;
+  }
   .w3-col.m5 {
     width: 41.66666%
   }
@@ -2258,11 +2270,13 @@ span#usergetsstar {
 }
 
 .topnav a.topnav-icons {
-  background-color: #282A35;
+  background-color: #353128;
 }
 
 a.topnav-icons {
   width: 52px !important;
+
+  position: fixed;
 }
 
 a.topnav-icons.fa-home {
@@ -2296,8 +2310,8 @@ a.topnav-localicons {
 
 #sidenav a:hover,
 #sidenav a:focus {
-  color: #000000;
-  background-color: #cccccc;
+  color: #ffffff;
+  background-color: #3953ec;
 }
 
 #sidenav a.active {
@@ -2329,8 +2343,9 @@ a.topnav-localicons {
 #leftmenuinnerinner {
   height: 100%;
   width: 100%;
-  background-color: #E7E9EB;
+  background-color: #1936db;
   overflow-y: scroll;
+  color: #fff;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -2512,7 +2527,7 @@ a.topnav-localicons {
 }
 
 .w3-example {
-  background-color: #E7E9EB;
+  background-color: #a4f4aa;
   border-radius: 5px;
   padding: 0.01em 16px;
   margin: 20px 0;
@@ -4426,7 +4441,7 @@ table.gstl_50 {
 }
 
 .w3-info {
-  background-color: #D9EEE1;
+  background-color: #f3c5c5;
   border-left: none;
   padding: 32px;
   margin: 24px;
@@ -4472,7 +4487,7 @@ h2 {
 .w3-btn:active,
 .nextprev a:focus {
   box-shadow: none;
-  background-color: #059862 !important;
+  background-color: #0404ac !important;
 }
 
 .w3-example a:focus {
@@ -4942,16 +4957,15 @@ a.topnav-icons {
 }
 
 .ws-hover-black:hover {
-  background-color: #000 !important;
+  background-color: red !important;
   color: white !important;
 }
 
 
 .ws-grey {
-  background-color: #E7E9EB !important;
-  color: black !important;
+  background-color: #e91e63 !important;
+  color: #fff !important;
 }
-
 .ws-yellow {
   background-color: #FFF4A3 !important;
   color: black !important;
@@ -5042,7 +5056,7 @@ a.topnav-icons {
 
 .ws-btn:hover,
 .ws-btn:active {
-  background-color: #059862 !important;
+  background-color: red !important;
   color: #ffffff;
 }
 
