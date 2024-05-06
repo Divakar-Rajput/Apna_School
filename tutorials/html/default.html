@@ -2,6 +2,7 @@
 <html lang="en-US">
 
 <head>
+    <title>HTML Tutorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -9,8 +10,8 @@
     <meta name="Description"
         content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
     <meta name="ApnaSchool" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
-    <meta property="og:site_name" content="ApnaSchool">
-    <meta property="og:title" content="ApnaSchool Online Toturials & Questions">
+    <meta property="og:site_name" content="Apna School">
+    <meta property="og:title" content="ApnaSchool HTML Toturials & Questions">
     <meta property="og:description"
         content="ApnaSchool offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
     <meta property="og:image" itemprop="image" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
@@ -19,35 +20,27 @@
     <meta property="og:image:width" content="436">
     <meta property="og:image:height" content="228">
     <!-- <meta property="og:url" content="www.apnaschool.com"> -->
-    <title>ApnaSchool</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="lib/topnav/main.css">
-    <link rel="stylesheet" href="lib/my-learning/main.css">
-    <link rel="stylesheet" href="lib/pathfinder/main.css">
-    <link rel="stylesheet" href="lib/w3schools32.css">
-    <link rel="stylesheet" href="plus/plans/main.css">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../lib/topnav/main.css">
+    <link rel="stylesheet" href="../../lib/my-learning/main.css">
+    <link rel="stylesheet" href="../../lib/pathfinder/main.css">
+    <link rel="stylesheet" href="../../lib/all_pages_style.css">
+    <link rel="stylesheet" href="../../lib/w3schools32.css">
+    <link rel="stylesheet" href="../../plus/plans/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="lib/all_pages_style.css">
 </head>
 
-<body style="font-family: 'Source Sans Pro', sans-serif;">
-    <!-- 
-============================================================================================================================================================
-          start   top nav bar with logo image
-============================================================================================================================================================ -->
+<body>
+
     <div id="tnb-search-suggestions"></div>
     <div id="top-nav-bar" class="classic">
-        <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  start dektop view top navigation bar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-        -->
         <div id="pagetop" class="w3-bar notranslate w3-white">
-            <a id="w3-logo" href="index.html" class="w3-bar-item w3-button w3-hover-none w3-left ga-top ga-top-w3home"
-                title="Home" style="width:80px;" aria-label="Home link">
-                <img src="img/logo.png" alt="logo" style="width: 100%;">
-            </a>
+            <a id="w3-logo" href="../../index.html"
+                class="w3-bar-item w3-button w3-hover-none w3-left ga-top ga-top-w3home" title="Home"
+                style="width:80px;" aria-label="Home link">
+                <img src="../../img/logo.png" alt="logo" style="width: 100%;">
+            </a>            
             <nav class="tnb-desktop-nav w3-bar-item">
                 <a class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 ga-top ga-top-tut-and-ref"
                     href="javascript:void(0)" onclick="TopNavBar.openNavItem('tutorials')" id="navbtn_tutorials"
@@ -128,6 +121,8 @@
                     </div>
                 </div>
             </div>
+            <!--search bar close-->
+
             <div id="tnb-dark-mode-toggle-wrapper" class="w3-bar-item">
                 <a id="tnb-dark-mode-toggle-btn" href="javascript:void(0);"
                     class="tnb-button fa ga-nav ga-dark-mode-toggle" onclick="TopNavBar.toggleUserPreferredTheme()"
@@ -136,14 +131,7 @@
                 </a>
             </div>
         </div>
-        <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  close dektop view top navigation bar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
-        <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  start mobile view top navigation bar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+
         <nav id="tnb-mobile-nav" class="tnb-mobile-nav w3-hide">
             <div class="w3-container">
                 <div class="tnb-mobile-nav-section" data-section="tutorials">
@@ -152,54 +140,58 @@
                         <span class="tnb-title">Tutorials</span>
                         <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
                     </div>
+
                     <div id="sectionxs_tutorials" class="tnb-mobile-nav-section-body">
                         &nbsp;
                     </div>
                 </div>
+
                 <div class="tnb-mobile-nav-section" data-section="exercises">
                     <div class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-exc-and-quz"
                         onclick="TopNavBar.toggleMobileNav(event, 'exercises')" aria-label="Exercises" role="button">
                         <span class="tnb-title">Course MCQs</span>
                         <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
                     </div>
+
                     <div id="sectionxs_exercises" class="tnb-mobile-nav-section-body">
                         &nbsp;
                     </div>
                 </div>
+
                 <div class="tnb-mobile-nav-section" data-section="certified">
                     <div class="tnb-mobile-nav-section-toggle-btn tnb-paid-service w3-button ga-top ga-top-menu-cert-and-course"
                         onclick="TopNavBar.toggleMobileNav(event, 'certified')" aria-label="Certificates" role="button">
                         <span class="tnb-title">Branches</span>
                         <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
                     </div>
+
                     <div id="sectionxs_certified" class="tnb-mobile-nav-section-body">
                         &nbsp;
                     </div>
                 </div>
+
                 <div class="tnb-mobile-nav-section" data-section="services">
                     <div class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-services"
                         onclick="TopNavBar.toggleMobileNav(event, 'services')" aria-label="Services" role="button">
                         <span class="tnb-title">Services</span>
                         <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
                     </div>
+
                     <div id="sectionxs_services" class="tnb-mobile-nav-section-body">
                         &nbsp;
                     </div>
                 </div>
             </div>
+
             <div class="w3-button tnb-close-menu-btn w3-round ga-top ga-top-close-accordion" tabindex="0"
                 onclick="TopNavBar.closeMenu()" role="button" aria-label="Close menu">
                 <span>&times;</span>
             </div>
         </nav>
-        <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  close mobile view top navigation bar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
-        <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  start dropdown for tutorials section
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
+        <!-- 
+        ============================================================================================================================================================
+                         start tutorials  dropdown menu
+        ============================================================================================================================================================ -->
         <div id="dropdown-nav-outer-wrapper">
             <div id="dropdown-nav-inner-wrapper">
                 <nav id="nav_tutorials" class="dropdown-nav w3-hide-small navex" tabindex="-1"
@@ -208,8 +200,9 @@
                         <div id="tutorials_list" class="w3-row-padding w3-bar-block">
                             <div class="nav-heading-container w3-container">
                                 <div class="nav-heading-container-title">
-                                    <h2 style="color: #ffffff"><b>Tutorials</b></h2>
+                                    <h2 style="color: #fff4a3"><b>Tutorials</b></h2>
                                 </div>
+
                                 <div data-section="tutorials" class="filter-input-wrapper">
                                     <div class="filter-input-inner-wrapper">
                                         <label for="filter-tutorials-input" class="tnb-soft-hide">
@@ -236,90 +229,90 @@
                                     </h3>
                                     <div data-name="html" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-html"
-                                            href="tutorials/html/default.html" title="HTML Tutorial">
+                                            href="../html/default.html" title="HTML Tutorial">
                                             HTML
                                         </a>
                                     </div>
 
                                     <div data-name="css" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-css"
-                                            href="tutorials/css/default.html" title="CSS Tutorial">
+                                            href="../css/default.html" title="CSS Tutorial">
                                             CSS
                                         </a>
                                     </div>
 
                                     <div data-name="rwd" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-rwd"
-                                            href="tutorials/rwd/default.html" title="Responsive Web Design Tutorial">
+                                            href="../css/rwd/css_rwd_intro.html" title="Responsive Web Design Tutorial">
                                             RWD
                                         </a>
                                     </div>
 
                                     <div data-name="bootstrap" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-bs"
-                                            href="tutorials/bootstrap/default.html" title="Bootstrap Tutorials">
+                                            href="../bootstrap/bootstrap_default.html" title="Bootstrap Tutorials">
                                             Bootstrap
                                         </a>
                                     </div>
 
                                     <div data-name="w3.css" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-w3css"
-                                            href="tutorials/w3.css/default.html" title="W3.CSS Tutorial">
+                                            href="../w3css/default.html" title="W3.CSS Tutorial">
                                             W3.CSS
                                         </a>
                                     </div>
 
                                     <div data-name="sass" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sass"
-                                            href="tutorials/sass/default.html" title="SASS Tutorial">
+                                            href="../sass/default.html" title="SASS Tutorial">
                                             SASS
                                         </a>
                                     </div>
 
                                     <div data-name="colors" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-colors"
-                                            href="tutorials/colors/default.html" title="Colors Tutorial">
+                                            href="../colors/default.html" title="Colors Tutorial">
                                             Colors
                                         </a>
                                     </div>
 
                                     <div data-name="icons" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-icons"
-                                            href="tutorials/icons/default.html" title="Icons Tutorial">
+                                            href="../icons/default.html" title="Icons Tutorial">
                                             Icons
                                         </a>
                                     </div>
 
                                     <div data-name="svg" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-svg"
-                                            href="tutorials/graphics/default.html" title="SVG Tutorial">
+                                            href="../graphics/svg/svg_intro.html" title="SVG Tutorial">
                                             SVG
                                         </a>
                                     </div>
 
                                     <div data-name="canvas" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-canvas"
-                                            href="tutorials/graphics/default.html" title="Canvas Tutorial">
+                                            href="../graphics/canvas/canvas_intro.html" title="Canvas Tutorial">
                                             Canvas
                                         </a>
                                     </div>
 
                                     <div data-name="graphics" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-graphics"
-                                            href="tutorials/graphics/default.html" title="Graphics Tutorial">
+                                            href="../graphics/default.html" title="Graphics Tutorial">
                                             Graphics
                                         </a>
                                     </div>
                                     <div data-name="charsets" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-charsets"
-                                            href="tutorials/charsets/default.html" title="Character Sets Reference">
+                                            href="../charsets/default.html" title="Character Sets Reference">
                                             Character Sets
                                         </a>
                                     </div>
 
                                     <div data-name="how to" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-howto"
-                                            href="tutorials/howto/default.html" title="How To - Code Snippets">
+                                            href="../howto/default.html" title="How To - Code Snippets">
 
                                             How To
                                         </a>
@@ -332,7 +325,7 @@
                                     </h3>
                                     <div data-name="ai" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ai"
-                                            href="tutorials/ai/default.html" title="Artificial Intelligence Tutorial">
+                                            href="../ai/default.html" title="Artificial Intelligence Tutorial">
 
                                             AI
                                         </a>
@@ -340,45 +333,50 @@
 
                                     <div data-name="generative ai" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-genai"
-                                            href="tutorials/gen_ai/default.html" title="Generative AI Tutorial">
+                                            href="../gen_ai/index.php" title="Generative AI Tutorial">
 
                                             Generative AI
                                         </a>
                                     </div>
 
                                     <div data-name="chatgpt-3.5" data-category="data_analytics">
-                                        <a href="tutorials/gen_ai/chatgpt/default.html"
+                                        <a href="../gen_ai/chatgpt-3-5/index.php"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-chatgpt35"
                                             title="ChatGPT-3.5 Tutorial">
+
                                             ChatGPT-3.5
                                         </a>
                                     </div>
 
                                     <div data-name="chatgpt-4" data-category="data_analytics">
-                                        <a href="tutorials/gen_ai/chatgpt-4/default.html"
+                                        <a href="../gen_ai/chatgpt-4/index.php"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-chatgpt4"
                                             title="ChatGPT-4 Tutorial">
+
                                             ChatGPT-4
                                         </a>
                                     </div>
 
                                     <div data-name="google bard" data-category="data_analytics">
-                                        <a href="tutorials/gen_ai/bard/default.html"
+                                        <a href="../gen_ai/bard/index.php"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-bard"
                                             title="Google Bard Tutorial">
+
                                             Google Bard
                                         </a>
                                     </div>
+
                                     <div data-name="machine learning" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ml"
-                                            href="tutorials/python/python_ml_getting_started.html"
+                                            href="../python/ml-geetting/python_ml_getting_started.html"
                                             title="Machine Learning Tutorial">
+
                                             Machine Learning
                                         </a>
                                     </div>
 
                                     <div data-name="dsa" data-category="data_analytics">
-                                        <a href="tutorials/dsa/default.html"
+                                        <a href="../dsa/index.php"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-dsa"
                                             title="DSA - Data Structures and Algorithms">
 
@@ -388,14 +386,15 @@
 
                                     <div data-name="data science" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ds"
-                                            href="tutorials/datascience/default.html" title="Data Science Tutorial">
+                                            href="../datascience/default.html" title="Data Science Tutorial">
+
                                             Data Science
                                         </a>
                                     </div>
 
                                     <div data-name="numpy" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-numpy"
-                                            href="tutorials/python/numpy/default.html" title="NumPy Tutorial">
+                                            href="../python/numpy/default.html" title="NumPy Tutorial">
 
                                             NumPy
                                         </a>
@@ -403,7 +402,7 @@
 
                                     <div data-name="pandas" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-pandas"
-                                            href="tutorials/python/pandas/default.html" title="Pandas Tutorial">
+                                            href="../python/pandas/default.html" title="Pandas Tutorial">
 
                                             Pandas
                                         </a>
@@ -411,7 +410,7 @@
 
                                     <div data-name="scipy" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-scipy"
-                                            href="tutorials/python/scipy/default.html" title="SciPy Tutorial">
+                                            href="../python/scipy/index.php" title="SciPy Tutorial">
 
                                             SciPy
                                         </a>
@@ -419,7 +418,7 @@
 
                                     <div data-name="matplotlib" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-matplotlib"
-                                            href="tutorials/python/matplotlib_intro.html" title="Matplotlib Tutorial">
+                                            href="../python/matplotlib_intro.html" title="Matplotlib Tutorial">
 
                                             Matplotlib
                                         </a>
@@ -427,7 +426,7 @@
 
                                     <div data-name="statistics" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-stat"
-                                            href="tutorials/statistics/default.html" title="Statistics Tutorial">
+                                            href="../statistics/index.php" title="Statistics Tutorial">
 
                                             Statistics
                                         </a>
@@ -435,7 +434,7 @@
 
                                     <div data-name="excel" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-excel"
-                                            href="tutorials/excel/default.html" title="Excel Tutorial">
+                                            href="../excel/index.php" title="Excel Tutorial">
 
                                             Excel
                                         </a>
@@ -443,7 +442,7 @@
 
                                     <div data-name="google sheet" data-category="data_analytics">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sheets"
-                                            href="tutorials/googlesheets/default.html" title="Google Sheets Tutorial">
+                                            href="../googlesheets/index.php" title="Google Sheets Tutorial">
 
                                             Google Sheets
                                         </a>
@@ -458,7 +457,7 @@
                                     </h3>
                                     <div data-name="javascript" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-js"
-                                            href="tutorials/javascript/default.html" title="JavaScript Tutorial">
+                                            href="../javascript/default.html" title="JavaScript Tutorial">
 
                                             JavaScript
                                         </a>
@@ -466,7 +465,7 @@
 
                                     <div data-name="react" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-react"
-                                            href="tutorials/react/default.html" title="React Tutorial">
+                                            href="../react/default.html" title="React Tutorial">
 
                                             React
                                         </a>
@@ -474,7 +473,7 @@
 
                                     <div data-name="jquery" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-jquery"
-                                            href="tutorials/jquery/default.html" title="jQuery Tutorial">
+                                            href="../jquery/default.html" title="jQuery Tutorial">
 
                                             jQuery
                                         </a>
@@ -482,7 +481,7 @@
 
                                     <div data-name="vue" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-vue"
-                                            href="tutorials/vue/default.html" title="Vue Tutorial">
+                                            href="../vue/index.php" title="Vue Tutorial">
 
                                             Vue
                                         </a>
@@ -490,7 +489,7 @@
 
                                     <div data-name="angularjs" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-angularjs"
-                                            href="tutorials/angular/default.html" title="Angular Tutorial">
+                                            href="../angular/default.html" title="Angular Tutorial">
 
                                             AngularJS
                                         </a>
@@ -498,7 +497,7 @@
 
                                     <div data-name="json" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-json"
-                                            href="tutorials/javascript/json/js_json_intro.html" title="JSON Tutorial">
+                                            href="../javascript/js_json_intro.html" title="JSON Tutorial">
 
                                             JSON
                                         </a>
@@ -506,7 +505,7 @@
 
                                     <div data-name="ajax" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ajax"
-                                            href="tutorials/javascript/ajax/js_ajax_intro.html" title="AJAX Tutorial">
+                                            href="../javascript/js_ajax_intro.html" title="AJAX Tutorial">
 
                                             AJAX
                                         </a>
@@ -514,7 +513,7 @@
 
                                     <div data-name="appml" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-appml"
-                                            href="tutorials/appml/default.html" title="AppML Tutorial">
+                                            href="../appml/default.html" title="AppML Tutorial">
 
                                             AppML
                                         </a>
@@ -522,7 +521,7 @@
 
                                     <div data-name="w3.js" data-category="javascript">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-w3js"
-                                            href="tutorials/w3js/default.html" title="W3.JS Tutorial">
+                                            href="../w3js/default.html" title="W3.JS Tutorial">
 
                                             W3.JS
                                         </a>
@@ -537,38 +536,54 @@
                                     </h3>
                                     <div data-name="create a website" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-spaces"
-                                            href="tutorials/spaces/index.php" title="Get Your Own Website With W3shools Spaces">
+                                            href="../spaces/index.php" title="Get Your Own Website With W3shools Spaces">
                                             Create a Website
+                                            <!-- <span class="ribbon-topnav" style="background-color: #d9212c; color: white">
+                        HOT!
+                      </span> -->
                                         </a>
-                                    </div>                                    
+                                    </div>
+                                    <div data-name="create a server" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-server"
+                                            href="../spaces/index.php" title="Get Your Own Server">
+                                            Create a Server
+                                            <!-- <span class="ribbon-topnav ws-green">NEW</span> -->
+                                        </a>
+                                    </div>
+                                    <div data-name="where to start" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-wheretostart"
+                                            href="../wheretostart/where_to_start.html" title="Where To Start - Web Development">
+                                            Where To Start
+                                        </a>
+                                    </div>
                                     <div data-name="web templates" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-templates"
-                                            href="tutorials/w3css/w3css_templates.html" title="Free Web Templates">
+                                            href="../w3css/w3css_templates.html" title="Free Web Templates">
                                             Web Templates
                                         </a>
                                     </div>
                                     <div data-name="web statistics" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-webstats"
-                                            href="tutorials/browsers/default.html" title="Web Statistics">
+                                            href="../browsers/default.html" title="Web Statistics">
                                             Web Statistics
                                         </a>
                                     </div>
                                     <div data-name="web development" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-web-development"
-                                            href="tutorials/whatis/default.html" title="Web Development Roadmaps">
+                                            href="../whatis/default.html" title="Web Development Roadmaps">
                                             Web Development
                                         </a>
                                     </div>
 
                                     <div data-name="cyber security" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-cybersec"
-                                            href="tutorials/cybersecurity/index.php" title="Cyber Security Tutorial">
+                                            href="../cybersecurity/index.php" title="Cyber Security Tutorial">
                                             Cyber Security
                                         </a>
                                     </div>
                                     <div data-name="accessibility" data-category="web_building">
                                         <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-accessi"
-                                            href="tutorials/accessibility/index.php" title="Accessibility Security Tutorial">
+                                            href="../accessibility/index.php" title="Accessibility Security Tutorial">
                                             Accessibility
                                         </a>
                                     </div>
@@ -582,7 +597,7 @@
                                     </h3>
                                     <div data-name="python" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-python"
-                                            href="tutorials/python/default.html" title="Python Tutorial">
+                                            href="../python/default.html" title="Python Tutorial">
 
                                             Python
                                         </a>
@@ -590,7 +605,7 @@
 
                                     <div data-name="sql" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sql"
-                                            href="tutorials/sql/default.html" title="SQL Tutorial">
+                                            href="../sql/default.html" title="SQL Tutorial">
 
                                             SQL
                                         </a>
@@ -598,7 +613,7 @@
 
                                     <div data-name="mysql" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-mysql"
-                                            href="mysql/default.html" title="MySQL Tutorial">
+                                            href="../mysql/default.html" title="MySQL Tutorial">
 
                                             MySQL
                                         </a>
@@ -606,7 +621,7 @@
 
                                     <div data-name="php" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-php"
-                                            href="tutorials/php/default.html" title="PHP Tutorial">
+                                            href="../php/default.html" title="PHP Tutorial">
 
                                             PHP
                                         </a>
@@ -614,7 +629,7 @@
 
                                     <div data-name="java" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-java"
-                                            href="tutorials/java/default.html" title="Java Tutorial">
+                                            href="../java/default.html" title="Java Tutorial">
 
                                             Java
                                         </a>
@@ -622,7 +637,7 @@
 
                                     <div data-name="c" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-c"
-                                            href="tutorials/c/default.html" title="C Tutorial">
+                                            href="../c/index.php" title="C Tutorial">
 
                                             C
                                         </a>
@@ -630,7 +645,7 @@
 
                                     <div data-name="c++" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-cpp"
-                                            href="tutorials/cpp/default.html" title="C++ Tutorial">
+                                            href="../cpp/default.html" title="C++ Tutorial">
 
                                             C++
                                         </a>
@@ -638,7 +653,7 @@
 
                                     <div data-name="c#" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-cs"
-                                            href="tutorials/cs/index.php" title="C# Tutorial">
+                                            href="../cs/index.php" title="C# Tutorial">
 
                                             C#
                                         </a>
@@ -646,7 +661,7 @@
 
                                     <div data-name="r" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop ga-top-drop-tut-r"
-                                            href="tutorials/r/default.html" title="R Tutorial">
+                                            href="../r/default.html" title="R Tutorial">
 
                                             R
                                         </a>
@@ -654,7 +669,7 @@
 
                                     <div data-name="kotlin" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-kotlin"
-                                            href="tutorials/kotlin/index.php" title="Kotlin Tutorial">
+                                            href="../kotlin/index.php" title="Kotlin Tutorial">
 
                                             Kotlin
                                         </a>
@@ -662,7 +677,7 @@
 
                                     <div data-name="go" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-go"
-                                            href="tutorials/go/default.html" title="Go Tutorial">
+                                            href="../go/index.php" title="Go Tutorial">
 
                                             Go
                                         </a>
@@ -670,14 +685,14 @@
 
                                     <div data-name="django" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-django"
-                                            href="tutorials/django/index.php" title="Django Tutorial">
+                                            href="../django/index.php" title="Django Tutorial">
 
                                             Django
                                         </a>
                                     </div>
 
                                     <div data-name="postgresql" data-category="backend">
-                                        <a href="tutorials/postgresql/index.php"
+                                        <a href="../postgresql/index.php"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-postgresql"
                                             title="PostgreSQL Tutorial">
 
@@ -687,7 +702,7 @@
 
                                     <div data-name="typescript" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-typescript"
-                                            href="tutorials/typescript/index.php" title="TypeScript Tutorial">
+                                            href="../typescript/index.php" title="TypeScript Tutorial">
 
                                             TypeScript
                                         </a>
@@ -695,7 +710,7 @@
 
                                     <div data-name="html" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-html"
-                                            href="tutorials/html/default.html" title="html Tutorial">
+                                            href="../html/default.html" title="html Tutorial">
 
                                             html
                                         </a>
@@ -703,7 +718,7 @@
 
                                     <div data-name="node.js" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-nodejs"
-                                            href="tutorials/nodejs/default.html" title="Node.js Tutorial">
+                                            href="../nodejs/default.html" title="Node.js Tutorial">
 
                                             Node.js
                                         </a>
@@ -711,7 +726,7 @@
 
                                     <div data-name="rhtmlberry pi" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-rpi"
-                                            href="tutorials/nodejs/nodejs_rhtmlberrypi.html" title="Rhtmlberry Pi Tutorial">
+                                            href="../nodejs/rhtmlberry/nodejs_rhtmlberrypi.html" title="Rhtmlberry Pi Tutorial">
 
                                             Rhtmlberry Pi
                                         </a>
@@ -719,7 +734,7 @@
 
                                     <div data-name="git" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-git"
-                                            href="tutorials/git/default.html" title="Git Tutorial">
+                                            href="../git/default.html" title="Git Tutorial">
 
                                             Git
                                         </a>
@@ -727,7 +742,7 @@
 
                                     <div data-name="mongodb" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-mongodb"
-                                            href="tutorials/mongodb/index.php" title="MongoDB Tutorial">
+                                            href="../mongodb/index.php" title="MongoDB Tutorial">
 
                                             MongoDB
                                         </a>
@@ -735,14 +750,14 @@
 
                                     <div data-name="aws cloud" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-aws-cloud"
-                                            href="tutorials/aws/index.php" title="AWS Cloud Tutorial">
+                                            href="../aws/index.php" title="AWS Cloud Tutorial">
 
                                             AWS Cloud
                                         </a>
                                     </div>
                                     <div data-name="xml" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-xml"
-                                            href="tutorials/xml/default.html" title="XML Tutorial">
+                                            href="../xml/default.html" title="XML Tutorial">
 
                                             XML
                                         </a>
@@ -759,13 +774,14 @@
                         <span>&times;</span>
                     </div>
                 </nav>
-                <!--
-            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                                  close dropdown for tutorials section
-            <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<-->
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                      start dropdown for course MCQs section
-            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+                <!-- 
+        ============================================================================================================================================================
+                         close tutorials  dropdown menu
+        ============================================================================================================================================================ -->
+                <!-- 
+        ============================================================================================================================================================
+                         start courseMCQs  dropdown menu
+        ============================================================================================================================================================ -->
                 <nav id="nav_exercises" class="dropdown-nav w3-hide-small navex" tabindex="-1"
                     aria-label="Exercises menu">
                     <div class="w3-content menu-content">
@@ -800,28 +816,28 @@
                                     </h3>
                                     <div data-name="quantitative aptitude questions" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html"
-                                            href="mcqs/1000-Quantitative-Aptitude-Questions/1000-Quantitative-Aptitude-Questions.html">
+                                            href="../../mcqs/1000-Quantitative-Aptitude-Questions/1000-Quantitative-Aptitude-Questions.html">
                                             1000 Quantitative Aptitude Questions
                                         </a>
                                     </div>
 
                                     <div data-name="data interpretation questions" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html"
-                                            href="mcqs/1000-data-interpretation-Questions/1000-data-interpretation-Questions.html">
+                                            href="../../mcqs/1000-data-interpretation-Questions/1000-data-interpretation-Questions.html">
                                             1000 Data Interpretation Questions
                                         </a>
                                     </div>
 
                                     <div data-name="logical reasoning questions" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html"
-                                            href="mcqs/1000-logical-reasoning-Questions/1000-logical-reasoning-Questions.html">
+                                            href="../../mcqs/1000-logical-reasoning-Questions/1000-logical-reasoning-Questions.html">
                                             1000 Logical Reasoning Questions
                                         </a>
                                     </div>
 
                                     <div data-name="english grammer exercises" data-category="html_and_css">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html"
-                                            href="mcqs/5000-english-grammer-exercises/5000-english-grammer-exercises.html">
+                                            href="../../mcqs/5000-english-grammer-exercises/5000-english-grammer-exercises.html">
                                             5000+ English Grammer Exercises
                                         </a>
                                     </div>
@@ -832,73 +848,73 @@
                                         Interview Preparation
                                     </h3>
                                     <div data-name="data structure mcqs dsa" data-category="data_analytics">
-                                        <a href="mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html"
+                                        <a href="../../mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Data Structure MCQs (DSA-I)
                                         </a>
                                     </div>
                                     <div data-name="algorithm mcqs dsa" data-category="data_analytics">
-                                        <a href="mcqs/1000-algorithms-mcqs/1000-algorithms-mcqs.html"
+                                        <a href="../../mcqs/1000-algorithms-mcqs/1000-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Algorithms MCQs (DSA-II)
                                         </a>
                                     </div>
                                     <div data-name="python mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-python-mcqs/1000-python-mcqs.html"
+                                        <a href="../../mcqs/1000-python-mcqs/1000-python-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Python MCQs | Python Jobs
                                         </a>
                                     </div>
                                     <div data-name="java mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-java-mcqs/mcqs/1000-java-mcqs.html"
+                                        <a href="../../mcqs/1000-java-mcqs/mcqs/1000-java-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Java MCQs | Java Jobs
                                         </a>
                                     </div>
                                     <div data-name="c++ mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-c++-mcqs/1000-c++-mcqs.html"
+                                        <a href="../../mcqs/1000-c++-mcqs/1000-c++-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 C++ MCQs | C++ Jobs
                                         </a>
                                     </div>
                                     <div data-name="c mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-c-mcqs/1000-c-mcqs.html"
+                                        <a href="../../mcqs/1000-c-mcqs/1000-c-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 C MCQs | C Jobs
                                         </a>
                                     </div>
                                     <div data-name="C# mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-c#-mcqs/1000-c#-mcqs.html"
+                                        <a href="../../mcqs/1000-c#-mcqs/1000-c#-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 C# MCQs | C# Jobs
                                         </a>
                                     </div>
                                     <div data-name="artificial antelligence mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-artificial-intelligence-mcqs/1000-artificial-intelligence-mcqs.html"
+                                        <a href="../../mcqs/1000-artificial-intelligence-mcqs/1000-artificial-intelligence-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Artificial Intelligence MCQs
                                         </a>
                                     </div>
                                     <div data-name="machine learning mcqs ai ml " data-category="data_analytics">
-                                        <a href="mcqs/1000-machine-learning-mcqs/1000-machine-learning-mcqs.html"
+                                        <a href="../../mcqs/1000-machine-learning-mcqs/1000-machine-learning-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Machine Learning MCQs | AI-ML Jobs
                                         </a>
                                     </div>
                                     <div data-name="linux mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-linux--mcqs/1000-linux--mcqs.html"
+                                        <a href="../../mcqs/1000-linux--mcqs/1000-linux--mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Linux MCQs | Linux Programmer Jobs
                                         </a>
                                     </div>
                                     <div data-name="linux admin kernel mcqs" data-category="data_analytics">
-                                        <a href="mcqs/linux-kernel-mcqs/linux-kernel-mcqs.html"
+                                        <a href="../../mcqs/linux-kernel-mcqs/linux-kernel-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Linux Kernel MCQs | Linux Admin Jobs
                                         </a>
                                     </div>
                                     <div data-name="full stack developer mcqs" data-category="data_analytics">
-                                        <a href="mcqs/full-stack-developer-mcqs/full-stack-developer-mcqs.html"
+                                        <a href="../../mcqs/full-stack-developer-mcqs/full-stack-developer-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Full Stack Developer Jobs
                                         </a>
@@ -906,19 +922,19 @@
                                     <br>
                                     <br>
                                     <div data-name="c algorithms mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-c-algorithms-mcqs/1000-c-algorithms-mcqs.html"
+                                        <a href="../../mcqs/1000-c-algorithms-mcqs/1000-c-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 C Algorithms MCQs
                                         </a>
                                     </div>
                                     <div data-name="c++ algorithms mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-c++-algorithms-mcqs/1000-c++-algorithms-mcqs.html"
+                                        <a href="../../mcqs/1000-c++-algorithms-mcqs/1000-c++-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 C++ Algorithms MCQs
                                         </a>
                                     </div>
                                     <div data-name="java algorithms mcqs" data-category="data_analytics">
-                                        <a href="mcqs/1000-java-algorithms-mcqs/1000-java-algorithms-mcqs.html"
+                                        <a href="../../mcqs/1000-java-algorithms-mcqs/1000-java-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             1000 Java Algorithms MCQs
                                         </a>
@@ -927,25 +943,25 @@
                                     <br>
 
                                     <div data-name="data structure & algorithms c" data-category="data_analytics">
-                                        <a href="mcqs/data-structure-c-algorithms-mcqs/data-structure-c-algorithms-mcqs.html"
+                                        <a href="../../mcqs/data-structure-c-algorithms-mcqs/data-structure-c-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Data Structure & C Algorithms MCQs
                                         </a>
                                     </div>
                                     <div data-name="data structure & algorithms c++" data-category="data_analytics">
-                                        <a href="mcqs/data-structure-c++-algorithms-mcqs/data-structure-c++-algorithms-mcqs.html"
+                                        <a href="../../mcqs/data-structure-c++-algorithms-mcqs/data-structure-c++-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Data Structure & C++ Algorithms MCQs
                                         </a>
                                     </div>
                                     <div data-name="data structure & algorithms java" data-category="data_analytics">
-                                        <a href="mcqs/data-structure-java-algorithms-mcqs/data-structure-java-algorithms-mcqs.html"
+                                        <a href="../../mcqs/data-structure-java-algorithms-mcqs/data-structure-java-algorithms-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Data Structure & Java Algorithms MCQs
                                         </a>
                                     </div>
                                     <div data-name="dynamic programming problems" data-category="data_analytics">
-                                        <a href="mcqs/dynamic-programming-problems-mcqs/dynamic-programming-problems-mcqs.html"
+                                        <a href="../../mcqs/dynamic-programming-problems-mcqs/dynamic-programming-problems-mcqs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa">
                                             Dynamic Programming Problems MCQs
                                         </a>
@@ -953,7 +969,7 @@
 
                                     <div class="black-box-container">
                                         <a class="w3-bar-item w3-button ga-top-drop w3-center w3-round ga-top-drop-quiztest"
-                                            href="mcqs/all-course-mcqs.html" title="W3Schools Quizzes"
+                                            href="../../mcqs/all-course-mcqs.html" title="W3Schools Quizzes"
                                             style="display: block; background-color: #21232c; border: 1px solid grey; width: 195px">
                                             More MCQs
                                         </a>
@@ -968,97 +984,97 @@
 
                                 <div data-name="data structure mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html">
+                                        href="../../mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html">
                                         1000 Data Structure & Algorithms | MCQs
                                     </a>
                                 </div>
                                 <div data-name="object oriented programming oops mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-object-oriented-programming-mcqs/1000-object-oriented-programming-mcqs.html">
+                                        href="../../mcqs/1000-object-oriented-programming-mcqs/1000-object-oriented-programming-mcqs.html">
                                         1000 Object Oriented Programming MCQs
                                     </a>
                                 </div>
                                 <div data-name="junit mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-junit-mcqs/1000-junit-mcqs.html">
+                                        href="../../mcqs/1000-junit-mcqs/1000-junit-mcqs.html">
                                         1000 JUnit MCQs
                                     </a>
                                 </div>
                                 <div data-name="javascript mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-javascript-mcqs/1000-javascript-mcqs.html">
+                                        href="../../mcqs/1000-javascript-mcqs/1000-javascript-mcqs.html">
                                         1000 JavaScrip MCQs
                                     </a>
                                 </div>
                                 <div data-name="php mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-php-mcqs/1000-php-mcqs.html">
+                                        href="../../mcqs/1000-php-mcqs/1000-php-mcqs.html">
                                         1000 PHP MCQs
                                     </a>
                                 </div>
                                 <div data-name="ruby mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-ruby-mcqs/1000-ruby-mcqs.html">
+                                        href="../../mcqs/1000-ruby-mcqs/1000-ruby-mcqs.html">
                                         1000 Ruby MCQs
                                     </a>
                                 </div>
                                 <div data-name="r programming mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-r-programming-mcqs/1000-r-programming-mcqs.html">
+                                        href="../../mcqs/1000-r-programming-mcqs/1000-r-programming-mcqs.html">
                                         1000 R Programming MCQs
                                     </a>
                                 </div>
                                 <div data-name="data science mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-data-science-mcqs/1000-data-science-mcqs.html">
+                                        href="../../mcqs/1000-data-science-mcqs/1000-data-science-mcqs.html">
                                         1000 Data Science MCQs
                                     </a>
                                 </div>
                                 <div data-name="mongobd mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-mongodb-mcqs/1000-mongodb-mcqs.html">
+                                        href="../../mcqs/1000-mongodb-mcqs/1000-mongodb-mcqs.html">
                                         1000 MongoDB MCQs
                                     </a>
                                 </div>
                                 <div data-name="sql mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-sql-mcqs/1000-sql-mcqs.html">
+                                        href="../../mcqs/1000-sql-mcqs/1000-sql-mcqs.html">
                                         1000 SQL MCQs
                                     </a>
                                 </div>
                                 <div data-name="mysql mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-mysql-mcqs/1000-mysql-mcqs.html">
+                                        href="../../mcqs/1000-mysql-mcqs/1000-mysql-mcqs.html">
                                         1000 MySQL MCQs
                                     </a>
                                 </div>
                                 <div data-name="oracle mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-oracle-mcqs/1000-oracle-mcqs.html">
+                                        href="../../mcqs/1000-oracle-mcqs/1000-oracle-mcqs.html">
                                         1000 Oracle MCQs
                                     </a>
                                 </div>
                                 <div data-name="web technology mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-webtechnology-mcqs/1000-webtechnology-mcqs.html">
+                                        href="../../mcqs/1000-webtechnology-mcqs/1000-webtechnology-mcqs.html">
                                         1000 Web Technology MCQs
                                     </a>
                                 </div>
                                 <div data-name="html mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-html-mcqs/1000-html-mcqs.html">
+                                        href="../../mcqs/1000-html-mcqs/1000-html-mcqs.html">
                                         1000 HTML MCQs
                                     </a>
                                 </div>
                                 <div data-name="css mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-css-mcqs/1000-css-mcqs.html">
+                                        href="../../mcqs/1000-css-mcqs/1000-css-mcqs.html">
                                         1000 CSS MCQs
                                     </a>
                                 </div>
                                 <div data-name="unix mcqs" data-category="javascript">
                                     <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js"
-                                        href="mcqs/1000-unix-mcqs/1000-unix-mcqs.html">
+                                        href="../../mcqs/1000-unix-mcqs/1000-unix-mcqs.html">
                                         1000 Unix MCQs
                                     </a>
                                 </div>
@@ -1072,37 +1088,37 @@
                                     </h3>
                                     <div data-name="operating system mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-operating-system-mcqs/1000-operating-system-mcqs.html">
+                                            href="../../mcqs/1000-operating-system-mcqs/1000-operating-system-mcqs.html">
                                             1000 Operating System MCQs
                                         </a>
                                     </div>
                                     <div data-name="computer architecture mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-computer-architecture-mcqs/1000-computer-architecture-mcqs.html">
+                                            href="../../mcqs/1000-computer-architecture-mcqs/1000-computer-architecture-mcqs.html">
                                             1000 Computer Architecture MCQs
                                         </a>
                                     </div>
                                     <div data-name="software enginnering mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-software-enginnering-mcqs/1000-software-engineering-mcqs.html">
+                                            href="../../mcqs/1000-software-enginnering-mcqs/1000-software-engineering-mcqs.html">
                                             1000 Software Enginnering MCQs
                                         </a>
                                     </div>
                                     <div data-name="computer network mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-computer-network-mcqs/1000-computer-network-mcqs.html">
+                                            href="../../mcqs/1000-computer-network-mcqs/1000-computer-network-mcqs.html">
                                             1000 Computer Network MCQs
                                         </a>
                                     </div>
                                     <div data-name="micro processsor mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-microprocessor-mcqs/1000-microprocessor-mcqs.html">
+                                            href="../../mcqs/1000-microprocessor-mcqs/1000-microprocessor-mcqs.html">
                                             1000 Microprecessor MCQs
                                         </a>
                                     </div>
                                     <div data-name="dbms mcqs" data-category="backend">
                                         <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python"
-                                            href="mcqs/1000-dbms-mcqs/1000-dbms-mcqs.html">
+                                            href="../../mcqs/1000-dbms-mcqs/1000-dbms-mcqs.html">
                                             1000 DBMS MCQs
                                         </a>
                                     </div>
@@ -1119,12 +1135,15 @@
                         <span>&times;</span>
                     </div>
                 </nav>
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                        close dropdown for course MCQs section
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                        start dropdown for branchwise MCQs section
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+                <!-- 
+        ============================================================================================================================================================
+                         close courseMCQs  dropdown menu
+        ============================================================================================================================================================ -->
+
+                <!-- 
+        ============================================================================================================================================================
+                         start practice  dropdown menu
+        ============================================================================================================================================================ -->
                 <nav id="nav_certified" class="dropdown-nav w3-hide-small navex" tabindex="-1"
                     aria-label="Certification menu">
                     <div class="w3-content menu-content">
@@ -1160,26 +1179,26 @@
                                     </h3>
 
                                     <div data-name="programming mcqs" data-category="html_and_css">
-                                        <a target="_blank" href="mcqs/programming/programming.html"
+                                        <a target="_blank" href="../../mcqs/programming/programming.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html">
                                             Programming
                                         </a>
                                     </div>
                                     <div data-name="cs mcqs" data-category="html_and_css">
-                                        <a target="_blank" href="mcqs/cs/cs.html"
+                                        <a target="_blank" href="../../mcqs/cs/cs.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html">
                                             CS
                                         </a>
                                     </div>
 
                                     <div data-name="it mcqs" data-category="html_and_css">
-                                        <a target="_blank" href="mcqs/it/it.html"
+                                        <a target="_blank" href="../../mcqs/it/it.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html">
                                             IT
                                         </a>
                                     </div>
                                     <div data-name="is mcqs" data-category="html_and_css">
-                                        <a target="_blank" href="mcqs/is/is.html"
+                                        <a target="_blank" href="../../mcqs/is/is.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html">
                                             IS
                                         </a>
@@ -1193,68 +1212,78 @@
                                     </h3>
 
                                     <div data-name="ece mcqs" data-category="data_analytics">
-                                        <a target="_blank" href="mcqs/ece/ece.html"
+                                        <a target="_blank" href="../../mcqs/ece/ece.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa">
                                             ECE
                                         </a>
                                     </div>
                                     <div data-name="eee mcqs" data-category="data_analytics">
-                                        <a target="_blank" href="mcqs/eee/eee.html"
+                                        <a target="_blank" href="../../mcqs/eee/eee.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa">
                                             EEE
                                         </a>
                                     </div>
                                     <div data-name="ee mcqs" data-category="data_analytics">
-                                        <a target="_blank" href="mcqs/ee/ee.html"
+                                        <a target="_blank" href="../../mcqs/ee/ee.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa">
                                             EE
                                         </a>
-                                    </div>                                    
+                                    </div>
+
+                                    <!-- <div class="black-box-container">
+                    <a target="_blank" href="https://campus.w3schools.com"
+                      class="w3-bar-item w3-button ga-top-drop w3-center w3-round ga-top-drop-campus"
+                      title="W3Schools Campus"
+                      style="display: block; background-color: #21232c; border: 1px solid grey; width: 195px; margin-bottom: 16px">
+                      Button
+                    </a>
+                  </div>-->
                                 </div>
                             </div>
+
                             <div class="w3-col l4 m6">
                                 <div id="certified_javascript_links_list">
                                     <h3 class="tnb-nav-section-title" data-heading="javascript_title">
 
                                     </h3>
                                     <div data-name="civil" data-category="javascript">
-                                        <a target="_blank" href="mcqs/civil/civil.html"
+                                        <a target="_blank" href="../../mcqs/civil/civil.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Civil
                                         </a>
                                     </div>
                                     <div data-name="machanical mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/machanical/machanical.html"
+                                        <a target="_blank" href="../../mcqs/machanical/machanical.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Machanical
                                         </a>
                                     </div>
                                     <div data-name="chemical mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/chemical/chemical.html"
+                                        <a target="_blank" href="../../mcqs/chemical/chemical.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Chemical
                                         </a>
                                     </div>
                                     <div data-name="metallury mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/metallury/metallury.html"
+                                        <a target="_blank" href="../../mcqs/metallury/metallury.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Metallury
                                         </a>
                                     </div>
                                     <div data-name="mining mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/mining/mining.html"
+                                        <a target="_blank" href="../../mcqs/mining/mining.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Mining
                                         </a>
                                     </div>
                                     <div data-name="intrumentation mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/intrumentation/intrumentation.html"
+                                        <a target="_blank" href="../../mcqs/intrumentation/intrumentation.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Intrumentation
                                         </a>
                                     </div>
                                     <div data-name="aerospace mcqs" data-category="javascript">
-                                        <a target="_blank" href="mcqs/aerospace/aerospace.html"
+                                        <a target="_blank" href="../../mcqs/aerospace/aerospace.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
                                             Aerospace
                                         </a>
@@ -1276,47 +1305,49 @@
                                     </h3>
 
                                     <div data-name="aeroautical mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/aeroautical/aeroautical.html"
+                                        <a target="_blank" href="../../mcqs/aeroautical/aeroautical.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             Aeroautical
                                         </a>
                                     </div>
                                     <div data-name="biotechnology mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/biotechnology/biotechnology.html"
+                                        <a target="_blank" href="../../mcqs/biotechnology/biotechnology.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             Biotechnology
                                         </a>
                                     </div>
                                     <div data-name="agriculture mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/agriculture/agriculture.html"
+                                        <a target="_blank" href="../../mcqs/agriculture/agriculture.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             Agriculture
                                         </a>
                                     </div>
                                     <div data-name="marine mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/marine/marine.html"
+                                        <a target="_blank" href="../../mcqs/marine/marine.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             Marine
                                         </a>
                                     </div>
                                     <div data-name="mechatronics mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/mechatronics/mechatronics.html"
+                                        <a target="_blank" href="../../mcqs/mechatronics/mechatronics.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             Mechatronics
                                         </a>
                                     </div>
                                     <div data-name="mca mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/mca/mca.html"
+                                        <a target="_blank" href="../../mcqs/mca/mca.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             MCA
                                         </a>
                                     </div>
                                     <div data-name="bca mcqs" data-category="backend">
-                                        <a target="_blank" href="mcqs/bca/bca.html"
+                                        <a target="_blank" href="../../mcqs/bca/bca.html"
                                             class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python">
                                             BCA
                                         </a>
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -1329,12 +1360,16 @@
                         <span>&times;</span>
                     </div>
                 </nav>
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                        close dropdown for branchwise MCQs section
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                        start dropdown for services section
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+                <!-- 
+        ============================================================================================================================================================
+                         close practice  dropdown menu
+        ============================================================================================================================================================ -->
+
+                <!-- 
+        ============================================================================================================================================================
+                         start Contact  dropdown menu
+        ============================================================================================================================================================ -->
+
                 <nav id="nav_services" class="dropdown-nav w3-hide-small navex" tabindex="-1"
                     aria-label="Services menu">
                     <div class="w3-content menu-content">
@@ -1345,22 +1380,19 @@
                                 </div>
 
                                 <!-- <div data-section="services" class="filter-input-wrapper">
-                                    <div class="filter-input-inner-wrapper">
-                                        <label for="filter-services-input" class="tnb-soft-hide">
-                                            Services filter input
-                                        </label>
-                                        <input id="filter-services-input"
-                                            oninput="TopNavBar.filter(event, 'nav_services')" type="text"
-                                            class="filter-input" placeholder="Filter..."
-                                            aria-label="Services filter bar" />
+                  <div class="filter-input-inner-wrapper">
+                    <label for="filter-services-input" class="tnb-soft-hide">
+                      Services filter input
+                    </label>
+                    <input id="filter-services-input" oninput="TopNavBar.filter(event, 'nav_services')" type="text"
+                      class="filter-input" placeholder="Filter..." aria-label="Services filter bar" />
 
-                                        <div class="filter-clear-btn tnb-button-dark-v2" role="button"
-                                            aria-label="Filter clear button"
-                                            onclick="TopNavBar.clearFilter(event, 'nav_services')">
-                                            <span>&times;</span>
-                                        </div>
-                                    </div>
-                                </div> -->
+                    <div class="filter-clear-btn tnb-button-dark-v2" role="button" aria-label="Filter clear button"
+                      onclick="TopNavBar.clearFilter(event, 'nav_services')">
+                      <span>&times;</span>
+                    </div>
+                  </div>
+                </div> -->
                             </div>
 
                             <div class="nav-heading-container w3-container">
@@ -1380,22 +1412,20 @@
                                 <h2 style="color: #fff4a3"><b>For Enqury E-Mail</b></h2>
                             </div>
                             <p class="tnb-services-headlines">
-                                <a href="mailto:apnaschool@gmail.com">ApnaSchool@gmail.com</a>
+                                <a href="mailto:apnaschool9758@gmail.com">ApnaSchool9758@gmail.com</a>
                             </p>
 
                             <!-- <div class="serviceboxes">
-                                <div class="servicebox" style="width: 100%;">
-                                    <a href="tutorials/index.php"
-                                        class="serviceslink ga-top-drop ga-top-drop-services-tut" title="Tutorials"
-                                        aria-label="Free tutorials">
-                                        <div class="w3-padding services w3-round">
-                                            <h4>E mail</h4>
-                                            <p>Enjoy our free tutorials like millions of other internet users since 1999
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div> -->
+                <div class="servicebox" style="width: 100%;">
+                  <a href="tutorials/index.php" class="serviceslink ga-top-drop ga-top-drop-services-tut"
+                    title="Tutorials" aria-label="Free tutorials">
+                    <div class="w3-padding services w3-round">
+                      <h4>E mail</h4>
+                      <p>Enjoy our free tutorials like millions of other internet users since 1999</p>
+                    </div>
+                  </a>
+                </div>                              
+              </div> -->
 
                             <div class="w3-button tnb-close-nav-btn w3-round" tabindex="0"
                                 onclick="TopNavBar.closeNavItem('services')"
@@ -1406,9 +1436,6 @@
                         </div>
                     </div>
                 </nav>
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                                        close dropdown for services section
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
             </div>
         </div>
         <div id="googleSearch">
@@ -1419,9 +1446,6 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTCFC3S" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                        start sub navigation bar
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
     <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
         onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
         <div id="scroll_left_btn" class="w3-hide-medium w3-hide-small">
@@ -1429,55 +1453,60 @@
                 onmouseout="stopscrollmenow()">&nbsp;&nbsp;&nbsp;&#10094;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
         </div>
         <div id="menubtn_container">
-            <span>
+            <!-- <span>
                 <a href='javascript:void(0);'
                     class='topnav-icons fa fa-menu w3-hide-large w3-hide-medium w3-hide-small w3-left w3-bar-item w3-button ga-nav'
-                    style="line-height:1.1;padding-top:3px!important;" onclick='open_menu()' title='Menu'>
-                </a>
+                    style="line-height:1.1;padding-top:3px!important;" onclick='open_menu()' title='Menu'></a>
+            </span> -->
+            <span>
+                <a href="javascript:void(0);"
+                    class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav"
+                    style="line-height:1.1;padding-top:8px!important;padding-bottom:8px!important; background-color:#0202e1 !important;"
+                    onclick="open_menu()" title="Menu"></a>
             </span>
         </div>
-        <a href="tutorials/html/default.html" class="ga-nav subtopnav_firstitem" style="margin: 0 !important;"
+        <a href="../html/default.html" class="ga-nav subtopnav_firstitem current_active"
             title="HTML Tutorial">HTML</a>
-        <a href="tutorials/css/default.html" class="ga-nav" title="CSS Tutorial">CSS</a>
-        <a href="tutorials/js/default.html" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
-        <a href="tutorials/sql/default.html" class="ga-nav" title="SQL Tutorial">SQL</a>
-        <a href="tutorials/python/default.html" class="ga-nav" title="Python Tutorial">PYTHON</a>
-        <a href="tutorials/java/default.html" class="ga-nav" title="Java Tutorial">JAVA</a>
-        <a href="tutorials/php/default.html" class="ga-nav" title="PHP Tutorial">PHP</a>
-        <a href="tutorials/howto/default.html" class="ga-nav" title="How to">HOW TO</a>
-        <a href="tutorials/w3css/default.html" class="ga-nav" title="W3.CSS Tutorial">W3.CSS</a>
-        <a href="tutorials/c/index.php" class="ga-nav" title="C Tutorial">C</a>
-        <a href="tutorials/cpp/default.html" class="ga-nav" title="C++ Tutorial">C++</a>
-        <a href="tutorials/cs/index.php" class="ga-nav" title="C# Tutorial">C#</a>
-        <a href="tutorials/bootstrap/bootstrap_ver.html" class="ga-nav" title="Bootstrap Tutorial">BOOTSTRAP</a>
-        <a href="tutorials/react/default.html" class="ga-nav" title="React Tutorial">REACT</a>
-        <a href="tutorials/mysql/default.html" class="ga-nav" title="MySQL Tutorial">MYSQL</a>
-        <a href="tutorials/jquery/default.html" class="ga-nav" title="JQuery Tutorial">JQUERY</a>
-        <a href="tutorials/excel/index.php" class="ga-nav" title="Excel Tutorial">EXCEL</a>
-        <a href="tutorials/xml/default.html" class="ga-nav" title="XML Tutorial">XML</a>
-        <a href="tutorials/django/index.php" class="ga-nav" title="Django Tutorial">DJANGO</a>
-        <a href="tutorials/python/numpy/default.html" class="ga-nav" title="NumPy Tutorial">NUMPY</a>
-        <a href="tutorials/python/pandas/default.html" class="ga-nav" title="Pandas Tutorial">PANDAS</a>
-        <a href="tutorials/nodejs/default.html" class="ga-nav" title="Node.js Tutorial">NODEJS</a>
-        <a href="tutorials/r/default.html" class="ga-nav" title="R Tutorial">R</a>
-        <a href="tutorials/typescript/index.php" class="ga-nav" title="TypeScript Tutorial">TYPESCRIPT</a>
-        <a href="tutorials/angular/default.html" class="ga-nav" title="Angular.js Tutorial">ANGULAR</a>
-        <a href="vgit/default.html" class="ga-nav" title="Git Tutorial">GIT</a>
-        <a href="tutorials/postgresql/index.php" class="ga-nav" title="PostgreSQL Tutorial">POSTGRESQL</a>
-        <a href="mongodb/index.php" class="ga-nav" title="MongoDB Tutorial">MONGODB</a>
-        <a href="tutorials/html/default.html" class="ga-nav" title="html Tutorial">html</a>
-        <a href="tutorials/ai/default.html" class="ga-nav" title="A.I. Tutorial">AI</a>
-        <a href="tutorials/go/index.php" class="ga-nav" title="Go Tutorial">GO</a>
-        <a href="tutorials/kotlin/index.php" class="ga-nav" title="Kotlin Tutorial">KOTLIN</a>
-        <a href="tutorials/sass/default.html" class="ga-nav" title="Sass Tutorial">SASS</a>
-        <a href="tutorials/vue/index.php" class="ga-nav" title="Vue.js Tutorial">VUE</a>
-        <a href="tutorials/dsa/index.php" class="ga-nav" title="DSA Tutorial">DSA</a>
-        <a href="tutorials/gen_ai/index.php" class="ga-nav" title="Gen A.I. Tutorial">GEN AI</a>
-        <a href="tutorials/python/scipy/index.php" class="ga-nav" title="SciPy Tutorial">SCIPY</a>
-        <a href="tutorials/aws/index.php" class="ga-nav" title="AWS Tutorial">AWS</a>
-        <a href="tutorials/cybersecurity/index.php" class="ga-nav" title="Cyber security Tutorial">CYBERSECURITY</a>
-        <a href="tutorials/datascience/default.html" class="ga-nav" title="Data science Tutorial">DATA SCIENCE</a>
-        <a href="tutorials/javascript:void(0)" style="width:50px;visibility:hidden;"></a>
+        <a href="../css/default.html" class="ga-nav" title="CSS Tutorial">CSS</a>
+        <a href="../js/default.html" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
+        <a href="../sql/default.html" class="ga-nav" title="SQL Tutorial">SQL</a>
+        <a href="../python/default.html" class="ga-nav" title="Python Tutorial">PYTHON</a>
+        <a href="../java/default.html" class="ga-nav" title="Java Tutorial">JAVA</a>
+        <a href="../php/default.html" class="ga-nav" title="PHP Tutorial">PHP</a>
+        <a href="../howto/default.html" class="ga-nav" title="How to">HOW TO</a>
+        <a href="../w3css/default.html" class="ga-nav" title="W3.CSS Tutorial">W3.CSS</a>
+        <a href="../c/index.php" class="ga-nav" title="C Tutorial">C</a>
+        <a href="../cpp/default.html" class="ga-nav" title="C++ Tutorial">C++</a>
+        <a href="../cs/index.php" class="ga-nav" title="C# Tutorial">C#</a>
+        <a href="../bootstrap/bootstrap_ver.html" class="ga-nav" title="Bootstrap Tutorial">BOOTSTRAP</a>
+        <a href="../react/default.html" class="ga-nav" title="React Tutorial">REACT</a>
+        <a href="../mysql/default.html" class="ga-nav" title="MySQL Tutorial">MYSQL</a>
+        <a href="../jquery/default.html" class="ga-nav" title="JQuery Tutorial">JQUERY</a>
+        <a href="../excel/index.php" class="ga-nav" title="Excel Tutorial">EXCEL</a>
+        <a href="../xml/default.html" class="ga-nav" title="XML Tutorial">XML</a>
+        <a href="../django/index.php" class="ga-nav" title="Django Tutorial">DJANGO</a>
+        <a href="../python/numpy/default.html" class="ga-nav" title="NumPy Tutorial">NUMPY</a>
+        <a href="../python/pandas/default.html" class="ga-nav" title="Pandas Tutorial">PANDAS</a>
+        <a href="../nodejs/default.html" class="ga-nav" title="Node.js Tutorial">NODEJS</a>
+        <a href="../r/default.html" class="ga-nav" title="R Tutorial">R</a>
+        <a href="../typescript/index.php" class="ga-nav" title="TypeScript Tutorial">TYPESCRIPT</a>
+        <a href="../angular/default.html" class="ga-nav" title="Angular.js Tutorial">ANGULAR</a>
+        <a href="../git/default.html" class="ga-nav" title="Git Tutorial">GIT</a>
+        <a href="../postgresql/index.php" class="ga-nav" title="PostgreSQL Tutorial">POSTGRESQL</a>
+        <a href="../mongodb/index.php" class="ga-nav" title="MongoDB Tutorial">MONGODB</a>
+        <a href="../html/default.html" class="ga-nav" title="html Tutorial">html</a>
+        <a href="../ai/default.html" class="ga-nav" title="A.I. Tutorial">AI</a>
+        <a href="../go/index.php" class="ga-nav" title="Go Tutorial">GO</a>
+        <a href="../kotlin/index.php" class="ga-nav" title="Kotlin Tutorial">KOTLIN</a>
+        <a href="../sass/default.html" class="ga-nav" title="Sass Tutorial">SASS</a>
+        <a href="../vue/index.php" class="ga-nav" title="Vue.js Tutorial">VUE</a>
+        <a href="../dsa/index.php" class="ga-nav" title="DSA Tutorial">DSA</a>
+        <a href="../gen_ai/index.php" class="ga-nav" title="Gen A.I. Tutorial">GEN AI</a>
+        <a href="../python/scipy/index.php" class="ga-nav" title="SciPy Tutorial">SCIPY</a>
+        <a href="../aws/index.php" class="ga-nav" title="AWS Tutorial">AWS</a>
+        <a href="../cybersecurity/index.php" class="ga-nav" title="Cyber security Tutorial">CYBERSECURITY</a>
+        <a href="../datascience/default.html" class="ga-nav" title="Data science Tutorial">DATA SCIENCE</a>
+        <a href="javascript:void(0)" style="width:50px;visibility:hidden;"></a>
         <div id="btn_container_subtopnav">
             <div id="scroll_right_btn" class="w3-hide-medium w3-hide-small">
                 <span onmousedown="scrollmenow(1)" onmouseup="stopscrollmenow()"
@@ -1485,735 +1514,471 @@
             </div>
         </div>
     </div>
-    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                        close sub navigation bar
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                    start   body/content section
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-    <div class='w3-main w3-light-grey' id='belowtopnav'>
+    <script>
+        subtopnav_intoview();
+    </script>
+
+    <!---========================================================================================================================
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+=============================================================================================================================-->
+
+    <div class='w3-sidebar w3-collapse' id='sidenav'>
+        <div id='leftmenuinner'>
+            <div id='leftmenuinnerinner'>
+                <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+                <a target="_top" class="current_active" href="default.html">HTML HOME</a>
+                <a target="_top" href="html_intro.html">HTML Introduction</a>
+                <a target="_top" href="html_editors.html">HTML Editors</a>
+                <a target="_top" href="html_basic.html">HTML Basic</a>
+                <a target="_top" href="html_elements.html">HTML Elements</a>
+                <a target="_top" href="html_attributes.html">HTML Attributes</a>
+                <a target="_top" href="html_headings.html">HTML Headings</a>
+                <a target="_top" href="html_paragraphs.html">HTML Paragraphs</a>
+                <a target="_top" href="html_styles.html">HTML Styles</a>
+                <a target="_top" href="html_formatting.html">HTML Formatting</a>
+                <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
+                <a target="_top" href="html_comments.html">HTML Comments</a>
+                <a target="_top" href="html_colors.html">HTML Colors</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_colors.html">Colors</a>
+                    <a target="_top" href="html_colors_rgb.html">RGB</a>
+                    <a target="_top" href="html_colors_hex.html">HEX</a>
+                    <a target="_top" href="html_colors_hsl.html">HSL</a>
+                </div>
+                <a target="_top" href="html_css.html">HTML CSS</a>
+                <a target="_top" href="html_links.html">HTML Links</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_links.html">Links</a>
+                    <a target="_top" href="html_links_colors.html">Link Colors</a>
+                    <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
+                </div>
+                <a target="_top" href="html_images.html">HTML Images</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_images.html">Images</a>
+                    <a target="_top" href="html_images_imagemap.html">Image Map</a>
+                    <a target="_top" href="html_images_background.html">Background Images</a>
+                    <a target="_top" href="html_images_picture.html">The Picture Element</a>
+                </div>
+                <a target="_top" href="html_favicon.html">HTML Favicon</a>
+                <a target="_top" href="html_page_title.html">HTML Page Title</a>
+                <a target="_top" href="html_tables.html">HTML Tables</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_tables.html">HTML Tables</a>
+                    <a target="_top" href="html_table_borders.html">Table Borders</a>
+                    <a target="_top" href="html_table_sizes.html">Table Sizes</a>
+                    <a target="_top" href="html_table_headers.html">Table Headers</a>
+                    <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
+                    <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
+                    <a target="_top" href="html_table_styling.html">Table Styling</a>
+                    <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
+                </div>
+                <a target="_top" href="html_lists.html">HTML Lists</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_lists.html">Lists</a>
+                    <a target="_top" href="html_lists_unordered.html">Unordered Lists</a>
+                    <a target="_top" href="html_lists_ordered.html">Ordered Lists</a>
+                    <a target="_top" href="html_lists_other.html">Other Lists</a>
+                </div>
+                <a target="_top" href="html_blocks.html">HTML Block &amp; Inline</a>
+                <a target="_top" href="html_div.html">HTML Div</a>
+                <a target="_top" href="html_classes.html">HTML Classes</a>
+                <a target="_top" href="html_id.html">HTML Id</a>
+                <a target="_top" href="html_iframe.html">HTML Iframes</a>
+                <a target="_top" href="html_scripts.html">HTML JavaScript</a>
+                <a target="_top" href="html_filepaths.html">HTML File Paths</a>
+                <a target="_top" href="html_head.html">HTML Head</a>
+                <a target="_top" href="html_layout.html">HTML Layout</a>
+                <a target="_top" href="html_responsive.html">HTML Responsive</a>
+                <a target="_top" href="html_computercode_elements.html">HTML Computercode</a>
+                <a target="_top" href="html5_semantic_elements.html">HTML Semantics</a>
+                <a target="_top" href="html5_syntax.html">HTML Style Guide</a>
+                <a target="_top" href="html_entities.html">HTML Entities</a>
+                <a target="_top" href="html_symbols.html">HTML Symbols</a>
+                <a target="_top" href="html_emojis.html">HTML Emojis</a>
+                <a target="_top" href="html_charset.html">HTML Charsets</a>
+                <a target="_top" href="html_urlencode.html">HTML URL Encode</a>
+                <a target="_top" href="html_xhtml.html" class="not-wired">HTML vs. XHTML</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+                <a target="_top" href="html_forms.html">HTML Forms</a>
+                <a target="_top" href="html_forms_attributes.html">HTML Form Attributes</a>
+                <a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+                <a target="_top" href="html_form_input_types.html">HTML Input Types</a>
+                <a target="_top" href="html_form_attributes.html">HTML Input Attributes</a>
+                <a target="_top" href="html_form_attributes_form.html" class="not-wired">Input Form Attributes</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+                <a target="_top" href="html5_canvas.html">HTML Canvas</a>
+                <a target="_top" href="html5_svg.html" class="not-wired">HTML SVG</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+                <a target="_top" href="html_media.html">HTML Media</a>
+                <a target="_top" href="html5_video.html">HTML Video</a>
+                <a target="_top" href="html5_audio.html">HTML Audio</a>
+                <a target="_top" href="html_object.html">HTML Plug-ins</a>
+                <a target="_top" href="html_youtube.html" class="not-wired">HTML YouTube</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+                <a target="_top" href="html5_geolocation.html">HTML Geolocation</a>
+                <a target="_top" href="html5_draganddrop.html">HTML Drag/Drop</a>
+                <a target="_top" href="html5_webstorage.html">HTML Web Storage</a>
+                <a target="_top" href="html5_webworkers.html">HTML Web Workers</a>
+                <a target="_top" href="html5_serversentevents.html" class="not-wired">HTML SSE</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+                <a target="_top" class="no-checkmark" href="html_examples.html">HTML Examples</a>
+                <a target="_top" class="no-checkmark" href="html_editor.html">HTML Editor</a>
+                <a target="_top" class="no-checkmark" href="html_quiz.html">HTML Quiz</a>
+                <a target="_top" class="no-checkmark" href="html_exercises.html">HTML Exercises</a>
+                <a target="_top" class="no-checkmark" href="html_website.html">HTML Website</a>
+                <a target="_top" class="no-checkmark" href="html_interview_prep.html">HTML Interview Prep</a>
+                <a target="_top" class="no-checkmark" href="html_bootcamp.html">HTML Bootcamp</a>
+                <a target="_top" class="no-checkmark" href="html_exam.html">HTML Certificate</a>
+                <a target="_top" class="no-checkmark" href="html_summary.html">HTML Summary</a>
+                <a target="_top" class="no-checkmark not-wired" href="html_accessibility.html">HTML Accessibility</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+                <a target="_top" class="no-checkmark not-wired" href="tags/default.html">HTML Tag List</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_attributes.html">HTML Attributes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_standardattributes.html">HTML Global
+                    Attributes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_html_browsersupport.html">HTML Browser
+                    Support</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_eventattributes.html">HTML Events</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_colornames.html">HTML Colors</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_canvas.html">HTML Canvas</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_av_dom.html">HTML Audio/Video</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_html_dtd.html">HTML Doctypes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_charactersets.html">HTML Character
+                    Sets</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_urlencode.html">HTML URL Encode</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_language_codes.html">HTML Lang Codes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_httpmessages.html">HTTP Messages</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_httpmethods.html">HTTP Methods</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_pxtoemconversion.html">PX to EM
+                    Converter</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_keyboardshortcuts.html">Keyboard
+                    Shortcuts</a>
+
+
+
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:250px;'>
         <div class='w3-row w3-white'>
-            <div class='w3-col l12 m12' id='main'>
-                <div class="ws-black w3-center herosection">
-                    <div class="w3-content learntocodecontent">
-                        <h1 class="learntocodeh1">Learn & Become Developer </h1>
-                        <h3 class="learntocodeh3" style="color: #80f700;">
-                            <i class="fa fa-logo w3-hide"
-                                style="color:#FFC0C7!important;margin-right:20px;z-index:1;font-size:36px!important;vertical-align:bottom"></i>
-                            With the ApnaSchool Website.
-                        </h3>
-                        <br>
-
-                        <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
-                            <input type="text" placeholder="Sometihng Search Here..., e.g HTML" id="search2"
-                                class="ga-fp" autocomplete="off" onkeydown="key_pressed_in_search(event)"
-                                oninput="find_search_results(this)" onfocus="find_search_results(this)">
-                            <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i
-                                    id="learntocode_searchicon" class="fa fa-search ga-fp"></i></button>
-                            <div id="listofsearchresults">
-                            </div>
-                        </form>
-
-                    </div>
+            <div class='w3-col l10 m12' id='main'>
+                <div id='mainLeaderboard' style='overflow:hidden;'>
+                    <div id="adngin-main_leaderboard-0"></div>
                 </div>
 
-                <svg style="background-color:#e8f147;" width="100%" height="70" viewbox="0 0 100 100"
-                    preserveAspectRatio="none">
-                    <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#0202e1" />
-                </svg>
-                <div class="w3-row w3-padding-32 ws-light-green" style="margin-top:-10px;">
-                    <div class="w3-content">
-
-                        <div class="w3-col l6 w3-center" style="padding:3%;">
-                            <h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;">HTML</h1>
-                            <p style="font-size:19px;">The language for building web pages</p>
-                            <a href="tutorials/html/default.html" class="w3-button ga-fp tut-button"
-                                style="margin-bottom:2px;">Learn HTML
-                            </a><br>
-                            <a style="position:relative;overflow:visible;margin-bottom:1px;"
-                                href="tutorials/html/html_reference.html"
-                                class="w3-button ga-fp ws-yellow tut-button ws-yellow-hover"
-                                title="HTML video tutorial">HTML Reference </a><br>
-                            <a href="#"
-                                class="w3-button ga-fp w3-block ref-button black-color">MCQs</a><br>
-                        </div>
-                        <div class="w3-col l6" style="padding:3%">
-                            <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px; background-color: #9ff147;">
-                                <h3>HTML Example:</h3>
-                                <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">!DOCTYPE</span><span style="color: red;"> html</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">html</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">head</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">title</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span>
-                                    Page Title
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">/title</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">body</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">h1</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span>
-                                    This is a heading
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">/h1</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>                                   
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">p</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span>
-                                    This is a paragraph
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">/p</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">/body</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                    <span style="color: rgb(0, 55, 255);">
-                                        &lt;</span><span style="color: brown;">/html</span><span style="color: rgb(34, 0, 255);">&gt;
-                                    </span><br>
-                                </div>
-                                <a href="run-code/examples/html-example.html" target="_blank" style="background-color: #0fd009;"
-                                    class="w3-button ga-fp tryit-button">
-                                    Run Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-row w3-padding-32 ws-yellow">
-                    <div class="w3-content">
-                        <div class="w3-col l6" style="padding:3%">
-                            <div class="w3-hide-small grey-color w3-card-2 w3-round" style="padding:16px; background-color: #e8f147;">
-                                <h3>CSS Example:</h3>
-                                <div class="w3-code cssHigh notranslate green-border">
-                                    body {<br>
-                                    &nbsp; background-color: lightblue;<br>}<br><br>
-                                    h1 {<br>
-                                    &nbsp; color: white;<br>
-                                    &nbsp; text-align: center;<br>}<br><br>p {<br>&nbsp; font-family: verdana;<br>}
-                                </div>
-                                <a href="run-code/examples/css_example.html" target="_blank" class="w3-button ga-fp tryit-button" style="background-color: #a6ad15;">
-                                    Run Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w3-col l6 w3-center" style="padding:3%">
-                        <h1 style="font-size:100px;font-weight:700">CSS</h1>
-                        <p style="font-size:19px;">The language for styling web pages</p>
-                        <a href="tutorials/css/default.html" class="w3-button ga-fp w3-block tut-button">Learn CSS</a><br>
-                        <a href="tutorials/css/css_reference.html" class="w3-button ga-fp w3-block ref-button black-color">CSS
-                            Reference</a><br>
-                        <a href="#" target="_blank"
-                            class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover">
-                            MCQs</a>
-                    </div>
+                <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="../../index.html">&#10094; Home</a>
+                    <a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
                 </div>
 
-                <div class="w3-row w3-padding-32 ws-black" style="background-color: #e10dc9;">
-                    <div class="w3-content">
-                        <div class="w3-col l6 w3-center" style="padding:3%">
-                            <h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important">JavaScript</h1>
-                            <p style="font-size:19px">The language for programming web pages</p>
-                            <a href="tutorials/javascript/default.html" class="w3-button ga-fp w3-block tut-button">Learn
-                                JavaScript</a><br>
-                            <a href="tutorials/javascript/javascript_reference.html" class="w3-button ga-fp w3-block ref-button">JavaScript
-                                Reference</a><br>
-                            <a href="#" target="_blank"
-                                class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover"
-                                title="Add JavaScript Certification">MCQs</a><br>
-                        </div>
-                        <div class="w3-col l6" style="padding:3%" >
-                            <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px; background-color: #f0e91b;">
-                                <h3>JavaScript Example:</h3>
-                                <div class="w3-code notranslate green-border">
-                                    <div class="htmlHigh">
-                                        &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br><br>
-                                        &lt;script&gt;<br>
-                                        function myFunction() {<br>
-                                        &nbsp; let x = document.getElementById(&quot;demo&quot;);<br>
-                                        &nbsp; x.style.fontSize = &quot;25px&quot;; <br>
-                                        &nbsp; x.style.color = &quot;red&quot;; <br>}<br>
-                                        &lt;/script&gt;
-                                    </div>
-                                </div>
-                                <a href="run-code/examples/javascript-example.html" target="_blank" style="background-color: #a49f1d;"
-                                    class="w3-button ga-fp tryit-button">
-                                Run Code</a>
-                            </div>
-                        </div>
+                <div class="w3-panel w3-info intro">
+                    <p>HTML is the standard markup language for Web pages.</p>
+                    <p>With HTML you can create your own Website.</p>
+                    <p>HTML is easy to learn - You will enjoy it!</p>
+                    <a class="w3-btn w3-margin-bottom" href="html_intro.html"
+                        style="font-size: 18px;padding-left:25px;padding-right:25px;font-family: 'Source Sans Pro', sans-serif;margin-top:6px;">Study
+                        our free HTML Tutorial &raquo;</a><br>
+                </div>
+                <hr>
+
+                <h2>Easy Learning with HTML &quot;Run Code&quot;</h2>
+                <p>With our &quot;Run Code&quot; editor, you can edit the HTML code and view the
+                    result:</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">!DOCTYPE</span><span style="color: red;"> html</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">html</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">head</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">title</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span>
+                        Page Title
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">/title</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">body</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">h1</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span>
+                        This is a heading
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">/h1</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>                                   
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">p</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span>
+                        This is a paragraph
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">/p</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">/body</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                        <span style="color: rgb(0, 55, 255);">
+                            &lt;</span><span style="color: brown;">/html</span><span style="color: rgb(34, 0, 255);">&gt;
+                        </span><br>
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/examples/html-example.html" target="_blank">Run
+                        Code
+                        &raquo;</a>
+                </div>
+                <p><strong>Click on the &quot;Run Code&quot; button to see how it works.</strong></p>
+                <hr>
+
+                <h2>HTML Examples</h2>
+                <p>In this HTML tutorial, you will find more than 200 examples. With our online
+                    &quot;Run Code&quot; editor, you can edit and test each example yourself!</p>
+                <p><a href="html_example.html" class="ws-btn ws-grey ws-hover-black">Go to HTML
+                        Examples!</a></p>
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <!-- MidContent -->
+                    <!-- <p class="adtext">Advertisement</p> -->
+
+                    <div id="adngin-mid_content-0"></div>
+
+                </div>
+                <hr>
+                <!-- <h2>HTML Exercises</h2>
+        <p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+        <form autocomplete="off" id="w3-exerciseform" action="exercise.html?filename=exercise_html_attributes1"
+          method="post" target="_blank">
+          <h2>Test Yourself With Exercises</h2>
+          <div class="exercisewindow">
+            <h2>Exercise:</h2>
+            <p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+            <div class="exerciseprecontainer">
+              &lt;p <input name="ex1" maxlength="5" style="width: 54px;">="About W3Schools"&gt;W3Schools is a web
+              developer's site.&lt;/p&gt;
+            </div>
+            <br>
+            <button type="submit" class="w3-btn w3-margin-bottom">Submit Answer &raquo;</button>
+            <p><a target="_blank" href="exercise.html?filename=exercise_html_attributes1">Start the Exercise</a></p>
+          </div>
+        </form> -->
+                <hr>
+                <!-- <h2>HTML Quiz Test</h2>
+        <p>Test your HTML skills with our HTML Quiz!</p>
+        <p><a href="html_quiz.html" class="ws-btn w3-blue">Start HTML Quiz!</a></p>
+        <hr>
+        <style>
+          #img_mylearning {
+            max-width: 100%;
+          }
+        </style>
+        <h2>My Learning</h2>
+
+        <p>Track your progress with the free "My Learning" program here at W3Schools.</p>
+        <p>Log in to your account, and start earning points!</p>
+        <p>This is an optional feature. You can study at W3Schools without using My Learning.</p> -->
+                <br>
+                <hr>
+
+                <h2>HTML References</h2>
+                <p>At ApnaSchool you will find complete references about HTML elements,
+                    attributes, events, color names, entities, character-sets, URL encoding,
+                    language codes, HTTP messages, browser support, and more:</p>
+
+                <div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px">
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/default.html">HTML Elements</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_html_browsersupport.html">Browser
+                            Support</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_attributes.html">Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_standardattributes.html">Global
+                            Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_eventattributes.html">Event
+                            Attributes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_colornames.html">Color Names</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_canvas.html">Canvas</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_av_dom.html">Audio/Video DOM</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_charactersets.html">Character Sets</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_urlencode.html">URL Encoding</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_language_codes.html">Language Codes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_country_codes.html">Country Codes</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_httpmessages.html">HTTP Messages</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_pxtoemconversion.html">Px to Em
+                            Converter</a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a class="bigbtn ws-grey ws-hover-black" href="tags/ref_keyboardshortcuts.html">Keyboard
+                            Shortcuts</a>
+                    </div>
+
+                </div>
+                <br>
+
+
+                <!-- <div class="w3-center ws-black htmlvidad w3-padding" style="border-radius:20px;">
+  <a href="https://www.w3schools.com/videos/index.php">
+    <img src="htmlvideoad2.png" style="max-width:100%;" title="html video tutorial">
+  </a>
+</div> -->
+
+
+                <br>
+                <br>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="../../index.html">&#10094; Home</a>
+                    <a class="w3-right w3-btn" href="html_intro.html">Next &#10095;</a>
+                </div>
+            </div>
+            <div class="w3-col l2 m12" id="right">
+                <div class="sidesection">
+                    <div id="skyscraper">
+                        <div id="adngin-sidebar_top-0"></div>
                     </div>
                 </div>
-
-                <div class="w3-row w3-padding-32 ws-light-pink" style="background-color: #f0e91b !important;">
-                    <div class="w3-content">
-                        <div class="w3-col l6" style="padding:3%">
-                            <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px; background-color: #e10dc9;">
-                                <h3>Python Example:</h3>
-                                <div class="w3-code jsHigh notranslate green-border" style="height:210px">
-                                    if 5 &gt; 2:<br>&nbsp; print("Five is greater than two!")
-                                </div>
-                                <a href="run-code/examples/python-example.py" target="_blank" class="w3-button ga-fp tryit-button" style="background-color: #900780;">
-                                    Run Code</a>
-                            </div>
-                        </div>
-                        <div class="w3-col l6 w3-center" style="padding:3%">
-                            <h1 style="font-weight:700">Python</h1>
-                            <p style="font-size:19px">A popular programming language</p>
-                            <a href="tutorials/python/default.py" class="w3-button ga-fp w3-block tut-button">Learn
-                                Python</a><br>
-                            <a href="tutorials/python/python_reference.html" class="w3-button ga-fp ref-button black-color">Python
-                                Reference</a><br>
-                            <a href="#" target="_blank"
-                                class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover"
-                                title="Add Python Certification">MCQs</a><br>
-                        </div>
-                    </div>
+                <div class="sidesection" style="margin-top:20px;margin-bottom:20px;">
+                    <a id="upperfeatureshowcaselink" class="ga-right ga-top-fullaccess-jan"
+                        href="https://campus.w3schools.com/products/w3schools-full-access-course" target="_blank">
+                        <picture id="upperfeatureshowcase">
+                            <!-- <source id="upperfeatureshowcase3001" srcset="/images/img_fullaccess_up_sep1_green_300.png"
+                media="(max-width: 990px)" style="border-radius: 5px;">
+              <source id="upperfeatureshowcase120" srcset="/images/img_fullaccess_up_sep1_green_120.png"
+                media="(max-width: 1260px)" style="border-radius: 5px;">
+              <source id="upperfeatureshowcase160" srcset="/images/img_fullaccess_up_sep1_green_160.png"
+                media="(max-width: 1700px)" style="border-radius: 5px;"> -->
+                            <!-- <img id="upperfeatureshowcase300" src="/images/img_fullaccess_up_sep1_green_300.png" alt="Get Certified"
+                style="width:auto;border-radius: 5px;"> -->
+                        </picture>
+                    </a>
                 </div>
 
-                <div class="w3-row w3-padding-32 ws-turquoise" style="background-color: aqua !important;">
-                    <div class="w3-content">
-                        <div class="w3-col l6 w3-center" style="padding:3%">
-                            <h1 style="font-weight:700">SQL</h1>
-                            <p style="font-size:19px">A language for accessing databases</p>
-                            <a href="tutorials/sql/default.html" class="w3-button ga-fp w3-block tut-button">Learn SQL</a><br>
-                            <a href="tutorials/sql/sql_reference.html" class="w3-button ga-fp ref-button black-color">SQL
-                                Reference</a><br>
-                            <a href="#" target="_blank"
-                                class="w3-button ga-fp w3-block ws-pink ref-button ws-pink-hover"
-                                title="Add SQL Certification">
-                                MCQs</a><br>
+                <!-- <div class="sidesection">
+          <div class="sharethis">
+            <a href="https://www.youtube.com/@w3schools" target="_blank" title="W3Schools on YouTube"><span
+                class="fa fa-youtube fa-2x ga-right w3-hover-text-red"></span></a>
+            <a href="https://www.linkedin.com/company/w3schools.com/" target="_blank"
+              title="W3Schools on LinkedIn"><span class="fa fa-linkedin-square fa-2x ga-right"></span></a>
+            <a href="https://discord.gg/6Z7UaRbUQM" target="_blank"
+              title='Join the W3schools community on Discord'><span class="fa fa-discord fa-2x ga-right"></span></a>
+            <a href="https://www.facebook.com/w3schoolscom/" target="_blank" title="W3Schools on Facebook"><span
+                class="fa fa-facebook-square fa-2x ga-right"></span></a>
+            <a href="https://www.instagram.com/w3schools.com_official/" target="_blank"
+              title="W3Schools on Instagram"><span class="fa fa-instagram fa-2x ga-right"></span></a>
+          </div>
+        </div> -->
 
-                        </div>
-                        <div class="w3-col l6" style="padding:3%">
-                            <div class="w3-hide-small w3-card-2 grey-color w3-round" style="padding:16px; background-color: #5df590;">
-                                <h3>SQL Example:</h3>
-                                <div class="w3-code sqlHigh notranslate green-border" style="height:210px">
-                                    SELECT * FROM Customers<br>
-                                    WHERE Country='Mexico';
-                                </div>
-                                <a href="run-code/examples/sql-example.html" target="_blank" class="w3-button ga-fp tryit-button" style="background-color: #079035;">
-                                    Run Code</a>
-                            </div>
-                        </div>
-                    </div>
+                <!--
+        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                        right sidebar
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+      -->
+                <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
+                    <div id="adngin-outstream-0"></div>
                 </div>
 
-                <div class="w3-row w3-padding-64 ws-black">
-                    <div style="max-width:1400px;margin:auto">
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="color:black;background-color:#FFC0C7;padding:24px">
-                                <h2 style="font-size:45px;font-weight:700">PHP</h2>
-                                <div style="height:70px;">
-                                    <h5 class="w3-text-dark-grey">A web server programming language</h5>
-                                </div>
-                                <a href="tutorials/php/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn PHP</a>
-                            </div>
 
+                <div id="stickypos" class="sidesection" style="text-align:center;position:sticky;top:50px;">
+                    <div id="stickyadcontainer">
+                        <div style="position:relative;margin:auto;">
+                            <div id="adngin-sidebar_sticky-0"></div>                          
                         </div>
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="background-color: #FFF4A3;color:black;padding:24px">
-                                <h2 style="font-size:45px;font-weight:700">jQuery</h2>
-                                <div style="height:70px;">
-                                    <h5 class="w3-text-dark-grey">A JS library for developing web pages</h5>
-                                </div>
-                                <a href="tutorials/jquery/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn
-                                    jQuery</a>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="color:black;background-color:#F3ECEA;padding:24px">
-                                <h2 style="font-size:45px;font-weight:700">Java</h2>
-                                <div style="height:70px;">
-                                    <h5 class="w3-text-dark-grey">A programming language</h5>
-                                </div>
-                                <a href="tutorials/java/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn
-                                    Java</a>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="color:black;background-color:#D9EEE1;padding:24px">
-                                <h2 style="font-size:45px;font-weight:700">C++</h2>
-                                <div style="height:70px;">
-                                    <h5 class="w3-text-dark-grey">A programming language</h5>
-                                </div>
-                                <a href="tutorials/cpp/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn C++</a>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="color:black;background-color:#96D4D4;padding:24px;">
-                                <h2 style="font-size:45px;font-weight:700">W3.CSS</h2>
-                                <div style="height:70px;">
-                                    <h5>A CSS framework for faster and better responsive web pages</h5>
-                                </div>
-                                <a href="tutorials/w3css/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn
-                                    W3.CSS</a>
-                            </div>
-                        </div>
-
-                        <div class="w3-col l6 w3-center" style="padding:2% 3%;">
-                            <div class="w3-card-2 w3-round" style="color:black;background-color:#E7E9EB;padding:24px;">
-                                <h2 style="font-size:45px;font-weight:700">Bootstrap</h2>
-                                <div style="height:70px;">
-                                    <h5 class="w3-text-dark-grey">A CSS framework for designing better web pages</h5>
-                                </div>
-                                <a href="tutorials/bootstrap/default.html"
-                                    class="w3-button ga-fp tut-button black-color w3-margin-bottom">Learn Bootstrap</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w3-row ws-black tutbuttons" style="padding-bottom:64px;">
-                    <div style="max-width:1400px;margin:auto">
-                        <!-- <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="c/index.php" title="C Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:36px 24px">
-                                    <h2 style="font-size:30px;font-weight:500">C</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="cs/index.php" title="C# Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:36px 24px">
-                                    <h2 style="font-size:30px;font-weight:500">C#</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="r/default.html" title="R Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">R</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="kotlin/index.php" title="Kotlin Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px 15px">
-                                    <h2 style="font-size:30px;font-weight:500">Kotlin</h2>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="nodejs/default.html" title="Node.js Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Node.js</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="react/default.html" title="React Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">React</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="js/js_json.html" title="JSON Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">JSON</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="vue/index.php" title="Vue Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Vue</h2>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="mysql/default.html" title="MySQL Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">MySQL</h2>
-                                </div>
-                            </a>
-                        </div> -->
-                        <!-- <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="w3js/default.html" title="W3.JS Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">W3.JS</h2>
-                                </div>
-                            </a>
-                        </div> -->
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/xml/default.html" title="XML Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">XML</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/sass/default.php" title="Sass Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Sass</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/icons/default.html" title="Icons Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Icons</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/css/css_rwd_intro.html" title="Responsive Web Design Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">RWD</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/graphics/default.html" title="Graphics Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Graphics</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/graphics/svg/svg_intro.html" title="SVG Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">SVG</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/graphics/canvas/canvas_intro.html" title="Canvas Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Canvas</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/nodejs/rhtmlberrypi/nodejs_rhtmlberrypi.html" title="Rhtmlberry Pi Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">Rhtmlberry Pi</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/cybersecurity/index.php" title="Cyber Security Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">Cyber<span class="ws-hide-special">
-                                            Security</span></h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/colors/default.html" title="Colors Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Colors</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/git/default.html" title="Git Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Git</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/python/matplotlib/matplotlib_intro.html" title="Python Matplotlib Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Matplotlib</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/python/numpy/numpy/default.html" title="Python NumPy Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">NumPy</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/python/pandas/pandas/default.html" title="Python Pandas Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Pandas</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/python/scipy/index.php" title="Python SciPy Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">SciPy</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/html/default.html" title="html Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">html</h2>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/angular/default.html" title="AngularJS Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/appml/default.html" title="AppML Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">AppML</h2>
-                                </div>
-                            </a>
-                        </div>
-
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/go/index.php" title="Go Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Go</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/typescript/index.php" title="TypeScript Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">TypeScript</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/django/index.php" title="Django Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Django</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/mongodb/index.php" title="MongoDB Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">MongoDB</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/statistics/index.php" title="Statistics Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Statistics</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/datascience/default.html" title="Data Science Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink"
-                                    style="padding:24px;padding-left:0;padding-right:0">
-                                    <h2 style="font-size:30px;font-weight:500;white-space:nowrap;">Data Science</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/typingspeed/default.html" title="Graphics Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green"
-                                    style="padding:24px;padding-left:0;padding-right:0">
-                                    <h2 style="font-size:30px;font-weight:500;white-space:nowrap">Typing Speed</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/howto/default.html" title="How To - Code snippets" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">HowTo</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/codegame/index.html" title="Code Game" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">Code Game</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/spaces/index.php" title="Spaces - free web hosting" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">Spaces</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="tutorials/postgresql/index.php" title="PostgrSQL Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">PostgreSQL</h2>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="dsa.html" title="PostgrSQL Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-green" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">DSA</h2>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="postgresql/index.php" title="PostgrSQL Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">All MCQs</h2>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="w3-col l3 m6 s12 w3-center" style="padding:2% 3%;">
-                            <a href="postgresql/index.php" title="PostgrSQL Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">Theory Questions</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- End small boxes -->
-
-                        <!-- other boxes -->
-                        <!-- <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="excel/index.php" title="Excel Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-turquoise" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Excel</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="dsa/index.php" title="DSA Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-yellow" style="padding:24px 0">
-                                    <h2 style="font-size:30px;font-weight:500">DSA - D<span style="font-size:80%">ata
-                                        </span>S<span style="font-size:80%">tructures and </span>A<span
-                                            style="font-size:80%">lgorithms</span></h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="python/python_ml_getting_started.html" title="Machine Learning Tutorial"
-                                class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Machine Learning</h2>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="w3-col l6 s12 w3-center" style="padding:2% 3%;height:auto;">
-                            <a href="ai/default.html" title="Artificial Intelligence Tutorial" class="ga-fp">
-                                <div class="w3-card-2 w3-round ws-light-pink" style="padding:24px">
-                                    <h2 style="font-size:30px;font-weight:500">Artificial Intelligence</h2>
-                                </div>
-                            </a>
-                        </div> -->
-
-                    </div>
-                </div>
-
-                <!-- <div class="w3-center w3-padding-64 ws-black"
-                    style="padding-left:20px;background-color:#0e135e; color:white">
-                    <h2 style="font-size:65px;font-weight:700">Questions and Answers</h2>
-                    <h4>Grow your knowledge with our <b>One Million+ MCQs Questions</b> and <b>Theory Questions</b></h4>
-                    <br>
-                </div> -->
-                <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                    footer start
-                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-                <div class="foohero">
-                    <div class="top_header">
-                        <section>
-                            <span><i class="fa fa-map-marker"></i></span>
-                            <span>Aligarh, Uttar Pradesh, INDIA, 2021907</span>
-                        </section>
-                        <section>
-                            <span><i class="fa fa-phone"></i></span>
-                            <span>(+91) 9758XXX00</span>
-                        </section>
-                        <section>
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span>apnaschool9758@gmail.com</span>
-                        </section>
-                    </div>
-                    <span class="border-shape"></span>
-                    <div class="bottom_content">
-                        <!-- <section>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-telegram"></i></a>
-                        </section> -->
-                        <section>
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About us</a>
-                            <a href="">Terms</a>
-                            <a href="">Privacy</a>
-                            <a href="">Policy</a>
-                            <a href="about.html">Contact Us</a>
-                        </section>
-                    </div>
-                    <div class="copyright" id="copyright">
-                        Copyright © 2024-2025 websitename - All rights reserved
                     </div>
                 </div>
             </div>
         </div>
+        <div class="foohero">
+            <div class="top_header">
+                <section>
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span>Aligarh, Uttar Pradesh, INDIA, 2021907</span>
+                </section>
+                <section>
+                    <span><i class="fa fa-phone"></i></span>
+                    <span>(+91) 9758XXX00</span>
+                </section>
+                <section>
+                    <span><i class="fa fa-envelope"></i></span>
+                    <span>apnaschool9758@gmail.com</span>
+                </section>
+            </div>
+            <span class="border-shape"></span>
+            <div class="bottom_content">
+                <!-- <section>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-telegram"></i></a>
+          </section> -->
+                <section>
+                    <a href="../index.html">Home</a>
+                    <a href="../about.html">About us</a>
+                    <a href="">Terms</a>
+                    <a href="">Privacy</a>
+                    <a href="">Policy</a>
+                    <a href="../about.html">Contact Us</a>
+                </section>
+            </div>
+            <div class="copyright" id="copyright">
+                Copyright © 2024-2025 websitename - All rights reserved
+            </div>
+        </div>
     </div>
-    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-                    close   body/content section
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-    <script src="lib/topnav/main.js"></script>
-    <script src="lib/w3schools32.css"></script>
-    <script src="lib/all_page_js.js"></script>
+
+    <script src="../../lib/all_page_js.js"></script>
+    <script src="../../lib/w3schools_footer.js"></script>
+    <script src="../../lib/topnav/main.js"></script>
 </body>
 
 </html>

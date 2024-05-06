@@ -156,7 +156,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button
+  -webkit-appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -204,7 +204,7 @@ textarea {
 
 [type=search] {
   -webkit-appearance: textfield;
-  outline-offset: -2px
+  outline-offset: -2px;
 }
 
 [type=search]::-webkit-search-decoration {
@@ -2315,7 +2315,7 @@ a.topnav-localicons {
 }
 
 #sidenav a.active {
-  background-color:  #0202e1 !important;
+  /* background-color:  0202e1 !important; */
   color: #ffffff !important;
 }
 
@@ -4967,7 +4967,7 @@ a.topnav-icons {
   color: #fff !important;
 }
 .ws-yellow {
-  background-color: #FFF4A3 !important;
+  background-color: #9ff147 !important;
   color: black !important;
 }
 
@@ -4995,7 +4995,7 @@ a.topnav-icons {
 }
 
 .ws-light-green {
-  background-color: #D9EEE1 !important;
+  background-color: #e8f147 !important;
   color: black !important;
 }
 
