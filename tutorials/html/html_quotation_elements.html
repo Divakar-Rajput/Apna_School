@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Headings Tutorial</title>
+    <title>HTML Quotations Tutorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1534,11 +1534,11 @@
                 <a target="_top" href="html_basic.html">HTML Basic</a>
                 <a target="_top" href="html_elements.html">HTML Elements</a>
                 <a target="_top" href="html_attributes.html">HTML Attributes</a>
-                <a target="_top" class="current_active" href="html_headings.html">HTML Headings</a>
+                <a target="_top" href="html_headings.html">HTML Headings</a>
                 <a target="_top" href="html_paragraphs.html">HTML Paragraphs</a>
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
-                <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
+                <a target="_top" class="current_active" href="html_quotation_elements.html">HTML Quotations</a>
                 <a target="_top" href="html_comments.html">HTML Comments</a>
                 <a target="_top" href="html_colors.html">HTML Colors</a>
                 <div class="tut_overview">
@@ -1674,10 +1674,11 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Headings</span></h1>
+                <h1>HTML<span class="color_h1"> Quotation and Citation Elements
+                    </span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_attributes.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_paragraphs.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_formatting.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_comments.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,124 +1688,177 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                <p class="intro">In this chapter we will go through the
+                    <code class="w3-codespan">&lt;blockquote&gt;</code>,<code class="w3-codespan">&lt;q&gt;</code>,
+                    <code class="w3-codespan">&lt;abbr&gt;</code>, <code class="w3-codespan">&lt;address&gt;</code>,
+                    <code class="w3-codespan">&lt;cite&gt;</code>,
+                    and <code class="w3-codespan">&lt;bdo&gt;</code> HTML elements.
+                </p>
                 <hr>
 
                 <div class="w3-example">
                     <h3>Example</h3>
                     <div class="w3-white w3-padding notranslate">
-                        <h1>Heading 1</h1>
-                        <h2>Heading 2</h2>
-                        <h3>Heading 3</h3>
-                        <h4>Heading 4</h4>
-                        <h5>Heading 5</h5>
-                        <h6>Heading 6</h6>
+                        <p>Here is a quote from WWF's website:</p>
+                        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                            For 60 years, WWF has worked to help people and nature thrive. As the world's
+                            leading conservation organization, WWF works in nearly 100 countries. At every
+                            level, we collaborate with people around the world to develop and deliver
+                            innovative solutions that protect communities, wildlife, and the places in
+                            which they live.</blockquote>
                     </div>
-                    <a class="w3-btn w3-margin-top w3-margin-bottom" href="../../run-code/code-html/html_basic_headings.html"
-                        target="_blank">Run Code &raquo;</a>
+                    <a class="w3-btn w3-margin-top w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_intro2"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
-
                 <hr>
-                <h2>HTML Headings</h2>
-                <p>HTML headings are defined with the <code class="w3-codespan">&lt;h1&gt;</code> to <code
-                        class="w3-codespan">&lt;h6&gt;</code> tags.</p>
-                <p><code class="w3-codespan">&lt;h1&gt;</code> defines the most important heading. <code
-                        class="w3-codespan">&lt;h6&gt;</code> defines the least important heading.</p>
+
+                <h2>HTML &lt;blockquote&gt; for Quotations</h2>
+                <p>The HTML <code class="w3-codespan">&lt;blockquote&gt;</code> element defines a section that
+                    is quoted from another source.</p>
+                <p>Browsers usually indent <code class="w3-codespan">&lt;blockquote&gt;</code> elements.</p>
                 <div class="w3-example">
                     <h3>Example</h3>
                     <div class="w3-code notranslate htmlHigh">
-                       <span style="color: brown;">
-                          <span style="color: blue;">&lt;</span>h1<span style="color: blue;">&gt;</span> Heading 1<span style="color: blue;">&lt;</span>/h1<span style="color: blue;">&gt;</span>
-                       </span><br>
-                       <span style="color: brown;">
-                        <span style="color: blue;">&lt;</span>h2<span style="color: blue;">&gt;</span> Heading 2<span style="color: blue;">&lt;</span>/h2<span style="color: blue;">&gt;</span>
-                      </span><br>
-                      <span style="color: brown;">
-                        <span style="color: blue;">&lt;</span>h3<span style="color: blue;">&gt;</span> Heading 3<span style="color: blue;">&lt;</span>/h3<span style="color: blue;">&gt;</span>
-                     </span><br>
-                     <span style="color: brown;">
-                        <span style="color: blue;">&lt;</span>h4<span style="color: blue;">&gt;</span> Heading 4<span style="color: blue;">&lt;</span>/h4<span style="color: blue;">&gt;</span>
-                     </span><br>
-                     <span style="color: brown;">
-                        <span style="color: blue;">&lt;</span>h5<span style="color: blue;">&gt;</span> Heading 5<span style="color: blue;">&lt;</span>/h5<span style="color: blue;">&gt;</span>
-                     </span><br>
-                     <span style="color: brown;">
-                        <span style="color: blue;">&lt;</span>h6<span style="color: blue;">&gt;</span> Heading 6<span style="color: blue;">&lt;</span>/h6<span style="color: blue;">&gt;</span>
-                     </span>
-                    </div>
-                        
-                    <a target="_blank" href="../../run-code/code-html/html_basic_headings.html" class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
-                </div>
-
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Browsers automatically add some white space (a margin) before and after a
-                        heading.</p>
+                        &lt;p&gt;Here is a quote from WWF's website:&lt;/p&gt;<br>&lt;blockquote
+                        cite=&quot;http://www.worldwildlife.org/who/index.html&quot;&gt;<br>
+                        For 60 years, WWF has worked to help people and nature thrive. As the world's
+                        leading conservation organization, WWF works in nearly 100 countries. At every
+                        level, we collaborate with people around the world to develop and deliver
+                        innovative solutions that protect communities, wildlife, and the places in
+                        which they live.<br>&lt;/blockquote&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_blockquote"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
                 <hr>
 
-                <h2>Headings Are Important</h2>
-                <p>Search engines use the headings to index the structure and content of your web pages.</p>
-                <p>Users often skim a page by its headings. It is important to use headings to show the document
-                    structure.</p>
-                <p><code class="w3-codespan">&lt;h1&gt;</code> headings should be used for main headings, followed by
-                    <code class="w3-codespan">&lt;h2&gt;</code> headings, then the less important
-                    <code class="w3-codespan">&lt;h3&gt;</code>, and so on.
-                </p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Use HTML headings for headings only. Don't use headings to make text
-                        <strong>BIG</strong> or <strong>bold</strong>.
-                    </p>
-                </div>
-                <hr>
-                <h2>Bigger Headings</h2>
-
-                <p>Each HTML heading has a default size. However, you can specify the size for any heading
-                    with the <code class="w3-codespan">style</code> attribute, using the CSS <code
-                        class="w3-codespan">font-size</code> property:</p>
-
+                <h2>HTML &lt;q&gt; for Short Quotations</h2>
+                <p>The HTML <code class="w3-codespan">&lt;q&gt;</code> tag defines a short quotation.</p>
+                <p>Browsers normally insert quotation marks around the quotation.</p>
                 <div class="w3-example">
                     <h3>Example</h3>
                     <div class="w3-code notranslate htmlHigh">
-                        <span style="color: brown;">
-                            <span style="color: blue;">&lt;</span>h1<span style="color: blue;"><span style="color: red;"> style</span><span style="color: brown;">=&quot;font-size:60px&quot;</span>&gt;</span> Heading 1<span style="color: blue;">&lt;</span>/h1<span style="color: blue;">&gt;</span>
-                         </span><br>
-                    </div>
-                    <a target="_blank" href="../../run-code/code-html/html_headings_size.html"
-                        class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                        &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with
+                        nature.&lt;/q&gt;&lt;/p&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_q"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
                     <!-- MidContent -->
                     <!-- <p class="adtext">Advertisement</p> -->
 
-                    <div id="adngin-mid_content-0"></div>
+                    <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+                        <script>
+                            uic_r_g();
+                        </script>
+                    </div>
 
                 </div>
                 <hr>
-                <h2>HTML Tag Reference</h2>
-                <p>W3Schools' tag reference contains additional information about these tags and their attributes.</p>
+                <h2>HTML &lt;abbr&gt; for Abbreviations</h2>
+                <p>The HTML <code class="w3-codespan">&lt;abbr&gt;</code> tag defines an abbreviation or an acronym,
+                    like &quot;HTML&quot;,
+                    &quot;CSS&quot;, "Mr.&quot;,
+                    &quot;Dr.&quot;, &quot;ASAP&quot;, &quot;ATM&quot;.</p>
+                <p>Marking abbreviations can give useful information to browsers, translation
+                    systems and search-engines.</p>
+                <p><b>Tip:</b> Use the global title attribute to
+                    show the description for the
+                    abbreviation/acronym when you mouse over the element.&nbsp;</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;p&gt;The &lt;abbr title=&quot;World Health Organization&quot;&gt;WHO&lt;/abbr&gt; was
+                        founded in
+                        1948.&lt;/p&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_abbr"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h2>HTML &lt;address&gt; for Contact Information</h2>
+                <p>The HTML <code class="w3-codespan">&lt;address&gt;</code> tag defines the contact information for the
+                    author/owner of a document
+                    or an article.</p>
+                <p>The contact information can be an email address, URL, physical address, phone
+                    number, social media handle, etc.</p>
+                <p>The text in the <code class="w3-codespan">&lt;address&gt;</code> element usually renders in
+                    <i>italic,</i>
+                    and browsers will
+                    always add a line break before and after the <code class="w3-codespan">&lt;address&gt;</code>
+                    element.</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+
+                        &lt;address&gt;<br>Written by John Doe.&lt;br&gt; <br>Visit us
+                        at:&lt;br&gt;<br>Example.com&lt;br&gt;<br>
+                        Box 564, Disneyland&lt;br&gt;<br>USA<br>&lt;/address&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_address"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h2>HTML &lt;cite&gt; for Work Title</h2>
+                <p>The HTML <code class="w3-codespan">&lt;cite&gt;</code> tag defines the title of a
+                    creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+                <p><b>Note:</b> A person's name is not the title of a work.</p>
+                <p>The text in the <code class="w3-codespan">&lt;cite&gt;</code> element usually renders in
+                    <i>italic</i>.</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_cite"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h2>HTML &lt;bdo&gt; for Bi-Directional Override</h2>
+                <p>BDO stands for Bi-Directional Override.</p>
+                <p>The HTML <code class="w3-codespan">&lt;bdo&gt;</code> tag is used to override
+                    the current text direction:</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;bdo dir=&quot;rtl&quot;&gt;This text will be written from right to left&lt;/bdo&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_formatting_bdo"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+                <h2>HTML Quotation and Citation Elements</h2>
                 <table class="ws-table-all notranslate">
                     <tr>
-                        <th>Tag</th>
+                        <th style="width:20%">Tag</th>
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_html.html">&lt;html&gt;</a></td>
-                        <td>Defines the root of an HTML document</td>
+                        <td><a href="/tags/tag_abbr.asp">&lt;abbr&gt;</a></td>
+                        <td>Defines an abbreviation or acronym</td>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_body.html">&lt;body&gt;</a></td>
-                        <td>Defines the document's body</td>
+                        <td><a href="/tags/tag_address.asp">&lt;address&gt;</a></td>
+                        <td>Defines contact information for the author/owner of a document</td>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_hn.html">&lt;h1&gt; to &lt;h6&gt;</a></td>
-                        <td>Defines HTML headings</td>
+                        <td><a href="/tags/tag_bdo.asp">&lt;bdo&gt;</a></td>
+                        <td>Defines the text direction</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/tag_blockquote.asp">&lt;blockquote&gt;</a></td>
+                        <td> Defines a section that is quoted from another source</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/tag_cite.asp">&lt;cite&gt;</a></td>
+                        <td>Defines the title of a work</td>
+                    </tr>
+                    <tr>
+                        <td><a href="/tags/tag_q.asp">&lt;q&gt;</a></td>
+                        <td>Defines a short inline quotation</td>
                     </tr>
                 </table>
-
                 <div class="w3-note w3-panel">
-                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.html">HTML Tag
+                    <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag
                             Reference</a>.</p>
                 </div>
 
@@ -1817,8 +1871,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_paragraphs.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_formatting.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_comments.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
