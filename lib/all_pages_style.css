@@ -1084,6 +1084,17 @@ body.darkpagetheme .icons-right {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-  
+.brackets{
+  color: blue;
+ } 
+ .tagname,.tagvalue{
+  color: brown;
+ }
+ .attribute{
+  color: red;
+ }
+ .attribute_value{
+  color: blue;
+ }
   
   
