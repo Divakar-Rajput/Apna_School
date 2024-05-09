@@ -851,7 +851,7 @@ body.darkpagetheme .icons-right {
   #subtopnav a:hover,
   #subtopnav a:focus,
   #subtopnav a:active {
-    background-color: #0b219e !important;
+    background-color: #0b219e;
     color: #ffffff !important;
   }
 
@@ -860,11 +860,11 @@ body.darkpagetheme .icons-right {
     color: #fff !important;
   }
   .current_active {
-    background-color: #f800c3 !important;
+    background-color: red !important;
     color: #fff !important;
   }
   .current_active:hover {
-    background-color: #f800c3 !important;
+    background-color: red !important;
   }
 
   #btn_container_subtopnav {
@@ -1066,18 +1066,17 @@ body.darkpagetheme .icons-right {
   }
   /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background:#0202e1; 
+  background:#c3c3c8; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #eb0404;
-  border-radius: 10px; 
+  background: #000;
 }
 
 /* Handle on hover */
