@@ -2507,6 +2507,13 @@ a.topnav-localicons {
   background-color: #ddd;
   line-height: 1.8em;
 }
+.tut_active{
+  color: #c81616;
+  background-color: #0404ac !important;
+}
+.tut_active:hover{
+  background-color: #0404ac !important;
+}
 
 #sidenav a.activesub:link,
 #sidenav a.activesub:visited {
@@ -5056,7 +5063,7 @@ a.topnav-icons {
 
 .ws-btn:hover,
 .ws-btn:active {
-  background-color: red !important;
+  background-color: #0404ac !important;
   color: #ffffff;
 }
 
