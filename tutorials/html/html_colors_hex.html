@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Comments Tutorial</title>
+    <title>HTML HEX Colors Tutorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1539,12 +1539,12 @@
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
                 <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
-                <a target="_top" class="current_active" href="html_comments.html">HTML Comments</a>
-                <a target="_top" href="html_colors.html">HTML Colors</a>
-                <div class="tut_overview">
+                <a target="_top" href="html_comments.html">HTML Comments</a>
+                <a target="_top" class="tut_active" href="html_colors.html">HTML Colors</a>
+                <div class="tut_overview" style="background-color: #7878ef !important;">
                     <a target="_top" href="html_colors.html">Colors</a>
                     <a target="_top" href="html_colors_rgb.html">RGB</a>
-                    <a target="_top" href="html_colors_hex.html">HEX</a>
+                    <a target="_top" class="current_active" href="html_colors_hex.html">HEX</a>
                     <a target="_top" href="html_colors_hsl.html">HSL</a>
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
@@ -1674,10 +1674,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Comments</span></h1>
+                <h1>HTML<span class="color_h1"> HEX Colors</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_colors_rgb.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_colors_hsl.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,123 +1687,144 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML comments are not displayed in the browser, but they can
-                    help document your HTML source code.</p>
-                <hr>
-
-                <h2>HTML Comment Tag</h2>
-                <p>You can add comments to your HTML source by using the following syntax:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- Write your comments here --&gt;</span>
+                <p class="intro">A hexadecimal color is specified with: #RRGGBB, where the RR 
+                    (red), GG (green) and BB (blue) hexadecimal integers specify the components of 
+                    the color.</p>
+                    <hr>
+                    
+                    <h2>HEX Color Values</h2>
+                    <p>In HTML, a color can be specified using a hexadecimal value in 
+                    the form:</p>
+                    <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">#<em>rrggbb</em></p>
+                    <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+                    <p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other 
+                    two (green and blue) are set to 00.</p>
+                    <p>Another example, #00ff00 is displayed as green, 
+                    because green is set to its highest value (ff), and the other two (red and blue) are 
+                    set to 00.</p>
+                    <p>To display black, set all color parameters to 00, like this: #000000.</p>
+                    <p>To display white, set all color parameters to ff, like 
+                    this: #ffffff. </p>
+                    
+                    <p>Experiment by mixing the HEX values below:</p>
+                    <div class="w3-container xw3-light-grey">
+                      <div class="w3-row w3-container">
+                        <div class="w3-col m2 w3-container w3-center">
+                        </div>
+                        <div class="w3-col m8 w3-container w3-center">
+                          <div id="hexresult" style="line-height:80px;"><p id="hexresulttext" style="font-size:120%;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace;">&nbsp;</p></div>
+                        </div>
+                        <div class="w3-col m2 w3-container w3-center">
+                        </div>
+                      </div>
+                      <div class="w3-row w3-container">
+                        <div class="w3-col m4 w3-container w3-center">
+                          <p>RED</p>
+                          <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex" value="255" min="00" max="255">
+                          <div id="valRed2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                        </div>
+                        <div class="w3-col m4 w3-container w3-center">
+                          <p>GREEN</p>
+                          <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex" value="220" min="00" max="255">
+                          <div id="valGreen2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                        </div>
+                        <div class="w3-col m4 w3-container w3-center">
+                          <p>BLUE</p>
+                          <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex" value="80" min="00" max="255">
+                          <div id="valBlue2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                <p>Notice that there is an exclamation point (!) in the start tag, but not in the
-                    end tag.</p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your
-                        HTML source code.</p>
-                </div>
-
-                <hr>
-
-                <h2>Add Comments</h2>
-                <p>With comments you can place notifications and reminders in your HTML code:</p>
-                <div class="w3-example">
+                      <script>
+                        changeHex("r");
+                        function changeHex(x) {
+                          let col, r, g, b;
+                          r = parseInt(document.getElementById("slideRedHex").value);
+                          g = parseInt(document.getElementById("slideGreenHex").value);
+                          b = parseInt(document.getElementById("slideBlueHex").value);
+                          hr = r.toString(16);
+                          hg = g.toString(16);
+                          hb = b.toString(16);
+                            document.getElementById('valRed2Hex').innerHTML = hr;
+                            document.getElementById('valGreen2Hex').innerHTML = hg;
+                            document.getElementById('valBlue2Hex').innerHTML = hb;
+                            document.getElementById('hexresult').style.backgroundColor = `#${hr}${hg}${hb}`;
+                            document.getElementById('hexresulttext').innerHTML = `#${hr}${hg}${hb}`;
+                          if (r<150 || g<150 || b<150) {
+                            document.getElementById('hexresulttext').style.color = "#ffffff";
+                          } else {
+                            document.getElementById('hexresulttext').style.color = "#000";
+                          }
+                        }
+                        </script>
+                    
+                    <div class="w3-example">
                     <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- This is a comment --&gt;</span>
-                        <br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br>
-                        <br><span class="comments">&lt;!-- Remember to add more information here --&gt;</span>
+                    <div class="notranslate w3-white w3-container">
+                    <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ff0000;">#ff0000</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#0000ff;">#0000ff</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#3cb371;">#3cb371</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ee82ee;">#ee82ee</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ffa500;">#ffa500</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#6a5acd;">#6a5acd</div>
+                      </div>
                     </div>
-                    <a target="_blank" href="../../run-code/code-html/html_comment.html"
-                        class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
-                </div>
-
-                <hr>
-
-                <h2>Hide Content</h2>
-
-                <p>Comments can be used to hide content.</p>
-
-                <p>This can be helpful if you hide content temporarily:</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><br>
-                        <span class="comments">&lt;!-- &lt;p&gt;This is another paragraph&lt;/p&gt;
-                            --&gt;</span><br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
                     </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_hide.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <p>You can also hide more than one line. Everything between the <code class="w3-codespan">&lt;!--</code>
-                    and the <code class="w3-codespan">--></code>
-                    will be hidden from the display.</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a section of HTML code:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><span class="comments">&lt;!--<br>&lt;p&gt;Look at this cool
-                            image:&lt;/p&gt;<br>
-                            &lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot;
-                            alt=&quot;Trulli&quot;&gt;<br>--&gt;</span><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
+                    <br>
+                    <a target="_blank" href="../../run-code/code-html/html_color_hex.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
                     </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_out.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
-                </div>
-
-                <p>Comments are also great for debugging HTML, because you can
-                    comment out HTML lines of code, one at a time, to search for errors.</p>
-
-                <hr>
-                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <hr>
+                    <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
                     <!-- MidContent -->
                     <!-- <p class="adtext">Advertisement</p> -->
-
-                    <div id="adngin-mid_content-0"></div>
-
-                </div>
-                <hr>
-                <h2>Hide Inline Content</h2>
-
-                <p>Comments can be used to hide parts in the middle of the HTML code.</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a part of a paragraph:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This <span class="comments">&lt;!-- great text --&gt;</span> is a paragraph too.<span
-                            class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
+                    
+                      <div id="adngin-mid_content-0"></div>
+                      
                     </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_inline.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <hr>
+                    <hr>
+                    
+                    <h2>Shades of Gray</h2>
+                    <p>Shades of gray are often defined using equal values for all three parameters:</p>
+                    <div class="w3-example">
+                     <h3>Example</h3>
+                    <div class="notranslate w3-white w3-container">
+                    <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#404040;">#404040</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#686868;">#686868</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#A0A0A0;">#a0a0a0</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#BEBEBE;">#bebebe</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#dcdcdc;color:#555555">#dcdcdc</div>
+                      </div>
+                      <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#f8f8f8;color:#555555">#f8f8f8</div>
+                      </div>
+                    </div>
+                    </div>
+                    <br>
+                    <a target="_blank" href="../../run-code/code-html/html_color_hex_gray.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                    </div>                    
+                    <hr>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1814,8 +1835,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_colors_rgb.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_colors_hsl.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">

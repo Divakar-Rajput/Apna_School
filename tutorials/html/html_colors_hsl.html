@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Comments Tutorial</title>
+    <title>HTML HSL and HSLA Colors Tutorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1539,13 +1539,13 @@
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
                 <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
-                <a target="_top" class="current_active" href="html_comments.html">HTML Comments</a>
-                <a target="_top" href="html_colors.html">HTML Colors</a>
-                <div class="tut_overview">
+                <a target="_top" href="html_comments.html">HTML Comments</a>
+                <a target="_top" class="tut_active" href="html_colors.html">HTML Colors</a>
+                <div class="tut_overview" style="background-color: #7878ef !important;">
                     <a target="_top" href="html_colors.html">Colors</a>
                     <a target="_top" href="html_colors_rgb.html">RGB</a>
                     <a target="_top" href="html_colors_hex.html">HEX</a>
-                    <a target="_top" href="html_colors_hsl.html">HSL</a>
+                    <a target="_top" class="current_active" href="html_colors_hsl.html">HSL</a>
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
                 <a target="_top" href="html_links.html">HTML Links</a>
@@ -1674,10 +1674,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Comments</span></h1>
+                <h1>HTML<span class="color_h1"> HSL and HSLA Colors</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_colors_hex.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_css.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,125 +1687,317 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML comments are not displayed in the browser, but they can
-                    help document your HTML source code.</p>
+                <p class="intro">HSL stands for hue, saturation, and lightness.</p>
+                <p class="intro">HSLA color values are an extension of HSL with an Alpha channel 
+                (opacity).</p>
                 <hr>
-
-                <h2>HTML Comment Tag</h2>
-                <p>You can add comments to your HTML source by using the following syntax:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- Write your comments here --&gt;</span>
+                
+                <h2>HSL Color Values</h2>
+                <p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in 
+                the form:</p>
+                <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
+                <p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+                <p>Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.</p>
+                <p>Lightness is also a percentage value. 0% is black, and 100% is white.</p>
+                
+                <p>Experiment by mixing the HSL values below:</p>
+                
+                <div class="w3-container xw3-light-grey">
+                  <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
                     </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                      <div id="hslresult" style="line-height:80px;"><p id="hslresulttext" style="font-size:120%;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace;">&nbsp;</p></div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                  </div>
+                  <div class="w3-row w3-container">
+                    <div class="w3-col m4 w3-container w3-center">
+                      <p>HUE</p>
+                      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
+                      <div id="valHue" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                      <p>SATURATION</p>
+                      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
+                      <div id="valSat" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                      <p>LIGHTNESS</p>
+                      <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
+                      <div id="valLight" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+                    </div>
+                  </div>
                 </div>
-                <p>Notice that there is an exclamation point (!) in the start tag, but not in the
-                    end tag.</p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your
-                        HTML source code.</p>
+                <script>
+                    changeHsl("h");
+                function changeHsl(x) {
+                  var col, h, s, l;
+                  h = document.getElementById("slideHue").value;
+                  s = document.getElementById("slideSat").value;
+                  l = document.getElementById("slideLight").value;
+                    document.getElementById('valHue').innerHTML = h;
+                    document.getElementById('valSat').innerHTML = s +"%";
+                    document.getElementById('valLight').innerHTML =  l +"%";
+                    document.getElementById('hslresult').style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`;
+                    document.getElementById('hslresulttext').innerHTML = `hsl(${h}, ${s}%, ${l}%)`;
+                  if (s<50 && l<50) {
+                    document.getElementById('hslresulttext').style.color = "#ffffff";
+                  } else if(l<50){
+                    document.getElementById('hslresulttext').style.color = "#ffffff";
+                  }
+                   else {
+                    document.getElementById('hslresulttext').style.color = "#000";
+                  }
+                }
+                </script>
+                
+                <div class="w3-example">
+                 <h3>Example</h3>
+                <div class="notranslate w3-white w3-container">
+                
+                <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</div>
+                  </div>
                 </div>
-
+                </div>
+                <br>
+                <a target="_blank" href="../../run-code/code-html/html_color_hsl.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                </div>
                 <hr>
-
-                <h2>Add Comments</h2>
-                <p>With comments you can place notifications and reminders in your HTML code:</p>
+                <h3>Saturation</h3>
+                <p>Saturation can be described as the intensity of a color.</p>
+                <p>100% is pure color, no shades of gray.</p>
+                <p>50% is 50% gray, but you can still see the color.</p>
+                <p>0% is completely gray; you can no longer see the color.</p>
+                
                 <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- This is a comment --&gt;</span>
-                        <br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br>
-                        <br><span class="comments">&lt;!-- Remember to add more information here --&gt;</span>
-                    </div>
-                    <a target="_blank" href="../../run-code/code-html/html_comment.html"
-                        class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
+                 <h3>Example</h3>
+                <div class="notranslate w3-white w3-container">
+                
+                <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+                  </div>
                 </div>
-
-                <hr>
-
-                <h2>Hide Content</h2>
-
-                <p>Comments can be used to hide content.</p>
-
-                <p>This can be helpful if you hide content temporarily:</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><br>
-                        <span class="comments">&lt;!-- &lt;p&gt;This is another paragraph&lt;/p&gt;
-                            --&gt;</span><br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_hide.html"
-                        target="_blank">Run Code &raquo;</a>
                 </div>
-
-                <p>You can also hide more than one line. Everything between the <code class="w3-codespan">&lt;!--</code>
-                    and the <code class="w3-codespan">--></code>
-                    will be hidden from the display.</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a section of HTML code:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><span class="comments">&lt;!--<br>&lt;p&gt;Look at this cool
-                            image:&lt;/p&gt;<br>
-                            &lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot;
-                            alt=&quot;Trulli&quot;&gt;<br>--&gt;</span><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_out.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
+                <br>
+                <a target="_blank" href="../../run-code/html_color_hsl_saturation.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
                 </div>
-
-                <p>Comments are also great for debugging HTML, because you can
-                    comment out HTML lines of code, one at a time, to search for errors.</p>
-
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-                    <!-- MidContent -->
-                    <!-- <p class="adtext">Advertisement</p> -->
-
-                    <div id="adngin-mid_content-0"></div>
-
+                  <div id="adngin-mid_content-0"></div>
+                  
                 </div>
                 <hr>
-                <h2>Hide Inline Content</h2>
-
-                <p>Comments can be used to hide parts in the middle of the HTML code.</p>
-
+                
+                <h3>Lightness</h3>
+                <p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), 
+                and 100% means full lightness (white).</p>
+                
                 <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a part of a paragraph:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This <span class="comments">&lt;!-- great text --&gt;</span> is a paragraph too.<span
-                            class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_inline.html"
-                        target="_blank">Run Code &raquo;</a>
+                 <h3>Example</h3>
+                <div class="notranslate w3-white w3-container">
+                <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 90%);color:#555555">hsl(0, 100%, 90%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 100%, 100%);color:#555555;">hsl(0, 100%, 100%)</div>
+                  </div>
                 </div>
-
+                </div>
+                <br>
+                <a target="_blank" href="../../run-code/code-html/html_color_hsl_lightness.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                </div>
                 <hr>
-
-                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                
+                <h2>Shades of Gray</h2>
+                <p>Shades of gray are often defined by setting the hue and saturation to 0, and 
+                adjusting the lightness from 0% to 100% to get darker/lighter shades:</p>
+                <div class="w3-example">
+                 <h3>Example</h3>
+                <div class="notranslate w3-white w3-container">
+                <div class="w3-row w3-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 30%)">hsl(0, 0%, 30%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 70%);color:#555555">hsl(0, 0%, 70%)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsl(0, 0%, 90%);color:#555555;">hsl(0, 0%, 90%)</div>
+                  </div>
+                </div>
+                </div>
+                <br>
+                <a target="_blank" href="../../run-code/code-html/html_color_hsl_gray.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                </div>
+                
+                <hr>
+                <h2>HSLA Color Values</h2>
+                <p>HSLA color values are an extension of HSL color values, with an Alpha channel 
+                - which specifies the opacity for a color.</p>
+                <p>An HSLA color value is 
+                specified with:</p>
+                <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsla(<em>hue,</em> <em>saturation</em>, <em>lightness, 
+                alpha</em>)</p>
+                <p>The alpha parameter is a number 
+                between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+                
+                <p>Experiment by mixing the HSLA values below:</p>
+                
+                <div class="w3-container xw3-light-grey">
+                  <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                      <div id="hslaresult" style="line-height:80px;"><p id="hslaresulttext" style="font-size:120%;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace;">&nbsp;</p></div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                  </div>
+                  <div class="w3-row w3-container">
+                    <div class="w3-col m3 w3-container w3-center">
+                      <p>HUE</p>
+                      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
+                      <div id="valHueA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                      <p>SATURATION</p>
+                      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA" value="100" min="0" max="100">
+                      <div id="valSatA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                      <p>LIGHTNESS</p>
+                      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA" value="50" min="0" max="100">
+                      <div id="valLightA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                      <p>ALPHA</p>
+                      <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
+                      <div id="valHslAlpha" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0.5</div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="w3-example">
+                 <h3>Example</h3>
+                <div class="notranslate w3-white">
+                <div class="w3-row w3-center" 
+                  style="
+                    line-height:80px;
+                    color:white;
+                    font-size:20px;
+                    font-weight:bold;
+                    font-family:Consolas, 'Courier New', Courier, monospace;
+                    background-image:url(img_bg_eyeicon.png), url(img_bg_transparent.gif);
+                    background-repeat:no-repeat, repeat;
+                    background-position:center, top left;
+                    background-color:#ffffff;">
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 0);color:#555555;">hsla(9, 100%, 64%, 0)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 0.2);color:#555555;">hsla(9, 100%, 64%, 0.2)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</div>
+                  </div>
+                  <div class="w3-col m6 w3-padding">
+                    <div style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</div>
+                  </div>
+                </div>
+                </div>
+                <br>
+                <a target="_blank" href="../../run-code/code-html/html_color_hsla.html" class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                </div>
+                
+                
+                <script>                                
+                changeHsla("h");
+                function changeHsla(x) {
+                  var col, h, s, l, a;
+                  h = document.getElementById("slideHueA").value;
+                  s = document.getElementById("slideSatA").value;
+                  l = document.getElementById("slideLightA").value;
+                  a = document.getElementById("slideHslAlpha").value/10;
+                  document.getElementById('valHueA').innerHTML = h;
+                  document.getElementById('valSatA').innerHTML = s+"%";
+                  document.getElementById('valLightA').innerHTML = l+"%";
+                  document.getElementById('valHslAlpha').innerHTML = a;
+                  document.getElementById('hslaresult').style.backgroundColor = `hsla(${h}, ${s}%, ${l}%, ${a})`;
+                  document.getElementById('hslaresulttext').innerHTML = `hsla(${h}, ${s}%, ${l}%, ${a})`;
+                  if (l<50 && a > 0.2) {
+                    document.getElementById('hslaresulttext').style.color = "#ffffff";
+                  } else {
+                    document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+                  }
+                }
+                
+                </script>
+                
+                <hr>
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                                                   artical content
@@ -1814,8 +2006,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_colors_hex.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_css.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
