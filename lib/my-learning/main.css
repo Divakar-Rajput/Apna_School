@@ -5,8 +5,8 @@
   width: 100%;
 }
 #sidenav #leftmenuinnerinner a.overview_header.active {
-  background-color: #CCCCCC !important;
-  color: #000000 !important;
+  background-color: #CCCCCC ;
+  color: #f7f6f6 ;
 }
 .darktheme #sidenav #leftmenuinnerinner a.overview_header.active {
   background-color: #38444d !important;
@@ -38,11 +38,11 @@
 .darktheme #sidenav #leftmenuinnerinner a > .w3s-accordion:after {
   opacity: 0.3;
 }
-#sidenav #leftmenuinnerinner a:not(.no-checkmark):before {
+/* #sidenav #leftmenuinnerinner a:not(.no-checkmark):before {
   display: block;
   font-family:fontawesome;
   content: "\e82b";
-  opacity: 0.1;
+  opacity: 1;
   position: absolute;
   top: 4px;
   left: 12px;
@@ -56,7 +56,7 @@
 #sidenav #leftmenuinnerinner a:not(.no-checkmark):after {
   display: block;
   font-family:fontawesome;
-  content: " \e82b";
+  content: " \e02b";
   position: absolute;
   display: inline-block;
   border-left: 2px solid #000;
@@ -158,13 +158,16 @@
 }
 #sidenav #leftmenuinnerinner a:not(.no-checkmark).overview_header.last-in-group:not(.active)::after, #sidenav #leftmenuinnerinner a:not(.no-checkmark).overview_header.last-in-group.closed::after {
   display: none !important;
-}
+} */
 #sidenav #leftmenuinnerinner .overview_body,
 #sidenav #leftmenuinnerinner .tut_overview,
 #sidenav #leftmenuinnerinner .ref_overview {
   margin-left: 0 !important;
-  background-color: #fff !important;
+  background-color: #fff !important ;
   line-height: 1.5 !important;
+}
+#sidenav #leftmenuinnerinner .tut_overview{
+  background-color: #7878ef !important;
 }
 .darktheme #sidenav #leftmenuinnerinner .overview_body,
 .darktheme #sidenav #leftmenuinnerinner .tut_overview,

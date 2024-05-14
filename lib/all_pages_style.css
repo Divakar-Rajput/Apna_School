@@ -973,6 +973,9 @@ body.darkpagetheme .icons-right {
   background-color:#0202e1;
   color:#fff;
   }
+  .darktheme .foohero{
+    background-color:#000;
+  }
   
   .top_header{
   padding:2rem;
@@ -1039,6 +1042,9 @@ body.darkpagetheme .icons-right {
   color:rgba(255,255,255,0.7);
   font-size:12px;
   }
+  .darktheme .copyright{
+    background-color: #000;
+  }
   
   
   
@@ -1086,16 +1092,37 @@ body.darkpagetheme .icons-right {
 .brackets{
   color: blue;
  } 
+ .darktheme .brackets{
+  color: rgb(0, 255, 68);
+ } 
  .tagname,.tagvalue{
   color: brown;
+ }
+ .darktheme .tagname,.darktheme .tagvalue{
+  color: rgb(255, 81, 0);
  }
  .attribute{
   color: red;
  }
+ .darktheme .attribute{
+  color: rgb(255, 204, 0);
+ }
  .attribute_value{
   color: blue;
+ }
+ .darktheme .attribute_value{
+  color: rgb(0, 255, 34);
  }
 .comments{
   color: green;
 }
-  
+.tut_active{
+  color: #f0eaea !important;
+  background-color: #0404ac !important;
+}
+.tut_active:hover{
+  background-color: #0404ac !important;
+}
+.sub-active{
+  background-color: #0404ac !important;
+}
