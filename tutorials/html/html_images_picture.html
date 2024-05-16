@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Images Tutorials</title>
+    <title>HTML Picture Element Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1561,10 +1561,10 @@
                 <a target="_top" class="sub-active" href="html_images.html">HTML Images</a>
 
                 <div class="tut_overview" style="background-color: #7878ef !important;">
-                    <a target="_top" class="current_active" href="html_images.html">Images</a>
+                    <a target="_top" href="html_images.html">Images</a>
                     <a target="_top" href="html_images_imagemap.html">Image Map</a>
                     <a target="_top" href="html_images_background.html">Background Images</a>
-                    <a target="_top" href="html_images_picture.html">The Picture Element</a>
+                    <a target="_top" class="current_active" href="html_images_picture.html">The Picture Element</a>
                 </div>
 
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
@@ -1680,10 +1680,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Images</span></h1>
+                <h1>HTML<span class="color_h1"> &lt;picture> Element</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_links_bookmarks.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_images_imagemap.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_images_background.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_favicon.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1693,93 +1693,47 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-
-                <div class="w3-row" style="text-align:center">
-                    <div class="w3-col m4"
-                        style="background-image:url('img/moutain.jpg');background-size:cover;height:300px;">
-                    </div>
-                    <div class="w3-col m4"
-                        style="background-image:url('img/img_girl.jpg');background-size:cover;height:300px;">
-                    </div>
-                    <div class="w3-col m4"
-                        style="background-image:url('img/redfort.jpg');background-size:cover;height:300px;">
-                    </div>
-                </div>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;moutain.jpg&quot;
-                        alt=&quot;Himalya Moutain&quot;&gt;<br>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_moutain.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;img_girl.jpg&quot;
-                        alt=&quot;Girl seeing nature&quot;&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_girl.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
-                </div>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;redfort.jpg&quot;
-                        alt=&quot;RedFort of India&quot;&gt;<br>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_redfort.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
+                <p class="intro">The HTML <code class="w3-codespan">&lt;picture&gt;</code> element allows
+                    you to display different pictures for
+                    different devices or screen sizes.</p>
+                <hr>
+                <img src="picture_example.jpg" style="max-width:100%">
                 <hr>
 
-                <h2>HTML Images Syntax</h2>
-                <p>The HTML <code class="w3-codespan">&lt;img&gt;</code> tag is used to embed an
-                    image in a web page.</p>
-                <p>Images are not technically inserted into a web page; images are linked to web
-                    pages. The <code class="w3-codespan">&lt;img&gt;</code> tag creates a holding
-                    space for the referenced image.</p>
-                <p>The <code class="w3-codespan">&lt;img&gt;</code> tag&nbsp;is empty, it contains attributes only, and
-                    does not
-                    have a closing tag.</p>
-                <p>The <code class="w3-codespan">&lt;img&gt;</code> tag has two required
-                    attributes:</p>
-                <ul>
-                    <li>src - Specifies the path to the image</li>
-                    <li>alt - Specifies an alternate text for the image</li>
-                </ul>
-
-                <div class="w3-example">
-                    <h3>Syntax</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;<i>url</i>&quot; alt=&quot;<em>alternatetext</em>&quot;&gt;
-                    </div>
-                </div>
-                <hr>
-
-                <h2>The src Attribute</h2>
-                <p>The required <code class="w3-codespan">src</code> attribute specifies the path (URL) to the image.
+                <h2>The HTML &lt;picture&gt; Element</h2>
+                <p>The HTML <code class="w3-codespan">&lt;picture&gt;</code> element gives web
+                    developers more flexibility in
+                    specifying image resources.</p>
+                <p>The <code class="w3-codespan">&lt;picture&gt;</code> element contains one or
+                    more <code class="w3-codespan">&lt;source&gt;</code> elements, each referring
+                    to different images through the <code class="w3-codespan">srcset</code>
+                    attribute. This way the browser can choose the image that best
+                    fits the current view and/or device.</p>
+                <p>Each <code class="w3-codespan">&lt;source&gt;</code> element has a
+                    <code class="w3-codespan">media</code> attribute that defines when the image is the
+                    most suitable.
                 </p>
-                <p><strong>Note:</strong> When a web page loads, it is the browser, at that
-                    moment, that gets the image from a web server and inserts it into the page.
-                    Therefore, make sure that the image actually stays in the same spot in relation
-                    to the web page, otherwise your visitors will get a broken link icon. The broken
-                    link icon and the <code class="w3-codespan">alt</code> text are shown if the browser cannot find the
-                    image.</p>
                 <div class="w3-example">
                     <h3>Example</h3>
+                    <p>Show different images for different screen sizes:</p>
                     <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;img_india.jpg&quot; alt=&quot;Somewhere
-                        in India&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_alt_india.html"
-                        target="_blank">Run Code &raquo;</a>
+                        &lt;picture&gt;<br>&nbsp; &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;<br>
+                        &nbsp;
+                        &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;<br>&nbsp; &lt;img
+                        src="img_girl.jpg&quot;&gt;<br>&lt;/picture&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_images_picture1"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
 
+
+                <div class="w3-panel w3-note">
+                    <p><strong>Note:</strong> Always specify an <code class="w3-codespan">&lt;img&gt;</code> element as
+                        the last child
+                        element of the <code class="w3-codespan">&lt;picture&gt;</code> element. The <code
+                            class="w3-codespan">&lt;img&gt;</code> element is used by browsers that do
+                        not support the <code class="w3-codespan">&lt;picture&gt;</code> element, or if none of the
+                        <code class="w3-codespan">&lt;source&gt;</code> tags match.</p>
+                </div>
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
                     <!-- MidContent -->
@@ -1789,240 +1743,36 @@
 
                 </div>
                 <hr>
-                <h2>The alt Attribute</h2>
-                <p>The required <code class="w3-codespan">alt</code> attribute provides an alternate text for an image,
-                    if the user for
-                    some reason cannot view it (because of slow connection, an error in the src
-                    attribute, or if the user uses a screen reader).</p>
-                <p>The value of the <code class="w3-codespan">alt</code> attribute should describe the image:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;img_india.jpg&quot; alt=&quot;Somewhere
-                        in India&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_alt_india.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <p>If a browser cannot find an image, it will display the value of the <code
-                        class="w3-codespan">alt</code>
-                    attribute:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;wrongname.gif&quot; alt=&quot;wrongname image&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_wrongname.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <div class="w3-panel w3-note">
-                    <p><strong>Tip:</strong> A screen reader is a software program that reads the HTML code, and allows
-                        the user to &quot;listen&quot; to the content. Screen readers are useful
-                        for people who are visually impaired or learning disabled.</p>
-                </div>
-                <hr>
 
-                <h2>Image Size - Width and Height</h2>
-                <p>You can use the <code class="w3-codespan">style</code> attribute to specify the width and
-                    height of an image.</p>
+                <h2>When to use the Picture Element</h2>
+                <p>There are two main purposes for the <code class="w3-codespan">&lt;picture&gt;</code> element:</p>
+                <h3>1. Bandwidth</h3>
+                <p>If you have a small screen or device, it is not necessary to load a large
+                    image file. The browser will use the first <code class="w3-codespan">&lt;source&gt;</code>
+                    element with matching attribute values, and ignore any of the following
+                    elements.</p>
+                <h3>2. Format Support</h3>
+                <p>Some browsers or devices may not support all image formats. By using the
+                    <code class="w3-codespan">&lt;picture&gt;</code> element, you can add images of all
+                    formats, and the browser will use the first format it recognizes, and ignore any
+                    of the following elements.
+                </p>
                 <div class="w3-example">
                     <h3>Example</h3>
+                    <p>The browser will use the first image format it recognizes:</p>
                     <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl Seeing Nature&quot;
-                        style=&quot;width:500px;height:600px;&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_size.html"
-                        target="_blank">Run Code &raquo;</a>
+                        &lt;picture&gt;<br>&nbsp; &lt;source srcset="img_avatar.png"&gt;<br>
+                        &nbsp; &lt;source srcset="img_girl.jpg"&gt;<br>
+                        &nbsp; &lt;img src="img_beatles.gif"
+                        alt="Beatles" style="width:auto;"&gt;<br>&lt;/picture&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_images_picture_format"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
-
-                <p>Alternatively, you can use the <code class="w3-codespan">width</code> and <code
-                        class="w3-codespan">height</code> attributes:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl Seeing Nature&quot; width=&quot;500&quot;
-                        height=&quot;600&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_attributes.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <p>The <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> attributes
-                    always define the width and height of the
-                    image in pixels.</p>
 
                 <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Always specify the width and height of an image. If width and height are
-                        not specified, the
-                        web page
-                        might flicker while the image loads.</p>
-                </div>
-                <hr>
-
-                <h2>Width and Height, or Style?</h2>
-                <p>The <code class="w3-codespan">width</code>, <code class="w3-codespan">height</code>, and <code
-                        class="w3-codespan">style</code> attributes are
-                    all valid in HTML.</p>
-                <p>However, we suggest using the <code class="w3-codespan">style</code> attribute. It prevents styles
-                    sheets from changing
-                    the size of images:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;head&gt;<br>&lt;style&gt;<br>img {
-                        <br>&nbsp;&nbsp;width: 100%; <br>}<br>
-                        &lt;/style&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;img src=&quot;html.png&quot;
-                        alt=&quot;HTML5 Icon&quot; width=&quot;128&quot; height=&quot;128&quot;&gt;<br><br>&lt;img
-                        src=&quot;html.png&quot; alt=&quot;HTML5 Icon&quot;
-                        style=&quot;width:128px;height:128px;&quot;&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_style.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <hr>
-
-                <h2>Images in Another Folder</h2>
-                <p>If you have your images in a sub-folder, you must include the folder
-                    name in the <code class="w3-codespan">src</code> attribute:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;/images/html.png&quot;
-                        alt=&quot;HTML5 Icon&quot; style=&quot;width:128px;height:128px;&quot;&gt;
-                    </div>
-                    <!-- <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_images_folder"
-                        target="_blank">Run Code &raquo;</a> -->
-                </div>
-                <hr>
-
-                <h2>Images on Another Server/Website</h2>
-                <p>Some web sites point to an image on another server.</p>
-                <p>To point to an image on another server, you must specify an absolute (full)
-                    URL in the <code class="w3-codespan">src</code> attribute:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;https://www.ApnaSchools.com/images/html.png&quot;
-                        alt=&quot;W3Schools.com&quot;&gt;
-                    </div>
-                    <!-- <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_images_w3schools"
-                        target="_blank">Run Code &raquo;</a> -->
-                </div>
-                <p><strong>Notes on external images:</strong> External images might be under
-                    copyright. If you do not get permission to use it, you may be in violation of
-                    copyright laws. In addition, you cannot control external images; they can suddenly
-                    be removed or changed.</p>
-                <hr>
-
-                <h2>Animated Images</h2>
-                <p>HTML allows animated GIFs:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;img src=&quot;bird-wings-flying.gif&quot; alt=&quot;bird-wings-flying&quot;
-                        style=&quot;width:100px;height:100px;&quot;&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_bird.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <hr>
-
-                <h2>Image as a Link</h2>
-                <p>To use an image as a link, put the <code class="w3-codespan">&lt;img&gt;</code> tag inside the <code
-                        class="w3-codespan">&lt;a&gt;</code>
-                    tag:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;a href=&quot;https://www.google.com/&quot;&gt;<br>&nbsp; &lt;img src=&quot;google.png&quot;
-                        alt=&quot;Google&quot;
-                        style=&quot;width:42px;height:42px;&quot;&gt;<br>&lt;/a&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_links_image.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <hr>
-
-                <h2>Image Floating</h2>
-                <p>Use the CSS <code class="w3-codespan">float</code> property to let the image float to the right or to
-                    the left of a text:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;p&gt;&lt;img src=&quot;google.png&quot; alt=&quot;Google&quot;
-                        style=&quot;float:right;width:42px;height:42px;&quot;&gt;<br>
-                        The image will float to the right of
-                        the text.&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src=&quot;google.png&quot; alt=&quot;
-                        Google&quot;
-                        style=&quot;float:left;width:42px;height:42px;&quot;&gt;<br>
-                        The image will float to the left of
-                        the text.&lt;/p&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_images_float.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-                <div class="w3-note w3-panel">
-                    <p><strong>Tip:</strong> To learn more about CSS Float, read our <a href="css/css_float.asp">CSS
-                            Float Tutorial</a>.<br></p>
-                </div>
-                <hr>
-
-                <h2>Common Image Formats</h2>
-                <p>Here are the most common image file types, which are supported in all browsers
-                    (Chrome, Edge, Firefox, Safari, Opera):</p>
-                <table class="ws-table-all notranslate">
-                    <tr>
-                        <th>Abbreviation</th>
-                        <th>File Format</th>
-                        <th>File Extension</th>
-                    </tr>
-                    <tr>
-                        <td>APNG</td>
-                        <td>Animated Portable Network Graphics</td>
-                        <td>.apng</td>
-                    </tr>
-                    <tr>
-                        <td>GIF</td>
-                        <td>Graphics Interchange Format</td>
-                        <td>.gif</td>
-                    </tr>
-                    <tr>
-                        <td>ICO</td>
-                        <td>Microsoft Icon</td>
-                        <td>.ico, .cur </td>
-                    </tr>
-                    <tr>
-                        <td>JPEG</td>
-                        <td>Joint Photographic Expert Group image</td>
-                        <td>.jpg, .jpeg, .jfif, .pjpeg, .pjp</td>
-                    </tr>
-                    <tr>
-                        <td>PNG</td>
-                        <td>Portable Network Graphics</td>
-                        <td>.png</td>
-                    </tr>
-                    <tr>
-                        <td>SVG</td>
-                        <td>Scalable Vector Graphics</td>
-                        <td>.svg</td>
-                    </tr>
-                </table>
-                <hr>
-
-                <h2>Chapter Summary</h2>
-                <ul>
-                    <li>Use the HTML <code class="w3-codespan">&lt;img&gt;</code> element to define an image</li>
-                    <li>Use the HTML <code class="w3-codespan">src</code> attribute to define the URL of the image</li>
-                    <li>Use the HTML <code class="w3-codespan">alt</code> attribute to define an alternate text for an
-                        image, if it cannot be displayed</li>
-                    <li>Use the HTML <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code>
-                        attributes
-                        or the CSS <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code>
-                        properties to define the size of the image</li>
-                    <li>Use the CSS <code class="w3-codespan">float</code> property to let the image float
-                        to the left or to the right</li>
-                </ul>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Loading large images takes time, and can slow down your
-                        web page. Use images carefully.</p>
+                    <p><strong>Note:</strong> The browser will use the first <code
+                            class="w3-codespan">&lt;source&gt;</code> element with matching attribute
+                        values, and ignore any following <code class="w3-codespan">&lt;source&gt;</code> elements.</p>
                 </div>
                 <hr>
 
@@ -2033,28 +1783,28 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_img.asp">&lt;img&gt;</a></td>
+                        <td><a href="/tags/tag_img.asp">&lt;img&gt;</a></td>
                         <td>Defines an image</td>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_map.asp">&lt;map&gt;</a></td>
+                        <td><a href="/tags/tag_map.asp">&lt;map&gt;</a></td>
                         <td>Defines an image map</td>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_area.asp">&lt;area&gt;</a></td>
+                        <td><a href="/tags/tag_area.asp">&lt;area&gt;</a></td>
                         <td>Defines a clickable area inside an image map</td>
                     </tr>
                     <tr>
-                        <td><a href="tags/tag_picture.asp">&lt;picture&gt;</a></td>
+                        <td><a href="/tags/tag_picture.asp">&lt;picture&gt;</a></td>
                         <td>Defines a container for multiple image resources</td>
                     </tr>
                 </table>
                 <div class="w3-note w3-panel">
-                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.asp">HTML Tag
+                    <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag
                             Reference</a>.</p>
                 </div>
 
-                <hr>
+                <br>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -2065,8 +1815,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_links_bookmarks.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_images_imagemap.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_images_background.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_favicon.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">

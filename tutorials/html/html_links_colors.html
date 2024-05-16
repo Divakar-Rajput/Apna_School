@@ -1551,7 +1551,8 @@
                     <a target="_top" href="html_colors_hsl.html">HSL</a>
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
-                <a target="_top" class="tut_active" href="html_links.html" style="background-color: #0404ac !important; color: #fff !important;">HTML Links</a>
+                <a target="_top" class="tut_active" href="html_links.html"
+                    style="background-color: #0404ac !important; color: #fff !important;">HTML Links</a>
 
                 <div class="tut_overview" style="background-color: #7878ef !important;">
                     <a target="_top" href="html_links.html">Links</a>
@@ -1680,8 +1681,8 @@
                 </div>
                 <h1>HTML<span class="color_h1"> Links - Different Colors</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_css.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_links_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_links.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_links_bookmarks.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1691,75 +1692,96 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">An HTML link is displayed in a different color depending on 
-                whether it has been visited, is unvisited, or is active.</p>
+                <p class="intro">An HTML link is displayed in a different color depending on
+                    whether it has been visited, is unvisited, or is active.</p>
                 <hr>
-                
+
                 <h2>HTML Link Colors</h2>
                 <p>By default, a link will appear like this (in all browsers):</p>
                 <ul>
-                  <li>An unvisited link is underlined and blue</li>
-                  <li>A visited link is underlined and purple</li>
-                  <li>An active link is underlined and red</li>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
                 </ul>
                 <p>You can change the link state colors, by using CSS:</p>
                 <div class="w3-example">
-                <h3>Example</h3>
-                <p>Here, an unvisited link will be green with no underline. A visited link 
-                will be pink with no underline. An active link will be yellow and underlined. 
-                In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
-                <div class="w3-code notranslate cssHigh">
-                &lt;style&gt;<br>a:link {<br>&nbsp;&nbsp;color: green; <br>&nbsp;&nbsp;background-color: transparent; 
-                  <br>&nbsp;&nbsp;text-decoration: none;<br>}<br><br>
-                a:visited {<br>&nbsp; color: pink;<br>&nbsp; background-color: transparent;<br>&nbsp; 
-                  text-decoration: none;<br>}<br><br>a:hover {<br>&nbsp; color: red;<br>&nbsp; background-color: transparent;<br>
-                  &nbsp; text-decoration: underline;<br>}<br><br>
-                  a:active {<br>&nbsp; color: yellow;<br>&nbsp; background-color: transparent;<br>&nbsp; 
-                  text-decoration: underline;<br>}<br>&lt;/style&gt;
-                </div>
-                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_links_colors" target="_blank">Try it Yourself &raquo;</a>
+                    <h3>Example</h3>
+                    <p>Here, an unvisited link will be green with no underline. A visited link
+                        will be pink with no underline. An active link will be yellow and underlined.
+                        In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+                    <div class="w3-code notranslate cssHigh">
+                        &lt;style&gt;<br>a:link {<br>&nbsp;&nbsp;color: green; <br>&nbsp;&nbsp;background-color:
+                        transparent;
+                        <br>&nbsp;&nbsp;text-decoration: none;<br>}<br><br>
+                        a:visited {<br>&nbsp; color: pink;<br>&nbsp; background-color: transparent;<br>&nbsp;
+                        text-decoration: none;<br>}<br><br>a:hover {<br>&nbsp; color: red;<br>&nbsp; background-color:
+                        transparent;<br>
+                        &nbsp; text-decoration: underline;<br>}<br><br>
+                        a:active {<br>&nbsp; color: yellow;<br>&nbsp; background-color: transparent;<br>&nbsp;
+                        text-decoration: underline;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_links_colors.html"
+                        target="_blank">Run Code &raquo;</a>
                 </div>
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-                <!-- MidContent -->
-                <!-- <p class="adtext">Advertisement</p> -->
-                
-                  <div id="adngin-mid_content-0"></div>
-                  
+                    <!-- MidContent -->
+                    <!-- <p class="adtext">Advertisement</p> -->
+
+                    <div id="adngin-mid_content-0"></div>
+
                 </div>
                 <hr>
-                
+
                 <h2>Link Buttons</h2>
                 <p>A link can also be styled as a button, by using CSS:</p>
                 <a class="mytestbtn" href="javascript:void(0)">This is a link</a>
+                <style>
+                    .mytestbtn {
+                        background-color: rgb(237, 18, 18);
+                        color: #fff;
+                        padding: 15px 25px;
+                        text-decoration: none;
+                    }
+
+                    .mytestbtn:hover {
+                        background-color: red;
+                        color: #fff;
+                    }
+                </style>
                 <div class="w3-example">
-                <h3>Example</h3>
-                <div class="w3-code notranslate cssHigh">
-                &lt;style&gt;<br>a:link, a:visited {<br>&nbsp; background-color: #f44336;<br>&nbsp; 
-                  color: white;<br>&nbsp; padding: 15px 25px;<br>&nbsp; text-align: center;<br>&nbsp; 
-                  text-decoration: none;<br>&nbsp; display: inline-block;<br>}<br><br>a:hover, a:active {<br>&nbsp; 
-                  background-color: red;<br>}<br>&lt;/style&gt;
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        &lt;style&gt;<br>a:link, a:visited {<br>&nbsp; background-color: #f44336;<br>&nbsp;
+                        color: white;<br>&nbsp; padding: 15px 25px;<br>&nbsp; text-align: center;<br>&nbsp;
+                        text-decoration: none;<br>&nbsp; display: inline-block;<br>}<br><br>a:hover, a:active
+                        {<br>&nbsp;
+                        background-color: red;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_links_button.html"
+                        target="_blank">Run Code &raquo;</a>
                 </div>
-                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_links_button" target="_blank">Try it Yourself &raquo;</a>
-                </div>
-                
+
                 <div class="w3-note w3-panel">
-                <p>To learn more about CSS, go to our <a href="/css/default.asp">CSS Tutorial</a>.</p></div>
-                
-                
+                    <p>To learn more about CSS, go to our <a href="css/default.asp">CSS Tutorial</a>.</p>
+                </div>
                 <hr>
-                
                 <h2>HTML Link Tags</h2>
                 <table class="ws-table-all notranslate">
-                <tr>
-                <th style="width:30%">Tag</th>
-                <th>Description</th></tr><tr>
-                <td><a href="/tags/tag_a.asp">&lt;a&gt;</a></td><td>Defines a hyperlink</td></tr>
+                    <tr>
+                        <th style="width:30%">Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><a href="tags/tag_a.asp">&lt;a&gt;</a></td>
+                        <td>Defines a hyperlink</td>
+                    </tr>
                 </table>
                 <div class="w3-note w3-panel">
-                  <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag Reference</a>.</p>
+                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.asp">HTML Tag
+                            Reference</a>.</p>
                 </div>
-                
+
                 <hr>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1771,8 +1793,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_css.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_links_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_links.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_links_bookmarks.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
@@ -1807,42 +1829,62 @@
                 </div>
             </div>
         </div>
-        <div class="foohero">
-            <div class="top_header">
-                <section>
-                    <span><i class="fa fa-map-marker"></i></span>
-                    <span>Aligarh, Uttar Pradesh, INDIA, 2021907</span>
-                </section>
-                <section>
-                    <span><i class="fa fa-phone"></i></span>
-                    <span>(+91) 9758XXX00</span>
-                </section>
-                <section>
-                    <span><i class="fa fa-envelope"></i></span>
-                    <span>apnaschool9758@gmail.com</span>
-                </section>
+        <footer>
+            <div class="content">
+                <div class="top1">
+                    <div class="logo-details">
+                        <i class="fa fa-slack"></i>
+                        <span class="logo_name">ApnaSchools.com</span>
+                    </div>
+                    <div class="media-icons" id="medialinks">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">ApnaSchool</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Frontend</li>
+                        <li><a href="tutorials/html/default.html">HTML Tutorials</a></li>
+                        <li><a href="tutorials/css/default.html">CSS Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/bootstrap/default.html">BootStrap Tutorials</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Backend</li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/python/default.html">Python Tutorials</a></li>
+                        <li><a href="tutorials/java/default.html">JAVA Tutorials</a></li>
+                        <li><a href="tutorials/ruby/default.html">Ruby Tutorials</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Courses MCQs</li>
+                        <li><a href="mcqs/html/html_mcqs.html">HTML</a></li>
+                        <li><a href="mcqs/css/html_mcqs.html">CSS</a></li>
+                        <li><a href="mcqs/javascript/html_mcqs.html">JavaScript</a></li>
+                        <li><a href="mcqs/php/html_mcqs.html">PHP</a></li>
+                    </ul>
+                </div>
             </div>
-            <span class="border-shape"></span>
-            <div class="bottom_content">
-                <!-- <section>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-telegram"></i></a>
-          </section> -->
-                <section>
-                    <a href="../index.html">Home</a>
-                    <a href="../about.html">About us</a>
-                    <a href="">Terms</a>
-                    <a href="">Privacy</a>
-                    <a href="">Policy</a>
-                    <a href="../about.html">Contact Us</a>
-                </section>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text" id="copyright">Copyright &#169; 2021 <a href="#">CodingLab.</a>All rights
+                        reserved</span>
+                    <span class="policy_terms" id="privacy">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms & condition</a>
+                    </span>
+                </div>
             </div>
-            <div class="copyright" id="copyright">
-                Copyright © 2024-2025 websitename - All rights reserved
-            </div>
-        </div>
+        </footer>
     </div>
 
     <script src="../../lib/all_page_js.js"></script>
