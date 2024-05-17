@@ -1320,6 +1320,12 @@ footer .bottom-details .bottom_text{
   footer .content .link-boxes{
     flex-wrap: wrap;
   }
+  footer .content .top1{
+    flex-direction: column;
+  }
+  .content .top1 .media-icons{
+   margin-top: 10px;
+  }
   footer .content .link-boxes .input-box{
     width: 40%;
     margin-top: 10px;
