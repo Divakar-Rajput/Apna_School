@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Comments Tutorial</title>
+    <title>HTML Table Colspan & Rowspan Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="../../plus/plans/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../../lib/common-deps.js"></script>
+    <script src="../../lib/my-learning/main.js"></script>
 </head>
 
 <body>
-
     <div id="tnb-search-suggestions"></div>
     <div id="top-nav-bar" class="classic">
         <div id="pagetop" class="w3-bar notranslate w3-white">
@@ -1519,7 +1520,9 @@
     <script>
         subtopnav_intoview();
     </script>
-
+    <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
+        onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
+    </div>
     <!---========================================================================================================================
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 =============================================================================================================================-->
@@ -1539,7 +1542,7 @@
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
                 <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
-                <a target="_top" class="current_active" href="html_comments.html">HTML Comments</a>
+                <a target="_top" href="html_comments.html">HTML Comments</a>
                 <a target="_top" href="html_colors.html">HTML Colors</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_colors.html">Colors</a>
@@ -1549,8 +1552,9 @@
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
                 <a target="_top" href="html_links.html">HTML Links</a>
-                <div class="tut_overview">
-                    <a target="_top" href="html_links.html">Links</a>
+
+                <div class="tut_overview" style="background-color: #7878ef !important;">
+                    <a target="_top" class="current_active" href="html_links.html">Links</a>
                     <a target="_top" href="html_links_colors.html">Link Colors</a>
                     <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
                 </div>
@@ -1563,14 +1567,15 @@
                 </div>
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
                 <a target="_top" href="html_page_title.html">HTML Page Title</a>
-                <a target="_top" href="html_tables.html">HTML Tables</a>
+                <a target="_top" class="sub-active" href="html_tables.html">HTML Tables</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_tables.html">HTML Tables</a>
                     <a target="_top" href="html_table_borders.html">Table Borders</a>
                     <a target="_top" href="html_table_sizes.html">Table Sizes</a>
                     <a target="_top" href="html_table_headers.html">Table Headers</a>
                     <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
-                    <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
+                    <a target="_top" class="current_active" href="html_table_colspan_rowspan.html">Colspan &amp;
+                        Rowspan</a>
                     <a target="_top" href="html_table_styling.html">Table Styling</a>
                     <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
                 </div>
@@ -1674,10 +1679,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Comments</span></h1>
+                <h1>HTML<span class="color_h1"> Table Colspan & Rowspan</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_table_padding_spacing.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_styling.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,95 +1692,138 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML comments are not displayed in the browser, but they can
-                    help document your HTML source code.</p>
+                <p class="intro">HTML tables can have cells that span over multiple rows and/or columns.</p>
                 <hr>
-
-                <h2>HTML Comment Tag</h2>
-                <p>You can add comments to your HTML source by using the following syntax:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- Write your comments here --&gt;</span>
-                    </div>
+                <style>
+                    table,
+                    th,
+                    td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                </style>
+                <div id="tableborders" style="overflow:auto;">
+                    <table class="table1" style="width:30%;float:left;">
+                        <tr>
+                            <th colspan="2">NAME</th>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="table1" style="width:30%;float:left;margin-left:5%;">
+                        <tr>
+                            <th rowspan="3">APRIL</th>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
+                    <table class="table1" style="width:30%;float:right;">
+                        <tr>
+                            <th colspan="3">2022</th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" rowspan="2">FIESTA</th>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </table>
                 </div>
-                <p>Notice that there is an exclamation point (!) in the start tag, but not in the
-                    end tag.</p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your
-                        HTML source code.</p>
-                </div>
-
                 <hr>
-
-                <h2>Add Comments</h2>
-                <p>With comments you can place notifications and reminders in your HTML code:</p>
+                <h2>HTML Table - Colspan</h2>
+                <p>To make a cell span over multiple columns, use the <code class="w3-codespan">colspan</code>
+                    attribute:</p>
                 <div class="w3-example">
                     <h3>Example</h3>
                     <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- This is a comment --&gt;</span>
-                        <br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br>
-                        <br><span class="comments">&lt;!-- Remember to add more information here --&gt;</span>
-                    </div>
-                    <a target="_blank" href="../../run-code/code-html/html_comment.html"
-                        class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
-                </div>
-
-                <hr>
-
-                <h2>Hide Content</h2>
-
-                <p>Comments can be used to hide content.</p>
-
-                <p>This can be helpful if you hide content temporarily:</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><br>
-                        <span class="comments">&lt;!-- &lt;p&gt;This is another paragraph&lt;/p&gt;
-                            --&gt;</span><br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_hide.html"
+                        &lt;table&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp; &lt;th
+                        colspan=&quot;2&quot;&gt;Name&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;th&gt;Age&lt;/th&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;Jill&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;Smith&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;43&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;Eve&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;Jackson&lt;/td&gt;<br>&nbsp;&nbsp;&nbsp; &lt;td&gt;57&lt;/td&gt;<br>&nbsp;
+                        &lt;/tr&gt;<br>&lt;/table&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_colspan2.html"
                         target="_blank">Run Code &raquo;</a>
                 </div>
 
-                <p>You can also hide more than one line. Everything between the <code class="w3-codespan">&lt;!--</code>
-                    and the <code class="w3-codespan">--></code>
-                    will be hidden from the display.</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a section of HTML code:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><span class="comments">&lt;!--<br>&lt;p&gt;Look at this cool
-                            image:&lt;/p&gt;<br>
-                            &lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot;
-                            alt=&quot;Trulli&quot;&gt;<br>--&gt;</span><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_out.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
+                <div class="w3-panel w3-note">
+                    <p><b>Note:</b> The value of the <code class="w3-codespan">colspan</code> attribute represents the
+                        number of columns to span.</p>
                 </div>
 
-                <p>Comments are also great for debugging HTML, because you can
-                    comment out HTML lines of code, one at a time, to search for errors.</p>
+                <hr>
+
+                <h2>HTML Table - Rowspan</h2>
+                <p>To make a cell span over multiple rows, use the <code class="w3-codespan">rowspan</code> attribute:
+                </p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;table&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;th&gt;Name&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;Jill&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;th rowspan=&quot;2&quot;&gt;Phone&lt;/th&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;555-1234&lt;/td&gt;<br>&nbsp; &lt;/tr&gt;<br>&nbsp; &lt;tr&gt;<br>&nbsp;&nbsp;&nbsp;
+                        &lt;td&gt;555-8745&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_rowspan2.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <div class="w3-panel w3-note">
+                    <p><b>Note:</b> The value of the <code class="w3-codespan">rowspan</code> attribute represents the
+                        number of
+                        rows to span.</p>
+                </div>
 
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -1786,24 +1834,7 @@
 
                 </div>
                 <hr>
-                <h2>Hide Inline Content</h2>
 
-                <p>Comments can be used to hide parts in the middle of the HTML code.</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a part of a paragraph:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This <span class="comments">&lt;!-- great text --&gt;</span> is a paragraph too.<span
-                            class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_inline.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <hr>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1814,8 +1845,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_table_padding_spacing.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_styling.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
@@ -1832,10 +1863,10 @@
                 </div>
 
                 <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         right sidebar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-      -->
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+              -->
                 <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
                     <div id="adngin-outstream-0"></div>
                 </div>
@@ -1868,30 +1899,30 @@
                 <div class="link-boxes">
                     <ul class="box">
                         <li class="link_name">ApnaSchool</li>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../contact.html">Contact us</a></li>
-                        <li><a href="../../about.html">About us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Frontend</li>
-                        <li><a href="default.html">HTML Tutorials</a></li>
-                        <li><a href="../css/default.html">CSS Tutorials</a></li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../bootstrap/default.html">BootStrap Tutorials</a></li>
+                        <li><a href="tutorials/html/default.html">HTML Tutorials</a></li>
+                        <li><a href="tutorials/css/default.html">CSS Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/bootstrap/default.html">BootStrap Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Backend</li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../python/default.html">Python Tutorials</a></li>
-                        <li><a href="../java/default.html">JAVA Tutorials</a></li>
-                        <li><a href="../ruby/default.html">Ruby Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/python/default.html">Python Tutorials</a></li>
+                        <li><a href="tutorials/java/default.html">JAVA Tutorials</a></li>
+                        <li><a href="tutorials/ruby/default.html">Ruby Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Courses MCQs</li>
-                        <li><a href="../../mcqs/html/html_mcqs.html">HTML</a></li>
-                        <li><a href="../../mcqs/css/html_mcqs.html">CSS</a></li>
-                        <li><a href="../../mcqs/javascript/html_mcqs.html">JavaScript</a></li>
-                        <li><a href="../../mcqs/php/html_mcqs.html">PHP</a></li>
+                        <li><a href="mcqs/html/html_mcqs.html">HTML</a></li>
+                        <li><a href="mcqs/css/html_mcqs.html">CSS</a></li>
+                        <li><a href="mcqs/javascript/html_mcqs.html">JavaScript</a></li>
+                        <li><a href="mcqs/php/html_mcqs.html">PHP</a></li>
                     </ul>
                 </div>
             </div>
@@ -1922,6 +1953,7 @@
     <script src="../../lib/all_page_js.js"></script>
     <script src="../../lib/w3schools_footer.js"></script>
     <script src="../../lib/topnav/main.js"></script>
+    <script src="../../lib/footer.js"></script>
 </body>
 
 </html>

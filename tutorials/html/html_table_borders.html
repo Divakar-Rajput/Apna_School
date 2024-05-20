@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Comments Tutorial</title>
+    <title>HTML Table Borders Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="../../plus/plans/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../../lib/common-deps.js"></script>
+    <script src="../../lib/my-learning/main.js"></script>
 </head>
 
 <body>
-
     <div id="tnb-search-suggestions"></div>
     <div id="top-nav-bar" class="classic">
         <div id="pagetop" class="w3-bar notranslate w3-white">
@@ -1519,7 +1520,9 @@
     <script>
         subtopnav_intoview();
     </script>
-
+    <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
+        onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
+    </div>
     <!---========================================================================================================================
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 =============================================================================================================================-->
@@ -1539,7 +1542,7 @@
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
                 <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
-                <a target="_top" class="current_active" href="html_comments.html">HTML Comments</a>
+                <a target="_top" href="html_comments.html">HTML Comments</a>
                 <a target="_top" href="html_colors.html">HTML Colors</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_colors.html">Colors</a>
@@ -1549,8 +1552,9 @@
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
                 <a target="_top" href="html_links.html">HTML Links</a>
-                <div class="tut_overview">
-                    <a target="_top" href="html_links.html">Links</a>
+
+                <div class="tut_overview" style="background-color: #7878ef !important;">
+                    <a target="_top" class="current_active" href="html_links.html">Links</a>
                     <a target="_top" href="html_links_colors.html">Link Colors</a>
                     <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
                 </div>
@@ -1563,10 +1567,10 @@
                 </div>
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
                 <a target="_top" href="html_page_title.html">HTML Page Title</a>
-                <a target="_top" href="html_tables.html">HTML Tables</a>
+                <a target="_top" class="sub-active" href="html_tables.html">HTML Tables</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_tables.html">HTML Tables</a>
-                    <a target="_top" href="html_table_borders.html">Table Borders</a>
+                    <a target="_top" class="current_active" href="html_table_borders.html">Table Borders</a>
                     <a target="_top" href="html_table_sizes.html">Table Sizes</a>
                     <a target="_top" href="html_table_headers.html">Table Headers</a>
                     <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
@@ -1674,10 +1678,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Comments</span></h1>
+                <h1>HTML<span class="color_h1"> Table Borders</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_tables.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_sizes.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,121 +1691,290 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML comments are not displayed in the browser, but they can
-                    help document your HTML source code.</p>
+                <p class="intro">HTML tables can have borders of different styles and shapes.</p>
                 <hr>
+                <h2>How To Add a Border</h2>
 
-                <h2>HTML Comment Tag</h2>
-                <p>You can add comments to your HTML source by using the following syntax:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- Write your comments here --&gt;</span>
-                    </div>
-                </div>
-                <p>Notice that there is an exclamation point (!) in the start tag, but not in the
-                    end tag.</p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your
-                        HTML source code.</p>
-                </div>
-
-                <hr>
-
-                <h2>Add Comments</h2>
-                <p>With comments you can place notifications and reminders in your HTML code:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- This is a comment --&gt;</span>
-                        <br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br>
-                        <br><span class="comments">&lt;!-- Remember to add more information here --&gt;</span>
-                    </div>
-                    <a target="_blank" href="../../run-code/code-html/html_comment.html"
-                        class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
-                </div>
-
-                <hr>
-
-                <h2>Hide Content</h2>
-
-                <p>Comments can be used to hide content.</p>
-
-                <p>This can be helpful if you hide content temporarily:</p>
+                <p>To add a border, use the CSS <code class="w3-codespan">border</code> property on
+                    <code class="w3-codespan">table</code>, <code class="w3-codespan">th</code>, and
+                    <code class="w3-codespan">td</code> elements:
+                </p>
+                <style>
+                    table, tr, td{
+                        border: 1px solid black;
+                    }
+                </style>
+                <table class="table1" style="width:30%;">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
 
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><br>
-                        <span class="comments">&lt;!-- &lt;p&gt;This is another paragraph&lt;/p&gt;
-                            --&gt;</span><br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_hide.html"
+                    <div class="w3-code notranslate cssHigh">
+                        table, th, td
+                        {<br>
+                        &nbsp;&nbsp;border: 1px solid black;<br>
+                        }</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border.html"
                         target="_blank">Run Code &raquo;</a>
                 </div>
 
-                <p>You can also hide more than one line. Everything between the <code class="w3-codespan">&lt;!--</code>
-                    and the <code class="w3-codespan">--></code>
-                    will be hidden from the display.</p>
+                <hr>
+
+                <h2>Collapsed Table Borders</h2>
+                <p>To avoid having double borders like in the example above, set the CSS <code
+                        class="w3-codespan">border-collapse</code>
+                    property to <code class="w3-codespan">collapse</code>.</p>
+                <p>This will make the borders collapse into a single border:</p>
+                <table class="table2" style="width:30%; border-collapse: collapse;">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <p>Hide a section of HTML code:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><span class="comments">&lt;!--<br>&lt;p&gt;Look at this cool
-                            image:&lt;/p&gt;<br>
-                            &lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot;
-                            alt=&quot;Trulli&quot;&gt;<br>--&gt;</span><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_out.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
+                    <div class="w3-code notranslate cssHigh">
+                        table, th, td {<br>&nbsp;&nbsp;border: 1px solid black;<br>
+                        &nbsp;
+                        border-collapse: collapse;<br>}</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_collapse.html"
+                        target="_blank">Run Code &raquo;</a>
                 </div>
 
-                <p>Comments are also great for debugging HTML, because you can
-                    comment out HTML lines of code, one at a time, to search for errors.</p>
 
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
                     <!-- MidContent -->
                     <!-- <p class="adtext">Advertisement</p> -->
 
-                    <div id="adngin-mid_content-0"></div>
+                    <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+                        <script>
+                            uic_r_g();
+                        </script>
+                    </div>
 
                 </div>
                 <hr>
-                <h2>Hide Inline Content</h2>
 
-                <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+
+                <h2>Style Table Borders</h2>
+                <p>If you set a background color of each cell,
+                    and give the border a white color (the same as the document background),
+                    you get the impression of an invisible border:</p>
+                <table class="table4" style="width:30%; border: none;">
+                    <tr style="background-color: #96D4D4; border: none;">
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                    </tr>
+                    <tr style="background-color: #96D4D4;">
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                    </tr>
+                    <tr style="background-color: #96D4D4;">
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                        <td style="border: none;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        table, th, td {<br>&nbsp;&nbsp;border: 1px solid white;<br>
+                        &nbsp;
+                        border-collapse: collapse;<br>}<br>th, td {<br>&nbsp; background-color: #96D4D4;<br>
+                        }</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border_style.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
+
+                <hr>
+
+                <h2>Round Table Borders</h2>
+                <p>With the <code class="w3-codespan">border-radius</code> property, the borders get rounded corners:
+                </p>
+                <table class="table5" style="width:30%; border-radius: 10px;">
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        table, th, td {<br>&nbsp;&nbsp;border: 1px solid
+                        black;<br>
+                        &nbsp;
+                        border-radius: 10px;<br>}</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border_round1.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
+
+                <hr>
+
+                <p>Skip the border around the table by leaving out <code class="w3-codespan">table</code> from the css
+                    selector:</p>
+                <table class="table6" style="width:30%; border: none;">
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                        <td style="border-radius: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        th, td {<br>&nbsp;&nbsp;border: 1px solid
+                        black;<br>
+                        &nbsp;
+                        border-radius: 10px;<br>}</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border_round2.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
+
+                <hr>
+
+                <h2>Dotted Table Borders</h2>
+                <p>With the <code class="w3-codespan">border-style</code> property, you can set the
+                    appearance of the border.</p>
+
+                <table class="table7" style="width:30%; border: none;">
+                    <tr>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                        <td style="border: 2px solid black; border-style:dotted;">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <p>The following values are allowed:</p>
+
+                <ul>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">dotted</code></span>
+                        <span style="xborder:2px solid black;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">dashed</code></span>
+                        <span style="xborder:2px solid black;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">solid</code></span>
+                        <span style="xborder:2px solid black;border-style:solid">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">double</code></span>
+                        <span style="xborder:2px solid black;border-style:double">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">groove</code></span>
+                        <span style="xborder:2px solid black;border-style:groove">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">ridge</code></span>
+                        <span style="xborder:2px solid black;border-style:ridge">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">inset</code></span>
+                        <span style="xborder:2px solid black;border-style:inset">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">outset</code></span>
+                        <span style="xborder:2px solid black;border-style:outset">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">none</code></span>
+                        <span style="xborder:2px solid black;border-style:none">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                    <li><span style="display:inline-block;width:70px;"><code class="w3-codespan">hidden</code></span>
+                        <span style="xborder:2px solid black;border-style:hidden">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+                </ul>
 
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <p>Hide a part of a paragraph:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This <span class="comments">&lt;!-- great text --&gt;</span> is a paragraph too.<span
-                            class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_inline.html"
+                    <div class="w3-code notranslate cssHigh">
+                        &nbsp;th, td {<br>&nbsp;
+                        border-style: dotted;<br>}</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border_dotted.html"
                         target="_blank">Run Code &raquo;</a>
                 </div>
+
+
+                <hr>
+                <h2>Border Color</h2>
+                <p>With the <code class="w3-codespan">border-color</code> property, you can set the color of the border.
+                </p>
+
+                <table class="table8" style="width:30%; border-collapse:collapse ;">
+                    <tr>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                        <td style="border: 2px solid #96D4D4;">&nbsp;</td>
+                    </tr>
+                </table>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        &nbsp;th, td {<br>&nbsp;
+                        border-color: #96D4D4;<br>}</div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_border_color.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
 
                 <hr>
 
@@ -1814,8 +1987,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_tables.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_sizes.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
@@ -1832,10 +2005,10 @@
                 </div>
 
                 <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         right sidebar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-      -->
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+              -->
                 <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
                     <div id="adngin-outstream-0"></div>
                 </div>
@@ -1868,30 +2041,30 @@
                 <div class="link-boxes">
                     <ul class="box">
                         <li class="link_name">ApnaSchool</li>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../contact.html">Contact us</a></li>
-                        <li><a href="../../about.html">About us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Frontend</li>
-                        <li><a href="default.html">HTML Tutorials</a></li>
-                        <li><a href="../css/default.html">CSS Tutorials</a></li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../bootstrap/default.html">BootStrap Tutorials</a></li>
+                        <li><a href="tutorials/html/default.html">HTML Tutorials</a></li>
+                        <li><a href="tutorials/css/default.html">CSS Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/bootstrap/default.html">BootStrap Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Backend</li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../python/default.html">Python Tutorials</a></li>
-                        <li><a href="../java/default.html">JAVA Tutorials</a></li>
-                        <li><a href="../ruby/default.html">Ruby Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/python/default.html">Python Tutorials</a></li>
+                        <li><a href="tutorials/java/default.html">JAVA Tutorials</a></li>
+                        <li><a href="tutorials/ruby/default.html">Ruby Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Courses MCQs</li>
-                        <li><a href="../../mcqs/html/html_mcqs.html">HTML</a></li>
-                        <li><a href="../../mcqs/css/html_mcqs.html">CSS</a></li>
-                        <li><a href="../../mcqs/javascript/html_mcqs.html">JavaScript</a></li>
-                        <li><a href="../../mcqs/php/html_mcqs.html">PHP</a></li>
+                        <li><a href="mcqs/html/html_mcqs.html">HTML</a></li>
+                        <li><a href="mcqs/css/html_mcqs.html">CSS</a></li>
+                        <li><a href="mcqs/javascript/html_mcqs.html">JavaScript</a></li>
+                        <li><a href="mcqs/php/html_mcqs.html">PHP</a></li>
                     </ul>
                 </div>
             </div>
@@ -1922,6 +2095,7 @@
     <script src="../../lib/all_page_js.js"></script>
     <script src="../../lib/w3schools_footer.js"></script>
     <script src="../../lib/topnav/main.js"></script>
+    <script src="../../lib/footer.js"></script>
 </body>
 
 </html>

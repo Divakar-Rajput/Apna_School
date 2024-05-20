@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Comments Tutorial</title>
+    <title>HTML Table Styling Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="../../plus/plans/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../../lib/common-deps.js"></script>
+    <script src="../../lib/my-learning/main.js"></script>
 </head>
 
 <body>
-
     <div id="tnb-search-suggestions"></div>
     <div id="top-nav-bar" class="classic">
         <div id="pagetop" class="w3-bar notranslate w3-white">
@@ -1519,7 +1520,9 @@
     <script>
         subtopnav_intoview();
     </script>
-
+    <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
+        onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
+    </div>
     <!---========================================================================================================================
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 =============================================================================================================================-->
@@ -1539,7 +1542,7 @@
                 <a target="_top" href="html_styles.html">HTML Styles</a>
                 <a target="_top" href="html_formatting.html">HTML Formatting</a>
                 <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
-                <a target="_top" class="current_active" href="html_comments.html">HTML Comments</a>
+                <a target="_top" href="html_comments.html">HTML Comments</a>
                 <a target="_top" href="html_colors.html">HTML Colors</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_colors.html">Colors</a>
@@ -1549,8 +1552,9 @@
                 </div>
                 <a target="_top" href="html_css.html">HTML CSS</a>
                 <a target="_top" href="html_links.html">HTML Links</a>
-                <div class="tut_overview">
-                    <a target="_top" href="html_links.html">Links</a>
+
+                <div class="tut_overview" style="background-color: #7878ef !important;">
+                    <a target="_top" class="current_active" href="html_links.html">Links</a>
                     <a target="_top" href="html_links_colors.html">Link Colors</a>
                     <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
                 </div>
@@ -1563,7 +1567,7 @@
                 </div>
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
                 <a target="_top" href="html_page_title.html">HTML Page Title</a>
-                <a target="_top" href="html_tables.html">HTML Tables</a>
+                <a target="_top" class="sub-active" href="html_tables.html">HTML Tables</a>
                 <div class="tut_overview">
                     <a target="_top" href="html_tables.html">HTML Tables</a>
                     <a target="_top" href="html_table_borders.html">Table Borders</a>
@@ -1571,7 +1575,7 @@
                     <a target="_top" href="html_table_headers.html">Table Headers</a>
                     <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
                     <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
-                    <a target="_top" href="html_table_styling.html">Table Styling</a>
+                    <a target="_top" class="current_active" href="html_table_styling.html">Table Styling</a>
                     <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
                 </div>
                 <a target="_top" href="html_lists.html">HTML Lists</a>
@@ -1674,10 +1678,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Comments</span></h1>
+                <h1>HTML<span class="color_h1"> Table Styling</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_table_colspan_rowspan.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_cogroup.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1687,95 +1691,231 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">HTML comments are not displayed in the browser, but they can
-                    help document your HTML source code.</p>
+                <p class="intro">Use CSS to make your tables look better.</p>
                 <hr>
+                <!--
+<div id="tableborders" style="overflow:auto;">
+<table class="table3" style="width:30%;float:left;">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+</table>
+<table class="table2" style="width:30%;float:left;margin-left:5%;">
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+</table>
+<table class="table1 table2 table4" style="width:30%;float:right;">
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+<hr>
+-->
+                <h2>HTML Table - Zebra Stripes</h2>
 
-                <h2>HTML Comment Tag</h2>
-                <p>You can add comments to your HTML source by using the following syntax:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- Write your comments here --&gt;</span>
-                    </div>
-                </div>
-                <p>Notice that there is an exclamation point (!) in the start tag, but not in the
-                    end tag.</p>
-                <div class="w3-panel w3-note">
-                    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your
-                        HTML source code.</p>
-                </div>
-
-                <hr>
-
-                <h2>Add Comments</h2>
-                <p>With comments you can place notifications and reminders in your HTML code:</p>
+                <p>If you add a background color on every other table row, you will get a nice zebra stripes effect.</p>
+                <style>
+                    .table2 tr:nth-child(even) {
+                        background-color: #D6EEEE;
+                    }
+                </style>
+                <table class="table2" style="width:60%;">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+                <p>To style every other table row element, use the <code class="w3-codespan">:nth-child(even)</code>
+                    selector like this:</p>
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="comments">&lt;!-- This is a comment --&gt;</span>
-                        <br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br>
-                        <br><span class="comments">&lt;!-- Remember to add more information here --&gt;</span>
-                    </div>
-                    <a target="_blank" href="../../run-code/code-html/html_comment.html"
-                        class="w3-btn w3-margin-bottom">
-                        Run Code &raquo;</a>
-                </div>
-
-                <hr>
-
-                <h2>Hide Content</h2>
-
-                <p>Comments can be used to hide content.</p>
-
-                <p>This can be helpful if you hide content temporarily:</p>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>
-                        This is a paragraph.
-                        <span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><br>
-                        <span class="comments">&lt;!-- &lt;p&gt;This is another paragraph&lt;/p&gt;
-                            --&gt;</span><br><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_hide.html"
+                    <div class="w3-code notranslate cssHigh">
+                        tr:nth-child(even) {<br>&nbsp; background-color: #D6EEEE;<br>} </div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra.html"
                         target="_blank">Run Code &raquo;</a>
                 </div>
 
-                <p>You can also hide more than one line. Everything between the <code class="w3-codespan">&lt;!--</code>
-                    and the <code class="w3-codespan">--></code>
-                    will be hidden from the display.</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <p>Hide a section of HTML code:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span><br><span class="comments">&lt;!--<br>&lt;p&gt;Look at this cool
-                            image:&lt;/p&gt;<br>
-                            &lt;img border=&quot;0&quot; src=&quot;pic_trulli.jpg&quot;
-                            alt=&quot;Trulli&quot;&gt;<br>--&gt;</span><br>
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This is a paragraph too.<span class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_out.html"
-                        target="_blank">
-                        Run Code &raquo;</a>
+                <div class="w3-panel w3-note">
+                    <p><b>Note:</b> If you use <code class="w3-codespan">(odd)</code> instead of <code
+                            class="w3-codespan">
+(even)</code>, the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.</p>
                 </div>
 
-                <p>Comments are also great for debugging HTML, because you can
-                    comment out HTML lines of code, one at a time, to search for errors.</p>
+                <hr>
+
+                <h2>HTML Table - Vertical Zebra Stripes</h2>
+
+                <p>To make vertical zebra stripes, style every other <em>column</em>, instead of every other
+                    <em>row</em>.
+                </p>
+                <style>
+                    .table1 td:nth-child(even),
+                    .table1 th:nth-child(even) {
+                        background-color: #D6EEEE;
+                    }
+                </style>
+                <table class="table1" style="width:60%;">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                    </tr>
+                </table>
+                <p>Set the <code class="w3-codespan">:nth-child(even)</code> for table data elements like this:</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        td:nth-child(even),
+                        th:nth-child(even) {<br>&nbsp; background-color: #D6EEEE;<br>} </div>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra_vertical.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <div class="w3-panel w3-note">
+                    <p><b>Note:</b> Put the <code class="w3-codespan">:nth-child()</code> selector
+                        on both <code class="w3-codespan">th</code> and <code class="w3-codespan">td</code>
+                        elements if you want to have the styling on both headers and regular table
+                        cells.</p>
+                </div>
 
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
@@ -1786,23 +1926,208 @@
 
                 </div>
                 <hr>
-                <h2>Hide Inline Content</h2>
 
-                <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+                <h2>Combine Vertical and Horizontal Zebra Stripes</h2>
+                <p>You can combine the styling from the two examples above and you will have stripes on every other row
+                    and every other column.</p>
+                <p>If you use a transparent color you will get an overlapping effect.</p>
+                <style>
+                    .table4 tr:nth-child(even) {
+                        background-color: rgba(150, 212, 212, 0.4);
+                    }
 
+                    .table4 tr:nth-child(even),
+                    .table4 td:nth-child(even) {
+                        background-color: rgba(150, 212, 212, 0.4);
+                    }
+                </style>
+                <table class="table1 table2 table4" style="width:60%;">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+
+                <p>Use an <code class="w3-codespan">rgba()</code> color to specify the transparency of the color:</p>
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <p>Hide a part of a paragraph:</p>
-                    <div class="w3-code notranslate htmlHigh">
-                        <span class="brackets">&lt;<span class="tagname">p</span>&gt;
-                        </span>This <span class="comments">&lt;!-- great text --&gt;</span> is a paragraph too.<span
-                            class="brackets">&lt;<span class="tagname">/p</span>&gt;
-                        </span>
+                    <div class="w3-code notranslate cssHigh">
+                        tr:nth-child(even) {<br>&nbsp; background-color: rgba(150, 212, 212, 0.4);<br>
+                        }<br>
+                        <br>th:nth-child(even),td:nth-child(even) {<br>&nbsp; background-color: rgba(150,
+                        212, 212, 0.4);<br>}
                     </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_comment_inline.html"
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra_combine.html"
                         target="_blank">Run Code &raquo;</a>
                 </div>
 
+                <hr>
+
+                <h2>Horizontal Dividers</h2>
+                <style>
+                    .tabletest2 {
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    .tabletest2 tr {
+                        border-bottom: 1px solid #ddd;
+                    }
+
+                    .tabletest2 th,
+                    .tabletest2 td {
+                        text-align: left;
+                        padding: 10px;
+                    }
+                </style>
+                <table class="tabletest2">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Savings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Peter</td>
+                            <td>Griffin</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Lois</td>
+                            <td>Griffin</td>
+                            <td>$150</td>
+                        </tr>
+                        <tr>
+                            <td>Joe</td>
+                            <td>Swanson</td>
+                            <td>$300</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>If you specify borders only at the bottom of each table row, you will have a table with horizontal
+                    dividers.</p>
+
+                <p>Add the <code class="w3-codespan">border-bottom</code> property to all
+                    <code class="w3-codespan">tr</code> elements to get horizontal dividers:
+                </p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        tr {<br>&nbsp;&nbsp;border-bottom: 1px solid #ddd;<br>}</div>
+                    <a target="_blank" href="../../run-code/code-html/html_table_border_divider2.html"
+                        class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
+                </div>
+                <hr>
+
+                <h2>Hoverable Table</h2>
+                <p>Use the <code class="w3-codespan">:hover</code> selector on
+                    <code class="w3-codespan">tr</code> to highlight table rows on mouse
+                    over:
+                </p>
+                <style>
+                    .tabletest4 {
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    .tabletest4 tr {
+                        border-bottom: 1px solid #ddd;
+                    }
+
+                    .tabletest4 th,
+                    .tabletest4 td {
+                        text-align: left;
+                        padding: 10px;
+                    }
+
+                    tr:hover {
+                        background-color: #D6EEEE;
+                    }
+                </style>
+                <table class="tabletest4">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>Peter</td>
+                        <td>Griffin</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Lois</td>
+                        <td>Griffin</td>
+                        <td>$150</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>Swanson</td>
+                        <td>$300</td>
+                    </tr>
+                </table>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate cssHigh">
+                        tr:hover {background-color: #D6EEEE;}</div>
+                    <a target="_blank" href="../../run-code/code-html/html_table_hover.html"
+                        class="w3-btn w3-margin-bottom">Run
+                        Code &raquo;</a>
+                </div>
                 <hr>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1814,8 +2139,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_quotation_elements.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_colors.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_table_colspan_rowspan.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_table_colgroup.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
@@ -1832,10 +2157,10 @@
                 </div>
 
                 <!--
-        >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+             >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                         right sidebar
-        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-      -->
+             <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+              -->
                 <div id="vidpos" class="sidesection" style="text-align:center;margin-bottom:0;height:0;">
                     <div id="adngin-outstream-0"></div>
                 </div>
@@ -1868,30 +2193,30 @@
                 <div class="link-boxes">
                     <ul class="box">
                         <li class="link_name">ApnaSchool</li>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../contact.html">Contact us</a></li>
-                        <li><a href="../../about.html">About us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Frontend</li>
-                        <li><a href="default.html">HTML Tutorials</a></li>
-                        <li><a href="../css/default.html">CSS Tutorials</a></li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../bootstrap/default.html">BootStrap Tutorials</a></li>
+                        <li><a href="tutorials/html/default.html">HTML Tutorials</a></li>
+                        <li><a href="tutorials/css/default.html">CSS Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/bootstrap/default.html">BootStrap Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Backend</li>
-                        <li><a href="../javascript/default.html">JavaScript Tutorials</a></li>
-                        <li><a href="../python/default.html">Python Tutorials</a></li>
-                        <li><a href="../java/default.html">JAVA Tutorials</a></li>
-                        <li><a href="../ruby/default.html">Ruby Tutorials</a></li>
+                        <li><a href="tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="tutorials/python/default.html">Python Tutorials</a></li>
+                        <li><a href="tutorials/java/default.html">JAVA Tutorials</a></li>
+                        <li><a href="tutorials/ruby/default.html">Ruby Tutorials</a></li>
                     </ul>
                     <ul class="box">
                         <li class="link_name">Courses MCQs</li>
-                        <li><a href="../../mcqs/html/html_mcqs.html">HTML</a></li>
-                        <li><a href="../../mcqs/css/html_mcqs.html">CSS</a></li>
-                        <li><a href="../../mcqs/javascript/html_mcqs.html">JavaScript</a></li>
-                        <li><a href="../../mcqs/php/html_mcqs.html">PHP</a></li>
+                        <li><a href="mcqs/html/html_mcqs.html">HTML</a></li>
+                        <li><a href="mcqs/css/html_mcqs.html">CSS</a></li>
+                        <li><a href="mcqs/javascript/html_mcqs.html">JavaScript</a></li>
+                        <li><a href="mcqs/php/html_mcqs.html">PHP</a></li>
                     </ul>
                 </div>
             </div>
@@ -1922,6 +2247,7 @@
     <script src="../../lib/all_page_js.js"></script>
     <script src="../../lib/w3schools_footer.js"></script>
     <script src="../../lib/topnav/main.js"></script>
+    <script src="../../lib/footer.js"></script>
 </body>
 
 </html>
