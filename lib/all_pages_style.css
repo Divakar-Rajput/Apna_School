@@ -1372,3 +1372,75 @@ footer .bottom-details .bottom_text{
     width: 100%;
   }
 }
+.darksoul-layout
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            background-color: #000000;
+            z-index: 99999;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .darksoul-grid
+        {
+            margin: auto;
+            margin-right: 1px;
+            width: 50px;
+            height: 50px;
+            display: grid;
+            gap: 0px;
+            grid-template-columns: auto auto;
+            animation: rotate 2s linear 0s infinite;
+        }
+        .item1
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+            background-color: rgb(255, 255, 255);
+        }
+        .item2
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        .item3
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        .item4
+        {
+            margin: auto;
+            width: 15px;
+            height: 15px;
+            border-radius: 0%;
+             background-color: rgb(255, 255, 255);
+        }
+        @keyframes rotate 
+        {
+            0%{rotate: 0deg; transform: scale(0.6);}
+            50%{ rotate: 100deg; transform: scale(0.4);}    
+            100%{rotate: 360deg; transform: scale(0.6);}
+        }
+        .darksoul-loader-h
+        {
+            margin: auto;
+            margin-left: 5px;
+            color: #fff;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .hide{
+          display: none;
+        }
+        
