@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Table Styling Tutorials</title>
+    <title>HTML Other Lists Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1553,8 +1553,8 @@
                 <a target="_top" href="html_css.html">HTML CSS</a>
                 <a target="_top" href="html_links.html">HTML Links</a>
 
-                <div class="tut_overview" style="background-color: #7878ef !important;">
-                    <a target="_top" class="current_active" href="html_links.html">Links</a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_links.html">Links</a>
                     <a target="_top" href="html_links_colors.html">Link Colors</a>
                     <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
                 </div>
@@ -1567,7 +1567,7 @@
                 </div>
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
                 <a target="_top" href="html_page_title.html">HTML Page Title</a>
-                <a target="_top" class="sub-active" href="html_tables.html">HTML Tables</a>
+                <a target="_top" href="html_tables.html">HTML Tables <i class="fa fa-caret-down" style="float: right;"></i></a>
                 <div class="tut_overview">
                     <a target="_top" href="html_tables.html">HTML Tables</a>
                     <a target="_top" href="html_table_borders.html">Table Borders</a>
@@ -1575,7 +1575,7 @@
                     <a target="_top" href="html_table_headers.html">Table Headers</a>
                     <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
                     <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
-                    <a target="_top" class="current_active" href="html_table_styling.html">Table Styling</a>
+                    <a target="_top" href="html_table_styling.html">Table Styling</a>
                     <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
                 </div>
                 <a target="_top" href="html_lists.html">HTML Lists</a>
@@ -1586,7 +1586,7 @@
                     <a target="_top" href="html_lists_other.html">Other Lists</a>
                 </div>
                 <a target="_top" href="html_blocks.html">HTML Block &amp; Inline</a>
-                <a target="_top" href="html_div.html">HTML Div</a>
+                <a target="_top" class="current_active" href="html_div.html">HTML Div</a>
                 <a target="_top" href="html_classes.html">HTML Classes</a>
                 <a target="_top" href="html_id.html">HTML Id</a>
                 <a target="_top" href="html_iframe.html">HTML Iframes</a>
@@ -1678,10 +1678,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Table Styling</span></h1>
+                <h1>HTML<span class="color_h1"> Other Lists</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_table_colspan_rowspan.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_table_colgroup.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1690,445 +1690,7 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-                <hr>
-                <p class="intro">Use CSS to make your tables look better.</p>
-                <hr>
-                <!--
-<div id="tableborders" style="overflow:auto;">
-<table class="table3" style="width:30%;float:left;">
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-</tr>
-<tr>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-</tr>
-<tr>
-<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-</tr>
-<tr>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>20</td>
-</tr>
-</table>
-<table class="table2" style="width:30%;float:left;margin-left:5%;">
-<tr>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr>
-<td>5</td>
-<td>6</td>
-<td>7</td>
-<td>8</td>
-</tr>
-<tr>
-<td>9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-</tr>
-<tr>
-<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-</tr>
-<tr>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-<td>20</td>
-</tr>
-</table>
-<table class="table1 table2 table4" style="width:30%;float:right;">
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</div>
-<hr>
--->
-                <h2>HTML Table - Zebra Stripes</h2>
-
-                <p>If you add a background color on every other table row, you will get a nice zebra stripes effect.</p>
-                <style>
-                    .table2 tr:nth-child(even) {
-                        background-color: #D6EEEE;
-                    }
-                </style>
-                <table class="table2" style="width:60%;">
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-                <p>To style every other table row element, use the <code class="w3-codespan">:nth-child(even)</code>
-                    selector like this:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate cssHigh">
-                        tr:nth-child(even) {<br>&nbsp; background-color: #D6EEEE;<br>} </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <div class="w3-panel w3-note">
-                    <p><b>Note:</b> If you use <code class="w3-codespan">(odd)</code> instead of <code
-                            class="w3-codespan">
-(even)</code>, the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.</p>
-                </div>
-
-                <hr>
-
-                <h2>HTML Table - Vertical Zebra Stripes</h2>
-
-                <p>To make vertical zebra stripes, style every other <em>column</em>, instead of every other
-                    <em>row</em>.
-                </p>
-                <style>
-                    .table1 td:nth-child(even),
-                    .table1 th:nth-child(even) {
-                        background-color: #D6EEEE;
-                    }
-                </style>
-                <table class="table1" style="width:60%;">
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                    </tr>
-                    <tr>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                    </tr>
-                    <tr>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                    </tr>
-                </table>
-                <p>Set the <code class="w3-codespan">:nth-child(even)</code> for table data elements like this:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate cssHigh">
-                        td:nth-child(even),
-                        th:nth-child(even) {<br>&nbsp; background-color: #D6EEEE;<br>} </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra_vertical.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <div class="w3-panel w3-note">
-                    <p><b>Note:</b> Put the <code class="w3-codespan">:nth-child()</code> selector
-                        on both <code class="w3-codespan">th</code> and <code class="w3-codespan">td</code>
-                        elements if you want to have the styling on both headers and regular table
-                        cells.</p>
-                </div>
-
-                <hr>
-                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-                    <!-- MidContent -->
-                    <!-- <p class="adtext">Advertisement</p> -->
-
-                    <div id="adngin-mid_content-0"></div>
-
-                </div>
-                <hr>
-
-                <h2>Combine Vertical and Horizontal Zebra Stripes</h2>
-                <p>You can combine the styling from the two examples above and you will have stripes on every other row
-                    and every other column.</p>
-                <p>If you use a transparent color you will get an overlapping effect.</p>
-                <style>
-                    .table4 tr:nth-child(even) {
-                        background-color: rgba(150, 212, 212, 0.4);
-                    }
-
-                    .table4 tr:nth-child(even),
-                    .table4 td:nth-child(even) {
-                        background-color: rgba(150, 212, 212, 0.4);
-                    }
-                </style>
-                <table class="table1 table2 table4" style="width:60%;">
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                </table>
-
-                <p>Use an <code class="w3-codespan">rgba()</code> color to specify the transparency of the color:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate cssHigh">
-                        tr:nth-child(even) {<br>&nbsp; background-color: rgba(150, 212, 212, 0.4);<br>
-                        }<br>
-                        <br>th:nth-child(even),td:nth-child(even) {<br>&nbsp; background-color: rgba(150,
-                        212, 212, 0.4);<br>}
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_table_zebra_combine.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <hr>
-
-                <h2>Horizontal Dividers</h2>
-                <style>
-                    .tabletest2 {
-                        border-collapse: collapse;
-                        width: 100%;
-                    }
-
-                    .tabletest2 tr {
-                        border-bottom: 1px solid #ddd;
-                    }
-
-                    .tabletest2 th,
-                    .tabletest2 td {
-                        text-align: left;
-                        padding: 10px;
-                    }
-                </style>
-                <table class="tabletest2">
-                    <thead>
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Savings</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Peter</td>
-                            <td>Griffin</td>
-                            <td>$100</td>
-                        </tr>
-                        <tr>
-                            <td>Lois</td>
-                            <td>Griffin</td>
-                            <td>$150</td>
-                        </tr>
-                        <tr>
-                            <td>Joe</td>
-                            <td>Swanson</td>
-                            <td>$300</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p>If you specify borders only at the bottom of each table row, you will have a table with horizontal
-                    dividers.</p>
-
-                <p>Add the <code class="w3-codespan">border-bottom</code> property to all
-                    <code class="w3-codespan">tr</code> elements to get horizontal dividers:
-                </p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate cssHigh">
-                        tr {<br>&nbsp;&nbsp;border-bottom: 1px solid #ddd;<br>}</div>
-                    <a target="_blank" href="../../run-code/code-html/html_table_border_divider2.html"
-                        class="w3-btn w3-margin-bottom">Run Code &raquo;</a>
-                </div>
-                <hr>
-
-                <h2>Hoverable Table</h2>
-                <p>Use the <code class="w3-codespan">:hover</code> selector on
-                    <code class="w3-codespan">tr</code> to highlight table rows on mouse
-                    over:
-                </p>
-                <style>
-                    .tabletest4 {
-                        border-collapse: collapse;
-                        width: 100%;
-                    }
-
-                    .tabletest4 tr {
-                        border-bottom: 1px solid #ddd;
-                    }
-
-                    .tabletest4 th,
-                    .tabletest4 td {
-                        text-align: left;
-                        padding: 10px;
-                    }
-
-                    tr:hover {
-                        background-color: #D6EEEE;
-                    }
-                </style>
-                <table class="tabletest4">
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Savings</th>
-                    </tr>
-                    <tr>
-                        <td>Peter</td>
-                        <td>Griffin</td>
-                        <td>$100</td>
-                    </tr>
-                    <tr>
-                        <td>Lois</td>
-                        <td>Griffin</td>
-                        <td>$150</td>
-                    </tr>
-                    <tr>
-                        <td>Joe</td>
-                        <td>Swanson</td>
-                        <td>$300</td>
-                    </tr>
-                </table>
-
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate cssHigh">
-                        tr:hover {background-color: #D6EEEE;}</div>
-                    <a target="_blank" href="../../run-code/code-html/html_table_hover.html"
-                        class="w3-btn w3-margin-bottom">Run
-                        Code &raquo;</a>
-                </div>
-                <hr>
+                
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -2139,8 +1701,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_table_colspan_rowspan.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_table_colgroup.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
