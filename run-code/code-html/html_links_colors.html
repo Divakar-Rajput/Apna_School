@@ -75,11 +75,36 @@
 
  &lt;!DOCTYPE html&gt;
  &lt;html&gt;
- &lt;body&gt;
- 
-<h1>HTML Links</h1>
-<p><a href="https://www.apnaschools.com/">Visit ApnaSchools.com</a></p>
-
+ <style>
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: pink;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    a:active {
+      color: yellow;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Link Colors</h2>
+    
+    <p>You can change the default colors of links</p>
+    
+    <a href="../../tutorials/html/html_images.html" target="_blank">HTML Images</a> 
  
  &lt;/body&gt;
  &lt;/html&gt;
