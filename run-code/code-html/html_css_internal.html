@@ -30,14 +30,14 @@
                 class="w3-button w3-bar-item w3-hide-small topnav-icons fa fa-rotate-left ga-tryit"
                 style="margin-top:-2px;"></a>
 
-            <a href="javascript:void(0);" onclick="clearCode()" title="Delete code"
-                class="w3-button w3-bar-item topnav-icons fa fa-trash-o" style="margin-top:-2px;"></a>
+            <a href="javascript:void(0);" onclick="clearCode()" title="Copy Code"
+                class="w3-button w3-bar-item topnav-icons fa fa-copy" style="margin-top:-2px;"></a>
 
             <a href="javascript:void(0);" onclick="retheme()" title="Change Theme"
                 class="w3-button w3-bar-item topnav-icons fa fa-adjust ga-tryit" style="margin-top:-2px;"></a>
 
             <button id="runbtn" class="w3-button w3-bar-item w3-hover-white w3-hover-text-green ga-tryit"
-                onclick="submitTryit(1);uic_r_p();">Run &#10095;</button>
+                onclick="submitTryit();">Run &#10095;</button>
             <!--<span class="w3-right w3-hide-small xxw3-hide-medium" style="padding:8px 8px 8px 8px;display:block"></span>-->
             <span class="w3-right w3-hide-small"
                 style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span
@@ -48,7 +48,17 @@
           ==================================================================================
           ================================================================================== -->
     <!-- menu area close -->
-
+    <div class="toast">
+        <div class="toast-content">
+            <i class="toast-check fa fa-check"></i>
+            <div class="message">
+                <span class="message-text text-1" id="tetx-1">Success</span>
+            </div>
+        </div>
+        <i class="fa fa-close toast-close"></i>
+        <div class="progress"></div>
+    </div>
+    </div>
     <div id="shield"></div>
     <a href="javascript:void(0)" id="dragbar"></a>
 
@@ -61,7 +71,7 @@
         <div id="textareacontainer">
             <div id="textarea">
                 <div id="textareawrapper">
-<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+                    <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 &lt;!DOCTYPE html>
 &lt;html>
 &lt;head>
