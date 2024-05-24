@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Other Lists Tutorials</title>
+    <title>HTML Div Element Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1567,7 +1567,8 @@
                 </div>
                 <a target="_top" href="html_favicon.html">HTML Favicon</a>
                 <a target="_top" href="html_page_title.html">HTML Page Title</a>
-                <a target="_top" href="html_tables.html">HTML Tables <i class="fa fa-caret-down" style="float: right;"></i></a>
+                <a target="_top" href="html_tables.html">HTML Tables <i class="fa fa-caret-down"
+                        style="float: right;"></i></a>
                 <div class="tut_overview">
                     <a target="_top" href="html_tables.html">HTML Tables</a>
                     <a target="_top" href="html_table_borders.html">Table Borders</a>
@@ -1678,10 +1679,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Other Lists</span></h1>
+                <h1>HTML<span class="color_h1"> Div Element</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_blocks.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_classes.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1690,7 +1691,427 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-                
+                <hr>
+                <p class="intro">The <code class="w3-codespan">&lt;div&gt;</code> element is used as a container for
+                    other HTML elements.</p>
+                <hr>
+
+                <h2>The &lt;div&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element is by default a
+                    block element, meaning that it takes all available width, and comes with line
+                    breaks before and after.</p>
+
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>A &lt;div&gt; element takes up all available width:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt;
+                        dolor sit amet.</div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        Lorem Ipsum<div style="background: #FFF4A3;color:#000;">
+                            I am a div
+                        </div>
+                        dolor sit amet.
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div1.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element has no required attributes, but <code
+                        class="w3-codespan">style</code>, <code class="w3-codespan">class</code> and <code
+                        class="w3-codespan">id</code> are common.</p>
+
+                <hr>
+
+                <h2>&lt;div&gt; as a container</h2>
+
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element is often used to group sections of a web
+                    page together.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>A &lt;div&gt; element with HTML elements:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of
+                        England.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;
+                    </div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div style="background-color:#FFF4A3;color:#000;padding:10px;xtext-align:center;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div2.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <!-- MidContent -->
+                    <!-- <p class="adtext">Advertisement</p> -->
+
+                    <div id="adngin-mid_content-0"></div>
+
+                </div>
+                <hr>
+                <h2>Center align a &lt;div&gt; element</h2>
+
+                <p>If you have a <code class="w3-codespan">&lt;div&gt;</code> element that is
+                    not 100% wide, and you want to center-align it, set the CSS
+                    <code class="w3-codespan">margin</code> property to <code class="w3-codespan">
+auto</code>.
+                </p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>div {<br>&nbsp; width:300px;<br>&nbsp; margin:auto;<br>}<br>
+                        &lt;/style&gt;</div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div
+                            style="background-color:#FFF4A3;color:#000;padding:10px;xtext-align:center;width:300px;margin:auto;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div3.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <hr>
+                <h2>Multiple &lt;div&gt; elements</h2>
+
+                <p>You can have many <code class="w3-codespan">&lt;div&gt;</code> containers on the same page.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of
+                        England.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br><br>&lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;Oslo&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Oslo is the capital city of
+                        Norway.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br><br>&lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;Rome&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Rome is the capital city of
+                        Italy.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;
+                    </div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;xtext-align:center">
+
+                        <div style="background-color:#FFF4A3;color:#000;xpadding:10px;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div style="background-color:#FFC0C7;color:#000;xpadding:10px;">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div style="background-color:#D9EEE1;color:#000;xpadding:10px;">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+
+
+                    <br>
+
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div4.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <hr>
+
+                <h2>Aligning &lt;div&gt; elements side by side</h2>
+
+                <p>When building web pages, you often want to have two or more
+                    <code class="w3-codespan">&lt;div&gt;</code> elements side by side, like this:
+                </p>
+
+                <style>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+
+                    .grid-container div {
+                        padding: 10px;
+                    }
+                </style>
+
+                <div class="grid-container">
+
+                    <div style="background-color:#FFF4A3;color:#000">
+                        <h2>London</h2>
+                        <p>London is the capital city of England.</p>
+                        <p>London has over 13 million inhabitants.</p>
+                    </div>
+
+                    <div style="background-color:#FFC0C7;color:#000">
+                        <h2>Oslo</h2>
+                        <p>Oslo is the capital city of Norway.</p>
+                        <p>Oslo has over 600.000 inhabitants.</p>
+                    </div>
+
+                    <div style="background-color:#D9EEE1;color:#000">
+                        <h2>Rome</h2>
+                        <p>Rome is the capital city of Italy.</p>
+                        <p>Rome has almost 3 million inhabitants.</p>
+                    </div>
+
+                </div>
+
+                <p>There are different methods for aligning elements side by side, all include some CSS styling.
+                    We will look at the most common methods:</p>
+
+                <hr>
+
+                <h2>Float</h2>
+
+                <p>The CSS <code class="w3-codespan">float</code> property was not originally meant to align
+                    <code class="w3-codespan">&lt;div&gt;</code> elements side-by-side,
+                    but has been used for this purpose for many years.
+                </p>
+
+                <p>The CSS <code class="w3-codespan">float</code> property is used for positioning and formatting
+                    content and
+                    allow elements float next to each other instead of on top of each other.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use float to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.mycontainer {<br>&nbsp; width:100%;<br>&nbsp; overflow:auto;<br>
+                        }<br>.mycontainer div {<br>&nbsp; width:33%; <br>&nbsp; float:left;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo1 {
+                            padding: 10px;
+                            width: 33.33%;
+                            float: left;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;overflow:auto;">
+                        <div class="demo1" style="background-color:#FFF4A3;color:#000">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div class="demo1" style="background-color:#FFC0C7;color:#000">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div class="demo1" style="background-color:#D9EEE1;color:#000">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_float.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <p>Learn more about float in our <a href="../css/css_float.html">CSS float tutorial</a>.</p>
+                <hr>
+                <h2>Inline-block</h2>
+
+                <p>If you change the <code class="w3-codespan">&lt;div&gt;</code> element's
+                    <code class="w3-codespan">display</code> property from <code class="w3-codespan">block</code> to
+                    <code class="w3-codespan">inline-block</code>,
+                    the <code class="w3-codespan">&lt;div&gt;</code> elements will no longer add a line break before and
+                    after,
+                    and will be displayed side by side instead of on top of each other.
+                </p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use display: inline-block to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>div {<br>&nbsp; width: 30%;<br>&nbsp; display:
+                        inline-block;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo2 {
+                            padding: 10px;
+                            width: 30%;
+                            display: inline-block;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;overflow:auto;">
+                        <div class="demo2" style="background-color:#FFF4A3;color:#000">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div class="demo2" style="background-color:#FFC0C7;color:#000">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div class="demo2" style="background-color:#D9EEE1;color:#000">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_inline-block.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+                <hr>
+                <h2>Flex</h2>
+
+                <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout
+                    structure without using float or positioning.</p>
+
+                <p>To make the CSS flex method work, surround the <code class="w3-codespan">&lt;div&gt;</code> elements
+                    with another
+                    <code class="w3-codespan">&lt;div&gt;</code> element and give
+                    it the status as a flex container.
+                </p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use flex to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.mycontainer {<br>&nbsp; display: flex;<br>}<br>.mycontainer
+                        &gt; div {<br>&nbsp; width:33%;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo3 {
+                            display: flex;
+                        }
+
+                        div.demo3 div {
+                            padding: 10px;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div class="demo3">
+                            <div style="background-color:#FFF4A3;color:#000">
+                                <h2>London</h2>
+                                <p>London is the capital city of England.</p>
+                                <p>London has over 13 million inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#FFC0C7;color:#000">
+                                <h2>Oslo</h2>
+                                <p>Oslo is the capital city of Norway.</p>
+                                <p>Oslo has over 600.000 inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#D9EEE1;color:#000">
+                                <h2>Rome</h2>
+                                <p>Rome is the capital city of Italy.</p>
+                                <p>Rome has almost 3 million inhabitants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_flex.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <p>Learn more about flex in our <a href="../css/css3_flexbox.html">CSS flexbox tutorial</a>.</p>
+
+                <hr>
+                <h2>Grid</h2>
+
+                <p>The CSS Grid Layout Module offers a grid-based layout system,
+                    with rows and columns,
+                    making it easier to design web pages without having to use floats and positioning.</p>
+
+                <p>Sounds almost the same as flex, but has the ability to define more than one row and position each row
+                    individually.</p>
+                <p>The CSS grid method requires that you surround the <code class="w3-codespan">
+&lt;div&gt;</code> elements with another <code class="w3-codespan">&lt;div&gt;</code> element and give
+                    the status as a grid container, and you must specify the width of each column.</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use grid to align &lt;div&gt; elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.grid-container {<br>&nbsp; display: grid;<br>&nbsp;
+                        grid-template-columns: 33% 33% 33%;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo4 {
+                            display: grid;
+                            grid-template-columns: 33% 33% 33%;
+                        }
+
+                        div.demo4 div {
+                            padding: 10px;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div class="demo4">
+                            <div style="background-color:#FFF4A3;color:#000">
+                                <h2>London</h2>
+                                <p>London is the capital city of England.</p>
+                                <p>London has over 13 million inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#FFC0C7;color:#000">
+                                <h2>Oslo</h2>
+                                <p>Oslo is the capital city of Norway.</p>
+                                <p>Oslo has over 600.000 inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#D9EEE1;color:#000">
+                                <h2>Rome</h2>
+                                <p>Rome is the capital city of Italy.</p>
+                                <p>Rome has almost 3 million inhabitants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_grid.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <p>Learn more about grid in our <a href="../css/css_grid.html">CSS grid tutorial</a>.</p>
+
+                <hr>
+
+                <h2>HTML Tags</h2>
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><a href="tags/tag_div.html">&lt;div&gt;</a></td>
+                        <td>Defines a section in a document (block-level)</td>
+                    </tr>
+                </table>
+
+                <div class="w3-note w3-panel">
+                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.html">HTML Tag
+                            Reference</a>.</p>
+                </div>
+
+                <br>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1701,8 +2122,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_blocks.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_classes.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">

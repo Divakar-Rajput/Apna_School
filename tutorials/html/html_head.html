@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Iframe Tutorials</title>
+    <title>HTML Head Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1590,10 +1590,10 @@
                 <a target="_top" href="html_div.html">HTML Div</a>
                 <a target="_top" href="html_classes.html">HTML Classes</a>
                 <a target="_top" href="html_id.html">HTML Id</a>
-                <a target="_top" class="current_active" href="html_iframe.html">HTML Iframes</a>
+                <a target="_top" href="html_iframe.html">HTML Iframes</a>
                 <a target="_top" href="html_scripts.html">HTML JavaScript</a>
                 <a target="_top" href="html_filepaths.html">HTML File Paths</a>
-                <a target="_top" href="html_head.html">HTML Head</a>
+                <a target="_top" class="current_active" href="html_head.html">HTML Head</a>
                 <a target="_top" href="html_layout.html">HTML Layout</a>
                 <a target="_top" href="html_responsive.html">HTML Responsive</a>
                 <a target="_top" href="html_computercode_elements.html">HTML Computercode</a>
@@ -1679,10 +1679,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Iframes</span></h1>
+                <h1>HTML<span class="color_h1"> The Head Element</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_id.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_scripts.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_filepaths.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_layout.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1692,136 +1692,272 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">An HTML iframe is used to display a web page within a web page.</p>
+                <p class="intro">The HTML <code class="w3-codespan">&lt;head&gt;</code> element
+                is a container for the following elements:
+                <code class="w3-codespan">&lt;title&gt;</code>, <code class="w3-codespan">&lt;style&gt;</code>, 
+                <code class="w3-codespan">&lt;meta&gt;</code>, <code class="w3-codespan">&lt;link&gt;</code>, <code class="w3-codespan">&lt;script&gt;</code>, and <code class="w3-codespan">&lt;base&gt;</code>.</p>
                 <hr>
-                <div style="width:100%;height:400px;overflow:hidden;">
-                    <iframe src="default.html" title="ShreeCollege HTML Tutorial" height="400px" width="99%"></iframe>
+                
+                <h2>The HTML &lt;head&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;head&gt;</code> element is a container for metadata (data 
+                about data) and is placed between the <code class="w3-codespan">&lt;html&gt;</code> tag and the <code class="w3-codespan">&lt;body&gt;</code> tag.</p>
+                <p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+                <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+                <hr>
+                
+                <h2>The HTML &lt;title&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;title&gt;</code> element defines the title of the document. 
+                The title must be text-only, and it is shown in the browser's title bar or in 
+                the page's tab.</p>
+                <p>The <code class="w3-codespan">&lt;title&gt;</code> element is required in HTML documents!</p>
+                <p>The content of a page title is very important for search engine optimization 
+                (SEO)! The page title is used by search engine algorithms to decide the order 
+                when listing pages in search results.</p>
+                <p>The <code class="w3-codespan">&lt;title&gt;</code> element:</p>
+                <ul>
+                  <li>defines a title in the browser toolbar</li>
+                  <li>provides a title for the page when it is added to favorites</li>
+                  <li>displays a title for the page in search engine-results</li>
+                </ul>
+                
+                <p>So, try to make the title as accurate and meaningful as possible!</p>
+                
+                <p>A simple HTML document:</p>
+                <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>&lt;head&gt;<br>
+                &nbsp;
+                &lt;title&gt;A Meaningful Page 
+                 Title&lt;/title&gt;<br>
+                 &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                  <br>The content of the document......<br>
+                  <br>&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_title" target="_blank">Try it Yourself &raquo;</a>
                 </div>
                 <hr>
-
-                <h2>HTML Iframe Syntax</h2>
-                <p>The HTML <code class="w3-codespan">&lt;iframe&gt;</code> tag specifies an
-                    inline frame.</p>
-                <p>An inline frame is used to embed another document within the current HTML document.</p>
+                
+                <h2>The HTML &lt;style&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;style&gt;</code> element is used to define style information for a 
+                single HTML page:</p>
                 <div class="w3-example">
-                    <h3>Syntax</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;<i>url</i>&quot; title=&quot;<em>description</em>&quot;&gt;&lt;/iframe&gt;
-                    </div>
-                </div>
-                <p><strong>Tip:</strong> It is a good practice to always include a <code class="w3-codespan">
-                 title</code> attribute for the <code class="w3-codespan">&lt;iframe&gt;</code>.
-                    This is used by screen readers to read out what the content of the iframe is.</p>
-                <hr>
-
-                <h2>Iframe - Set Height and Width</h2>
-                <p>Use the <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code> attributes
-                    to specify the
-                    size of the iframe.</p>
-                <p>The height and width are specified in pixels by default:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;demo_iframe.htm&quot; height=&quot;200&quot; width=&quot;300&quot;
-                        title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_iframe_height_width.html"
-                        target="_blank">Run Code &raquo;</a>
-                </div>
-
-                <p>Or you can add the <code class="w3-codespan">style</code> attribute and use
-                    the CSS <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code>
-                    properties:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;height:200px;width:300px;&quot;
-                        title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_iframe_height_width_css.html"
-                        target="_blank">Run Code &raquo;</a>
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                &lt;style&gt;<br>
+                  &nbsp;
+                  body {background-color: powderblue;}<br>&nbsp; h1 {color: red;}<br>
+                  &nbsp;
+                  p {color: blue;}<br>
+                &lt;/style&gt;</div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_style" target="_blank">Try it Yourself &raquo;</a>
                 </div>
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
-                    <!-- MidContent -->
-                    <!-- <p class="adtext">Advertisement</p> -->
-
-                    <div id="adngin-mid_content-0"></div>
-
+                <!-- MidContent -->
+                <!-- <p class="adtext">Advertisement</p> -->
+                
+                  <div id="adngin-mid_content-0"></div>
+                  
                 </div>
                 <hr>
-
-                <h2>Iframe - Remove the Border</h2>
-                <p>By default, an iframe has a border around it. </p>
-                <p>To remove the border, add the <code class="w3-codespan">style</code> attribute and use the CSS
-                    <code class="w3-codespan">border</code> property:
-                </p>
+                <h2>The HTML &lt;link&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;link&gt;</code> element defines the 
+                relationship between the current document and an external resource.<br><br>The <code class="w3-codespan">&lt;link&gt;</code> 
+                tag is most often used to link to external style sheets:</p>
                 <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:none;&quot;
-                        title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_iframe_frameborder.html"
-                        target="_blank">Run Code &raquo;</a>
+                <h3>Example</h3>
+                 <div class="w3-code notranslate htmlHigh">
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;mystyle.css&quot;&gt;
                 </div>
-                <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
-                <div class="w3-example">
-                    <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;demo_iframe.htm&quot; style=&quot;border:2px solid red;&quot;
-                        title=&quot;Iframe Example&quot;&gt;&lt;/iframe&gt;</div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_iframe_border2.html"
-                        target="_blank">Run Code &raquo;</a>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_link" target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <div class="w3-panel w3-note">
+                  <p><strong>Tip:</strong> To learn all about CSS, visit our <a href="/css/default.asp">CSS Tutorial</a>.</p>
                 </div>
                 <hr>
-
-                <h2>Iframe - Target for a Link</h2>
-                <p>An iframe can be used as the target frame for a link.</p>
-                <p>The <code class="w3-codespan">target</code> attribute
-                    of the link must refer to the <code class="w3-codespan">name</code> attribute of the iframe:</p>
+                
+                <h2>The HTML &lt;meta&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;meta&gt;</code> element is typically used 
+                to specify the character set, page description, keywords, author of the document, 
+                and viewport settings.</p>
+                <p>The metadata will not be displayed on the page, but is used by browsers (how to display content 
+                or reload page), 
+                by search engines (keywords), and other web services.</p>
+                
+                <h2>Examples</h2>
+                <p><b>Define the character set used:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>&lt;meta charset=&quot;UTF-8&quot;&gt;</div>
+                </div>
+                
+                <p><b>Define keywords for search engines:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>&lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, JavaScript&quot;&gt;</div>
+                </div>
+                
+                <p><b>Define a description of your web page:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>&lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;</div>
+                </div>
+                
+                <p><b>Define the author of a page:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>&lt;meta name=&quot;author&quot; content=&quot;John Doe&quot;&gt;</div>
+                </div>
+                
+                <p><b>Refresh document every 30 seconds:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>&lt;meta http-equiv=&quot;refresh&quot; content=&quot;30&quot;&gt;</div>
+                </div>
+                
+                <p><b>Setting the viewport to make your website look good on all devices:</b></p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                <div>
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                </div>
+                </div>
+                <p>Example of <code class="w3-codespan">&lt;meta&gt;</code> tags:</p>
                 <div class="w3-example">
-                    <h3>Example</h3>
-
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;iframe src=&quot;demo_iframe.htm&quot; name=&quot;iframe_a&quot; title=&quot;Iframe
-                        Example&quot;&gt;&lt;/iframe&gt;<br><br>
-                        &lt;p&gt;&lt;a href=&quot;https://www.ShreeCollege.com&quot;
-                        target=&quot;iframe_a&quot;&gt;ShreeCollege.com&lt;/a&gt;&lt;/p&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_iframe_target.html"
-                        target="_blank">Run Code &raquo;</a>
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                 &lt;meta charset=&quot;UTF-8&quot;&gt;<br>&lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;<br>&lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, JavaScript&quot;&gt;<br>&lt;meta name=&quot;author&quot; content=&quot;John 
+                  Doe&quot;&gt;<br></div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_meta" target="_blank">Try it Yourself &raquo;</a>
                 </div>
                 <hr>
-
+                
+                <h2>Setting The Viewport</h2>
+                
+                <p>The viewport is the user's visible area of a web page. It varies with the device 
+                - it will be smaller on a mobile phone than on a computer screen.</p>
+                <p>You should include the following <code class="w3-codespan">&lt;meta&gt;</code> element in all your web pages:</p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                  <div>
+                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                </div>
+                </div>
+                <p>This gives the browser instructions on how 
+                to control the page's dimensions and scaling.</p>
+                <p>The <code class="w3-codespan">width=device-width</code> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+                <p>The <code class="w3-codespan">initial-scale=1.0</code> part sets the initial zoom level when the page is first loaded by the browser.</p>
+                <p>Here is an example of a web page <em>without</em> the viewport meta tag, and the same web page <em>with</em> the viewport meta tag:</p>
+                <div class="w3-note w3-panel">
+                  <p><strong>Tip:</strong> If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.</p>
+                </div>
+                <br>
+                <div class="w3-row" style="text-align:center;">
+                  <div class="w3-half">
+                    <a target="_blank" href="example_withoutviewport.htm"><img src="img/img_viewport1.png" class="w3-hover-shadow viewport"><br><br><b>Without the 
+                viewport meta tag</b></a>
+                   <br>
+                    <br>
+                  </div>
+                  <div class="w3-half">
+                    <a target="_blank" href="example_withviewport.htm"><img src="img/img_viewport2.png" class="w3-hover-shadow viewport"><br><br><b>With the 
+                viewport meta tag</b></a>
+                    <br>
+                    <br>
+                  </div>  
+                </div>
+                <hr>
+                
+                <h2>The HTML &lt;script&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;script&gt;</code> element is used to define client-side JavaScripts.</p>
+                <p>The following JavaScript writes &quot;Hello JavaScript!&quot; into an HTML element with id=&quot;demo&quot;:</p>
+                
+                <div class="w3-example">
+                <h3>Example</h3>
+                <div class="w3-code notranslate htmlHigh">
+                &lt;script&gt;<br>function myFunction() {<br>
+                  &nbsp;
+                 document.getElementById(&quot;demo&quot;).innerHTML = &quot;Hello JavaScript!&quot;;<br>
+                 }<br>&lt;/script&gt;</div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_script" target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <div class="w3-panel w3-note">
+                  <p><strong>Tip:</strong> To learn all about JavaScript, visit our <a href="/js/default.asp">JavaScript Tutorial</a>.</p>
+                </div>
+                <hr>
+                
+                <h2>The HTML &lt;base&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;base&gt;</code> element specifies the base URL and/or target for all relative URLs in a page.</p>
+                <p>The <code class="w3-codespan">&lt;base&gt;</code> tag must have either an 
+                href or a target attribute present, or both.</p>
+                <p>There can only be one single <code class="w3-codespan">&lt;base&gt;</code> 
+                element in a document!</p>
+                <div class="w3-example">
+                <h3>Example</h3>
+                  <p>Specify a default URL and a default target for all links on a page:</p>
+                 <div class="w3-code notranslate htmlHigh">
+                   &lt;head&gt;<br>&lt;base href=&quot;https://www.w3schools.com/&quot; target=&quot;_blank&quot;&gt;<br>&lt;/head&gt;<br>
+                   <br>&lt;body&gt;<br>&lt;img src=&quot;images/stickman.gif&quot; width=&quot;24&quot; height=&quot;39&quot; 
+                   alt=&quot;Stickman&quot;&gt;<br>&lt;a href=&quot;tags/tag_base.asp&quot;&gt;HTML base Tag&lt;/a&gt;<br>&lt;/body&gt;<br>
+                </div>
+                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_base" target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
                 <h2>Chapter Summary</h2>
                 <ul>
-                    <li>The HTML <code class="w3-codespan">&lt;iframe&gt;</code> tag specifies an
-                        inline frame</li>
-                    <li>The <code class="w3-codespan">src</code>
-                        attribute defines the URL of the page to embed</li>
-                    <li>Always include a <code class="w3-codespan">
-title</code> attribute (for screen readers)</li>
-                    <li>The <code class="w3-codespan">height</code> and <code class="w3-codespan">width</code>
-                        attributes specify the
-                        size of the iframe</li>
-                    <li>Use <code class="w3-codespan">border:none;</code> to remove the border
-                        around the iframe</li>
+                <li>The <code class="w3-codespan">&lt;head&gt;</code> element is a container for metadata (data 
+                about data)</li>
+                  <li>The <code class="w3-codespan">&lt;head&gt;</code> element is placed between the <code class="w3-codespan">&lt;html&gt;</code> tag and the <code class="w3-codespan">&lt;body&gt;</code> tag</li>
+                  <li>The <code class="w3-codespan">&lt;title&gt;</code> element is required and 
+                  it defines the title of the document</li>
+                  <li>The <code class="w3-codespan">&lt;style&gt;</code> element is used to 
+                  define style information for a single document</li>
+                  <li>The <code class="w3-codespan">&lt;link&gt;</code> 
+                  tag is most often used to link to external style sheets</li>
+                  <li>The <code class="w3-codespan">&lt;meta&gt;</code> element is typically 
+                  used to specify the character set, page description, keywords, author of the 
+                  document, and viewport settings</li>
+                  <li>The <code class="w3-codespan">&lt;script&gt;</code> element is used to define client-side JavaScripts</li>
+                  <li>The <code class="w3-codespan">&lt;base&gt;</code> element specifies the 
+                  base URL and/or target for all relative URLs in a page</li>
                 </ul>
                 <hr>
-                <h2>HTML iframe Tag</h2>
+                
+                <h2>HTML head Elements</h2>
                 <table class="ws-table-all notranslate">
-                    <tr>
-                        <th>Tag</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td><a href="tags/tag_iframe.html">&lt;iframe&gt;</a></td>
-                        <td>Defines an inline frame</td>
-                    </tr>
+                <tr>
+                <th style="width:20%">Tag</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_head.asp">&lt;head&gt;</a></td>
+                <td> Defines information about the document</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_title.asp">&lt;title&gt;</a></td>
+                <td>Defines the title of a document</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_base.asp">&lt;base&gt;</a></td>
+                <td>Defines a default address or a default target for all links on a page</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_link.asp">&lt;link&gt;</a></td>
+                <td>Defines the relationship between a document and an external resource</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_meta.asp">&lt;meta&gt;</a></td>
+                <td>Defines metadata about an HTML document</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_script.asp">&lt;script&gt;</a></td>
+                <td>Defines a client-side script</td>
+                </tr>
+                <tr>
+                <td><a href="/tags/tag_style.asp">&lt;style&gt;</a></td>
+                <td>Defines style information for a document</td>
+                </tr>
                 </table>
                 <div class="w3-note w3-panel">
-                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.html">HTML Tag
-                            Reference</a>.</p>
+                  <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag Reference</a>.</p>
                 </div>
-
                 <hr>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1833,8 +1969,8 @@ title</code> attribute (for screen readers)</li>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_id.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_scripts.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_filepaths.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_layout.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
