@@ -75,20 +75,19 @@
 
  &lt;!DOCTYPE html&gt;
  &lt;html&gt;
- &lt;body&gt;
- 
- <h1>This is heading 1</h1>
- <p>This is some text.</p>
- <hr>
- 
- <h2>This is heading 2</h2>
- <p>This is some other text.</p>
- <hr>
- 
- <h2>This is heading 2</h2>
- <p>This is some other text.</p> 
-  
+ &lt;body>
+ <h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
 
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+     
  &lt;/body&gt;
  &lt;/html&gt;
 

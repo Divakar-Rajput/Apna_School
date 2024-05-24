@@ -73,24 +73,25 @@
                 <div id="textareawrapper">
                     <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
 
- &lt;!DOCTYPE html&gt;
- &lt;html&gt;
- &lt;body&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
  
- <h1>This is heading 1</h1>
- <p>This is some text.</p>
- <hr>
- 
- <h2>This is heading 2</h2>
- <p>This is some other text.</p>
- <hr>
- 
- <h2>This is heading 2</h2>
- <p>This is some other text.</p> 
-  
+<h2>Image Maps</h2>
 
- &lt;/body&gt;
- &lt;/html&gt;
+<p>Click on the cup of coffee to execute a JavaScript function:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
 
 </textarea>
                     <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
