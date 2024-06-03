@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>ApnaSchool Online Editor</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../editor-lib/main.css">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../editor-lib/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id='tryitLeaderboard'>
+    </div>
+    <!-- ==================================================================================
+          ==================================================================================
+          ================================================================================== -->
+    <!-- menu area start -->
+    <div class="trytopnav">
+        <div class="w3-bar" style="overflow:auto">
+            <a id="tryhome" href="../../index.html" target="_blank" title="Home"
+                class="w3-button w3-bar-item topnav-icons fa fa-home ga-tryit" style="margin-top:-2px;"></a>
+
+            <a href="javascript:void(0);" id="downloadlink" onclick="saveCode()" title="Download Code"
+                class="w3-button w3-bar-item topnav-icons fa fa-save ga-tryit" style="margin-top:-2px;"></a>
+
+            <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation"
+                class="w3-button w3-bar-item w3-hide-small topnav-icons fa fa-rotate-left ga-tryit"
+                style="margin-top:-2px;"></a>
+
+            <a href="javascript:void(0);" onclick="clearCode()" title="Copy Code"
+                class="w3-button w3-bar-item topnav-icons fa fa-copy" style="margin-top:-2px;"></a>
+
+            <a href="javascript:void(0);" onclick="retheme()" title="Change Theme"
+                class="w3-button w3-bar-item topnav-icons fa fa-adjust ga-tryit" style="margin-top:-2px;"></a>
+
+            <button id="runbtn" class="w3-button w3-bar-item w3-hover-white w3-hover-text-green ga-tryit"
+                onclick="submitTryit();">Run &#10095;</button>
+            <!--<span class="w3-right w3-hide-small xxw3-hide-medium" style="padding:8px 8px 8px 8px;display:block"></span>-->
+            <span class="w3-right w3-hide-small"
+                style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span
+                    id="framesize"></span></span>
+        </div>
+    </div>
+    <!-- ==================================================================================
+          ==================================================================================
+          ================================================================================== -->
+    <!-- menu area close -->
+    <div class="toast">
+        <div class="toast-content">
+            <i class="toast-check fa fa-check"></i>
+            <div class="message">
+                <span class="message-text text-1" id="tetx-1">Success</span>
+            </div>
+        </div>
+        <i class="fa fa-close toast-close"></i>
+        <div class="progress"></div>
+    </div>
+    </div>
+    <div id="shield"></div>
+    <a href="javascript:void(0)" id="dragbar"></a>
+
+    <div id="container">
+        <div id="menuOverlay" class="w3-overlay w3-transparent" style="cursor:pointer;z-index:4"></div>
+        <!-- ==================================================================================
+          ==================================================================================
+          ================================================================================== -->
+        <!-- code writing area start -->
+        <div id="textareacontainer">
+            <div id="textarea">
+                <div id="textareawrapper">
+<textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+    
+<h1>File upload</h1>
+
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    
+&lt;/body>
+&lt;/html>
+</textarea>
+                    <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
+                        <input type="hidden" name="code" id="code" />
+                    </form>
+                </div>
+            </div>
+            <!-- code writing area close -->
+        </div>
+        <!-- ==================================================================================
+       ==================================================================================
+       ================================================================================== -->
+        <!-- code preview start -->
+        <div id="iframecontainer">
+            <div id="iframe">
+                <div id="iframewrapper">
+
+                </div>
+            </div>
+        </div>
+        <!-- code preview close -->
+        <!-- ==================================================================================
+       ==================================================================================
+       ================================================================================== -->
+    </div>
+    <script src="../editor-lib/main.js"></script>
+</body>
+
+</html>
