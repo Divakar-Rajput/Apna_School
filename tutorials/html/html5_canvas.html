@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Emojis Tutorials</title>
+    <title>HTML Canvas Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords"
@@ -1601,7 +1601,7 @@
                 <a target="_top" href="html5_syntax.html">HTML Style Guide</a>
                 <a target="_top" href="html_entities.html">HTML Entities</a>
                 <a target="_top" href="html_symbols.html">HTML Symbols</a>
-                <a target="_top" class="current_active" href="html_emojis.html">HTML Emojis</a>
+                <a target="_top" href="html_emojis.html">HTML Emojis</a>
                 <a target="_top" href="html_charset.html">HTML Charsets</a>
                 <a target="_top" href="html_urlencode.html">HTML URL Encode</a>
                 <a target="_top" href="html_xhtml.html" class="not-wired">HTML vs. XHTML</a>
@@ -1615,7 +1615,7 @@
                 <a target="_top" href="html_form_attributes_form.html" class="not-wired">Input Form Attributes</a>
                 <br>
                 <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
-                <a target="_top" href="html5_canvas.html">HTML Canvas</a>
+                <a target="_top" class="current_active" href="html5_canvas.html">HTML Canvas</a>
                 <a target="_top" href="html5_svg.html" class="not-wired">HTML SVG</a>
                 <br>
                 <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
@@ -1679,10 +1679,10 @@
                 <div id='mainLeaderboard' style='overflow:hidden;'>
                     <div id="adngin-main_leaderboard-0"></div>
                 </div>
-                <h1>HTML<span class="color_h1"> Emojis in HTML</span></h1>
+                <h1>HTML<span class="color_h1"> Canvas Graphics</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_symbols.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_charset.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_form_attributes_form.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html5_svg.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1692,177 +1692,98 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
-                <p class="intro">Emojis are characters from the UTF-8 character set: &#128516; &#128525; &#128151;</p>
-                <hr>
-                <style>
-                    td:first-child {
-                        font-size: 30px;
-                        padding: 0 8px 0 16px;
+
+                <div>
+                    <canvas id="myCanvas" width="270" height="160"
+                        style="border:1px solid #c3c3c3;float:left;margin-right:20px;margin-bottom:15px">
+                        Your browser does not support the &lt;canvas&gt; element.
+                    </canvas>
+                    <p class="intro">The HTML <code class="w3-codespan">&lt;canvas&gt;</code> element is used to draw
+                        graphics on a web page.</p>
+                    <p class="intro">The graphic to the left is created with <code
+                            class="w3-codespan">&lt;canvas&gt;</code>. It shows four
+                        elements: a red rectangle, a gradient rectangle,
+                        a multicolor rectangle, and a multicolor text.</p>
+                </div>
+                <div style="clear:both;"></div>
+                <script>
+                    var c = document.getElementById("myCanvas");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        ctx.fillStyle = "#FF0000";
+                        ctx.fillRect(20, 20, 100, 50);
+
+                        var grd = ctx.createLinearGradient(140, 20, 240, 70);
+                        grd.addColorStop(0, "black");
+                        grd.addColorStop(1, "white");
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(140, 20, 100, 50);
+
+                        var grd2 = ctx.createLinearGradient(20, 90, 120, 90);
+                        grd2.addColorStop(0, "black");
+                        grd2.addColorStop("0.3", "magenta");
+                        grd2.addColorStop("0.5", "blue");
+                        grd2.addColorStop("0.6", "green");
+                        grd2.addColorStop("0.8", "yellow");
+                        grd2.addColorStop(1, "red");
+                        ctx.fillStyle = grd2;
+                        ctx.fillRect(20, 90, 100, 50);
+
+                        ctx.font = "30px Verdana";
+                        var grd3 = ctx.createLinearGradient(140, 20, 240, 90);
+                        grd3.addColorStop(0, "black");
+                        grd3.addColorStop("0.3", "magenta");
+                        grd3.addColorStop("0.6", "blue");
+                        grd3.addColorStop("0.8", "green");
+                        grd3.addColorStop(1, "red");
+                        ctx.strokeStyle = grd3;
+                        ctx.strokeText("Smile!", 140, 120);
                     }
-                </style>
-                <div class="w3-responsive">
-                    <table class="ws-table-all">
-                        <tr>
-                            <th>Emoji</th>
-                            <th>Value</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>&#128507;</td>
-                            <td>&amp;#128507;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128507.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128508;</td>
-                            <td>&amp;#128508;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128508.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128509;</td>
-                            <td>&amp;#128509;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128509.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128510;</td>
-                            <td>&amp;#128510;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128510.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128511;</td>
-                            <td>&amp;#128511;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128511.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128512;</td>
-                            <td>&amp;#128512;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128512.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128513;</td>
-                            <td>&amp;#128513;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128513.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128514;</td>
-                            <td>&amp;#128514;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128514.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128515;</td>
-                            <td>&amp;#128515;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128515.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128516;</td>
-                            <td>&amp;#128516;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128516.html'>Run &raquo;</a></td>
-                        </tr>
-                        <tr>
-                            <td>&#128517;</td>
-                            <td>&amp;#128517;</td>
-                            <td><a target='_blank' class='w3-btn btnsmall'
-                                    href='../../run-code/code-html/html_emoji_128517.html'>Run &raquo;</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <p><a href="/charsets/ref_emoji_smileys.html">Full HTML Emoji Reference</a></p>
+                </script>
                 <hr>
 
-                <h2>HTML Emojis Examples</h2>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh w3-xxlarge">
-                        &#128640;&#128641;&#128642;&#128643;&#128644;
-                    </div>
-                </div>
-                <p><a href="/charsets/ref_emoji_transport.html">HTML Emoji Transport Symbols</a></p>
-
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh w3-xxlarge">
-                        &#128186;&#128187;&#128188;&#128189;&#128190;
-                    </div>
-                </div>
-                <p><a href="/charsets/ref_emoji_office.html">HTML Emoji Office Symbols</a></p>
-
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh w3-xxlarge">
-                        &#128110;&#128111;&#128112;&#128113;&#128114;
-                    </div>
-                </div>
-                <p><a href="/charsets/ref_emoji_body.html">HTML Emoji People Symbols</a></p>
-
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh w3-xxlarge">
-                        &#128002;&#128003;&#128004;&#128005;&#128006;
-                    </div>
-                </div>
-                <p><a href="/charsets/ref_emoji_animals.html">HTML Emoji Animals Symbols</a></p>
-
-                <hr>
-                <h2>What are Emojis?</h2>
-                <p>Emojis look like images, or icons, but they are not.</p>
-                <p>They are letters (characters) from the UTF-8 (Unicode) character set.</p>
-
-                <div class="w3-panel w3-note">
-                    <p>UTF-8 covers almost all of the characters and symbols in the world.</p>
-                </div>
-
+                <h2>What is HTML Canvas?</h2>
+                <p>The HTML <code class="w3-codespan">&lt;canvas&gt;</code> element is used to draw graphics, on the
+                    fly, via JavaScript.</p>
+                <p>The <code class="w3-codespan">&lt;canvas&gt;</code> element is only a container for graphics. You
+                    must use
+                    JavaScript to actually draw the graphics.</p>
+                <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+                <p>Canvas is supported by all major browsers.</p>
                 <hr>
 
-                <h2>The HTML charset Attribute</h2>
-                <p>To display an HTML page correctly, a web browser must know the character set used in the page.</p>
-                <p>This is specified in the <code class="w3-codespan">&lt;meta&gt;</code> tag:</p>
-                <div class="w3-example">
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                <h2>Canvas Examples</h2>
+                <p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.
+                </p>
+                <p>The markup looks like this:</p>
+                <div class="w3-code w3-border notranslate htmlHigh">
+                    <div>
+                        &lt;canvas id="myCanvas&quot; width="200" height="100"&gt;&lt;/canvas&gt;
                     </div>
                 </div>
-                <div class="w3-panel w3-note">
-                    <p>If not specified, UTF-8 is the default character set in HTML.</p>
-                </div>
-
-                <hr>
-                <h2>UTF-8 Characters</h2>
-                <p>Many UTF-8 characters cannot be typed on a keyboard,
-                    but they can always be displayed using numbers (called entity numbers):</p>
-                <ul>
-                    <li>A is 65</li>
-                    <li>B is 66</li>
-                    <li>C is 67</li>
-                </ul>
-
+                <p><b>Note:</b> Always specify an <code class="w3-codespan">id</code> attribute (to be referred to in a
+                    script),
+                    and a <code class="w3-codespan">width</code> and <code class="w3-codespan">height</code> attribute
+                    to define the size of the canvas. To add a border, use the <code class="w3-codespan">style</code>
+                    attribute.</p>
+                <p>Here is an example of a basic, empty canvas:</p>
+                <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                    Your browser does not support the canvas element.
+                </canvas>
                 <div class="w3-example">
                     <h3>Example</h3>
                     <div class="w3-code notranslate htmlHigh">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html&gt;<br>
-                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
-                        &lt;body&gt;<br><br>
-                        &lt;p&gt;I will display A B C&lt;/p&gt;<br>
-                        &lt;p&gt;I will display &amp;#65; &amp;#66; &amp;#67;&lt;/p&gt;<br><br>
-                        &lt;/body&gt;<br>
-                        &lt;/html&gt;
+                        &lt;canvas id="myCanvas&quot; width="200" height="100"
+                        style=&quot;border:1px solid
+                        #000000;&quot;&gt;<br>
+                        &lt;/canvas&gt;
                     </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_emojis_utf8.html"
-                        target="_blank">Run Code &raquo;</a>
+                    <a target="_blank" href="tryit.asp?filename=tryhtml5_canvas_empty"
+                        class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
                 </div>
-
-                <h3>Example Explained</h3>
-                <p>The <code class="w3-codespan">&lt;meta charset=&quot;UTF-8&quot;&gt;</code> element defines the
-                    character set.</p>
-                <p>The characters A, B, and C, are displayed by the numbers 65, 66, and 67.</p>
-                <p>To let the browser understand that you are displaying a character, you must start the entity number
-                    with &amp;# and end it with ; (semicolon).</p>
-
                 <hr>
                 <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
                     <!-- MidContent -->
@@ -1873,48 +1794,214 @@
                 </div>
                 <hr>
 
-                <h2>Emoji Characters</h2>
-                <p>Emojis are also characters from the UTF-8 alphabet:</p>
-                <ul>
-                    <li>&#128516; is 128516</li>
-                    <li>&#128525; is 128525</li>
-                    <li>&#128151; is 128151</li>
-                </ul>
-
+                <h2>Add a JavaScript</h2>
+                <p>After creating the rectangular canvas area, you must add a JavaScript to do
+                    the drawing.</p>
+                <p>Here are some examples:</p>
+                <h3>Draw a Line</h3>
+                <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas2");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        ctx.moveTo(0, 0);
+                        ctx.lineTo(200, 100);
+                        ctx.stroke();
+                    }
+                </script>
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html&gt;<br>
-                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
-                        &lt;body&gt;<br><br>
-                        &lt;h1&gt;My First Emoji&lt;/h1&gt;<br><br>
-                        &lt;p&gt;&amp;#128512;&lt;/p&gt;<br><br>
-                        &lt;/body&gt;<br>&lt;/html&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_emojis.html"
-                        target="_blank">Run
-                        Code &raquo;</a>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx =
+                        c.getContext(&quot;2d&quot;);<br>
+                        ctx.moveTo(0, 0);<br>ctx.lineTo(200, 100);<br>
+                        ctx.stroke();<br>&lt;/script&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_path"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
+                <hr>
 
-                <p>Since Emojis are characters, they can be copied, displayed,
-                    and sized just like any other character in HTML.</p>
-
+                <h3>Draw a Circle</h3>
+                <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas3");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        ctx.beginPath();
+                        ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                        ctx.stroke();
+                    }
+                </script>
                 <div class="w3-example">
                     <h3>Example</h3>
-                    <div class="w3-code notranslate htmlHigh">
-                        &lt;!DOCTYPE html&gt;<br>
-                        &lt;html&gt;<br>
-                        &lt;meta charset=&quot;UTF-8&quot;&gt;<br>
-                        &lt;body&gt;<br><br>
-                        &lt;h1&gt;Sized Emojis&lt;/h1&gt;<br><br>
-                        &lt;p style=&quot;font-size:48px&quot;&gt;<br>&amp;#128512; &amp;#128516; &amp;#128525;
-                        &amp;#128151;<br>&lt;/p&gt;<br><br>
-                        &lt;/body&gt;<br>&lt;/html&gt;
-                    </div>
-                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_emojis_size.html"
-                        target="_blank">Run Code &raquo;</a>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx =
+                        c.getContext(&quot;2d&quot;);<br>
+                        ctx.beginPath();<br>ctx.arc(95, 50, 40, 0, 2 * Math.PI);<br>ctx.stroke();<br>
+                        &lt;/script&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_path2"
+                        target="_blank">Try it Yourself &raquo;</a>
                 </div>
+                <hr>
+
+                <h3>Draw a Text</h3>
+                <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas4");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("Hello World", 10, 50);
+                    }
+                </script>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx =
+                        c.getContext(&quot;2d&quot;);<br>
+                        ctx.font = &quot;30px Arial&quot;;<br>ctx.fillText(&quot;Hello World&quot;, 10, 50);<br>
+                        &lt;/script&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_text"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h3>Stroke Text</h3>
+                <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas5");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.strokeText("Hello World", 10, 50);
+                    }
+                </script>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>var ctx =
+                        c.getContext(&quot;2d&quot;);<br>
+                        ctx.font = &quot;30px Arial&quot;;<br>ctx.strokeText(&quot;Hello World&quot;, 10, 50);<br>
+                        &lt;/script&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_text2"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h3>Draw Linear Gradient</h3>
+                <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas6");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(1, "white");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(10, 10, 150, 80);
+                    }
+                </script>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>
+                        var ctx = c.getContext(&quot;2d&quot;);<br>
+                        <br>
+                        // Create gradient<br>
+                        var grd = ctx.createLinearGradient(0, 0, 200, 0);<br>
+                        grd.addColorStop(0, &quot;red&quot;);<br>
+                        grd.addColorStop(1, &quot;white&quot;);<br>
+                        <br>
+                        // Fill with gradient<br>
+                        ctx.fillStyle = grd;<br>
+                        ctx.fillRect(10, 10, 150, 80);<br>&lt;/script&gt;
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_grad"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h3>Draw Circular Gradient</h3>
+                <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;">
+                    Your browser does not support the canvas element
+                </canvas>
+                <script>
+                    var c = document.getElementById("myCanvas7");
+                    var canvOK = 1;
+                    try { c.getContext("2d"); }
+                    catch (er) { canvOK = 0; }
+                    if (canvOK == 1) {
+                        var ctx = c.getContext("2d");
+                        // Create gradient
+                        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                        grd.addColorStop(0, "red");
+                        grd.addColorStop(1, "white");
+                        // Fill with gradient
+                        ctx.fillStyle = grd;
+                        ctx.fillRect(10, 10, 150, 80);
+                    }
+                </script>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>
+                        var ctx = c.getContext(&quot;2d&quot;);<br>
+                        <br>
+                        // Create gradient<br>
+                        var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);<br>
+                        grd.addColorStop(0, &quot;red&quot;);<br>
+                        grd.addColorStop(1, &quot;white&quot;);<br>
+                        <br>
+                        // Fill with gradient<br>
+                        ctx.fillStyle = grd;<br>ctx.fillRect(10, 10, 150, 80);<br>&lt;/script&gt;
+                    </div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_grad2"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <div class="w3-example">
+                    <h3>Draw Image</h3>
+                    <div class="w3-code notranslate jsHigh">
+                        &lt;script&gt;<br>var c = document.getElementById(&quot;myCanvas&quot;);<br>
+                        var ctx = c.getContext(&quot;2d&quot;);<br>
+                        var img = document.getElementById(&quot;scream&quot;);<br>
+                        ctx.drawImage(img, 10, 10);<br>&lt;/script&gt;</div>
+                    <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_canvas_tut_img"
+                        target="_blank">Try it Yourself &raquo;</a>
+                </div>
+                <hr>
+
+                <h2>HTML Canvas Tutorial</h2>
+                <p>To learn more about <code class="w3-codespan">&lt;canvas&gt;</code>, please
+                    read our <a href="/graphics/canvas_intro.asp">HTML Canvas Tutorial</a>.</p>
 
                 <br>
 
@@ -1927,8 +2014,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="html_emojis.html">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="html_charset.html">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_form_attributes_form.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html5_svg.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">

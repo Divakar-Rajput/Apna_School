@@ -1681,8 +1681,8 @@
                 </div>
                 <h1>HTML<span class="color_h1"> Symbols</span></h1>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_entities.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_emojis.html">Next &#10095;</a>
                 </div>
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1691,7 +1691,313 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                <hr>
+                <p class="intro">Symbols or letters that are not present on your keyboard can be added to HTML using
+                    entities.</p>
+                <hr>
 
+                <h2>HTML Symbol Entities</h2>
+                <p>HTML entities were described in the previous chapter.</p>
+                <p>Many mathematical, technical, and currency symbols, are not present on a normal keyboard.</p>
+                <p>To add such symbols to an HTML page, you can use the entity name or the entity number
+                    (a decimal or a hexadecimal reference) for the symbol:</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>Display the euro sign:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;p&gt;I will display &amp;euro;&lt;/p&gt;<br>
+                        &lt;p&gt;I will display &amp;#8364;&lt;/p&gt;<br>
+                        &lt;p&gt;I will display &amp;#x20AC;&lt;/p&gt;
+                    </div>
+                    <h3>Will display as:</h3>
+                    <div class="w3-white w3-padding">
+                        I will display &euro;<br>
+                        I will display &#8364;<br>
+                        I will display &#x20AC;
+                    </div>
+                    <a class="w3-btn w3-margin-bottom w3-margin-top" href="../../run-code/code-html/html_utf_euro.html"
+                        target="_blank">Run &raquo;</a>
+                </div>
+
+                <hr>
+                <h2>Some Mathematical Symbols Supported by HTML</h2>
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Char</th>
+                        <th>Number</th>
+                        <th>Entity</th>
+                        <th>Description</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>&#8704;</td>
+                        <td>&amp;#8704;</td>
+                        <td>&amp;forall;</td>
+                        <td>For all</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_forall.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8706;</td>
+                        <td>&amp;#8706;</td>
+                        <td>&amp;part;</td>
+                        <td>Partial differential</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_part.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8707;</td>
+                        <td>&amp;#8707;</td>
+                        <td>&amp;exist;</td>
+                        <td>There exists</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_exist.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8709;</td>
+                        <td>&amp;#8709;</td>
+                        <td>&amp;empty;</td>
+                        <td>Empty sets</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_empty.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8711;</td>
+                        <td>&amp;#8711;</td>
+                        <td>&amp;nabla;</td>
+                        <td>Nabla</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_nabla.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8712;</td>
+                        <td>&amp;#8712;</td>
+                        <td>&amp;isin;</td>
+                        <td>Element of</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_isin.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8713;</td>
+                        <td>&amp;#8713;</td>
+                        <td>&amp;notin;</td>
+                        <td>Not an element of</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_notin.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8715;</td>
+                        <td>&amp;#8715;</td>
+                        <td>&amp;ni;</td>
+                        <td>Contains as member</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_ni.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8719;</td>
+                        <td>&amp;#8719;</td>
+                        <td>&amp;prod;</td>
+                        <td>N-ary product</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_prod.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8721;</td>
+                        <td>&amp;#8721;</td>
+                        <td>&amp;sum;</td>
+                        <td>N-ary summation</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_sum.html">Run &raquo;</a></td>
+                    </tr>
+                </table>
+                <p><a href="/charsets/ref_utf_math.html">Full Math Symbols Reference</a></p>
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <!-- MidContent -->
+                    <!-- <p class="adtext">Advertisement</p> -->
+
+                    <div id="adngin-mid_content-0"></div>
+
+                </div>
+                <hr>
+                <h2>Some Greek Letters Supported by HTML</h2>
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Char</th>
+                        <th>Number</th>
+                        <th>Entity</th>
+                        <th>Description</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>&#913;</td>
+                        <td>&amp;#913;</td>
+                        <td>&amp;Alpha;</td>
+                        <td>GREEK ALPHA</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_alpha.html">Run &raquo;</a></td>
+                    <tr>
+                        <td>&#914;</td>
+                        <td>&amp;#914;</td>
+                        <td>&amp;Beta;</td>
+                        <td>GREEK BETA</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_beta.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#915;</td>
+                        <td>&amp;#915;</td>
+                        <td>&amp;Gamma;</td>
+                        <td>GREEK GAMMA</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_gamma.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#916;</td>
+                        <td>&amp;#916;</td>
+                        <td>&amp;Delta;</td>
+                        <td>GREEK DELTA</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_delta.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#917;</td>
+                        <td>&amp;#917;</td>
+                        <td>&amp;Epsilon;</td>
+                        <td>GREEK EPSILON</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_epsilon.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#918;</td>
+                        <td>&amp;#918;</td>
+                        <td>&amp;Zeta;</td>
+                        <td>GREEK ZETA</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_zeta.html">Run &raquo;</a></td>
+                    </tr>
+                </table>
+                <p><a href="/charsets/ref_utf_greek.html">Full Greek Reference</a></p>
+                <hr>
+
+                <h2>Some Other Entities Supported by HTML</h2>
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Char</th>
+                        <th>Number</th>
+                        <th>Entity</th>
+                        <th>Description</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>&#169;</td>
+                        <td>&amp;#169;</td>
+                        <td>&amp;copy;</td>
+                        <td>COPYRIGHT</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_copy.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#174;</td>
+                        <td>&amp;#174;</td>
+                        <td>&amp;reg;</td>
+                        <td>REGISTERED</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_reg.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8364;</td>
+                        <td>&amp;#8364;</td>
+                        <td>&amp;euro;</td>
+                        <td>EURO SIGN</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_euro.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8482;</td>
+                        <td>&amp;#8482;</td>
+                        <td>&amp;trade;</td>
+                        <td>TRADEMARK</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_trade.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8592;</td>
+                        <td>&amp;#8592;</td>
+                        <td>&amp;larr;</td>
+                        <td>LEFT ARROW</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_larr.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8593;</td>
+                        <td>&amp;#8593;</td>
+                        <td>&amp;uarr;</td>
+                        <td>UP ARROW</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_uarr.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8594;</td>
+                        <td>&amp;#8594;</td>
+                        <td>&amp;rarr;</td>
+                        <td>RIGHT ARROW</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_rarr.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#8595;</td>
+                        <td>&amp;#8595;</td>
+                        <td>&amp;darr;</td>
+                        <td>DOWN ARROW</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_darr.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#9824;</td>
+                        <td>&amp;#9824;</td>
+                        <td>&amp;spades;</td>
+                        <td>SPADE</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_spades.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#9827;</td>
+                        <td>&amp;#9827;</td>
+                        <td>&amp;clubs;</td>
+                        <td>CLUB</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_clubs.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#9829;</td>
+                        <td>&amp;#9829;</td>
+                        <td>&amp;hearts;</td>
+                        <td>HEART</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_hearts.html">Run &raquo;</a></td>
+                    </tr>
+                    <tr>
+                        <td>&#9830;</td>
+                        <td>&amp;#9830;</td>
+                        <td>&amp;diams;</td>
+                        <td>&nbsp;DIAMOND</td>
+                        <td><a target="_blank" class="w3-btn btnsmall"
+                                href="../../run-code/code-html/html_symbol_diams.html">Run &raquo;</a></td>
+                    </tr>
+                </table>
+                <style>
+                    td:first-child {
+                        font-size: 26px;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 16px;
+                    }
+                </style>
+                <p><a href="/charsets/ref_utf_currency.html">Full Currency Reference</a></p>
+                <p><a href="/charsets/ref_utf_arrows.html">Full Arrows Reference</a></p>
+                <p><a href="/charsets/ref_utf_symbols.html">Full Symbols Reference</a></p>
+                <br>
 
                 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1702,8 +2008,8 @@
                 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
                 <hr>
                 <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="#">&#10094; Previous</a>
-                    <a class="w3-right w3-btn" href="#">Next &#10095;</a>
+                    <a class="w3-left w3-btn" href="html_entities.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_emojis.html">Next &#10095;</a>
                 </div>
             </div>
             <div class="w3-col l2 m12" id="right">
