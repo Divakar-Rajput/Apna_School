@@ -837,7 +837,9 @@ body.darkpagetheme .icons-right {
     overflow: auto;
     scrollbar-width: none;
   }
-
+.darktheme #subtopnav{
+  background-color: #000000;
+}
   #subtopnav a {
     display: inline-block;
     width: auto;
@@ -854,7 +856,12 @@ body.darkpagetheme .icons-right {
     background-color: #0b219e;
     color: #ffffff !important;
   }
-
+  .darktheme #subtopnav a:hover,
+  .darktheme #subtopnav a:focus,
+  .darktheme #subtopnav a:active {
+    background-color: #4c4d4f;
+    color: #ffffff !important;
+  }
   #subtopnav a.active {
     /* background-color: #e70505 !important; */
     color: #fff !important;
@@ -865,6 +872,9 @@ body.darkpagetheme .icons-right {
   }
   .current_active:hover {
     background-color: red !important;
+  }
+  .darktheme .current_active {
+    background-color: rgb(94, 90, 90) !important;
   }
 
   #btn_container_subtopnav {
@@ -902,6 +912,12 @@ body.darkpagetheme .icons-right {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .darktheme #scroll_left_btn span {
+    background: linear-gradient(to right, #404040 70%, transparent 100%);
+  }
+  .darktheme #scroll_left_btn span:hover {
+    background: linear-gradient(to right, #909090 70%, transparent 100%);
+  }
 
   #scroll_left_btn span:hover {
     background: linear-gradient(to right, #0e28b8 80%, transparent 100%);
@@ -919,7 +935,13 @@ body.darkpagetheme .icons-right {
   }
 
   #scroll_right_btn:hover {
-    background: linear-gradient(to left, #0e28b8 80%, transparent 100%);
+    background: linear-gradient(to left, #0e28b8 70%, transparent 100%);
+  }
+  .darktheme #scroll_right_btn {
+    background: linear-gradient(to left, #404040 70%, transparent 100%);
+  }
+  .darktheme #scroll_right_btn:hover {
+    background: linear-gradient(to left, #909090 70%, transparent 100%);
   }
 
   #menubtn_container {
@@ -1137,7 +1159,7 @@ footer{
   background-color: rgb(28, 30, 35);
   color: gray;
 }
-footer::before{
+/* footer::before{
   content: '';
   position: absolute;
   left: 0;
@@ -1145,7 +1167,7 @@ footer::before{
   height: 1px;
   width: 100%;
   background: #AFAFB6;
-}
+} */
 footer .content{
   max-width: 1250px;
   margin: auto;
