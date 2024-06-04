@@ -857,6 +857,17 @@
     padding-bottom: 60px;
     padding-top: 35px;
   }
+  .darktheme #top-nav-bar #dropdown-nav-outer-wrapper #dropdown-nav-inner-wrapper .dropdown-nav {
+    position: relative;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 60px;
+    padding-top: 35px;
+  }
   @media (max-width: 688px) {
     #top-nav-bar #dropdown-nav-outer-wrapper #dropdown-nav-inner-wrapper .dropdown-nav {
       display: none !important;

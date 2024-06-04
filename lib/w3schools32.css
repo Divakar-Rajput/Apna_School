@@ -644,6 +644,7 @@ a {
   float: left;
   width: 100%;
 }
+
 .w3-third .bigbtn {
   margin-bottom: 16px;
   width: 100%;
@@ -654,6 +655,7 @@ a {
   text-decoration: none !important;
   border-radius: 5px;
 }
+
 .w3-col.s1 {
   width: 8.33333%
 }
@@ -720,10 +722,12 @@ a {
   .w3-third {
     width: 33.33333%
   }
+
   .w3-third a {
     width: 33.33333%;
     background-color: #000;
   }
+
   .w3-col.m5 {
     width: 41.66666%
   }
@@ -929,9 +933,8 @@ a {
   }
 
   .w3-hide-large {
-    display: none !important
-  }
-
+    display: none !important;
+  } 
   .w3-sidebar.w3-collapse {
     display: block !important
   }
@@ -2265,7 +2268,7 @@ span#usergetsstar {
 }
 
 .topnav .w3-bar a.active {
-  background-color:  #0202e1 !important;
+  background-color: #0202e1 !important;
   color: #ffffff;
 }
 
@@ -2284,7 +2287,18 @@ a.topnav-icons.fa-home {
 }
 
 a.topnav-icons.fa-menu {
-  font-size: 16px !important
+  font-size: 16px !important;
+  line-height: 1.1;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  background-color: #0202e1 !important;
+}
+.darktheme a.topnav-icons.fa-menu {
+  font-size: 16px !important;
+  line-height: 1.1;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+  background-color: #000 !important;
 }
 
 a.topnav-localicons {
@@ -2507,11 +2521,13 @@ a.topnav-localicons {
   background-color: #ddd;
   line-height: 1.8em;
 }
-.tut_active{
+
+.tut_active {
   color: #c81616;
   background-color: #0404ac !important;
 }
-.tut_active:hover{
+
+.tut_active:hover {
   background-color: #0404ac !important;
 }
 
@@ -2536,14 +2552,14 @@ a.topnav-localicons {
 .w3-example {
   /* background-color: #70f69b; */
   /* background-image: linear-gradient(90deg,#2ff43c, #00c3d1); */
-  background-color: #00DBDE;
-  background-image: linear-gradient(90deg, #00fbff 0%, #ff00a2 100%);
+  background-color: aqua;
   border-radius: 5px;
   padding: 0.01em 16px;
   margin: 20px 0;
-  box-shadow: 0px 10px 5px #000000 !important;
+  box-shadow: 0px 0px 10px 5px #000000;
 }
-.darktheme .w3-example{
+
+.darktheme .w3-example {
   background-color: #1d2a35 !important;
   background-image: linear-gradient(90deg, #3a4752 0%, #3a4752 100%);
 }
@@ -2570,39 +2586,44 @@ a.topnav-localicons {
 
 .w3-example .w3-btn,
 .w3-example .ws-btn {
-  background-color:  #0202e1 !important;
+  background-color: #0202e1 !important;
   border-radius: 5px;
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 6px 18px;
 }
-.darktheme .w3-example .w3-btn{
-  background-color:  #1d2a35 !important;
+
+.darktheme .w3-example .w3-btn {
+  background-color: #1d2a35 !important;
 }
-.darktheme .w3-example .w3-btn:hover{
-  background-color:  #030b14 !important;
+
+.darktheme .w3-example .w3-btn:hover {
+  background-color: #030b14 !important;
 }
 
 .w3-code {
-  border-left: 4px solid  #0202e1;
+  border-left: 4px solid #0202e1;
 }
 
 .nextprev a.w3-right,
 .nextprev a.w3-left {
-  background-color:  #0202e1;
+  background-color: #0202e1;
   color: #ffffff;
-  border-color:  #0202e1
+  border-color: #0202e1
 }
+
 .darktheme .nextprev a.w3-right,
 .darktheme .nextprev a.w3-left {
-  background-color:  #000;
-  border-color:  #000;
+  background-color: #000;
+  border-color: #000;
 }
+
 .darktheme .nextprev a.w3-right:hover,
 .darktheme .nextprev a.w3-left:hover {
-  background-color:  #424040 !important;
-  border-color:  #424040 !important;
+  background-color: #424040 !important;
+  border-color: #424040 !important;
 }
+
 .pagemenu {
   margin-left: -20px;
   margin-right: -20px;
@@ -2669,7 +2690,7 @@ a.topnav-localicons {
 }
 
 #w3-exerciseform .w3-btn {
-  background-color:  #0202e1;
+  background-color: #0202e1;
   border-radius: 5px;
   font-size: 17px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -2679,11 +2700,11 @@ a.topnav-localicons {
 .w3-theme {
   color: #fff !important;
   background-color: #73AD21 !important;
-  background-color:  #0202e1 !important
+  background-color: #0202e1 !important
 }
 
 .w3-theme-border {
-  border-color:  #0202e1 !important
+  border-color: #0202e1 !important
 }
 
 .sharethis a:hover {
@@ -4377,7 +4398,7 @@ body.darkpagetheme #footerwrapper {
 }
 
 .w3-info {
-  background-color:  #0202e1;
+  background-color: #0202e1;
   border-left: 6px solid #4CAF50
 }
 
@@ -4479,7 +4500,7 @@ table.gstl_50 {
 }
 
 .w3-info .w3-btn {
-  background-color:  #0202e1;
+  background-color: #0202e1;
   border-radius: 5px;
 }
 
@@ -4580,15 +4601,24 @@ h2 {
 }
 
 .bar-item-hover:hover {
-  background-color:  #0202e1 !important;
+  background-color: #030370 !important;
+  color: white !important;
+}
+.darktheme .bar-item-hover:hover {
+  background-color: #525454 !important;
   color: white !important;
 }
 
 .mystyle,
 .mystyle:hover {
-  background-color: #282A35 !important;
+  background-color: #0727dc !important;
   color: white !important;
 }
+.darktheme .mystyle,
+.darktheme .mystyle:hover {
+  background-color: #000 !important;
+  color: white !important;
+} 
 
 .mystyle2 {
   background-color: #282A35 !important;
@@ -4602,7 +4632,7 @@ h2 {
 
 #w3loginbtn {
   width: 112px;
-  background-color:  #0202e1;
+  background-color: #0202e1;
   color: white;
   border-radius: 25px;
   line-height: 1.5;
@@ -4698,12 +4728,12 @@ h2 {
 }
 
 .ws-css-exercises .w3-btn {
-  background-color:  #0202e1;
+  background-color: #0202e1;
   color: white;
 }
 
 a.btnsmall {
-  background-color:  #0202e1 !important;
+  background-color: #0202e1 !important;
   color: white;
   border-radius: 5px;
 }
@@ -4981,7 +5011,7 @@ a.topnav-icons {
 
 /* NYE farger */
 .ws-black {
-  background-color:linear-gradient(90deg, #020256,#232365, #18189d, #020256);
+  background-color: linear-gradient(90deg, #020256, #232365, #18189d, #020256);
   color: white !important;
 }
 
@@ -4995,6 +5025,7 @@ a.topnav-icons {
   background-color: #e91e63 !important;
   color: #fff !important;
 }
+
 .ws-yellow {
   background-color: #9ff147 !important;
   color: black !important;
@@ -5006,12 +5037,12 @@ a.topnav-icons {
 }
 
 .ws-green {
-  background-color:  #0202e1 !important;
+  background-color: #0202e1 !important;
   color: white !important;
 }
 
 .ws-text-green {
-  color:  #0202e1 !important;
+  color: #0202e1 !important;
 }
 
 .ws-hover-green:hover {
@@ -5079,7 +5110,7 @@ a.topnav-icons {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color:  #0202e1;
+  background-color: #0202e1;
   color: #ffffff
 }
 
@@ -5217,7 +5248,8 @@ w3-codeline {
     margin-right: -32px;
     border-radius: 0
   }
-  p img{
+
+  p img {
     width: 100%;
   }
 }
@@ -5228,7 +5260,8 @@ w3-codeline {
     padding: 24px;
     padding: 16px
   }
-  p img{
+
+  p img {
     width: 100%;
   }
 
