@@ -25,16 +25,6 @@
   right: 0;
   top: 0;
 }
-#sidenav #leftmenuinnerinner a > .w3s-accordion:after {
-  display: block;
-  font-family:'fontawesome';
-  content: "\e809";
-  opacity: 0.1;
-  position: absolute;
-  top: 4px;
-  right: 7px;
-  font-size: 18px;
-}
 .darktheme #sidenav #leftmenuinnerinner a > .w3s-accordion:after {
   opacity: 0.3;
 }
