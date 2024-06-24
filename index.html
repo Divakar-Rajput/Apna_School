@@ -96,17 +96,23 @@
                         Search field
                     </label>
                     <!-- search box -->
-                    <input id="tnb-google-search-input" type="text" placeholder="Search..." autocomplete="off"
+                    <input id="tnb-google-search-input" type="text" placeholder="Search..." autocomplete="off" title="Click to see results"
                         onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field"
                         oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.searchWithSuggestions(this)"
                         onblur="TopNavBar.searchFieldLostFocus(event)" />
 
                     <div id="tnb-google-search-submit-btn" class="tnb-button-light" role="button"
                         aria-label="Button to search" onclick="TopNavBar.googleSearchSubmit()">
-                        <svg id="tnb-google-search-icon" viewBox="0 0 17 16" fill="none">
+                        <!-- <svg id="tnb-google-search-icon" viewBox="0 0 17 16" fill="none">
                             <path
                                 d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z"
                                 fill="black"></path>
+                        </svg> -->
+                        <svg id="tnb-google-search-icon" viewBox="0 0 16 16" title="Speak to Search">                        
+                            <path
+                                d="M9,12.86 L9,14 L9.5,14 C10.15,14 10.69,14.42 10.9,15 L5.1,15 C5.31,14.42 5.85,14 6.5,14 L7,14 L7,12.86 C5.28,12.41 4,10.86 4,9 L4,7 L5,7 L5,9 C5,10.66 6.34,12 8,12 C9.66,12 11,10.66 11,9 L11,7 L12,7 L12,9 C12,10.86 10.72,12.41 9,12.86 L9,12.86 L9,12.86 Z" />
+                            <path
+                                d="M8,11 C6.9,11 6,10.1 6,9 L6,3 C6,1.9 6.9,1 8,1 C9.1,1 10,1.9 10,3 L10,9 C10,10.1 9.1,11 8,11 L8,11 L8,11 Z" />                        
                         </svg>
                     </div>
                 </div>
@@ -1440,7 +1446,7 @@
                 </a>
             </span>
         </div>
-        <a href="tutorials/html/default.html" class="ga-nav subtopnav_firstitem" style="margin: 0 !important;"
+        <a href="tutorials/html/default.html"  class="ga-nav subtopnav_firstitem" style="margin: 0 !important;"
             title="HTML Tutorial">HTML</a>
         <a href="tutorials/css/default.html" class="ga-nav" title="CSS Tutorial">CSS</a>
         <a href="tutorials/js/default.html" class="ga-nav" title="JavaScript Tutorial">JAVASCRIPT</a>
@@ -1510,13 +1516,14 @@
                         <br>
 
                         <form class="example" action="/action_page.php" style="margin:auto;max-width:500px">
-                            <input type="text" placeholder="Sometihng Search Here..., e.g HTML" id="search2"
-                                class="ga-fp" autocomplete="off" onkeydown="key_pressed_in_search(event)"
-                                oninput="find_search_results(this)" onfocus="find_search_results(this)">
-                            <button type="button" id="learntocode_searchbtn" onclick="click_learntocode_search_btn()"><i
-                                    id="learntocode_searchicon" class="fa fa-search ga-fp"></i></button>
-                            <div id="listofsearchresults">
-                            </div>
+                            <input type="text" placeholder="Sometihng Search Here..., e.g HTML" id="search2" class="ga-fp" autocomplete="off" title="Click to see results"
+                                onkeydown="key_pressed_in_search(event)" oninput="find_search_results(this)"
+                                onfocus="find_search_results(this)">
+                            <button type="button" id="voice_search_btn"  onclick="click_learntocode_search_btn()" title="Speak To Search">
+                                <!-- <i id="learntocode_searchicon" class="fa fa-search ga-fp"></i> -->
+                                <i class="fa fa-microphone ga-fp"></i>
+                            </button>                        
+                            <div id="listofsearchresults"></div>
                         </form>
 
                     </div>
