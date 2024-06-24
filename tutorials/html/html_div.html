@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>HTML Div Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords"
+        content="HTML, Python, CSS, SQL, JavaScript, How to, PHP, Java, C, C++, C#, jQuery, Bootstrap, Colors, W3.CSS, XML, MySQL, Icons, NodeJS, React, Graphics, Angular, R, AI, Git, Data Science, Code Game, Tutorials, Programming, Web Development, Training, Learning, Quiz, Exercises, Courses, Lessons, References, Examples, Learn to code, Source code, Demos, Tips, Website">
+    <meta name="Description"
+        content="Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more.">
+    <meta name="ApnaSchool" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
+    <meta property="og:site_name" content="Apna School">
+    <meta property="og:title" content="ApnaSchool HTML Toturials & Questions">
+    <meta property="og:description"
+        content="ApnaSchool offers free online tutorials, references and exercises in all the major languages of the web. Covering popular subjects like HTML, CSS, JavaScript, Python, SQL, Java, and many, many more.">
+    <meta property="og:image" itemprop="image" content="https://i.ibb.co/QmTVgdL/link-preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <!-- <meta property="og:url" content="www.apnaschool.com"> -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/lib/topnav/main.css">
+    <link rel="stylesheet" href="/lib/my-learning/main.css">
+    <link rel="stylesheet" href="/lib/pathfinder/main.css">
+    <link rel="stylesheet" href="/lib/all_pages_style.css">
+    <link rel="stylesheet" href="/lib/w3schools32.css">
+    <link rel="stylesheet" href="/plus/plans/main.css">
+    <script src="/lib/common-deps.js"></script>
+    <script src="/lib/my-learning/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="tnb-search-suggestions"></div>
+    <div id="top-nav-bar" class="classic">
+        <div id="pagetop" class="w3-bar notranslate w3-white">
+            <a id="w3-logo" href="/index.html"
+                class="w3-bar-item w3-button w3-hover-none w3-left ga-top ga-top-w3home" title="Home"
+                style="width:80px;" aria-label="Home link">
+                <img src="/img/logo.png" alt="logo" style="width: 100%;">
+            </a>
+            <nav class="tnb-desktop-nav w3-bar-item">
+                <a class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 ga-top ga-top-tut-and-ref"
+                    href="javascript:void(0)" onclick="TopNavBar.openNavItem('tutorials')" id="navbtn_tutorials"
+                    title="Tutorials" role="button">
+                    Tutorials
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+                    <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i>
+                </a>
+                <a class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 ga-top ga-top-exc-and-quz"
+                    href="javascript:void(0)" onclick="TopNavBar.openNavItem('exercises')" id="navbtn_exercises"
+                    title="Exercises and Quizzes" role="button">
+                    MCQs
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+                    <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i>
+                </a>
+                <a class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 tnb-paid-service ga-top ga-top-cert-and-course"
+                    href="javascript:void(0)" onclick="TopNavBar.openNavItem('certified')" id="navbtn_certified"
+                    title="Certificates" role="button">
+                    Branches
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+                    <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i>
+                </a>
+                <a class="tnb-nav-btn w3-bar-item w3-button barex bar-item-hover w3-padding-16 ga-top ga-top-services"
+                    href="javascript:void(0)" onclick="TopNavBar.openNavItem('services')" id="navbtn_services"
+                    title="Our Services" role="button">
+                    Services
+                    <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+                    <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i>
+                </a>
+            </nav>
+            <a class="tnb-menu-btn w3-bar-item w3-button bar-item-hover w3-padding-16 ga-top ga-top-menu"
+                href="javascript:void(0)" onclick="TopNavBar.openMenu()" title="Menu" aria-label="Menu" role="button">
+                Menu
+                <i class="fa fa-caret-down" style="font-size: 15px" aria-hidden="true"></i>
+                <i class="fa fa-caret-up" style="display: none; font-size: 15px" aria-hidden="true"></i>
+            </a>
+            <div id="tnb-google-search-container" class="w3-bar-item">
+                <div id="tnb-google-search-inner-container">
+                    <label for="tnb-google-search-input" class="tnb-soft-hide">
+                        Search field
+                    </label>
+                    <!-- search box -->
+                    <input id="tnb-google-search-input" type="text" placeholder="Search..." autocomplete="off"
+                        onkeydown="TopNavBar.googleSearchAttachKeyPressHandler(event)" aria-label="Search field"
+                        oninput="TopNavBar.searchWithSuggestions(this)" onfocus="TopNavBar.searchWithSuggestions(this)"
+                        onblur="TopNavBar.searchFieldLostFocus(event)"/>
+                        <div id="tnb-google-search-submit-btn" class="tnb-button-light" role="button" title="Speak to Search"
+                        aria-label="Button to search" onclick="TopNavBar.googleSearchSubmit()">
+                        <svg id="tnb-google-search-icon" viewBox="0 0 16 16" title="Speak to Search">                        
+                            <path
+                                d="M9,12.86 L9,14 L9.5,14 C10.15,14 10.69,14.42 10.9,15 L5.1,15 C5.31,14.42 5.85,14 6.5,14 L7,14 L7,12.86 C5.28,12.41 4,10.86 4,9 L4,7 L5,7 L5,9 C5,10.66 6.34,12 8,12 C9.66,12 11,10.66 11,9 L11,7 L12,7 L12,9 C12,10.86 10.72,12.41 9,12.86 L9,12.86 L9,12.86 Z" />
+                            <path
+                                d="M8,11 C6.9,11 6,10.1 6,9 L6,3 C6,1.9 6.9,1 8,1 C9.1,1 10,1.9 10,3 L10,9 C10,10.1 9.1,11 8,11 L8,11 L8,11 Z" />                        
+                        </svg>
+                    </div>
+                </div>
+                <div id="tnb-google-search-mobile-action-btns">
+                    <div id="tnb-google-search-mobile-show" class="tnb-button"
+                        onclick="TopNavBar.googleSearchShowMobileContainer()" aria-label="Button to open search field"
+                        role="button">
+                        <svg viewBox="0 0 17 16" fill="none">
+                            <path
+                                d="M11.8153 10.3439C12.6061 9.2673 13.0732 7.9382 13.0732 6.5C13.0732 2.91015 10.163 0 6.57318 0C2.98333 0 0.0731812 2.91015 0.0731812 6.5C0.0731812 10.0899 2.98333 13 6.57318 13C8.01176 13 9.3412 12.5327 10.4179 11.7415L10.4171 11.7422C10.4466 11.7822 10.4794 11.8204 10.5156 11.8566L14.3661 15.7071C14.7566 16.0976 15.3898 16.0976 15.7803 15.7071C16.1708 15.3166 16.1708 14.6834 15.7803 14.2929L11.9298 10.4424C11.8936 10.4062 11.8553 10.3734 11.8153 10.3439ZM12.0732 6.5C12.0732 9.53757 9.61075 12 6.57318 12C3.53561 12 1.07318 9.53757 1.07318 6.5C1.07318 3.46243 3.53561 1 6.57318 1C9.61075 1 12.0732 3.46243 12.0732 6.5Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </div>
+                    <div id="tnb-google-search-mobile-close" class="tnb-button"
+                        onclick="TopNavBar.googleSearchHideMobileContainer()" role="button"
+                        aria-label="Close search field">
+                        <i>&times;</i>
+                    </div>
+                </div>
+            </div>
+            <!--search bar close-->
+            <div id="tnb-dark-mode-toggle-wrapper" class="w3-bar-item">
+                <a id="tnb-dark-mode-toggle-btn" href="javascript:void(0);"
+                    class="tnb-button fa ga-nav ga-dark-mode-toggle" onclick="TopNavBar.toggleUserPreferredTheme()"
+                    role="button" title="Toggle light/dark mode" aria-label="Toggle light/dark mode">
+                    <i class="fa fa-adjust"></i>
+                </a>
+            </div>
+        </div>
+
+        <nav id="tnb-mobile-nav" class="tnb-mobile-nav w3-hide">
+            <div class="w3-container">
+                <div class="tnb-mobile-nav-section" data-section="tutorials">
+                    <div class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-tut-and-ref"
+                        onclick="TopNavBar.toggleMobileNav(event, 'tutorials');" aria-label="Tutorials" role="button">
+                        <span class="tnb-title">Tutorials</span>
+                        <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div id="sectionxs_tutorials" class="tnb-mobile-nav-section-body">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="tnb-mobile-nav-section" data-section="exercises">
+                    <div class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-exc-and-quz"
+                        onclick="TopNavBar.toggleMobileNav(event, 'exercises')" aria-label="Exercises" role="button">
+                        <span class="tnb-title">MCQs</span>
+                        <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <div id="sectionxs_exercises" class="tnb-mobile-nav-section-body">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="tnb-mobile-nav-section" data-section="certified">
+                    <div class="tnb-mobile-nav-section-toggle-btn tnb-paid-service w3-button ga-top ga-top-menu-cert-and-course"
+                        onclick="TopNavBar.toggleMobileNav(event, 'certified')" aria-label="Certificates" role="button">
+                        <span class="tnb-title">Branches</span>
+                        <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div id="sectionxs_certified" class="tnb-mobile-nav-section-body">
+                        &nbsp;
+                    </div>
+                </div>
+
+                <div class="tnb-mobile-nav-section" data-section="services">
+                    <div class="tnb-mobile-nav-section-toggle-btn w3-button ga-top ga-top-menu-services"
+                        onclick="TopNavBar.toggleMobileNav(event, 'services')" aria-label="Services" role="button">
+                        <span class="tnb-title">Services</span>
+                        <i class="tnb-icon fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+
+                    <div id="sectionxs_services" class="tnb-mobile-nav-section-body">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-button tnb-close-menu-btn w3-round ga-top ga-top-close-accordion" tabindex="0"
+                onclick="TopNavBar.closeMenu()" role="button" aria-label="Close menu">
+                <span>&times;</span>
+            </div>
+        </nav>
+        <!-- 
+        ============================================================================================================================================================
+                         start tutorials  dropdown menu
+        ============================================================================================================================================================ -->
+        <div id="dropdown-nav-outer-wrapper">
+            <div id="dropdown-nav-inner-wrapper">
+                <nav id="nav_tutorials" class="dropdown-nav w3-hide-small navex" tabindex="-1"
+                    aria-label="Menu for tutorials">
+                    <div class="w3-content menu-content">
+                        <div id="tutorials_list" class="w3-row-padding w3-bar-block">
+                            <div class="nav-heading-container w3-container">
+                                <div class="nav-heading-container-title">
+                                    <h2 style="color: #fff4a3"><b>Tutorials</b></h2>
+                                </div>
+                                <div data-section="tutorials" class="filter-input-wrapper">
+                                    <div class="filter-input-inner-wrapper">
+                                        <label for="filter-tutorials-input" class="tnb-soft-hide">
+                                            Tutorials filter input
+                                        </label>
+                                        <input id="filter-tutorials-input"
+                                            oninput="TopNavBar.filter(event, 'nav_tutorials')" type="text"
+                                            class="filter-input" placeholder="Search tutorials here..."
+                                            aria-label="Tutorials filter input" />
+                                        <div class="filter-clear-btn tnb-button-dark-v2" role="button"
+                                            aria-label="Filter clear button"
+                                            onclick="TopNavBar.clearFilter(event, 'nav_tutorials')">
+                                            <span>&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="tutorials_html_css_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="html_and_css_title">
+                                        HTML and CSS
+                                    </h3>
+                                    <div data-name="html" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-html redirect" 
+                                        href="/tutorials/html/default.html" title="HTML Tutorial" data-url="/tutorials/html/default.html"> HTML </a>
+                                    </div>
+
+                                    <div data-name="css" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-css redirect"
+                                            href="/tutorials/css/default.html" title="CSS Tutorial" data-url="/tutorials/css/default.html">
+                                            CSS
+                                        </a>
+                                    </div>
+
+                                    <div data-name="rwd" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-rwd redirect"
+                                            href="/tutorials/rwd/default.html" title="Responsive Web Design Tutorial" data-url="/tutorials/rwd/default.html">
+                                            RWD
+                                        </a>
+                                    </div>
+
+                                    <div data-name="bootstrap" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-bs redirect"
+                                            href="/tutorials/bootstrap/default.html" title="Bootstrap Tutorials" data-url="/tutorials/bootstrap/default.html">
+                                            Bootstrap
+                                        </a>
+                                    </div>
+
+                                    <div data-name="w3.css" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-w3css redirect"
+                                            href="/tutorials/w3_css/default.html" title="W3.CSS Tutorial" data-url="/tutorials/w3_css/default.html">
+                                            W3.CSS
+                                        </a>
+                                    </div>
+
+                                    <div data-name="sass" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sass redirect"
+                                            href="/tutorials/sass/default.html" title="SASS Tutorial" data-url="/tutorials/sass/default.html">
+                                            SASS
+                                        </a>
+                                    </div>
+
+                                    <div data-name="colors" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-colors redirect"
+                                            href="/tutorials/colors/default.html" title="Colors Tutorial" data-url="/tutorials/colors/default.html">
+                                            Colors
+                                        </a>
+                                    </div>
+
+                                    <div data-name="icons" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-icons redirect"
+                                            href="/tutorials/icons/default.html" title="Icons Tutorial" data-url="/tutorials/icons/default.html">
+                                            Icons
+                                        </a>
+                                    </div>
+
+                                    <div data-name="svg" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-svg redirect"
+                                            href="/tutorials/graphics/svg/svg_intro.html" title="SVG Tutorial" data-url="/tutorials/graphics/svg/svg_intro.html">
+                                            SVG
+                                        </a>
+                                    </div>
+
+                                    <div data-name="canvas" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-canvas redirect"
+                                            href="/tutorials/graphics/canvas/canvas_intro.html" title="Canvas Tutorial" data-url="/tutorials/graphics/canvas/canvas_intro.html">
+                                            Canvas
+                                        </a>
+                                    </div>
+
+                                    <div data-name="graphics" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-graphics redirect"
+                                            href="/tutorials/graphics/default.html" title="Graphics Tutorial" data-url="/tutorials/graphics/default.html">
+                                            Graphics
+                                        </a>
+                                    </div>
+                                    <div data-name="charsets" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-charsets redirect"
+                                            href="/tutorials/charsets/default.html" title="Character Sets Reference" data-section="/tutorials/charsets/default.html">
+                                            Character Sets
+                                        </a>
+                                    </div>
+
+                                    <div data-name="how to" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-howto redirect"
+                                            href="/tutorials/how_to/default.html" title="How To - Code Snippets" data-url="/tutorials/how_to/default.html">
+                                            How To
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div id="tutorials_data_analytics_links_list_desktop" class="w3-hide-small">
+                                    <h3 class="tnb-nav-section-title" data-heading="data_analytics_title">
+                                        Data Analytics
+                                    </h3>
+                                    <div data-name="ai" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ai redirect"
+                                            href="/tutorials/ai/default.html" title="Artificial Intelligence Tutorial" data-url="/tutorials/ai/default.html">
+
+                                            AI
+                                        </a>
+                                    </div>
+
+                                    <div data-name="generative ai" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-genai redirect"
+                                            href="/tutorials/gen_ai/default.html" title="Generative AI Tutorial" data-url="/tutorials/gen_ai/default.html">
+                                            Generative AI
+                                        </a>
+                                    </div>
+
+                                    <div data-name="chatgpt-3.5" data-category="data_analytics">
+                                        <a href="/tutorials/gen_ai/chatgpt-3.5/index.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-chatgpt35 redirect"
+                                            title="ChatGPT-3.5 Tutorial" data-url="/tutorials/gen_ai/chatgpt-3.5/index.html">
+                                            ChatGPT-3.5
+                                        </a>
+                                    </div>
+
+                                    <div data-name="chatgpt-4" data-category="data_analytics">
+                                        <a href="/tutorials/gen_ai/chatgpt-4/index.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-chatgpt4 redirect"
+                                            title="ChatGPT-4 Tutorial" data-url="/tutorials/gen_ai/chatgpt-4/index.html">
+                                            ChatGPT-4
+                                        </a>
+                                    </div>
+
+                                    <div data-name="google bard" data-category="data_analytics">
+                                        <a href="/tutorials/gen_ai/bard/index.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-bard redirect"
+                                            title="Google Bard Tutorial" data-url="/tutorials/gen_ai/bard/index.html">
+                                            Google Bard
+                                        </a>
+                                    </div>
+
+                                    <div data-name="machine learning" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ml redirect"
+                                            href="/tutorials/python/ml-geetting/python_ml_getting_started.html"
+                                            title="Machine Learning Tutorial" data-url="/tutorials/python/ml-geetting/python_ml_getting_started.html">
+                                            Machine Learning
+                                        </a>
+                                    </div>
+
+                                    <div data-name="dsa" data-category="data_analytics">
+                                        <a href="/tutorials/dsa/default.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-dsa redirect"
+                                            title="DSA - Data Structures and Algorithms" data-url="/tutorials/dsa/default.html">
+                                            DSA
+                                        </a>
+                                    </div>
+
+                                    <div data-name="data science" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ds redirect"
+                                            href="/tutorials/data_science/default.html" title="Data Science Tutorial" data-url="/tutorials/data_science/default.html">
+                                            Data Science
+                                        </a>
+                                    </div>
+
+                                    <div data-name="numpy" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-numpy redirect"
+                                            href="/tutorials/numpy/default.html" title="NumPy Tutorial" data-url="/tutorials/numpy/default.html">
+                                            NumPy
+                                        </a>
+                                    </div>
+
+                                    <div data-name="pandas" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-pandas redirect"
+                                            href="/tutorials/pandas/default.html" title="Pandas Tutorial" data-url="/tutorials/pandas/default.html">
+                                            Pandas
+                                        </a>
+                                    </div>
+
+                                    <div data-name="scipy" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-scipy redirect"
+                                            href="/tutorials/scipy/default.html" title="SciPy Tutorial" data-url="/tutorials/scipy/default.html">
+                                            SciPy
+                                        </a>
+                                    </div>
+
+                                    <div data-name="matplotlib" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-matplotlib redirect"
+                                            href="/tutorials/python/matplotlib_intro.html" title="Matplotlib Tutorial" data-url="/tutorials/python/matplotlib_intro.html">
+                                            Matplotlib
+                                        </a>
+                                    </div>
+
+                                    <div data-name="statistics" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-stat redirect"
+                                            href="/tutorials/statistics/index.html" title="Statistics Tutorial" data-url="/tutorials/statistics/index.html">
+                                            Statistics
+                                        </a>
+                                    </div>
+
+                                    <div data-name="excel" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-excel redirect"
+                                            href="/tutorials/excel/default.html" title="Excel Tutorial" data-url="/tutorials/excel/default.html">
+                                            Excel
+                                        </a>
+                                    </div>
+
+                                    <div data-name="google sheet" data-category="data_analytics">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sheets redirect"
+                                            href="/tutorials/googlesheets/index.html" title="Google Sheets Tutorial" data-url="/tutorials/googlesheets/index.html">
+                                            Google Sheets
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-col l4 m6">
+                                <div id="tutorials_javascript_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="javascript_title">
+                                        JavaScript
+                                    </h3>
+                                    <div data-name="javascript" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-js redirect"
+                                            href="/tutorials/javascript/default.html" title="JavaScript Tutorial" data-url="/tutorials/javascript/default.html">
+                                            JavaScript
+                                        </a>
+                                    </div>
+
+                                    <div data-name="react" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-react redirect"
+                                            href="/tutorials/react/default.html" title="React Tutorial" data-url="/tutorials/react/default.html">
+                                            React
+                                        </a>
+                                    </div>
+
+                                    <div data-name="jquery" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-jquery redirect"
+                                            href="/tutorials/jquery/default.html" title="jQuery Tutorial" data-url="/tutorials/jquery/default.html">
+                                            jQuery
+                                        </a>
+                                    </div>
+
+                                    <div data-name="vue" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-vue redirect"
+                                            href="/tutorials/vue/default.html" title="Vue Tutorial" data-url="/tutorials/vue/default.html">
+                                            Vue
+                                        </a>
+                                    </div>
+
+                                    <div data-name="angularjs" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-angularjs redirect"
+                                            href="/tutorials/angular/default.html" title="Angular Tutorial" data-url="/tutorials/angular/default.html">
+                                            AngularJS
+                                        </a>
+                                    </div>
+
+                                    <div data-name="json" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-json redirect"
+                                            href="/tutorials/javascript/js_json_intro.html" title="JSON Tutorial" data-url="/tutorials/javascript/js_json_intro.html">
+                                            JSON
+                                        </a>
+                                    </div>
+
+                                    <div data-name="ajax" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-ajax redirect"
+                                            href="/tutorials/javascript/js_ajax_intro.html" title="AJAX Tutorial" data-url="/tutorials/javascript/js_ajax_intro.html">
+                                            AJAX
+                                        </a>
+                                    </div>
+
+                                    <div data-name="appml" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-appml redirect"
+                                            href="/tutorials/appml/default.html" title="AppML Tutorial" data-url="/tutorials/appml/default.html">
+                                            AppML
+                                        </a>
+                                    </div>
+
+                                    <div data-name="w3.js" data-category="javascript">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-w3js redirect"
+                                            href="/tutorials/w3js/default.html" title="W3.JS Tutorial" data-url="/tutorials/w3js/default.html">
+                                            W3.JS
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="tutorials_web_building_links_list_desktop"
+                                    class="w3-hide-medium w3-hide-small">
+                                    <h3 class="tnb-nav-section-title" data-heading="web_building_title">
+                                        Web Building
+                                    </h3>                                  
+                                    <div data-name="where to start" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-wheretostart redirect"
+                                            href="/tutorials/wheretostart/where_to_start.html"
+                                            title="Where To Start - Web Development" data-url="/tutorials/wheretostart/where_to_start.html">
+                                            Where To Start
+                                        </a>
+                                    </div>
+                                    <div data-name="web templates" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-templates redirect"
+                                            href="/tutorials/w3_css/w3css_templates.html" title="Free Web Templates" data-url="/tutorials/w3_css/w3css_templates.html">
+                                            Web Templates
+                                        </a>
+                                    </div>
+                                    <div data-name="web statistics" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-webstats redirect"
+                                            href="/tutorials/browsers/default.html" title="Web Statistics" data-url="/tutorials/browsers/default.html">
+                                            Web Statistics
+                                        </a>
+                                    </div>
+                                    <div data-name="web development" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-web-development redirect"
+                                            href="/tutorials/whatis/default.html" title="Web Development Roadmaps" data-url="/tutorials/whatis/default.html">
+                                            Web Development
+                                        </a>
+                                    </div>
+
+                                    <div data-name="cyber security" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-cybersec redirect"
+                                            href="/tutorials/cybersecurity/" title="Cyber Security Tutorial" data-url="/tutorials/cybersecurity/">
+                                            Cyber Security
+                                        </a>
+                                    </div>
+                                    <div data-name="accessibility" data-category="web_building">
+                                        <a class="w3-bar-item w3-button ga-top-drop ga-top-drop-tut-accessi redirect"
+                                            href="/tutorials/accessibility/index.html" title="Accessibility Security Tutorial" data-url="/tutorials/accessibility/index.html">
+                                            Accessibility
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="tutorials_backend_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="backend_title">
+                                        Backend
+                                    </h3>
+                                    <div data-name="python" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-python redirect"
+                                            href="/tutorials/python/default.html" title="Python Tutorial" data-url="/tutorials/python/default.html">
+                                            Python
+                                        </a>
+                                    </div>
+
+                                    <div data-name="sql" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-sql redirect"
+                                            href="/tutorials/sql/default.html" title="SQL Tutorial" data-url="/tutorials/sql/default.html">
+                                            SQL
+                                        </a>
+                                    </div>
+
+                                    <div data-name="mysql" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-mysql redirect"
+                                            href="/tutorials/mysql/default.html" title="MySQL Tutorial" data-url="/tutorials/mysql/default.html">
+                                            MySQL
+                                        </a>
+                                    </div>
+
+                                    <div data-name="php" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-php redirect"
+                                            href="/tutorials/php/default.html" title="PHP Tutorial" data-url="/tutorials/php/default.html">
+                                            PHP
+                                        </a>
+                                    </div>
+
+                                    <div data-name="java" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-java redirect"
+                                            href="/tutorials/java/default.html" title="Java Tutorial" data-url="/tutorials/java/default.html">
+                                            Java
+                                        </a>
+                                    </div>
+
+                                    <div data-name="c" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-c redirect"
+                                            href="/tutorials/c/default.html" title="C Tutorial" data-url="/tutorials/c/default.html">
+                                            C
+                                        </a>
+                                    </div>
+                                    <div data-name="c++" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-cpp redirect"
+                                            href="/tutorials/cpp/default.html" title="C++ Tutorial" data-url="/tutorials/cpp/default.html">
+                                            C++
+                                        </a>
+                                    </div>
+
+                                    <div data-name="c#" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-cs redirect"
+                                            href="/tutorials/cs/default.html" title="C# Tutorial" data-url="/tutorials/cs/default.html">
+                                            C#
+                                        </a>
+                                    </div>
+
+                                    <div data-name="r" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop ga-top-drop-tut-r redirect"
+                                            href="/tutorials/r/default.html" title="R Tutorial" data-url="/tutorials/r/default.html">
+                                            R
+                                        </a>
+                                    </div>
+
+                                    <div data-name="kotlin" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-kotlin redirect"
+                                            href="/tutorials/kotlin/default.html" title="Kotlin Tutorial" data-url="/tutorials/kotlin/default.html">
+                                            Kotlin
+                                        </a>
+                                    </div>
+
+                                    <div data-name="go" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-go redirect"
+                                            href="/tutorials/go/default.html" title="Go Tutorial" data-url="/tutorials/go/default.html">
+                                            Go
+                                        </a>
+                                    </div>
+
+                                    <div data-name="django" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-django redirect"
+                                            href="/tutorials/django/default.html" title="Django Tutorial" data-url="/tutorials/django/default.html">
+                                            Django
+                                        </a>
+                                    </div>
+
+                                    <div data-name="postgresql" data-category="backend">
+                                        <a href="/tutorials/postgresql/default.html" class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-postgresql redirect"
+                                            title="PostgreSQL Tutorial" data-url="/tutorials/postgresql/default.html">
+                                            PostgreSQL
+                                        </a>
+                                    </div>
+
+                                    <div data-name="typescript" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-typescript redirect"
+                                            href="/tutorials/typescript/default.html" title="TypeScript Tutorial" data-url="/tutorials/typescript/default.html">
+                                            TypeScript
+                                        </a>
+                                    </div>
+
+                                    <div data-name="html" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-html redirect"
+                                            href="/tutorials/asp/default.html" title="html Tutorial" data-url="/tutorials/asp/default.html">
+                                            ASP
+                                        </a>
+                                    </div>
+
+                                    <div data-name="node.js" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-nodejs redirect"
+                                            href="/tutorials/nodejs/default.html" title="Node.js Tutorial" data-url="/tutorials/nodejs/default.html">
+                                            Node.js
+                                        </a>
+                                    </div>
+
+                                    <div data-name="rhtmlberry pi" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-rpi redirect"
+                                            href="/tutorials/nodejs/rhtmlberry/nodejs_rhtmlberrypi.html"
+                                            title="Rhtmlberry Pi Tutorial" data-url="/tutorials/nodejs/rhtmlberry/nodejs_rhtmlberrypi.html">
+                                            Rhtmlberry Pi
+                                        </a>
+                                    </div>
+
+                                    <div data-name="git" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-git redirect"
+                                            href="/tutorials/git/default.html" title="Git Tutorial" data-url="/tutorials/git/default.html">
+                                            Git
+                                        </a>
+                                    </div>
+
+                                    <div data-name="mongodb" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-mongodb redirect"
+                                            href="/tutorials/mongobd/default.html" title="MongoDB Tutorial" data-url="/tutorials/mongobd/default.html">
+                                            MongoDB
+                                        </a>
+                                    </div>
+
+                                    <div data-name="aws cloud" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-aws-cloud redirect"
+                                            href="/tutorials/aws/default.html" title="AWS Cloud Tutorial" data-url="/tutorials/aws/default.html">
+                                            AWS Cloud
+                                        </a>
+                                    </div>
+                                    <div data-name="xml" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-tut-xml redirect"
+                                            href="/tutorials/xml/default.html" title="XML Tutorial" data-url="/tutorials/xml/default.html">
+                                            XML
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="w3-button tnb-close-nav-btn w3-round" tabindex="0"
+                        onclick="TopNavBar.closeNavItem('tutorials')"
+                        onkeydown="TopNavBar.mouseHandler(event, this, 'tutorials')" role="button"
+                        aria-label="Close navigation">
+                        <span>&times;</span>
+                    </div>
+                </nav>
+                <!-- 
+                 ============================================================================================================================================================
+                         close tutorials  dropdown menu
+                 ============================================================================================================================================================
+                 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] 
+                 ============================================================================================================================================================
+                         start courseMCQs  dropdown menu
+                 ============================================================================================================================================================ 
+                 -->
+                <nav id="nav_exercises" class="dropdown-nav w3-hide-small navex" tabindex="-1"
+                    aria-label="Exercises menu">
+                    <div class="w3-content menu-content">
+                        <div id="exercises_list" class="w3-row-padding w3-bar-block">
+                            <div class="nav-heading-container w3-container">
+                                <div class="nav-heading-container-title">
+                                    <h2 style="color: #fff4a3"><b>MCQs</b></h2>
+                                </div>
+                                <div data-section="exercises" class="filter-input-wrapper">
+                                    <div class="filter-input-inner-wrapper">
+                                        <label for="filter-exercises-input" class="tnb-soft-hide">
+                                            Excercises filter input
+                                        </label>
+                                        <input id="filter-exercises-input"
+                                            oninput="TopNavBar.filter(event, 'nav_exercises')" type="text"
+                                            class="filter-input" placeholder="Search MCQ Questions here..." autocomplete="off"
+                                            aria-label="Exercises filter bar" />
+                                        <div class="filter-clear-btn tnb-button-dark-v2" role="button"
+                                            aria-label="Filter clear button"
+                                            onclick="TopNavBar.clearFilter(event, 'nav_exercises')">
+                                            <span>&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="exercises_html_css_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="html_and_css_title">
+                                        Exams Preparation
+                                    </h3>
+                                    <div data-name="quantitative aptitude questions" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html redirect"
+                                            href="/mcqs/1000-Quantitative-Aptitude-Questions/1000-Quantitative-Aptitude-Questions.html"
+                                            data-url="/mcqs/1000-Quantitative-Aptitude-Questions/1000-Quantitative-Aptitude-Questions.html">
+                                            1000 Quantitative Aptitude Questions
+                                        </a>
+                                    </div>
+
+                                    <div data-name="data interpretation questions" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html redirect"
+                                            href="/mcqs/1000-data-interpretation-Questions/1000-data-interpretation-Questions.html"
+                                            data-url="/mcqs/1000-data-interpretation-Questions/1000-data-interpretation-Questions.html">
+                                            1000 Data Interpretation Questions
+                                        </a>
+                                    </div>
+
+                                    <div data-name="logical reasoning questions" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html redirect"
+                                            href="/mcqs/1000-logical-reasoning-Questions/1000-logical-reasoning-Questions.html"
+                                            data-url="/mcqs/1000-logical-reasoning-Questions/1000-logical-reasoning-Questions.html">
+                                            1000 Logical Reasoning Questions
+                                        </a>
+                                    </div>
+
+                                    <div data-name="english grammer exercises" data-category="html_and_css">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-html redirect"
+                                            href="/mcqs/5000-english-grammer-exercises/5000-english-grammer-exercises.html"
+                                            data-url="/mcqs/5000-english-grammer-exercises/5000-english-grammer-exercises.html">
+                                            5000+ English Grammer Exercises
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="w3-hide-small" id="exercises_data_analytics_links_list_desktop">
+                                    <h3 class="tnb-nav-section-title" data-heading="data_analytics_title">
+                                        Interview Preparation
+                                    </h3>
+                                    <div data-name="data structure mcqs dsa" data-category="data_analytics">
+                                        <a href="/mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa react"
+                                            data-url="/mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html">
+                                            1000 Data Structure MCQs (DSA-I)
+                                        </a>
+                                    </div>
+                                    <div data-name="algorithm mcqs dsa" data-category="data_analytics">
+                                        <a href="/mcqs/1000-algorithms-mcqs/1000-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-algorithms-mcqs/1000-algorithms-mcqs.html">
+                                            1000 Algorithms MCQs (DSA-II)
+                                        </a>
+                                    </div>
+                                    <div data-name="python mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-python-mcqs/1000-python-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-python-mcqs/1000-python-mcqs.html">
+                                            1000 Python MCQs | Python Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="java mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-java-mcqs/mcqs/1000-java-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-java-mcqs/mcqs/1000-java-mcqs.html">
+                                            1000 Java MCQs | Java Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="c++ mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-c++-mcqs/1000-c++-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-c++-mcqs/1000-c++-mcqs.html">
+                                            1000 C++ MCQs | C++ Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="c mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-c-mcqs/1000-c-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-c-mcqs/1000-c-mcqs.html">
+                                            1000 C MCQs | C Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="C# mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-c#-mcqs/1000-c#-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-c#-mcqs/1000-c#-mcqs.html">
+                                            1000 C# MCQs | C# Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="artificial antelligence mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-artificial-intelligence-mcqs/1000-artificial-intelligence-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-artificial-intelligence-mcqs/1000-artificial-intelligence-mcqs.html">
+                                            1000 Artificial Intelligence MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="machine learning mcqs ai ml " data-category="data_analytics">
+                                        <a href="/mcqs/1000-machine-learning-mcqs/1000-machine-learning-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-machine-learning-mcqs/1000-machine-learning-mcqs.html">
+                                            1000 Machine Learning MCQs | AI-ML Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="linux mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-linux--mcqs/1000-linux--mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-linux--mcqs/1000-linux--mcqs.html">
+                                            1000 Linux MCQs | Linux Programmer Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="linux admin kernel mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/linux-kernel-mcqs/linux-kernel-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/linux-kernel-mcqs/linux-kernel-mcqs.html">
+                                            Linux Kernel MCQs | Linux Admin Jobs
+                                        </a>
+                                    </div>
+                                    <div data-name="full stack developer mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/full-stack-developer-mcqs/full-stack-developer-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/full-stack-developer-mcqs/full-stack-developer-mcqs.html">
+                                            Full Stack Developer Jobs
+                                        </a>
+                                    </div>                                                                 
+                                    <div data-name="c algorithms mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-c-algorithms-mcqs/1000-c-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-c-algorithms-mcqs/1000-c-algorithms-mcqs.html">
+                                            1000 C Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="c++ algorithms mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-c++-algorithms-mcqs/1000-c++-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-c++-algorithms-mcqs/1000-c++-algorithms-mcqs.html">
+                                            1000 C++ Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="java algorithms mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/1000-java-algorithms-mcqs/1000-java-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/1000-java-algorithms-mcqs/1000-java-algorithms-mcqs.html">
+                                            1000 Java Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="data structure & algorithms c" data-category="data_analytics">
+                                        <a href="/mcqs/data-structure-c-algorithms-mcqs/data-structure-c-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect" 
+                                            data-url="/mcqs/data-structure-c-algorithms-mcqs/data-structure-c-algorithms-mcqs.html">
+                                            Data Structure & C Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="data structure & algorithms c++" data-category="data_analytics">
+                                        <a href="/mcqs/data-structure-c++-algorithms-mcqs/data-structure-c++-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/data-structure-c++-algorithms-mcqs/data-structure-c++-algorithms-mcqs.html">
+                                            Data Structure & C++ Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="data structure & algorithms java" data-category="data_analytics">
+                                        <a href="/mcqs/data-structure-java-algorithms-mcqs/data-structure-java-algorithms-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/data-structure-java-algorithms-mcqs/data-structure-java-algorithms-mcqs.html">
+                                            Data Structure & Java Algorithms MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="dynamic programming problems" data-category="data_analytics">
+                                        <a href="/mcqs/dynamic-programming-problems-mcqs/dynamic-programming-problems-mcqs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-dsa redirect"
+                                            data-url="/mcqs/dynamic-programming-problems-mcqs/dynamic-programming-problems-mcqs.html">
+                                            Dynamic Programming Problems MCQs
+                                        </a>
+                                    </div>
+
+                                    <div class="black-box-container">
+                                        <a class="w3-bar-item w3-button ga-top-drop w3-center w3-round ga-top-drop-quiztest redirect"
+                                            href="/mcqs/all-course-mcqs.html" data-url="/mcqs/all-course-mcqs.html"
+                                            style="display: block; background-color: #21232c; border: 1px solid grey; width: 195px">
+                                            More MCQs
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col l4 m6" id="exercises_javascript_links_list">
+                                <h3 class="tnb-nav-section-title" data-heading="javascript_title">
+                                    Programming & IT MCQs
+                                </h3>
+
+                                <div data-name="data structure mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html"
+                                        data-url="/mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html">
+                                        1000 Data Structure & Algorithms | MCQs
+                                    </a>
+                                </div>
+                                <div data-name="object oriented programming oops mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-object-oriented-programming-mcqs/1000-object-oriented-programming-mcqs.html"
+                                        data-url="/mcqs/1000-object-oriented-programming-mcqs/1000-object-oriented-programming-mcqs.html">
+                                        1000 Object Oriented Programming MCQs
+                                    </a>
+                                </div>
+                                <div data-name="junit mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-junit-mcqs/1000-junit-mcqs.html"
+                                        data-url="/mcqs/1000-junit-mcqs/1000-junit-mcqs.html">
+                                        1000 JUnit MCQs
+                                    </a>
+                                </div>
+                                <div data-name="javascript mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-javascript-mcqs/1000-javascript-mcqs.html"
+                                        data-url="/mcqs/1000-javascript-mcqs/1000-javascript-mcqs.html">
+                                        1000 JavaScrip MCQs
+                                    </a>
+                                </div>
+                                <div data-name="php mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-php-mcqs/1000-php-mcqs.html"
+                                        data-url="/mcqs/1000-php-mcqs/1000-php-mcqs.html">
+                                        1000 PHP MCQs
+                                    </a>
+                                </div>
+                                <div data-name="ruby mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-ruby-mcqs/1000-ruby-mcqs.html"
+                                        data-url="/mcqs/1000-ruby-mcqs/1000-ruby-mcqs.html">
+                                        1000 Ruby MCQs
+                                    </a>
+                                </div>
+                                <div data-name="r programming mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-r-programming-mcqs/1000-r-programming-mcqs.html"
+                                        data-url="/mcqs/1000-r-programming-mcqs/1000-r-programming-mcqs.html">
+                                        1000 R Programming MCQs
+                                    </a>
+                                </div>
+                                <div data-name="data science mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-data-science-mcqs/1000-data-science-mcqs.html"
+                                        data-url="/mcqs/1000-data-science-mcqs/1000-data-science-mcqs.html">
+                                        1000 Data Science MCQs
+                                    </a>
+                                </div>
+                                <div data-name="mongobd mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-mongodb-mcqs/1000-mongodb-mcqs.html"
+                                        data-url="/mcqs/1000-mongodb-mcqs/1000-mongodb-mcqs.html">
+                                        1000 MongoDB MCQs
+                                    </a>
+                                </div>
+                                <div data-name="sql mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-sql-mcqs/1000-sql-mcqs.html"
+                                        data-url="/mcqs/1000-sql-mcqs/1000-sql-mcqs.html">
+                                        1000 SQL MCQs
+                                    </a>
+                                </div>
+                                <div data-name="mysql mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-mysql-mcqs/1000-mysql-mcqs.html"
+                                        data-url="/mcqs/1000-mysql-mcqs/1000-mysql-mcqs.html">
+                                        1000 MySQL MCQs
+                                    </a>
+                                </div>
+                                <div data-name="oracle mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-oracle-mcqs/1000-oracle-mcqs.html"
+                                        data-url="/mcqs/1000-oracle-mcqs/1000-oracle-mcqs.html">
+                                        1000 Oracle MCQs
+                                    </a>
+                                </div>
+                                <div data-name="web technology mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-webtechnology-mcqs/1000-webtechnology-mcqs.html"
+                                        data-url="/mcqs/1000-webtechnology-mcqs/1000-webtechnology-mcqs.html">
+                                        1000 Web Technology MCQs
+                                    </a>
+                                </div>
+                                <div data-name="html mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-html-mcqs/1000-html-mcqs.html"
+                                        data-url="/mcqs/1000-html-mcqs/1000-html-mcqs.html">
+                                        1000 HTML MCQs
+                                    </a>
+                                </div>
+                                <div data-name="css mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-css-mcqs/1000-css-mcqs.html"
+                                        data-url="/mcqs/1000-css-mcqs/1000-css-mcqs.html">
+                                        1000 CSS MCQs
+                                    </a>
+                                </div>
+                                <div data-name="unix mcqs" data-category="javascript">
+                                    <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-js redirect"
+                                        href="/mcqs/1000-unix-mcqs/1000-unix-mcqs.html"
+                                        data-url="/mcqs/1000-unix-mcqs/1000-unix-mcqs.html">
+                                        1000 Unix MCQs
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="exercises_backend_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="backend_title">
+                                        Computer Science MCQs
+                                    </h3>
+                                    <div data-name="operating system mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-operating-system-mcqs/1000-operating-system-mcqs.html"
+                                            data-url="/mcqs/1000-operating-system-mcqs/1000-operating-system-mcqs.html">
+                                            1000 Operating System MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="computer architecture mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-computer-architecture-mcqs/1000-computer-architecture-mcqs.html"
+                                            data-url="/mcqs/1000-computer-architecture-mcqs/1000-computer-architecture-mcqs.html">
+                                            1000 Computer Architecture MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="software enginnering mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-software-enginnering-mcqs/1000-software-engineering-mcqs.html"
+                                            data-url="/mcqs/1000-software-enginnering-mcqs/1000-software-engineering-mcqs.html">
+                                            1000 Software Enginnering MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="computer network mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-computer-network-mcqs/1000-computer-network-mcqs.html"
+                                            data-url="/mcqs/1000-computer-network-mcqs/1000-computer-network-mcqs.html">
+                                            1000 Computer Network MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="micro processsor mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-microprocessor-mcqs/1000-microprocessor-mcqs.html"
+                                            data-url="/mcqs/1000-microprocessor-mcqs/1000-microprocessor-mcqs.html">
+                                            1000 Microprecessor MCQs
+                                        </a>
+                                    </div>
+                                    <div data-name="dbms mcqs" data-category="backend">
+                                        <a class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-ex-python redirect"
+                                            href="/mcqs/1000-dbms-mcqs/1000-dbms-mcqs.html"
+                                            data-url="/mcqs/1000-dbms-mcqs/1000-dbms-mcqs.html">
+                                            1000 DBMS MCQs
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="w3-button tnb-close-nav-btn w3-round" tabindex="0"
+                        onclick="TopNavBar.closeNavItem('exercises')"
+                        onkeydown="TopNavBar.mouseHandler(event, this, 'exercises')" role="button"
+                        aria-label="Close navigation">
+                        <span>&times;</span>
+                    </div>
+                </nav>
+                  <!-- 
+                 ============================================================================================================================================================
+                         close mcqs  dropdown menu
+                 ============================================================================================================================================================
+                 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] 
+                 ============================================================================================================================================================
+                         start branches  dropdown menu
+                 ============================================================================================================================================================ 
+                 -->
+                <nav id="nav_certified" class="dropdown-nav w3-hide-small navex" tabindex="-1"
+                    aria-label="Certification menu">
+                    <div class="w3-content menu-content">
+                        <div id="certified_list" class="w3-row-padding w3-bar-block">
+                            <div class="nav-heading-container w3-container">
+                                <div class="nav-heading-container-title">
+                                    <h2 style="color: #fff4a3"><b>Branchwise MCQs</b></h2>
+                                </div>
+                                <div data-section="certificates" class="filter-input-wrapper">
+                                    <div class="filter-input-inner-wrapper">
+                                        <label for="filter-certified-input" class="tnb-soft-hide">
+                                            Filter field for certifications
+                                        </label>
+                                        <input id="filter-certified-input"
+                                            oninput="TopNavBar.filter(event, 'nav_certified')" type="text"
+                                            class="filter-input" placeholder="Search Branches here..."
+                                            aria-label="Certificate filter bar" />
+
+                                        <div class="filter-clear-btn tnb-button-dark-v2" role="button"
+                                            aria-label="Filter clear button"
+                                            onclick="TopNavBar.clearFilter(event, 'nav_certified')">
+                                            <span>&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="certified_html_css_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="html_and_css_title">
+                                        CS IT & IS
+                                    </h3>
+
+                                    <div data-name="programming mcqs" data-category="html_and_css">
+                                        <a href="/mcqs/programming/programming.html" 
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html redirect"
+                                            data-url="/mcqs/programming/programming.html">
+                                            Programming
+                                        </a>
+                                    </div>
+                                    <div data-name="cs mcqs" data-category="html_and_css">
+                                        <a href="/mcqs/cs/cs.html" data-url="/mcqs/cs/cs.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html redirect">
+                                            CS
+                                        </a>
+                                    </div>
+
+                                    <div data-name="it mcqs" data-category="html_and_css">
+                                        <a href="/mcqs/it/it.html" data-url="/mcqs/it/it.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html redirect">
+                                            IT
+                                        </a>
+                                    </div>
+                                    <div data-name="is mcqs" data-category="html_and_css">
+                                        <a href="/mcqs/is/is.html" data-url="/mcqs/is/is.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-html redirect">
+                                            IS
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="certified_data_analytics_links_list_desktop" class="w3-hide-small">
+                                    <h3 class="tnb-nav-section-title" data-heading="data_analytics_title">
+                                        ECE EEE & EE
+                                    </h3>
+
+                                    <div data-name="ece mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/ece/ece.html" data-url="/mcqs/ece/ece.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa redirect">
+                                            ECE
+                                        </a>
+                                    </div>
+                                    <div data-name="eee mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/eee/eee.html" data-url="/mcqs/eee/eee.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa redirect">
+                                            EEE
+                                        </a>
+                                    </div>
+                                    <div data-name="ee mcqs" data-category="data_analytics">
+                                        <a href="/mcqs/ee/ee.html" data-url="/mcqs/ee/ee.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-dsa redirect">
+                                            EE
+                                        </a>
+                                    </div>
+                                    <div class="black-box-container">
+                                        <a class="w3-bar-item w3-button ga-top-drop w3-center w3-round ga-top-drop-quiztest redirect"
+                                            href="/mcqs/all-course-mcqs.html" data-url="/mcqs/all-course-mcqs.html"
+                                            style="display: block; background-color: #21232c; border: 1px solid grey; width: 195px">
+                                            More MCQs
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-col l4 m6">
+                                <div id="certified_javascript_links_list">
+                                    <h3 class="tnb-nav-section-title" data-heading="javascript_title">Enginnering</h3>
+                                    <div data-name="civil" data-category="javascript">
+                                        <a href="/mcqs/civil/civil.html" data-url="/mcqs/civil/civil.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Civil
+                                        </a>
+                                    </div>
+                                    <div data-name="machanical mcqs" data-category="javascript">
+                                        <a href="/mcqs/machanical/machanical.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js">
+                                            Machanical
+                                        </a>
+                                    </div>
+                                    <div data-name="chemical mcqs" data-category="javascript">
+                                        <a href="/mcqs/chemical/chemical.html" data-url="/mcqs/chemical/chemical.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Chemical
+                                        </a>
+                                    </div>
+                                    <div data-name="metallury mcqs" data-category="javascript">
+                                        <a  href="/mcqs/metallury/metallury.html" data-url="/mcqs/metallury/metallury.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Metallury
+                                        </a>
+                                    </div>
+                                    <div data-name="mining mcqs" data-category="javascript">
+                                        <a href="/mcqs/mining/mining.html" data-url="/mcqs/mining/mining.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Mining
+                                        </a>
+                                    </div>
+                                    <div data-name="intrumentation mcqs" data-category="javascript">
+                                        <a href="/mcqs/intrumentation/intrumentation.html" data-url="/mcqs/intrumentation/intrumentation.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Intrumentation
+                                        </a>
+                                    </div>
+                                    <div data-name="aerospace mcqs" data-category="javascript">
+                                        <a target="_blank" href="/mcqs/aerospace/aerospace.html" data-url="/mcqs/aerospace/aerospace.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-js redirect">
+                                            Aerospace
+                                        </a>
+                                    </div>
+                                </div>                                
+                            </div>
+
+                            <div class="w3-col l4 m6">
+                                <div id="certified_backend_links_list">
+                                    <br class="w3-hide-large w3-hide-small" />
+                                    <h3 class="tnb-nav-section-title" data-heading="backend_title">Programs</h3>
+
+                                    <div data-name="aeroautical mcqs" data-category="backend">
+                                        <a href="/mcqs/aeroautical/aeroautical.html" data-url="/mcqs/aeroautical/aeroautical.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            Aeroautical
+                                        </a>
+                                    </div>
+                                    <div data-name="biotechnology mcqs" data-category="backend">
+                                        <a href="/mcqs/biotechnology/biotechnology.html" data-url="/mcqs/biotechnology/biotechnology.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            Biotechnology
+                                        </a>
+                                    </div>
+                                    <div data-name="agriculture mcqs" data-category="backend">
+                                        <a target="_blank" href="/mcqs/agriculture/agriculture.html" data-url="/mcqs/agriculture/agriculture.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            Agriculture
+                                        </a>
+                                    </div>
+                                    <div data-name="marine mcqs" data-category="backend">
+                                        <a target="_blank" href="/mcqs/marine/marine.html" data-url="/mcqs/marine/marine.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            Marine
+                                        </a>
+                                    </div>
+                                    <div data-name="mechatronics mcqs" data-category="backend">
+                                        <a target="_blank" href="/mcqs/mechatronics/mechatronics.html" data-url="/mcqs/mechatronics/mechatronics.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            Mechatronics
+                                        </a>
+                                    </div>
+                                    <div data-name="mca mcqs" data-category="backend">
+                                        <a target="_blank" href="/mcqs/mca/mca.html" data-url="/mcqs/mca/mca.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            MCA
+                                        </a>
+                                    </div>
+                                    <div data-name="bca mcqs" data-category="backend">
+                                        <a target="_blank" href="/mcqs/bca/bca.html" data-url="/mcqs/bca/bca.html"
+                                            class="w3-bar-item w3-button acctop-link ga-top-drop ga-top-drop-cert-python redirect">
+                                            BCA
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="w3-button tnb-close-nav-btn w3-round" tabindex="0"
+                        onclick="TopNavBar.closeNavItem('certified')"
+                        onkeydown="TopNavBar.mouseHandler(event, this, 'certified')" role="button"
+                        aria-label="Close navigation">
+                        <span>&times;</span>
+                    </div>
+                </nav>
+                 <!-- 
+                 ============================================================================================================================================================
+                         close practice  dropdown menu
+                 ============================================================================================================================================================
+                 [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]] 
+                 ============================================================================================================================================================
+                         start Contact  dropdown menu
+                 ============================================================================================================================================================ 
+                 -->
+                <nav id="nav_services" class="dropdown-nav w3-hide-small navex" tabindex="-1"
+                    aria-label="Services menu">
+                    <div class="w3-content menu-content">
+                        <div id="services_list" class="w3-row-padding w3-bar-block">
+                            <div class="nav-heading-container w3-container">
+                                <div class="nav-heading-container-title">
+                                    <h2 style="color: #fff4a3"><b>All Our Services</b></h2>
+                                </div>
+                                <div data-section="services" class="filter-input-wrapper">
+                                    <div class="filter-input-inner-wrapper">
+                                        <label for="filter-services-input" class="tnb-soft-hide">
+                                            Services filter input
+                                        </label>
+                                        <input id="filter-services-input"
+                                            oninput="TopNavBar.filter(event, 'nav_services')" type="text"
+                                            class="filter-input" placeholder="Filter..."
+                                            aria-label="Services filter bar" />
+
+                                        <div class="filter-clear-btn tnb-button-dark-v2" role="button"
+                                            aria-label="Filter clear button"
+                                            onclick="TopNavBar.clearFilter(event, 'nav_services')">
+                                            <span>&times;</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-heading-container w3-container">
+                                <p class="tnb-services-headlines">
+                                    ApnaSchools offers a wide range of services and materials for beginners and
+                                    professionals.
+                                    <br>helps millions of people learn and master new skills every day.
+                                </p>
+                            </div>
+                            <div class="serviceboxes">
+                                <div class="servicebox">
+                                    <a href="/tutorials/freeTutorials/tutotials.html" data-url="/tutorials/freeTutorials/tutotials.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-tut redirect" title="Free Tutorials"
+                                        aria-label="Free tutorials">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Free Tutorials</h4>
+                                            <p>Enjoy our free tutorials to explore the computer world and Develope your
+                                                skils.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox">
+                                    <a href="/tutorials/references/index.html" data-url="/tutorials/references/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-ref" title="References"
+                                        aria-label="Tutorial references">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>References</h4>
+                                            <p>Explore our selection of references covering all popular coding languages
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox">
+                                    <a href="/tutorials/templates/w3css_templates.html" data-url="/tutorials/templates/w3css_templates.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-spaces redirect"
+                                        title="free web templates" aria-label="free web templates">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Free Web Templates</h4>
+                                            <p>
+                                                Download free web templates form
+                                                <strong>ApnaSchools</strong>
+                                                and practice to enhance your skills.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox">
+                                    <a href="quizzes/default.html" data-url="quizzes/default.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-qz redirect"
+                                        title="Test yourself with quizzes" aria-label="Quizzes">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Quizzes</h4>
+                                            <p>Test yourself with multiple choice questions</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox">
+                                    <a href="/tutorials/wheretostart/where_to_start.html" data-url="/tutorials/wheretostart/where_to_start.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-wheretostart redirect"
+                                        title="Where To Start" aria-label="Where to start">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Where To Start</h4>
+                                            <p>Not sure where you want to start? Follow our guided path</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <a href="/projects/Hangman_Game/index.html" data-url="/projects/Hangman_Game/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-w3css" title="Human Game"
+                                        aria-label="Human Game">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Human Game</h4>
+                                            <p>
+                                                Test your IQ to fill spellings in this game
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox tnb-paid-service">
+                                    <a href="/videos/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-videos"
+                                        title="HTML Video Tutorial" aria-label="Videos">
+                                        <div class="w3-padding services w3-round" style="position: relative">
+                                            <h4>Videos</h4>
+                                            <p>Learn the basics of HTML in a fun and engaging video tutorial</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <a href="/tutorials/how_to/default.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-howto"
+                                        title="How To Collection" aria-label="How To's">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>How To's</h4>
+                                            <p>Large collection of code snippets for HTML, CSS and JavaScript</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <a href="/projects/Image_Editor/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-w3css" title="Image Editor"
+                                        aria-label="Image Editor">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Image Editor</h4>
+                                            <p>
+                                                Edit your image with our image editor
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="servicebox">
+                                    <a href="/tutorials/w3_css/default.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-w3css"
+                                        title="W3.CSS Framework" aria-label="W3.CSS Framework">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>CSS Framework</h4>
+                                            <p>
+                                                Build fast and responsive sites using our free
+                                                <strong>W3.CSS</strong>
+                                                framework
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <a href="/projects/Text_to_Speech_Converter/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-w3css"
+                                        title="Text-To-Speech" aria-label="Text To Speech">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Text-To-Speech</h4>
+                                            <p>
+                                                Try this text to speech recognition tool.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <a href="/projects/Snake_Game/index.html"
+                                        class="serviceslink ga-top-drop ga-top-drop-services-color-picker"
+                                        title="Snake Game" aria-label="Snake Game">
+                                        <div class="w3-padding services w3-round" style="position: relative">
+                                            <h4>Snake Game</h4>
+                                            <p>
+                                                Snake is a classic game that millions of people have played.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="servicebox">
+                                    <div class="serviceslink ga-top-drop ga-top-drop-services-contact-us"
+                                        title="Contact Us" aria-label="Contact Us">
+                                        <div class="w3-padding services w3-round">
+                                            <h4>Contact Us</h4>
+                                            <p>
+                                                About errors:
+                                                <span style="float: right">help@apnaschools.com</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-button tnb-close-nav-btn w3-round" tabindex="0"
+                                onclick="TopNavBar.closeNavItem('services')"
+                                onkeydown="TopNavBar.mouseHandler(event, this, 'services')" role="button"
+                                aria-label="Close navigation">
+                                <span>&times;</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="googleSearch">
+            <div class="gcse-search"></div>
+        </div>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTCFC3S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="subtopnav" onmousedown="startscrolling_subtopnav(event)" onmousemove="scrolling_subtopnav(event)"
+        onmouseup="endscrolling_subtopnav(event)" onclick="return pellessii(event)">
+        <div id="scroll_left_btn" class="w3-hide-medium w3-hide-small">
+            <span onmousedown="scrollmenow(-1)" onmouseup="stopscrollmenow()"
+                onmouseout="stopscrollmenow()">&nbsp;&nbsp;&nbsp;&#10094;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div id="menubtn_container">
+            <span>
+                <a href="javascript:void(0);"
+                    class="topnav-icons fa fa-menu w3-hide-large w3-left w3-bar-item w3-button ga-nav"
+                    style="line-height:1.1;padding-top:8px!important;padding-bottom:8px!important; background-color:#0202e1 !important;"
+                    onclick="open_menu()" title="Menu"></a>
+            </span>
+        </div>
+        <div class="navigation-bar" id="html-navigation">
+            <a href="/tutorials/html/default.html" class="ga-nav redirect subtopnav_firstitem current_active" data-url="/tutorials/html/default.html" title="HTML Tutorial">HTML</a>
+            <a href="/tutorials/css/default.html" class="ga-nav redirect" data-url="/tutorials/css/default.html" title="CSS Tutorial">CSS</a>
+            <a href="/tutorials/javascript/default.html" class="ga-nav redirect" data-url="/tutorials/javascript/default.html" title="JavaScript Tutorial">JAVASCRIPT</a>
+            <a href="/tutorials/sql/default.html" class="ga-nav redirect" data-url="/tutorials/sql/default.html" title="SQL Tutorial">SQL</a>
+            <a href="/tutorials/python/default.html" class="ga-nav redirect" data-url="/tutorials/python/default.html" title="Python Tutorial">PYTHON</a>
+            <a href="/tutorials/java/default.html" class="ga-nav redirect" data-url="/tutorials/java/default.html" title="Java Tutorial">JAVA</a>
+            <a href="/tutorials/php/default.html" class="ga-nav redirect" data-url="/tutorials/php/default.html" title="PHP Tutorial">PHP</a>
+            <a href="/tutorials/how_to/default.html" class="ga-nav redirect" data-url="/tutorials/how_to/default.html" title="How to">HOW TO</a>
+            <a href="/tutorials/w3_css/default.html" class="ga-nav redirect" data-url="/tutorials/w3_css/default.html" title="W3.CSS Tutorial">W3.CSS</a>
+            <a href="/tutorials/c/default.html" class="ga-nav redirect" data-url="/tutorials/c/default.html" title="C Tutorial">C</a>
+            <a href="/tutorials/cpp/default.html" class="ga-nav redirect" data-url="/tutorials/cpp/default.html" title="C++ Tutorial">C++</a>
+            <a href="/tutorials/cs/default.html" class="ga-nav redirect" data-url="/tutorials/cs/default.html" title="C# Tutorial">C#</a>
+            <a href="/tutorials/bootstrap/default.html" class="ga-nav redirect" data-url="/tutorials/bootstrap/default.html" title="Bootstrap Tutorial">BOOTSTRAP</a>
+            <a href="/tutorials/react/default.html" class="ga-nav redirect" data-url="/tutorials/react/default.html" title="React Tutorial">REACT</a>
+            <a href="/tutorials/mysql/default.html" class="ga-nav redirect" data-url="/tutorials/mysql/default.html" title="MySQL Tutorial">MYSQL</a>
+            <a href="/tutorials/jquery/default.html" class="ga-nav redirect" data-url="/tutorials/jquery/default.html" title="JQuery Tutorial">JQUERY</a>
+            <a href="/tutorials/excel/default.html" class="ga-nav redirect" data-url="/tutorials/excel/default.html" title="Excel Tutorial">EXCEL</a>
+            <a href="/tutorials/xml/default.html" class="ga-nav redirect" data-url="/tutorials/xml/default.html" title="XML Tutorial">XML</a>
+            <a href="/tutorials/django/default.html" class="ga-nav redirect" data-url="/tutorials/django/default.html" itle="Django Tutorial">DJANGO</a>
+            <a href="/tutorials/numpy/default.html" class="ga-nav redirect" data-url="/tutorials/numpy/default.html" title="NumPy Tutorial">NUMPY</a>
+            <a href="/tutorials/pandas/default.html" class="ga-nav redirect" data-url="/tutorials/pandas/default.html" title="Pandas Tutorial">PANDAS</a>
+            <a href="/tutorials/nodejs/default.html" class="ga-nav redirect" data-url="/tutorials/nodejs/default.html" title="Node.js Tutorial">NODEJS</a>
+            <a href="/tutorials/r/default.html" class="ga-nav redirect" data-url="/tutorials/r/default.html" title="R Tutorial">R</a>
+            <a href="/tutorials/typescript/default.html" class="ga-nav redirect" data-url="/tutorials/typescript/default.html" title="TypeScript Tutorial">TYPESCRIPT</a>
+            <a href="/tutorials/angular/default.html" class="ga-nav redirect" data-url="/tutorials/angular/default.html" title="Angular.js Tutorial">ANGULAR</a>
+            <a href="/tutorials/git/default.html" class="ga-nav redirect" data-url="/tutorials/git/default.html" title="Git Tutorial">GIT</a>
+            <a href="/tutorials/postgresql/default.html" class="ga-nav redirect" data-url="/tutorials/postgresql/default.html" title="PostgreSQL Tutorial">POSTGRESQL</a>
+            <a href="/tutorials/mongobd/default.html" class="ga-nav redirect" data-url="/tutorials/mongobd/default.html" title="MongoDB Tutorial">MONGODB</a>
+            <a href="/tutorials/asp/default.html" class="ga-nav redirect" data-url="/tutorials/asp/default.html" title="html Tutorial">ASP</a>
+            <a href="/tutorials/ai/default.html" class="ga-nav redirect" data-url="/tutorials/ai/default.html" title="A.I. Tutorial">AI</a>
+            <a href="/tutorials/go/default.html" class="ga-nav redirect" data-url="/tutorials/go/default.html" title="Go Tutorial">GO</a>
+            <a href="/tutorials/kotlin/default.html" class="ga-nav redirect" data-url="/tutorials/kotlin/default.html" title="Kotlin Tutorial">KOTLIN</a>
+            <a href="/tutorials/sass/default.html" class="ga-nav redirect" data-url="/tutorials/sass/default.html" title="Sass Tutorial">SASS</a>
+            <a href="/tutorials/vue/default.html" class="ga-nav redirect" data-url="/tutorials/vue/default.html" title="Vue.js Tutorial">VUE</a>
+            <a href="/tutorials/dsa/default.html" class="ga-nav redirect" data-url="/tutorials/dsa/default.html" title="DSA Tutorial">DSA</a>
+            <a href="/tutorials/gen_ai/default.html" class="ga-nav redirect" data-url="/tutorials/gen_ai/default.html" title="Gen A.I. Tutorial">GEN AI</a>
+            <a href="/tutorials/scipy/default.html" class="ga-nav redirect" data-url="/tutorials/scipy/default.html" title="SciPy Tutorial">SCIPY</a>
+            <a href="/tutorials/aws/default.html" class="ga-nav redirect" data-url="/tutorials/aws/default.html" title="AWS Tutorial">AWS</a>
+            <a href="/tutorials/cybersecurity/default.html" class="ga-nav redirect" data-url="/tutorials/cybersecurity/default.html" title="Cyber security Tutorial">CYBERSECURITY</a>
+            <a href="/tutorials/data_science/default.html" class="ga-nav redirect" data-url="/tutorials/data_science/default.html" title="Data science Tutorial">DATA SCIENCE</a>
+            <a href="/mcqs/default.html" class="ga-nav redirect" data-url="/mcqs/default.html" title="MCQs">MCQs</a>
+            <a href="javascript:void(0)" style="width:50px;visibility:hidden;"></a>
+        </div>
+        <div id="btn_container_subtopnav">
+            <div id="scroll_right_btn" class="w3-hide-medium w3-hide-small">
+                <span onmousedown="scrollmenow(1)" onmouseup="stopscrollmenow()"
+                    onmouseout="stopscrollmenow()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#10095;&nbsp;&nbsp;&nbsp;</span>
+            </div>
+        </div>
+    </div>
+    <div class='w3-sidebar w3-collapse' id='sidenav'>
+        <div id='leftmenuinner'>
+            <div id='leftmenuinnerinner'>
+                <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+                <a target="_top" href="default.html">HTML HOME</a>
+                <a target="_top" href="html_intro.html">HTML Introduction</a>
+                <a target="_top" href="html_editors.html">HTML Editors</a>
+                <a target="_top" href="html_basic.html">HTML Basic</a>
+                <a target="_top" href="html_elements.html">HTML Elements</a>
+                <a target="_top" href="html_attributes.html">HTML Attributes</a>
+                <a target="_top" href="html_headings.html">HTML Headings</a>
+                <a target="_top" href="html_paragraphs.html">HTML Paragraphs</a>
+                <a target="_top" href="html_styles.html">HTML Styles</a>
+                <a target="_top" href="html_formatting.html">HTML Formatting</a>
+                <a target="_top" href="html_quotation_elements.html">HTML Quotations</a>
+                <a target="_top" href="html_comments.html">HTML Comments</a>
+                <a target="_top" href="html_colors.html">HTML Colors
+                    <i class="fa fa-caret-down" style="float: right;"></i>
+                </a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_colors.html">Colors</a>
+                    <a target="_top" href="html_colors_rgb.html">RGB</a>
+                    <a target="_top" href="html_colors_hex.html">HEX</a>
+                    <a target="_top" href="html_colors_hsl.html">HSL</a>
+                </div>
+                <a target="_top" href="html_css.html">HTML CSS</a>
+                <a target="_top" href="html_links.html">HTML Links
+                    <i class="fa fa-caret-down" style="float: right;"></i>
+                </a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_links.html">Links</a>
+                    <a target="_top" href="html_links_colors.html">Link Colors</a>
+                    <a target="_top" href="html_links_bookmarks.html">Link Bookmarks</a>
+                </div>
+                <a target="_top" href="html_images.html">HTML Images
+                    <i class="fa fa-caret-down" style="float: right;"></i>
+                </a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_images.html">Images</a>
+                    <a target="_top" href="html_images_imagemap.html">Image Map</a>
+                    <a target="_top" href="html_images_background.html">Background Images</a>
+                    <a target="_top" href="html_images_picture.html">The Picture Element</a>
+                </div>
+                <a target="_top" href="html_favicon.html">HTML Favicon</a>
+                <a target="_top" href="html_page_title.html">HTML Page Title</a>
+                <a target="_top"  href="html_tables.html">HTML Tables
+                    <i class="fa fa-caret-down" style="float: right;"></i>
+                </a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_tables.html">HTML Tables</a>
+                    <a target="_top" href="html_table_borders.html">Table Borders</a>
+                    <a target="_top" href="html_table_sizes.html">Table Sizes</a>
+                    <a target="_top" href="html_table_headers.html">Table Headers</a>
+                    <a target="_top" href="html_table_padding_spacing.html">Padding &amp; Spacing</a>
+                    <a target="_top" href="html_table_colspan_rowspan.html">Colspan &amp; Rowspan</a>
+                    <a target="_top" href="html_table_styling.html">Table Styling</a>
+                    <a target="_top" href="html_table_colgroup.html">Table Colgroup</a>
+                </div>
+                <a target="_top" href="html_lists.html">HTML Lists
+                    <i class="fa fa-caret-down" style="float: right;"></i>
+                </a>
+                <div class="tut_overview">
+                    <a target="_top" href="html_lists.html">Lists</a>
+                    <a target="_top" href="html_lists_unordered.html">Unordered Lists</a>
+                    <a target="_top" href="html_lists_ordered.html">Ordered Lists</a>
+                    <a target="_top" href="html_lists_other.html">Other Lists</a>
+                </div>
+                <a target="_top" href="html_blocks.html">HTML Block &amp; Inline</a>
+                <a target="_top" class="current_active" href="html_div.html">HTML Div</a>
+                <a target="_top" href="html_classes.html">HTML Classes</a>
+                <a target="_top" href="html_id.html">HTML Id</a>
+                <a target="_top" href="html_iframe.html">HTML Iframes</a>
+                <a target="_top" href="html_scripts.html">HTML JavaScript</a>
+                <a target="_top" href="html_filepaths.html">HTML File Paths</a>
+                <a target="_top" href="html_head.html">HTML Head</a>
+                <a target="_top" href="html_layout.html">HTML Layout</a>
+                <a target="_top" href="html_responsive.html">HTML Responsive</a>
+                <a target="_top" href="html_computercode_elements.html">HTML Computercode</a>
+                <a target="_top" href="html5_semantic_elements.html">HTML Semantics</a>
+                <a target="_top" href="html5_syntax.html">HTML Style Guide</a>
+                <a target="_top" href="html_entities.html">HTML Entities</a>
+                <a target="_top" href="html_symbols.html">HTML Symbols</a>
+                <a target="_top" href="html_emojis.html">HTML Emojis</a>
+                <a target="_top" href="html_charset.html">HTML Charsets</a>
+                <a target="_top" href="html_urlencode.html">HTML URL Encode</a>
+                <a target="_top" href="html_xhtml.html" class="not-wired">HTML vs. XHTML</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+                <a target="_top" href="html_forms.html">HTML Forms</a>
+                <a target="_top" href="html_forms_attributes.html">HTML Form Attributes</a>
+                <a target="_top" href="html_form_elements.html">HTML Form Elements</a>
+                <a target="_top" href="html_form_input_types.html">HTML Input Types</a>
+                <a target="_top" href="html_form_attributes.html">HTML Input Attributes</a>
+                <a target="_top" href="html_form_attributes_form.html" class="not-wired">Input Form Attributes</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+                <a target="_top" href="html5_canvas.html">HTML Canvas</a>
+                <a target="_top" href="html5_svg.html" class="not-wired">HTML SVG</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+                <a target="_top" href="html_media.html">HTML Media</a>
+                <a target="_top" href="html5_video.html">HTML Video</a>
+                <a target="_top" href="html5_audio.html">HTML Audio</a>
+                <a target="_top" href="html_object.html">HTML Plug-ins</a>
+                <a target="_top" href="html_youtube.html" class="not-wired">HTML YouTube</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+                <a target="_top" href="html5_geolocation.html">HTML Geolocation</a>
+                <a target="_top" href="html5_draganddrop.html">HTML Drag/Drop</a>
+                <a target="_top" href="html5_webstorage.html">HTML Web Storage</a>
+                <a target="_top" href="html5_webworkers.html">HTML Web Workers</a>
+                <a target="_top" href="html5_serversentevents.html" class="not-wired">HTML SSE</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+                <a target="_top" class="no-checkmark" href="html_examples.html">HTML Examples</a>
+                <a target="_top" class="no-checkmark not-wired" href="html_accessibility.html">HTML Accessibility</a>
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> References</h2>
+                <a target="_top" class="no-checkmark not-wired" href="tags/default.html">HTML Tag List</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_attributes.html">HTML Attributes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_standardattributes.html">HTML Global
+                    Attributes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_html_browsersupport.html">HTML Browser
+                    Support</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_eventattributes.html">HTML Events</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_colornames.html">HTML Colors</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_canvas.html">HTML Canvas</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_av_dom.html">HTML Audio/Video</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_html_dtd.html">HTML Doctypes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_charactersets.html">HTML Character
+                    Sets</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_urlencode.html">HTML URL Encode</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_language_codes.html">HTML Lang Codes</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_httpmessages.html">HTTP Messages</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_httpmethods.html">HTTP Methods</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_pxtoemconversion.html">PX to EM
+                    Converter</a>
+                <a target="_top" class="no-checkmark not-wired" href="tags/ref_keyboardshortcuts.html">Keyboard
+                    Shortcuts</a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:250px;'>
+        <div class='w3-row w3-white'>
+            <div class='w3-col l10 m12' id='main'>
+                <div id='mainLeaderboard' style='overflow:hidden;'>
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-main_leaderboard-0"></div>
+                </div>
+                <h1>HTML<span class="color_h1"> Div Element</span></h1>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="html_blocks.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_classes.html">Next &#10095;</a>
+                </div>
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                                  artical content
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                <hr>
+                <p class="intro">The <code class="w3-codespan">&lt;div&gt;</code> element is used as a container for
+                    other HTML elements.</p>
+                    <hr>
+                    <p class="intro">HTML attributes provide additional information about HTML elements.</p>
+                    <hr>
+                    <div class="w3-panel w3-note" id="credit">
+                        <p><strong style="color: red;">Sources & Credit :</strong><a href="https://www.w3schools.com/"><strong> W3Schools.com</strong></a> is the premier destination
+                            for comprehensive tutorials, practical examples, and in-depth study materials on web
+                            technologies. It empowers millions of learners to master coding and web development with
+                            accurate and accessible content. All study materials, examples etc. are owened by w3schools.com.
+                        </p>
+                    </div>
+                    <hr> 
+
+                <h2>The &lt;div&gt; Element</h2>
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element is by default a
+                    block element, meaning that it takes all available width, and comes with line
+                    breaks before and after.</p>
+
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>A &lt;div&gt; element takes up all available width:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt;
+                        dolor sit amet.</div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        Lorem Ipsum<div style="background: #FFF4A3;color:#000;">
+                            I am a div
+                        </div>
+                        dolor sit amet.
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div1.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element has no required attributes, but <code
+                        class="w3-codespan">style</code>, <code class="w3-codespan">class</code> and <code
+                        class="w3-codespan">id</code> are common.</p>
+
+                
+                        <hr>
+                        <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                            <p class="adtext">Advertisement</p>
+                            <div id="adngin-mid_content-0"></div>
+                        </div>
+                        <hr>
+
+                <h2>&lt;div&gt; as a container</h2>
+
+                <p>The <code class="w3-codespan">&lt;div&gt;</code> element is often used to group sections of a web
+                    page together.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>A &lt;div&gt; element with HTML elements:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of
+                        England.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;
+                    </div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div style="background-color:#FFF4A3;color:#000;padding:10px;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div2.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <h2>Center align a &lt;div&gt; element</h2>
+
+                <p>If you have a <code class="w3-codespan">&lt;div&gt;</code> element that is
+                    not 100% wide, and you want to center-align it, set the CSS
+                    <code class="w3-codespan">margin</code> property to <code class="w3-codespan">
+                     auto</code>.
+                </p>
+
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-mid_content-0"></div>
+                </div>
+                <hr>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>div {<br>&nbsp; width:300px;<br>&nbsp; margin:auto;<br>}<br>
+                        &lt;/style&gt;</div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div
+                            style="background-color:#FFF4A3;color:#000;padding:10px;width:300px;margin:auto;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div3.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <hr>
+                <h2>Multiple &lt;div&gt; elements</h2>
+
+                <p>You can have many <code class="w3-codespan">&lt;div&gt;</code> containers on the same page.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;London&lt;/h2&gt;<br>&nbsp; &lt;p&gt;London is the capital city of
+                        England.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br><br>&lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;Oslo&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Oslo is the capital city of
+                        Norway.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;<br><br>&lt;div&gt;<br>
+                        &nbsp; &lt;h2&gt;Rome&lt;/h2&gt;<br>&nbsp; &lt;p&gt;Rome is the capital city of
+                        Italy.&lt;/p&gt;<br>&nbsp;
+                        &lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt;<br>
+                        &lt;/div&gt;
+                    </div>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+
+                        <div style="background-color:#FFF4A3;color:#000;">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div style="background-color:#FFC0C7;color:#000;">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div style="background-color:#D9EEE1;color:#000;">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+
+
+                    <br>
+
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div4.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-mid_content-0"></div>
+                </div>
+                <hr>
+
+                <h2>Aligning &lt;div&gt; elements side by side</h2>
+
+                <p>When building web pages, you often want to have two or more
+                    <code class="w3-codespan">&lt;div&gt;</code> elements side by side, like this:
+                </p>
+
+                <style>
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+
+                    .grid-container div {
+                        padding: 10px;
+                    }
+                </style>
+
+                <div class="grid-container">
+
+                    <div style="background-color:#FFF4A3;color:#000">
+                        <h2>London</h2>
+                        <p>London is the capital city of England.</p>
+                        <p>London has over 13 million inhabitants.</p>
+                    </div>
+
+                    <div style="background-color:#FFC0C7;color:#000">
+                        <h2>Oslo</h2>
+                        <p>Oslo is the capital city of Norway.</p>
+                        <p>Oslo has over 600.000 inhabitants.</p>
+                    </div>
+
+                    <div style="background-color:#D9EEE1;color:#000">
+                        <h2>Rome</h2>
+                        <p>Rome is the capital city of Italy.</p>
+                        <p>Rome has almost 3 million inhabitants.</p>
+                    </div>
+
+                </div>
+
+                <p>There are different methods for aligning elements side by side, all include some CSS styling.
+                    We will look at the most common methods:</p>
+
+                <hr>
+
+                <h2>Float</h2>
+
+                <p>The CSS <code class="w3-codespan">float</code> property was not originally meant to align
+                    <code class="w3-codespan">&lt;div&gt;</code> elements side-by-side,
+                    but has been used for this purpose for many years.
+                </p>
+
+                <p>The CSS <code class="w3-codespan">float</code> property is used for positioning and formatting
+                    content and
+                    allow elements float next to each other instead of on top of each other.</p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use float to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.mycontainer {<br>&nbsp; width:100%;<br>&nbsp; overflow:auto;<br>
+                        }<br>.mycontainer div {<br>&nbsp; width:33%; <br>&nbsp; float:left;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo1 {
+                            padding: 10px;
+                            width: 33.33%;
+                            float: left;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;overflow:auto;">
+                        <div class="demo1" style="background-color:#FFF4A3;color:#000">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div class="demo1" style="background-color:#FFC0C7;color:#000">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div class="demo1" style="background-color:#D9EEE1;color:#000">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_float.html" target="_blank">Run Code &raquo;</a>
+                </div>
+
+                <p>Learn more about float in our <a href="../css/css_float.html">CSS float tutorial</a>.</p>
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-mid_content-0"></div>
+                </div>
+                <hr>
+                <h2>Inline-block</h2>
+
+                <p>If you change the <code class="w3-codespan">&lt;div&gt;</code> element's
+                    <code class="w3-codespan">display</code> property from <code class="w3-codespan">block</code> to
+                    <code class="w3-codespan">inline-block</code>,
+                    the <code class="w3-codespan">&lt;div&gt;</code> elements will no longer add a line break before and
+                    after,
+                    and will be displayed side by side instead of on top of each other.
+                </p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use display: inline-block to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>div {<br>&nbsp; width: 30%;<br>&nbsp; display:
+                        inline-block;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo2 {
+                            padding: 10px;
+                            width: 30%;
+                            display: inline-block;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;overflow:auto;">
+                        <div class="demo2" style="background-color:#FFF4A3;color:#000">
+                            <h2>London</h2>
+                            <p>London is the capital city of England.</p>
+                            <p>London has over 13 million inhabitants.</p>
+                        </div>
+
+                        <div class="demo2" style="background-color:#FFC0C7;color:#000">
+                            <h2>Oslo</h2>
+                            <p>Oslo is the capital city of Norway.</p>
+                            <p>Oslo has over 600.000 inhabitants.</p>
+                        </div>
+
+                        <div class="demo2" style="background-color:#D9EEE1;color:#000">
+                            <h2>Rome</h2>
+                            <p>Rome is the capital city of Italy.</p>
+                            <p>Rome has almost 3 million inhabitants.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_inline-block.html"
+                        target="_blank">Run Code &raquo;</a>
+                </div>
+                <hr>
+                <h2>Flex</h2>
+
+                <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout
+                    structure without using float or positioning.</p>
+
+                <p>To make the CSS flex method work, surround the <code class="w3-codespan">&lt;div&gt;</code> elements
+                    with another
+                    <code class="w3-codespan">&lt;div&gt;</code> element and give
+                    it the status as a flex container.
+                </p>
+
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use flex to align div elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.mycontainer {<br>&nbsp; display: flex;<br>}<br>.mycontainer
+                        &gt; div {<br>&nbsp; width:33%;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo3 {
+                            display: flex;
+                        }
+
+                        div.demo3 div {
+                            padding: 10px;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div class="demo3">
+                            <div style="background-color:#FFF4A3;color:#000">
+                                <h2>London</h2>
+                                <p>London is the capital city of England.</p>
+                                <p>London has over 13 million inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#FFC0C7;color:#000">
+                                <h2>Oslo</h2>
+                                <p>Oslo is the capital city of Norway.</p>
+                                <p>Oslo has over 600.000 inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#D9EEE1;color:#000">
+                                <h2>Rome</h2>
+                                <p>Rome is the capital city of Italy.</p>
+                                <p>Rome has almost 3 million inhabitants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_flex.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <p>Learn more about flex in our <a href="../css/css3_flexbox.html">CSS flexbox tutorial</a>.</p>
+
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-mid_content-0"></div>
+                </div>
+                <hr>
+                <h2>Grid</h2>
+
+                <p>The CSS Grid Layout Module offers a grid-based layout system,
+                    with rows and columns,
+                    making it easier to design web pages without having to use floats and positioning.</p>
+
+                <p>Sounds almost the same as flex, but has the ability to define more than one row and position each row
+                    individually.</p>
+                <p>The CSS grid method requires that you surround the <code class="w3-codespan">
+                     &lt;div&gt;</code> elements with another <code class="w3-codespan">&lt;div&gt;</code> element and give
+                    the status as a grid container, and you must specify the width of each column.</p>
+                <div class="w3-example">
+                    <h3>Example</h3>
+                    <p>How to use grid to align &lt;div&gt; elements side by side:</p>
+                    <div class="w3-code notranslate htmlHigh">
+                        &lt;style&gt;<br>.grid-container {<br>&nbsp; display: grid;<br>&nbsp;
+                        grid-template-columns: 33% 33% 33%;<br>}<br>&lt;/style&gt;
+                    </div>
+                    <style>
+                        div.demo4 {
+                            display: grid;
+                            grid-template-columns: 33% 33% 33%;
+                        }
+
+                        div.demo4 div {
+                            padding: 10px;
+                        }
+                    </style>
+                    <h3>Result</h3>
+                    <div class="w3-white" style="padding:20px 10px;">
+                        <div class="demo4">
+                            <div style="background-color:#FFF4A3;color:#000">
+                                <h2>London</h2>
+                                <p>London is the capital city of England.</p>
+                                <p>London has over 13 million inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#FFC0C7;color:#000">
+                                <h2>Oslo</h2>
+                                <p>Oslo is the capital city of Norway.</p>
+                                <p>Oslo has over 600.000 inhabitants.</p>
+                            </div>
+
+                            <div style="background-color:#D9EEE1;color:#000">
+                                <h2>Rome</h2>
+                                <p>Rome is the capital city of Italy.</p>
+                                <p>Rome has almost 3 million inhabitants.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="w3-btn w3-margin-bottom" href="../../run-code/code-html/html_div_grid.html" target="_blank">Run Code &raquo;</a>
+                </div>
+                <p>Learn more about grid in our <a href="../css/css_grid.html">CSS grid tutorial</a>.</p>
+
+                <hr>
+                <div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+                    <p class="adtext">Advertisement</p>
+                    <div id="adngin-mid_content-0"></div>
+                </div>
+                <hr>
+
+                <h2>HTML Tags</h2>
+                <table class="ws-table-all notranslate">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><a href="tags/tag_div.html">&lt;div&gt;</a></td>
+                        <td>Defines a section in a document (block-level)</td>
+                    </tr>
+                </table>
+
+                <div class="w3-note w3-panel">
+                    <p>For a complete list of all available HTML tags, visit our <a href="tags/default.html">HTML Tag
+                            Reference</a>.</p>
+                </div>
+
+                <br>
+
+                <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                                                  artical content
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+                <hr>
+                <div class="w3-clear nextprev">
+                    <a class="w3-left w3-btn" href="html_blocks.html">&#10094; Previous</a>
+                    <a class="w3-right w3-btn" href="html_classes.html">Next &#10095;</a>
+                </div>
+                <hr>
+                <div class="w3-panel w3-note" id="developer">
+                    <div style="float: left; margin-right: 15px;">
+                        <img src="/img/developer.jpeg" alt="" class="aligncenter lazyloaded" width="150px"
+                            height="150px" style="border-radius: 5px;" >
+                    </div>
+                    <b>Divakar Rajput</b> a technology veteran with 18+ years is Founder and CEO at<strong>
+                        ApnaSchools</strong>. He lives in Aligarh, and focuses on Web development & Programming
+                    languages to learn in a easy way to students.Stay connected with him at
+                    <a href="https://www.linkedin.com/in/divakar-rajput-145a282b2/" target="_blank"><b>LinkedIn</b></a>.
+                    <br><br>
+                    Subscribe to his free Masterclasses at <a
+                        href="https://www.youtube.com/channel/UC2JHgGqOaIPlNw1hImkEpDw/?sub_confirmation=1"
+                        rel="nofollow noopener" target="_blank"><b>Youtube</b>.</a>
+                    <br>Mail on if you find any problems/error <a href="mailto:apnaschool9758@gmail.com"><b>Click
+                            Here</b></a> & Jion our whatsapp channel <a
+                        href="https://whatsapp.com/channel/0029VaGbyAb9MF97S7He8t10" target="_blank"><b>Jion
+                            Channel</b></a>
+                    <div style="clear: left;"></div>
+                </div>
+                <hr>
+            </div>
+            <div class="w3-col l2 m12" id="right">
+                <div class="sidesection">
+                    <div id="adngin-sidebar_top-0" data-google-query-id="CNK-tqS0zoYDFdedrAId1_kPIQ">
+                        <div id="sn_ad_label_adngin-sidebar_top-0" class="sn_ad_label" style="color:#000000;font-size:12px;margin:0;text-align:center;">ADVERTISEMENT</div>
+                        <div id="google-right-ad" style="border: 0pt none; width: 100%; height: auto;">
+                            <!-- <img src="/img/ads.jpg" width="100%" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidesection">
+                    <div id="skyscraper">             
+                        <div id="w3ads"></div>            
+                    </div>
+                </div>
+                <div id="adngin-sidebar_top-0" data-google-query-id="CNK-tqS0zoYDFdedrAId1_kPIQ">
+                    <div id="sn_ad_label_adngin-sidebar_top-0" class="sn_ad_label" style="color:#000000;font-size:12px;margin:0;text-align:center;">ADVERTISEMENT</div>
+                    <div id="google-right-ad" style="border: 0pt none; width: 100%; height: auto;">
+                        <!-- <img src="/img/ads.jpg" width="100%" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="content">
+                <div class="top1">
+                    <div class="logo-details">
+                        <i class="fa fa-slack"></i>
+                        <span class="logo_name">ApnaSchools.com</span>
+                    </div>
+                    <div class="media-icons" id="medialinks">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="link-boxes">
+                    <ul class="box">
+                        <li class="link_name">Frontend</li>
+                        <li><a href="/tutorials/html/default.html">HTML Tutorials</a></li>
+                        <li><a href="/tutorials/css/default.html">CSS Tutorials</a></li>
+                        <li><a href="/tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="/tutorials/bootstrap/default.html">BootStrap Tutorials</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Backend</li>
+                        <li><a href="/tutorials/javascript/default.html">JavaScript Tutorials</a></li>
+                        <li><a href="/tutorials/python/default.html">Python Tutorials</a></li>
+                        <li><a href="/tutorials/java/default.html">JAVA Tutorials</a></li>
+                        <li><a href="/tutorials/ruby/default.html">Ruby Tutorials</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Courses MCQs</li>
+                        <li><a href="/mcqs/html/html_mcqs.html">HTML</a></li>
+                        <li><a href="/mcqs/css/html_mcqs.html">CSS</a></li>
+                        <li><a href="/mcqs/javascript/html_mcqs.html">JavaScript</a></li>
+                        <li><a href="/mcqs/php/html_mcqs.html">PHP</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">MCQs</li>
+                        <li><a href="/mcqs/1000-Quantitative-Aptitude-Questions/1000-Quantitative-Aptitude-Questions.html">Exams Preparation</a></li>
+                        <li><a href="/mcqs/1000-data-structure-mcqs/1000-data-structure-mcqs.html">Interview MCQs</a></li>
+                        <li><a href="/mcqs/1000-object-oriented-programming-mcqs/1000-object-oriented-programming-mcqs.html">Programming & IT MCQs</a></li>
+                        <li><a href="/mcqs/all-course-mcqs.html">More MCQS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-details">
+                <div class="bottom_text">
+                    <span class="copyright_text" id="copyright">Copyright &#169; 2021 <a href="#">ApnaSchool.</a>All rights reserved</span>
+                </div>
+            </div>
+        </footer>
+        <!-- preloader -->
+        <div class="darksoul-layout" id="preloader">
+            <div class="darksoul-grid">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+                <div class="item4"></div>
+            </div>
+            <h3 class="darksoul-loader-h">Loading...</h3>
+        </div>
+        <div class="darksoul-layout hidden" id='ads-blocked' style="background-color: #0d0404b6 !important;">
+            <div class='adblock-wrapper center'>
+                <div class='adblock-content-wrapper'>
+                  <div class='adblock-content'>
+                    <div class='center'>
+                      <div class='image-container'>
+                        <div class='image'>
+                          <h3>
+                            Ads
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='adblock-text'>
+                      <h3>
+                        Adblocker Detect!
+                      </h3>
+                      <p>
+                        We noticed you're using an ad blocker. To continue enjoying our free content, please consider disabling your
+                        ad blocker or adding us to your whitelist. Ads help us support the site and keep our content free for
+                        everyone. Thank you!
+                      </p>
+                    </div>
+                    <div class='adblock-button'>
+                      <button class='btn' id="refresh-button">
+                        Click to Refresh Page
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <script src="/lib/all_page_js.js"></script>
+    <script src="/lib/w3schools_footer.js"></script>
+    <script src="/lib/topnav/main.js"></script>
+    <script src="/lib/footer.js"></script>
+</body>
+
+</html>
